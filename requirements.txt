@@ -1,0 +1,2 @@
+fastapi[standard]==0.157.0
+# Install FastAPI and its standard command-line development tools at this version.
