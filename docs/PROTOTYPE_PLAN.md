@@ -61,7 +61,7 @@ The schema is in `supabase/migrations/`: `destinations` is the country catalog, 
 
 ## Data workflow
 
-The workbook is a research bank, not an import-ready database. Its cells mix source names, URLs, notes, and candidate claims. The GOV.UK Japan collector writes local candidates; the importer copies them into the private `source_candidates` table. A teammate should open each source, confirm the specific claim, capture a title and URL, and record who checked it and when. Rewrite and save approved travel guidance in `travel_facts` with citations. Only rows marked `published` are returned by FastAPI. Never treat a source mention or a saved workbook cell as proof that its statement is still current.
+The CSVs are a research bank, not an import-ready database. Their cells mix source names, URLs, notes, and candidate claims. The daily GOV.UK monitor creates a new versioned candidate when one of its five approved source pages changes; the importer copies it into the private `source_candidates` table. A teammate should confirm the claim, capture a title and URL, and record who checked it and when. Rewrite and save approved travel guidance in `travel_facts` with citations. Only rows marked `published` are returned by FastAPI. Never treat a source mention or a saved research-bank cell as proof that its statement is still current.
 
 Suggested API fact shape:
 

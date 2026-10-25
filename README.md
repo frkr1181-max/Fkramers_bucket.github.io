@@ -37,7 +37,7 @@ Open `http://127.0.0.1:5500`. The current screen flow is a session-only mock; Au
 
 ### Source collection
 
-The initial source collector retrieves structured Japan advice from the GOV.UK Content API and writes a local review queue. It checks `robots.txt` and preserves attribution, update date, jurisdiction, and source hash. Candidate material is never published automatically. See [collector setup and source rules](collectors/README.md).
+The source monitor polls five approved GOV.UK FCDO Content API pages daily, checks `robots.txt`, fingerprints each section, and saves new content versions to the private review queue. Candidate material is never published automatically. See [collector setup and source rules](collectors/README.md).
 
 ### Initial endpoints
 
@@ -62,7 +62,7 @@ Do not commit `.env` files or credentials. Add environment-variable names to `.e
 
 ### Scraper-to-Supabase workflow
 
-1. `python -m collectors.govuk_fcdo` writes local source candidates.
+1. `python -m collectors.govuk_fcdo --source-id govuk-fcdo-japan` writes local source candidates for one configured source.
 2. `python -m collectors.import_candidates data/candidates/govuk-fcdo-japan.json` puts them in the private `source_candidates` review queue.
 3. A teammate reviews the source in Supabase and writes traveler-facing, verified material as a separate `travel_facts` row with `destination_slug`, citations, and `published = true`.
 4. A signed-in client sends its Supabase access token to FastAPI. FastAPI validates it, then reads only published rows using its server-only key.
