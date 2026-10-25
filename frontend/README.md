@@ -1,6 +1,6 @@
 # Frontend scaffold
 
-This is a dependency-free browser prototype that follows the supplied RoamReady mid-fidelity screens. It currently supports a demo home page, trip form, dashboard, category switching, and a session-only checklist. The Japan content is deliberately a placeholder; the app does not show unreviewed travel claims.
+This is a dependency-free browser prototype that follows the supplied RoamReady mid-fidelity screens. It currently supports a demo home page, country-level trip form, dashboard, category switching, and a session-only checklist. The Japan country content is deliberately a placeholder; the app does not show unreviewed travel claims. The backend destination catalog covers all 24 countries in the four research CSVs received so far.
 
 Run the API in one terminal:
 

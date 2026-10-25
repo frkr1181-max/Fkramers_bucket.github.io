@@ -4,7 +4,7 @@ Senior capstone project for source-grounded travel information.
 
 ## Backend setup
 
-The backend is a FastAPI application connected to the RoamReady Supabase project's Auth and Postgres services. Destination and fact routes require a registered Supabase user. Destinations are starter data in memory; published travel facts are read from Supabase. Scraped source material enters a private review queue and is never returned as travel guidance.
+The backend is a FastAPI application connected to the RoamReady Supabase project's Auth and Postgres services. The country catalog, source-review queue, and published facts live in Supabase. Destination and fact routes require a registered Supabase user. Scraped source material enters a private review queue and is never returned as traveler guidance. Backend code is grouped by responsibility: `app/api/routes/` contains HTTP routes, `app/schemas/` defines response shapes, `app/repositories/` owns Supabase reads, and `app/core/` loads settings.
 
 ### Run locally
 
@@ -33,18 +33,18 @@ The prototype scaffold uses browser-native HTML, CSS, and JavaScript, so it has 
 python3 -m http.server 5500 --directory frontend
 ```
 
-Open `http://127.0.0.1:5500`. The current screen flow is a session-only mock; Auth and API data integration are scheduled work, and the Japan guide intentionally contains no travel claims until sources are reviewed. See [the two-week prototype plan](docs/PROTOTYPE_PLAN.md) for the scope, backend data model, owners, and dated schedule.
+Open `http://127.0.0.1:5500`. The current screen flow is a session-only mock; Auth and API data integration are scheduled work, and country guides intentionally contain no travel claims until sources are reviewed. See [the two-week prototype plan](docs/PROTOTYPE_PLAN.md) for the scope, backend data model, owners, and dated schedule.
 
 ### Source collection
 
-The initial source collector retrieves structured Japan advice from the GOV.UK Content API and writes a local review queue. It checks `robots.txt` and preserves attribution, update date, jurisdiction, and source hash. Candidate material is never published automatically. See [collector setup and source rules](collectors/README.md).
+The source monitor polls five approved GOV.UK FCDO Content API pages daily, checks `robots.txt`, fingerprints each section, and saves new content versions to the private review queue. Candidate material is never published automatically. See [collector setup and source rules](collectors/README.md).
 
 ### Initial endpoints
 
 - `GET /api/health` checks that the API is running.
 - `GET /api/auth/me` returns the current user's ID and email.
-- `GET /api/destinations` lists the prototype destinations (authenticated).
-- `GET /api/destinations/{country_code}/facts` returns published Supabase facts for a destination (authenticated).
+- `GET /api/destinations` lists the 24 research countries (authenticated).
+- `GET /api/destinations/{destination_slug}/facts?category=entry` returns published Supabase facts for a country (authenticated; category is optional).
 
 ### Authentication flow
 
@@ -62,9 +62,9 @@ Do not commit `.env` files or credentials. Add environment-variable names to `.e
 
 ### Scraper-to-Supabase workflow
 
-1. `python -m collectors.govuk_fcdo` writes local source candidates.
+1. `python -m collectors.govuk_fcdo --source-id govuk-fcdo-japan` writes local source candidates for one configured source.
 2. `python -m collectors.import_candidates data/candidates/govuk-fcdo-japan.json` puts them in the private `source_candidates` review queue.
-3. A teammate reviews the source in Supabase and writes traveler-facing, verified material as a separate `travel_facts` row with citations and `published = true`.
+3. A teammate reviews the source in Supabase and writes traveler-facing, verified material as a separate `travel_facts` row with `destination_slug`, citations, and `published = true`.
 4. A signed-in client sends its Supabase access token to FastAPI. FastAPI validates it, then reads only published rows using its server-only key.
 
-The published fact table and candidate table have RLS enabled with no client policies. This keeps raw candidate material and database writes off the public client surface. Schema: [migration](supabase/migrations/20261022224810_source_review_and_travel_facts.sql).
+The country catalog, fact table, and candidate table have RLS enabled with no client policies or grants to `anon` and `authenticated`. FastAPI reads with its server-only key only after validating Auth. Schema: [initial migration](supabase/migrations/20261022224810_source_review_and_travel_facts.sql) and [country catalog migration](supabase/migrations/20261025233333_country_catalog_and_backend.sql).

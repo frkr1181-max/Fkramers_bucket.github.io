@@ -7,9 +7,8 @@ export const categories = [
 
 export const destination = {
   name: "Japan",
-  city: "Tokyo",
-  countryCode: "JP",
-  note: "Japan is used for this demo because it appears in the research bank and the supplied prototype screens.",
+  slug: "japan",
+  note: "Country-level guide preview. The backend catalog includes all 24 countries in the research CSVs.",
 };
 
 export const demoTasks = [

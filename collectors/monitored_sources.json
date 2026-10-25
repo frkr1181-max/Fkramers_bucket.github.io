@@ -1,0 +1,62 @@
+[
+  {
+    "source_id": "govuk-fcdo-japan",
+    "adapter": "govuk-fcdo",
+    "destination": "Japan",
+    "destination_slug": "japan",
+    "country_code": "JP",
+    "api_url": "https://www.gov.uk/api/content/foreign-travel-advice/japan",
+    "canonical_page": "https://www.gov.uk/foreign-travel-advice/japan",
+    "jurisdiction": "United Kingdom",
+    "license": "Open Government Licence v3.0",
+    "enabled": true
+  },
+  {
+    "source_id": "govuk-fcdo-paraguay",
+    "adapter": "govuk-fcdo",
+    "destination": "Paraguay",
+    "destination_slug": "paraguay",
+    "country_code": "PY",
+    "api_url": "https://www.gov.uk/api/content/foreign-travel-advice/paraguay",
+    "canonical_page": "https://www.gov.uk/foreign-travel-advice/paraguay",
+    "jurisdiction": "United Kingdom",
+    "license": "Open Government Licence v3.0",
+    "enabled": true
+  },
+  {
+    "source_id": "govuk-fcdo-qatar",
+    "adapter": "govuk-fcdo",
+    "destination": "Qatar",
+    "destination_slug": "qatar",
+    "country_code": "QA",
+    "api_url": "https://www.gov.uk/api/content/foreign-travel-advice/qatar",
+    "canonical_page": "https://www.gov.uk/foreign-travel-advice/qatar",
+    "jurisdiction": "United Kingdom",
+    "license": "Open Government Licence v3.0",
+    "enabled": true
+  },
+  {
+    "source_id": "govuk-fcdo-saudi-arabia",
+    "adapter": "govuk-fcdo",
+    "destination": "Saudi Arabia",
+    "destination_slug": "saudi-arabia",
+    "country_code": "SA",
+    "api_url": "https://www.gov.uk/api/content/foreign-travel-advice/saudi-arabia",
+    "canonical_page": "https://www.gov.uk/foreign-travel-advice/saudi-arabia",
+    "jurisdiction": "United Kingdom",
+    "license": "Open Government Licence v3.0",
+    "enabled": true
+  },
+  {
+    "source_id": "govuk-fcdo-south-africa",
+    "adapter": "govuk-fcdo",
+    "destination": "South Africa",
+    "destination_slug": "south-africa",
+    "country_code": "ZA",
+    "api_url": "https://www.gov.uk/api/content/foreign-travel-advice/south-africa",
+    "canonical_page": "https://www.gov.uk/foreign-travel-advice/south-africa",
+    "jurisdiction": "United Kingdom",
+    "license": "Open Government Licence v3.0",
+    "enabled": true
+  }
+]

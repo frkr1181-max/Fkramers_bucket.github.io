@@ -57,7 +57,7 @@ function renderPlan() {
       <form id="trip-form" class="plan-layout">
         <div class="form-card">
           <label for="destination">Where are you going?</label>
-          <select id="destination" name="destination"><option>${destination.city}, ${destination.name}</option></select>
+          <select id="destination" name="destination"><option>${destination.name}</option></select>
           <label for="trip-date">When are you traveling? <span class="optional">Optional</span></label>
           <input id="trip-date" name="trip-date" type="date" />
           <fieldset><legend>How much have you traveled on your own?</legend>
@@ -78,7 +78,7 @@ function renderPlan() {
   app.querySelector("#trip-form").addEventListener("submit", (event) => {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
-    saveTrip({ destination: `${destination.city}, ${destination.name}`, date: form.get("trip-date"), purpose: form.get("purpose"), experience: form.get("experience"), completed: [] });
+    saveTrip({ destination: destination.name, date: form.get("trip-date"), purpose: form.get("purpose"), experience: form.get("experience"), completed: [] });
     renderTrip();
   });
 }
@@ -91,7 +91,7 @@ function renderTrip() {
   const pct = Math.round((completed.size / demoTasks.length) * 100);
   app.innerHTML = `
     <section class="wrap page-section">
-      <div class="trip-title"><div><p class="eyebrow">Your trip · ${escapeHtml(trip.purpose || "Vacation")}</p><h1>Your trip to ${escapeHtml(destination.city)}</h1><p>${escapeHtml(trip.destination)}${trip.date ? ` · ${escapeHtml(trip.date)}` : ""}</p></div><button class="button secondary" data-action="edit">Edit trip</button></div>
+      <div class="trip-title"><div><p class="eyebrow">Your trip · ${escapeHtml(trip.purpose || "Vacation")}</p><h1>Your trip to ${escapeHtml(destination.name)}</h1><p>${escapeHtml(trip.destination)}${trip.date ? ` · ${escapeHtml(trip.date)}` : ""}</p></div><button class="button secondary" data-action="edit">Edit trip</button></div>
       <div class="dashboard-layout">
         <section class="main-column">
           <p class="eyebrow">Your preparation guide</p><div class="category-grid">${categories.map((item) => `<button class="category-card ${selectedCategory === item.id ? "selected" : ""}" data-category="${item.id}"><span class="category-icon">${item.icon}</span><span class="card-group">${item.group}</span><strong>${item.title}</strong><span>${item.description}</span><span class="card-link">Open guide →</span></button>`).join("")}</div>
