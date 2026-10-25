@@ -27,6 +27,7 @@ def main() -> None:
     rows = [{
         "candidate_id": candidate["candidate_id"],
         "country_code": candidate["country_code"],
+        "destination_slug": candidate.get("destination_slug"),
         "category": candidate["category"],
         "title": candidate["title"],
         "candidate_text": candidate["candidate_text"],

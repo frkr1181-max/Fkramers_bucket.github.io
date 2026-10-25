@@ -1,18 +1,5 @@
-"""Load simple KEY=value settings from the ignored repo-local .env file."""
+"""Compatibility import for settings used by collectors and existing scripts."""
 
-import os
-from pathlib import Path
+from app.core.config import load_local_env
 
-
-def load_local_env() -> None:
-    env_file = Path(__file__).resolve().parents[1] / ".env"
-    if not env_file.is_file():
-        return
-    for line in env_file.read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        if not line or line.startswith("#") or "=" not in line:
-            continue
-        name, value = line.split("=", 1)
-        name, value = name.strip(), value.strip()
-        if name and name not in os.environ:
-            os.environ[name] = value.strip("\"'")
+__all__ = ["load_local_env"]

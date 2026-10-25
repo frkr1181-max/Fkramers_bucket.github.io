@@ -106,6 +106,7 @@ def collect() -> dict:
             "candidate_id": f"{SOURCE_ID}-{index + 1:02d}",
             "status": "needs_review",
             "destination": "Japan",
+            "destination_slug": "japan",
             "country_code": "JP",
             "category": part.get("slug") or "unclassified",
             "title": part.get("title") or payload.get("title") or "Foreign travel advice",

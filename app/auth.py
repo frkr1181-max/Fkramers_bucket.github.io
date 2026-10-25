@@ -1,7 +1,6 @@
 """Supabase Auth token validation for protected API routes."""
 
 import json
-import os
 from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
@@ -9,9 +8,7 @@ from urllib.request import Request, urlopen
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 
-from app.config import load_local_env
-
-load_local_env()
+from app.core.config import get_settings
 
 
 bearer_scheme = HTTPBearer(auto_error=False)
@@ -28,8 +25,9 @@ def require_authenticated_user(
             headers={"WWW-Authenticate": "Bearer"},
         )
 
-    supabase_url = os.getenv("SUPABASE_URL", "").rstrip("/")
-    publishable_key = os.getenv("SUPABASE_PUBLISHABLE_KEY", "")
+    settings = get_settings()
+    supabase_url = settings.supabase_url
+    publishable_key = settings.supabase_publishable_key
     if not supabase_url or not publishable_key:
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
