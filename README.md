@@ -35,6 +35,8 @@ python3 -m http.server 5500 --directory frontend
 
 Open `http://127.0.0.1:5500`. The current screen flow is a session-only mock; Auth and API data integration are scheduled work, and country guides intentionally contain no travel claims until sources are reviewed. See [the two-week prototype plan](docs/PROTOTYPE_PLAN.md) for the scope, backend data model, owners, and dated schedule.
 
+The proposed account-owned trip storage workflow, field validation, Supabase RLS policy design, and security acceptance checks are documented in [the trip data storage plan](docs/TRIP_DATA_STORAGE_PLAN.md). The SQL proposal in `supabase/plans/` is design-only and has not been applied to the database.
+
 ### Source collection
 
 The source monitor polls five approved GOV.UK FCDO Content API pages daily, checks `robots.txt`, fingerprints each section, and saves new content versions to the private review queue. Candidate material is never published automatically. See [collector setup and source rules](collectors/README.md).

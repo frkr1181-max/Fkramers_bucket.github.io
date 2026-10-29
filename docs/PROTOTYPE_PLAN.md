@@ -6,24 +6,24 @@
 
 Build a country-level trip preparation flow using the 24 countries in the four research CSVs received so far. Do not make city selection or city itineraries part of the destination model. Support the ten topics in the bank: entry and documents, getting there, getting around, money and payments, safety, health, local culture, phones and internet, electricity and tech, and emergency information. Use citations and review dates; mark any topic without reviewed facts as unavailable.
 
-The demo should let a registered user choose a country, open its topic guide, follow source links, and keep a session-only preparation checklist. Supabase Auth signs users in; protected API routes return the country catalog and approved facts. Keep trip dates and preferences in the browser for the demo, and do not collect passport, health, or precise-location details.
+The demo should let a registered user save trip details to their account, choose a country, open its topic guide, follow source links, and keep a session-only preparation checklist. Supabase Auth signs users in; protected API routes return the country catalog, approved facts, and only the current user's saved trips. Store the destination, travel date range, trip purpose, and optional trip name and description in an owner-protected Supabase table. Do not collect passport, health, or precise-location details.
 
-The initial front-end scaffold is intentionally a static, session-only preview. It contains no verified travel claims and does not yet call the API or sign in. The schedule below brings those pieces together.
+The initial front-end scaffold is intentionally a static preview. It contains no verified travel claims and does not yet call the API or sign in; trip details and checklist completion currently live only in the browser tab. The schedule below brings account sign-in, saved trip records, and API-backed guides together.
 
 ## Scope decisions and limits
 
 The current catalog contains 24 destinations across Aahana, David, Dion, and Hilna's CSV files. More country files may be added later. Country guides use stable slugs so England and Scotland remain separate entries despite sharing ISO code GB.
 
-For the two-week demo, defer collectors for additional sources, scheduled change detection, all-destination search, trip sharing and profile settings, offline storage, and a general-purpose AI chatbot. Review a small set of candidates manually. If there is time for an assistant, constrain it to retrieved approved facts and show the supporting sources; otherwise demo the assistant panel as a clearly marked future step.
+For the two-week demo, add basic owner-only trip create, list, read, update, and delete behavior. Keep checklist completion session-only until its persistence needs are designed separately. Defer trip sharing and profile settings, collectors for additional sources, scheduled change detection, all-destination search, offline storage, and a general-purpose AI chatbot. Review a small set of candidates manually. If there is time for an assistant, constrain it to retrieved approved facts and show the supporting sources; otherwise demo the assistant panel as a clearly marked future step.
 
 ## Repository structure
 
 ```text
 app/                       FastAPI backend
-  api/routes/              Health, Auth, country, and fact endpoints
+  api/routes/              Health, Auth, country, fact, and planned trip endpoints
   core/config.py           Environment and local .env settings
-  repositories/            Server-only Supabase REST queries
-  schemas/                 Country and fact response models
+  repositories/            Server-only guide queries and user-scoped trip queries
+  schemas/                 Country, fact, and trip request/response models
   auth.py                  Supabase access-token validation
   main.py                  App construction, middleware, and route registration
 collectors/                Source-specific web collectors and candidate importer
@@ -36,17 +36,19 @@ frontend/                  Browser prototype (new, no build dependencies)
     services/api.js        Small fetch helper for protected FastAPI routes
 docs/
   PROTOTYPE_PLAN.md        Scope, team work, schedule, and handoff
+  TRIP_DATA_STORAGE_PLAN.md  User trip fields, ownership workflow, and acceptance checks
 data/candidates/           Local, unreviewed source output (git-ignored)
 supabase/migrations/       Versioned country, candidate, and published-fact schema
+supabase/plans/            Proposed SQL designs not yet applied as migrations
 ```
 
 Keep the `app/` location so the existing FastAPI command still works. Keep collection separate from request handlers and database queries separate from route functions. Do not put downloaded source pages, unreviewed claims, or credentials in the public frontend folder.
 
 ## Backend framework
 
-For this prototype, use Supabase Auth for identity and FastAPI for the API. Keep the browser on the publishable key; never put a secret or service-role key in frontend code. Send the Supabase access token as `Authorization: Bearer <token>` to protected FastAPI routes. The API validates tokens through Supabase Auth and returns `401` for invalid sessions. The local frontend origins are allowed by CORS. Its server-only key reads published rows from Supabase after Auth validation.
+For this prototype, use Supabase Auth for identity and FastAPI for the API. Keep the browser on the publishable key; never put a secret or service-role key in frontend code. Send the Supabase access token as `Authorization: Bearer <token>` to protected FastAPI routes. The API validates tokens through Supabase Auth and returns `401` for invalid sessions. The local frontend origins are allowed by CORS. The server-only key reads published travel facts after Auth validation. For user-owned trip writes, use the authenticated user's token with the publishable key so Supabase RLS can enforce ownership; do not use the service-role key for trip CRUD because it bypasses RLS.
 
-Recommended read API:
+Recommended API routes:
 
 | Route | Purpose | Access |
 | --- | --- | --- |
@@ -54,14 +56,19 @@ Recommended read API:
 | `GET /api/auth/me` | Current signed-in identity | Registered user |
 | `GET /api/destinations` | Destination picker | Registered user |
 | `GET /api/destinations/{destination_slug}/facts?category=entry` | Reviewed facts and citations for a country | Registered user |
+| `POST /api/trips` | Save the signed-in user's trip details | Registered user |
+| `GET /api/trips` and `GET /api/trips/{trip_id}` | List or read only the signed-in user's trips | Registered user |
+| `PATCH /api/trips/{trip_id}` and `DELETE /api/trips/{trip_id}` | Edit or delete only the signed-in user's trip | Registered user |
 
 The protected facts route reads `travel_facts` from Supabase and returns only rows where `published = true`. It supports an optional category filter. Raw scraper output goes to `source_candidates`; reviewers must rewrite and verify claims before adding published facts.
 
-The schema is in `supabase/migrations/`: `destinations` is the country catalog, `source_candidates` stores unreviewed material, and `travel_facts` stores reviewed claims with citations and a `published` flag. These tables have RLS enabled and no client policies or grants to `anon` and `authenticated`; FastAPI reads with its server-only key only after validating Auth. Keep trips out of the database during this two-week demo unless the team has time to design and verify owner-only RLS.
+The applied schema is in `supabase/migrations/`: `destinations` is the country catalog, `source_candidates` stores unreviewed material, and `travel_facts` stores reviewed claims with citations and a `published` flag. RLS allows anonymous reads only for active destinations and published facts; `source_candidates` remains private. FastAPI's guide routes still require a signed-in user and read published rows with its server-only key after validating Auth. The proposed `public.user_trips` schema and owner-only RLS workflow are documented in [the trip data storage plan](TRIP_DATA_STORAGE_PLAN.md) and [the design SQL](../supabase/plans/user_trips.sql). They must be reviewed and added as a versioned migration before any trip data is saved to Supabase.
 
 ## Data workflow
 
 The CSVs are a research bank, not an import-ready database. Their cells mix source names, URLs, notes, and candidate claims. The daily GOV.UK monitor creates a new versioned candidate when one of its five approved source pages changes; the importer copies it into the private `source_candidates` table. A teammate should confirm the claim, capture a title and URL, and record who checked it and when. Rewrite and save approved travel guidance in `travel_facts` with citations. Only rows marked `published` are returned by FastAPI. Never treat a source mention or a saved research-bank cell as proof that its statement is still current.
+
+Trip data follows a separate account-owned path: the signed-in user submits the prototype's destination, date range, purpose, and optional name and description; FastAPI validates the Auth token and form values, derives `owner_id` from the verified account, and sends CRUD calls to Supabase using that user's token. Row Level Security grants that account access only to rows whose `owner_id` matches `auth.uid()`. Generated guide categories are not saved as form input. The detailed field map, validation rules, repository changes, and security checks are in [the trip data storage plan](TRIP_DATA_STORAGE_PLAN.md).
 
 Suggested API fact shape:
 
@@ -90,8 +97,8 @@ Do not copy the example URL or placeholder date into a real record.
 | 3 | Tue, Oct 27 | Build the home and trip-planning screens against the supplied prototype. | Aahana (UX), David + Divya (frontend) | Destination and trip form work on desktop and mobile widths. |
 | 4 | Wed, Oct 28 | Build the trip overview, category detail, source list, and checklist interactions. | David + Aahana; Frankie reviews language | User can create a trip and move from overview to a guide and back. |
 | 5 | Thu, Oct 29 | Implement the country catalog/fact API response and category filtering. Keep it read-only. | Hilna (API), Divya (schema/data), David (integration) | API returns the selected country's reviewed sample record and source links. |
-| 6 | Fri, Oct 30 | Connect Supabase Auth in the frontend and send access tokens to protected routes. Check local CORS and error states. | Hilna + David; Divya checks setup guide | Signed-out, signed-in, expired-token, and unavailable-service states are understandable. |
-| 7 | Mon, Nov 2 | Connect API data to guide pages. Add empty, loading, and retry states. Add the checklist completion behavior. | David + Hilna; Aahana reviews | UI shows API-backed sources and does not substitute mock claims when data is absent. |
+| 6 | Fri, Oct 30 | Connect Supabase Auth in the frontend; review and apply the user-trip migration with owner-only RLS. | Hilna + David; Divya checks data plan | Signed-out users cannot save; two test accounts cannot access each other's trips. |
+| 7 | Mon, Nov 2 | Add FastAPI trip create/list/read/update/delete routes and persist the screenshot's form fields. Connect API data to guide pages. | Hilna + David; Divya reviews data shape | A saved trip reloads for its owner, while checklist completion remains session-only. |
 | 8 | Tue, Nov 3 | Run at least two short usability sessions with the prepared task: find entry steps, transport, and emergency help. Fix the largest confusion points. | Dion + Frankie (sessions), Aahana (changes), all observe | Record observed issues and fixes; no unsupported travel statement is visible. |
 | 9 | Wed, Nov 4 | Stabilize, check keyboard use and narrow-screen layout, verify every citation, and write a 3-minute demo script. | All; Divya tracks remaining work | No new features; each demo step has an owner and fallback. |
 | 10 | Thu, Nov 5 | Rehearse on a clean browser, present the working flow, and record limitations and next decisions. | All | New teammate can run it from README and complete the demo path. |
@@ -111,7 +118,9 @@ Pair on shared work so no part of the demo depends on a single person's laptop. 
 
 - A teammate can start FastAPI and the frontend using the documented commands.
 - A registered user can sign in, choose from the 24-country catalog, and load a protected country guide.
-- A user can create a sample trip, open each of the three sections, and complete checklist items.
+- A registered user can save, reload, edit, and delete a trip containing the screenshot's destination, dates, purpose, and optional name/description.
+- Two test accounts confirm that each user can only read and change their own trips; invalid dates, purposes, or destinations are rejected.
+- A user can open each of the three guide sections and complete session-only checklist items.
 - Every displayed travel fact has an official source link and a checked date.
 - Empty data, sign-out, expired token, and API failure do not display stale placeholder guidance as current facts.
 - The prototype works with keyboard navigation and at a phone-sized viewport.
