@@ -1,0 +1,2 @@
+Flask>=3.0,<4.0
+# Install Flask 3.x to run the local JSON API.

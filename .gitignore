@@ -1,0 +1,8 @@
+Backend/.venv/
+# Keep the backend's local Python environment out of version control.
+Backend/__pycache__/
+# Keep generated Python bytecode out of version control.
+Backend/instance/
+# Keep the local SQLite database and its travel research out of version control.
+Backend/.env
+# Keep local environment settings and any secrets out of version control.
