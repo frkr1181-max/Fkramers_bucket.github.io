@@ -1,6 +1,6 @@
 # User trip data storage plan
 
-This plan describes how RoamReady should save the trip details shown in the user's mid-fidelity “Plan a trip” screen. It is design documentation only. The SQL in `supabase/plans/user_trips.sql` is proposed schema, not an applied migration; the live Supabase database has not been changed for this plan.
+This plan describes how RoamReady should save the trip details shown in the user's mid-fidelity “Plan a trip” screen. The owner-scoped `public.user_trips` schema is now live through [migration 20261029225934_user_trips.sql](../supabase/migrations/20261029225934_user_trips.sql). The API routes and front-end persistence still need implementation; applying the migration did not create any trip rows.
 
 ## What the form collects
 
@@ -65,8 +65,7 @@ Suggested code locations follow the existing repository layout: `app/api/routes/
 
 ## Implementation sequence
 
-1. Agree on the screenshot field names, required fields, date-range behavior, text limits, and whether checklist progress must persist.
-2. Create and review the migration in `supabase/migrations/` using the SQL proposal as the starting point. Confirm owner-only policies and authenticated-role grants before applying it.
-3. Add the Pydantic models, token-carrying Auth dependency, and user-scoped trip repository/API routes.
-4. Align the front-end form with the agreed fields and send its Supabase access token to FastAPI.
-5. Verify the owner-isolation and validation acceptance requirements with two test accounts; then update the README and demo plan.
+1. Confirm the required date and purpose fields with the team. The applied migration follows the screenshot; the current front end still marks them optional, so any schema changes should use a new migration.
+2. Add the Pydantic models, token-carrying Auth dependency, and user-scoped trip repository/API routes.
+3. Align the front-end form with the agreed fields and send its Supabase access token to FastAPI.
+4. Verify the owner-isolation and validation acceptance requirements with two test accounts; then update the README and demo plan.

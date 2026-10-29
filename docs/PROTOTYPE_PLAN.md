@@ -39,7 +39,6 @@ docs/
   TRIP_DATA_STORAGE_PLAN.md  User trip fields, ownership workflow, and acceptance checks
 data/candidates/           Local, unreviewed source output (git-ignored)
 supabase/migrations/       Versioned country, candidate, and published-fact schema
-supabase/plans/            Proposed SQL designs not yet applied as migrations
 ```
 
 Keep the `app/` location so the existing FastAPI command still works. Keep collection separate from request handlers and database queries separate from route functions. Do not put downloaded source pages, unreviewed claims, or credentials in the public frontend folder.
@@ -62,7 +61,7 @@ Recommended API routes:
 
 The protected facts route reads `travel_facts` from Supabase and returns only rows where `published = true`. It supports an optional category filter. Raw scraper output goes to `source_candidates`; reviewers must rewrite and verify claims before adding published facts.
 
-The applied schema is in `supabase/migrations/`: `destinations` is the country catalog, `source_candidates` stores unreviewed material, and `travel_facts` stores reviewed claims with citations and a `published` flag. RLS allows anonymous reads only for active destinations and published facts; `source_candidates` remains private. FastAPI's guide routes still require a signed-in user and read published rows with its server-only key after validating Auth. The proposed `public.user_trips` schema and owner-only RLS workflow are documented in [the trip data storage plan](TRIP_DATA_STORAGE_PLAN.md) and [the design SQL](../supabase/plans/user_trips.sql). They must be reviewed and added as a versioned migration before any trip data is saved to Supabase.
+The applied schema is in `supabase/migrations/`: `destinations` is the country catalog, `source_candidates` stores unreviewed material, `travel_facts` stores reviewed claims with citations and a `published` flag, and `user_trips` stores account-owned trip details. RLS allows anonymous reads only for active destinations and published facts; `source_candidates` remains private. FastAPI's guide routes still require a signed-in user and read published rows with its server-only key after validating Auth. The trip table has owner-only RLS policies and authenticated-role grants, applied in [migration 20261029225934_user_trips.sql](../supabase/migrations/20261029225934_user_trips.sql). The FastAPI trip routes and user-token forwarding still need implementation before trip data is saved through the app.
 
 ## Data workflow
 
@@ -97,7 +96,7 @@ Do not copy the example URL or placeholder date into a real record.
 | 3 | Tue, Oct 27 | Build the home and trip-planning screens against the supplied prototype. | Aahana (UX), David + Divya (frontend) | Destination and trip form work on desktop and mobile widths. |
 | 4 | Wed, Oct 28 | Build the trip overview, category detail, source list, and checklist interactions. | David + Aahana; Frankie reviews language | User can create a trip and move from overview to a guide and back. |
 | 5 | Thu, Oct 29 | Implement the country catalog/fact API response and category filtering. Keep it read-only. | Hilna (API), Divya (schema/data), David (integration) | API returns the selected country's reviewed sample record and source links. |
-| 6 | Fri, Oct 30 | Connect Supabase Auth in the frontend; review and apply the user-trip migration with owner-only RLS. | Hilna + David; Divya checks data plan | Signed-out users cannot save; two test accounts cannot access each other's trips. |
+| 6 | Fri, Oct 30 | Connect Supabase Auth in the frontend and implement the user-scoped trip repository using the access token; the owner-only migration is applied. | Hilna + David; Divya checks data plan | Signed-out users cannot save; two test accounts cannot access each other's trips. |
 | 7 | Mon, Nov 2 | Add FastAPI trip create/list/read/update/delete routes and persist the screenshot's form fields. Connect API data to guide pages. | Hilna + David; Divya reviews data shape | A saved trip reloads for its owner, while checklist completion remains session-only. |
 | 8 | Tue, Nov 3 | Run at least two short usability sessions with the prepared task: find entry steps, transport, and emergency help. Fix the largest confusion points. | Dion + Frankie (sessions), Aahana (changes), all observe | Record observed issues and fixes; no unsupported travel statement is visible. |
 | 9 | Wed, Nov 4 | Stabilize, check keyboard use and narrow-screen layout, verify every citation, and write a 3-minute demo script. | All; Divya tracks remaining work | No new features; each demo step has an owner and fallback. |
