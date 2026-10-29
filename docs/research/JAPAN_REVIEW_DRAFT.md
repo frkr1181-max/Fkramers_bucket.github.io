@@ -80,4 +80,17 @@ This is a country-level foundation, not a city itinerary or a substitute for a v
 
 Every item needs a human reviewer to confirm the source still supports the exact claim, the advice is appropriate for U.S. passport holders, and the wording does not overgeneralize. Mark the date checked and re-review dynamic categories (entry, safety, health, medicine, emergency contacts, connectivity, transport, and currency) on a defined cadence and before relevant trips. Source pages may change; automated monitoring should create a review candidate, not silently overwrite approved facts.
 
+## Work still needed before this is a complete traveler guide
+
+The text above is a researched foundation, not the complete trip-date-specific Japan guide described in the RoamReady standard. These items need their own current sources and review before they can be displayed as recommendations:
+
+- **Long stays:** build separate official pathways for stays over Japan's short-visit allowance by purpose (such as work, study, and residence). The general visa link above is only a starting point; it does not establish a traveler's eligibility.
+- **Border changes:** recheck official arrival and customs services for any current electronic registration, biometric, or border-control change, including who it applies to and its effective date.
+- **Transport apps:** compare nationwide rail route tools and taxi apps, verify their official download links, platform availability, geographic coverage, and current usefulness for a U.S. visitor.
+- **USD/JPY:** connect a timestamped USD-to-JPY rate source and show it as an estimate, alongside a clear note that a user's card issuer, ATM, or cash exchange may use a different rate and fees.
+- **Date-based weather and safety:** after a traveler enters dates, check whether a forecast is available for those dates. If the trip is farther away, show sourced seasonal conditions and hazard windows for the relevant period, clearly labeled as patterns rather than a forecast. Check official alerts again near departure.
+- **eSIMs:** compare a few providers that serve U.S. travelers in Japan; verify current coverage, compatible devices, data/voice limits, activation steps, support, official purchase links, and dated prices if shown.
+- **Electrical product link:** confirm plug, voltage, frequency, and device requirements before recommending a specific adapter or converter. A product link must match its verified technical specifications and must not imply that an adapter changes voltage.
+- **Useful cultural details:** add less widely known but practical details only when a credible source supports them; label each point as law, venue rule, or custom.
+
 This first full guide covers the ten current research categories. Before calling it exhaustive, the team should decide whether the product also needs dedicated sections for trip-purpose/length scenarios, accessibility, traveling with children, LGBTQ+ travelers, solo travel, food/diet, pets, travel insurance, customs/baggage allowances, outdoor activities, and country-level region-specific risk. These should be added only with clear source ownership and review rules.
