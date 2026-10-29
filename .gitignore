@@ -1,3 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+data/candidates/
 Backend/.venv/
 # Keep the backend's local Python environment out of version control.
 Backend/__pycache__/
