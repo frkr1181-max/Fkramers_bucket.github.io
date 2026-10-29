@@ -1,54 +1,54 @@
 # RoamReady backend
 
-This is a small Flask and SQLite API for the RoamReady prototype. Its layout follows the team's class projects: straightforward Python functions, explicit steps, and comments directly below every line of executable code. The API starts with health and destination routes, returns only approved facts with active source links, and provides a basic source-grounded question endpoint.
+This folder contains a Flask API connected to the existing RoamReady Supabase project. The code follows the team's beginner-friendly Python style, with an explanatory comment directly under each executable line.
 
-## Start the backend
+## Connect and run locally
 
-Run these commands from the `Backend` folder. Python 3.10 or newer is recommended.
+Use Python 3.10 or newer. Run these PowerShell commands from the `Backend` folder.
 
 ```powershell
 py -m venv .venv
-# Create a private Python environment for this backend.
-\.venv\Scripts\Activate.ps1
+# Create an isolated Python environment for the backend.
+.\.venv\Scripts\Activate.ps1
 # Activate the environment in PowerShell.
 py -m pip install -r requirements.txt
-# Install Flask into the active environment.
+# Install the pinned Flask, Supabase, and environment-loading packages.
+Copy-Item .env.example .env
+# Create a local settings file that is excluded from Git.
 py app.py
-# Create the local database and start the API at http://127.0.0.1:5000.
+# Start the API at http://127.0.0.1:5000.
 ```
 
-The first start creates `Backend/instance/roamready.sqlite3` and inserts the six first-round destinations from the project build guide: Algeria, Brazil, Egypt, South Korea, Paraguay, and Spain. No travel facts are included until the team researches and approves them.
+Before starting the API, replace the placeholder in `Backend/.env` with the project's **publishable** key from Supabase Project Settings. Do not use a secret key or the legacy service-role key. The local `.env` file is ignored by Git.
 
 ## API routes
 
-| Route | Purpose | Successful response |
-| --- | --- | --- |
-| `GET /api/health` | Check that the service is running. | Service status and version. |
-| `GET /api/destinations` | List pilot destinations. | Destination IDs, names, and country codes. |
-| `GET /api/destinations/{id}/facts` | Read approved facts for a destination. | Summaries, verification dates, source records, and a freshness notice. |
-| `POST /api/assistant/ask` | Search a destination's approved facts. | Matching summaries and citations, or an explicit no-answer message. |
+| Route | Purpose |
+| --- | --- |
+| `GET /api/health` | Checks that the backend can read from Supabase. |
+| `GET /api/destinations` | Lists active destination records from Supabase. |
+| `GET /api/destinations/{slug}/facts` | Returns published facts and their source links for one active destination. |
+| `POST /api/assistant/ask` | Searches published summaries for a question and returns citations, or says it has no verified answer. |
 
-Example question request:
+The question route expects a JSON object with `destination_slug` and `question`. It uses simple keyword matching and does not call an AI provider. It will only use published facts with source citations.
 
-```json
-{
-  "destination_id": 1,
-  "question": "What entry requirements should I check?"
-}
-```
+## Shared database
 
-The question feature is deliberately retrieval-only: it joins matching approved summaries and returns their source links. It does not call an AI provider or infer travel rules. If no approved fact with an active source matches, it says that RoamReady does not have a verified answer. The prototype does not store questions or personal trip details.
+The API reads the existing Supabase tables:
 
-## Database and review workflow
+- `destinations` holds stable country slugs, names, ISO codes, regions, and research owners.
+- `travel_facts` holds travel summaries, official excerpts, verification dates, and source links.
+- `source_candidates` holds draft research awaiting review; the public API does not query or expose this table.
 
-`app.py` creates six tables: `destinations`, `sources`, `facts`, `fact_sources`, `collection_runs`, and `change_reviews`. Facts have candidate, approved, rejected, or stale states. Website routes filter to approved facts, and they require an active linked source before showing one. The public API has no write route: team members should use a reviewed admin tool or a controlled database workflow to enter sources and facts. Do not approve a fact until its official source URL and last-verified date have been checked.
+The database already had 24 of the 36 destinations and 17 source candidates awaiting review, with no published travel facts. A migration adds the 12 destinations listed in the build document and grants read access only to active destinations and published facts. Row Level Security keeps the draft candidates private. No candidate was approved or published by this update.
 
-The database can be stored elsewhere by setting `ROAMREADY_DATABASE` before starting the app. The default local database is ignored by Git. Never commit credentials or private information.
+The SQL used for the Supabase update is preserved in `Supabase/migrations/202610290001_roamready_public_reads_and_destination_roster.sql`.
 
-## Team presentation notes
+## Team handoff
 
-- A destination is a place the pilot supports; a fact is one specific travel claim; a source is the evidence for that claim.
-- `fact_sources` connects the two, so each response can show where its information came from.
-- `status` separates proposed information from approved public guidance; changing source text should create a review proposal instead of silently replacing an approved fact.
-- The assistant endpoint is a transparent keyword matcher for the prototype, not an AI assistant. A later model integration should receive only retrieved approved facts and must validate its citations.
-- This backend has not yet been connected to the static `Front-End/test.html` page. The browser headers are open for local prototype use; deployment needs an explicit allowed-origin list and an access-controlled review workflow.
+- A destination is the guide the traveler selected; a fact is one specific travel claim; a source is the evidence that supports the claim.
+- New facts should remain unpublished until the team confirms the official source, plain-language summary, and last-verified date.
+- Changing a candidate's status to approved does not publish it; publication should follow the team's review process and explicit publish action.
+- Before deployment, set `ROAMREADY_ALLOWED_ORIGIN` to the website's exact origin and keep database secret keys off the client and out of source control.
+- The front-end page is not wired to these endpoints yet; it can request destinations and facts using the routes above.
+

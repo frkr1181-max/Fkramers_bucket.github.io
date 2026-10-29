@@ -1,221 +1,191 @@
 import os
-# Load standard-library tools for paths, JSON responses, regular expressions, and SQLite.
+# Read connection settings from the environment and keep them out of source code.
 import re
-# Use regular expressions to turn a travel question into searchable words.
-import sqlite3
-# Use SQLite so the class prototype can run without a separate database server.
-from pathlib import Path
-# Use Path objects to build file locations safely across operating systems.
-from flask import Flask, g, jsonify, request
-# Use Flask to create the web API and return structured JSON responses.
+# Extract searchable terms from a travel question.
+from dotenv import load_dotenv
+# Load local development settings from the ignored Backend/.env file.
+from flask import Flask, jsonify, request
+# Provide the JSON API routes used by the RoamReady website.
+from supabase import create_client
+# Use Supabase's Python client to read the shared project database.
 
-BASE_DIR = Path(__file__).resolve().parent
-# Find this backend folder so database paths do not depend on the launch directory.
-DATABASE_PATH = Path(os.getenv("ROAMREADY_DATABASE", BASE_DIR / "instance" / "roamready.sqlite3"))
-# Allow the team to select a database path with an environment setting.
-PILOT_DESTINATIONS = [("Algeria", "DZ"), ("Brazil", "BR"), ("Egypt", "EG"), ("South Korea", "KR"), ("Paraguay", "PY"), ("Spain", "ES")]
-# Seed the six first-round destinations named in the project build document.
+load_dotenv()
+# Load local environment variables without replacing system-provided values.
 app = Flask(__name__)
-# Create the Flask application that receives browser and assistant requests.
+# Create the Flask application that handles backend requests.
+SUPABASE_CLIENT = None
+# Keep one reusable Supabase client for this API process.
 
+def get_supabase_client():
+# Create the client the first time it is needed and reuse it afterward.
+    global SUPABASE_CLIENT
+    # Allow the helper to update the shared module-level client.
+    if SUPABASE_CLIENT is None:
+    # Initialize the Supabase connection on the first database request.
+        supabase_url = os.getenv("SUPABASE_URL")
+        # Read the project URL from the environment.
+        publishable_key = os.getenv("SUPABASE_PUBLISHABLE_KEY")
+        # Read the publishable key that is limited by database RLS policies.
+        if not supabase_url or not publishable_key:
+        # Stop clearly when the local Supabase settings have not been configured.
+            raise RuntimeError("Set SUPABASE_URL and SUPABASE_PUBLISHABLE_KEY before starting the API.")
+            # Name the missing settings without printing any configured values.
+        SUPABASE_CLIENT = create_client(supabase_url, publishable_key)
+        # Connect to the Supabase Data API with the public project key.
+    return SUPABASE_CLIENT
+    # Give the calling route the shared Supabase client.
 
-def get_database():
-# Return one SQLite connection for the current web request.
-    if "database" not in g:
-    # Reuse the request's connection when another helper needs the database.
-        DATABASE_PATH.parent.mkdir(parents=True, exist_ok=True)
-        # Create the database folder on a first run if it does not exist yet.
-        g.database = sqlite3.connect(DATABASE_PATH)
-        # Open the local database file for this request.
-        g.database.execute("PRAGMA foreign_keys = ON")
-        # Ask SQLite to enforce the links between destinations, facts, and sources.
-        g.database.row_factory = sqlite3.Row
-        # Make query results behave like dictionaries with named columns.
-    return g.database
-    # Give the caller the request's SQLite connection.
-
-
-@app.teardown_appcontext
-# Ask Flask to close the request's database connection when the request ends.
-def close_database(error=None):
-# Release the database connection after Flask finishes a request.
-    database = g.pop("database", None)
-    # Remove the connection from Flask's request storage if one was opened.
-    if database is not None:
-    # Close the connection only when the request actually used the database.
-        database.close()
-        # Release the local database file handle.
-
-
-def initialize_database():
-# Create the tables and pilot destinations the first time the backend runs.
-    database = sqlite3.connect(DATABASE_PATH)
-    # Open the configured SQLite file outside a web request.
-    database.execute("PRAGMA foreign_keys = ON")
-    # Enforce relationships while creating and seeding the database.
-    database.execute("CREATE TABLE IF NOT EXISTS destinations (id INTEGER PRIMARY KEY, name TEXT NOT NULL UNIQUE, country_code TEXT NOT NULL UNIQUE)")
-    # Store one stable record for each destination supported by the pilot.
-    database.execute("CREATE TABLE IF NOT EXISTS sources (id INTEGER PRIMARY KEY, title TEXT NOT NULL, organization TEXT NOT NULL, url TEXT NOT NULL, source_type TEXT NOT NULL, checked_at TEXT, active INTEGER NOT NULL DEFAULT 1)")
-    # Keep source ownership and URLs separate so each fact can cite evidence.
-    database.execute("CREATE TABLE IF NOT EXISTS facts (id INTEGER PRIMARY KEY, destination_id INTEGER NOT NULL REFERENCES destinations(id), category TEXT NOT NULL, title TEXT NOT NULL, plain_summary TEXT NOT NULL, official_excerpt TEXT NOT NULL, status TEXT NOT NULL CHECK(status IN ('candidate', 'approved', 'rejected', 'stale')), last_verified_at TEXT)")
-    # Store individual claims and keep their approval state explicit.
-    database.execute("CREATE TABLE IF NOT EXISTS fact_sources (fact_id INTEGER NOT NULL REFERENCES facts(id), source_id INTEGER NOT NULL REFERENCES sources(id), source_location TEXT, retrieved_at TEXT NOT NULL, PRIMARY KEY(fact_id, source_id))")
-    # Connect each fact to its supporting source and record when it was collected.
-    database.execute("CREATE TABLE IF NOT EXISTS collection_runs (id INTEGER PRIMARY KEY, source_id INTEGER REFERENCES sources(id), started_at TEXT NOT NULL, finished_at TEXT, outcome TEXT NOT NULL, records_found INTEGER NOT NULL DEFAULT 0, error_summary TEXT)")
-    # Record collection attempts so the team can explain success and failure.
-    database.execute("CREATE TABLE IF NOT EXISTS change_reviews (id INTEGER PRIMARY KEY, fact_id INTEGER NOT NULL REFERENCES facts(id), old_value TEXT, proposed_value TEXT NOT NULL, detected_at TEXT NOT NULL, decision TEXT NOT NULL DEFAULT 'pending', reviewer TEXT, reviewed_at TEXT)")
-    # Preserve proposed changes until a teammate has reviewed them.
-    database.executemany("INSERT OR IGNORE INTO destinations (name, country_code) VALUES (?, ?)", PILOT_DESTINATIONS)
-    # Add the six pilot countries without duplicating them on later starts.
-    database.commit()
-    # Save the tables and seed data to the database file.
-    database.close()
-    # Close the setup connection before Flask starts serving requests.
-
-
-def row_to_dict(row):
-# Convert one SQLite row into a regular Python dictionary for JSON output.
-    return dict(row)
-    # Flask can serialize the dictionary as a JSON object.
-
+def api_error(message, status_code):
+# Build the same JSON error shape for every API route.
+    return jsonify({"error": {"code": "request_failed", "message": message}}), status_code
+    # Return the readable error and the corresponding HTTP status.
 
 @app.after_request
-# Add browser headers so the separate front-end can read this API during development.
+# Allow the front end to read this public, read-only API during development.
 def add_browser_headers(response):
-# Let the static project front end request the read-only API from another local origin.
-    response.headers["Access-Control-Allow-Origin"] = "*"
-    # Allow browser JavaScript to read responses from this prototype API.
+# Add browser headers for cross-origin requests from the website.
+    response.headers["Access-Control-Allow-Origin"] = os.getenv("ROAMREADY_ALLOWED_ORIGIN", "*")
+    # Use the configured front-end origin or allow local prototype pages by default.
     response.headers["Access-Control-Allow-Headers"] = "Content-Type"
-    # Permit the JSON content header used by the question endpoint.
+    # Permit the JSON content header used by the question route.
     response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
     # Advertise the request methods supported by this API.
     return response
-    # Return the response with the development browser headers attached.
-
+    # Return the response after attaching browser access headers.
 
 @app.get("/api/health")
-# Provide a simple endpoint that confirms the backend is running.
+# Check whether this API can reach its Supabase project.
 def health():
-# Return a small status message suitable for a demo or uptime check.
-    return jsonify({"status": "ok", "service": "RoamReady API", "version": "0.1.0"})
-    # Send a JSON response without exposing machine or database details.
-
+# Run one small read-only query to verify the database connection.
+    try:
+    # Catch connection and permission failures with a safe response.
+        get_supabase_client().table("destinations").select("slug").limit(1).execute()
+        # Query one destination identifier without retrieving travel details.
+    except Exception:
+    # Keep connection details and keys out of the health response.
+        app.logger.exception("Supabase health check failed.")
+        # Write technical diagnostics to the backend log for the team.
+        return api_error("The backend could not reach its travel database.", 503)
+        # Tell the website that the database is temporarily unavailable.
+    return jsonify({"status": "ok", "service": "RoamReady API", "version": "0.2.0"})
+    # Confirm that the backend and its database are responding.
 
 @app.get("/api/destinations")
-# Provide the front end with the destinations available in the pilot.
+# Return active destinations from the shared Supabase project.
 def list_destinations():
-# Read and return every pilot destination in a predictable order.
-    rows = get_database().execute("SELECT id, name, country_code FROM destinations ORDER BY name").fetchall()
-    # Select only public destination fields and sort them by name.
-    return jsonify({"destinations": [row_to_dict(row) for row in rows]})
-    # Wrap the list in a named JSON field for a consistent response shape.
+# Send the destination records in alphabetical order.
+    try:
+    # Convert database failures into a safe JSON response.
+        response = get_supabase_client().table("destinations").select("slug,name,iso_alpha2,region,research_owner").eq("active", True).order("name").execute()
+        # Read only public fields for destinations marked active.
+    except Exception:
+    # Keep technical query errors out of the website response.
+        app.logger.exception("Could not load destinations from Supabase.")
+        # Record the technical failure in the backend log.
+        return api_error("Destinations are temporarily unavailable.", 503)
+        # Let the website display a retryable error.
+    return jsonify({"destinations": response.data})
+    # Return the destination list as structured JSON.
 
-
-@app.get("/api/destinations/<int:destination_id>/facts")
-# Provide approved source-backed facts for one selected destination.
-def destination_facts(destination_id):
-# Return traveler-facing facts without exposing candidate or reviewer information.
-    database = get_database()
-    # Reuse the current request's database connection.
-    destination = database.execute("SELECT id, name, country_code FROM destinations WHERE id = ?", (destination_id,)).fetchone()
-    # Look up the requested destination using a parameterized query.
-    if destination is None:
-    # Report an unknown destination instead of returning an empty success response.
-        return jsonify({"error": {"code": "destination_not_found", "message": "That destination is not in the pilot."}}), 404
-        # Use HTTP 404 because the requested destination does not exist.
-    fact_rows = database.execute("SELECT id, category, title, plain_summary, last_verified_at FROM facts WHERE destination_id = ? AND status = 'approved' AND EXISTS (SELECT 1 FROM fact_sources AS fs JOIN sources AS s ON s.id = fs.source_id WHERE fs.fact_id = facts.id AND s.active = 1) ORDER BY category, title", (destination_id,)).fetchall()
-    # Select only approved facts and fields that are safe for the website.
-    facts = []
-    # Prepare a list that will hold each fact and its source links.
-    for fact_row in fact_rows:
-    # Add the supporting source records to each approved fact.
-        fact = row_to_dict(fact_row)
-        # Convert the fact row into a JSON-friendly dictionary.
-        source_rows = database.execute("SELECT s.id, s.title, s.organization, s.url, s.checked_at, fs.source_location, fs.retrieved_at FROM sources AS s JOIN fact_sources AS fs ON fs.source_id = s.id WHERE fs.fact_id = ? AND s.active = 1 ORDER BY s.title", (fact["id"],)).fetchall()
-        # Include active sources with their original link and collection time.
-        fact["sources"] = [row_to_dict(source_row) for source_row in source_rows]
-        # Attach the evidence list so users can inspect where a fact came from.
-        facts.append(fact)
-        # Add the complete fact to the response list.
-    return jsonify({"destination": row_to_dict(destination), "facts": facts, "notice": "Travel information can change; confirm details with the linked official source."})
-    # Return approved information, its evidence, and a clear freshness reminder.
-
+@app.get("/api/destinations/<string:destination_slug>/facts")
+# Return published, source-backed travel facts for an active destination.
+def destination_facts(destination_slug):
+# Keep draft and review-only records out of traveler-facing results.
+    try:
+    # Catch database failures while loading the guide and its facts.
+        client = get_supabase_client()
+        # Reuse the shared client for both read-only lookups.
+        destination_response = client.table("destinations").select("slug,name,iso_alpha2,region").eq("slug", destination_slug).eq("active", True).limit(1).execute()
+        # Confirm that the requested destination is active.
+        if not destination_response.data:
+        # Return not found for an unknown or inactive destination.
+            return api_error("That destination is not available.", 404)
+            # Use HTTP 404 because an active destination guide does not exist.
+        fact_response = client.table("travel_facts").select("id,country_code,destination_slug,category,title,plain_summary,official_text_excerpt,last_verified_at,sources").eq("destination_slug", destination_slug).eq("published", True).order("category").order("title").execute()
+        # Select published claims and their citations from Supabase.
+    except Exception:
+    # Do not expose database error details to website visitors.
+        app.logger.exception("Could not load published travel facts from Supabase.")
+        # Save diagnostic details in the backend log for maintainers.
+        return api_error("Travel information is temporarily unavailable.", 503)
+        # Tell the website it can retry the request later.
+    return jsonify({"destination": destination_response.data[0], "facts": fact_response.data, "notice": "Travel information can change; confirm details with the linked official sources."})
+    # Return the destination, published facts, and a freshness reminder.
 
 @app.post("/api/assistant/ask")
-# Accept a question and retrieve matching approved facts without inventing answers.
+# Search published facts and return citations rather than inventing guidance.
 def ask_assistant():
-# Search verified pilot records and cite any facts included in the response.
+# Keep answers grounded in records already approved for publication.
     payload = request.get_json(silent=True)
-    # Read the request body as JSON and handle malformed JSON as missing input.
+    # Read JSON input and treat malformed JSON as missing.
     if not isinstance(payload, dict):
-    # Require a JSON object before trying to read its fields.
-        return jsonify({"error": {"code": "invalid_json", "message": "Send a JSON object with destination_id and question."}}), 400
-        # Return HTTP 400 when the request body is not a JSON object.
+    # Require an object containing a question and destination slug.
+        return api_error("Send a JSON object with destination_slug and question.", 400)
+        # Tell the caller which request fields are required.
     question = payload.get("question")
-    # Read the travel question supplied by the user.
-    destination_id = payload.get("destination_id")
-    # Read the chosen destination so searches stay within its approved records.
+    # Read the travel question supplied by the traveler.
+    destination_slug = payload.get("destination_slug")
+    # Read the selected destination's stable slug.
     if not isinstance(question, str) or not question.strip() or len(question) > 1000:
-    # Reject empty questions and limit request size to 1,000 characters.
-        return jsonify({"error": {"code": "invalid_question", "message": "Question must contain 1 to 1,000 characters."}}), 400
-        # Explain the accepted question size with a client error status.
-    if not isinstance(destination_id, int) or isinstance(destination_id, bool):
-    # Require an integer destination identifier and reject Python's boolean subtype.
-        return jsonify({"error": {"code": "invalid_destination_id", "message": "destination_id must be an integer."}}), 400
-        # Tell the caller how to correct a malformed destination identifier.
-    database = get_database()
-    # Open the request's database connection before searching records.
-    destination = database.execute("SELECT id, name FROM destinations WHERE id = ?", (destination_id,)).fetchone()
-    # Confirm the destination exists before looking for matching claims.
-    if destination is None:
-    # Avoid returning a misleading unsupported-answer response for an invalid destination.
-        return jsonify({"error": {"code": "destination_not_found", "message": "That destination is not in the pilot."}}), 404
-        # Report that the requested destination cannot be searched.
+    # Reject empty questions and limit question length to 1,000 characters.
+        return api_error("Question must contain 1 to 1,000 characters.", 400)
+        # Explain the accepted question size.
+    if not isinstance(destination_slug, str) or not destination_slug.strip():
+    # Require a destination identifier before searching.
+        return api_error("destination_slug must be a non-empty string.", 400)
+        # Tell the caller which field needs correction.
+    try:
+    # Catch database failures while checking the destination and loading facts.
+        client = get_supabase_client()
+        # Reuse the shared Supabase client for the search.
+        destination_response = client.table("destinations").select("slug").eq("slug", destination_slug).eq("active", True).limit(1).execute()
+        # Confirm the selected destination is active.
+        if not destination_response.data:
+        # Reject unknown destinations rather than reporting a false no-answer.
+            return api_error("That destination is not available.", 404)
+            # Use HTTP 404 for a destination outside the active roster.
+        fact_response = client.table("travel_facts").select("id,category,title,plain_summary,last_verified_at,sources").eq("destination_slug", destination_slug).eq("published", True).execute()
+        # Retrieve published facts for the selected destination only.
+    except Exception:
+    # Keep raw database errors and connection details out of the public response.
+        app.logger.exception("Could not search published facts in Supabase.")
+        # Save technical diagnostics in the backend log for the project team.
+        return api_error("Verified travel information is temporarily unavailable.", 503)
+        # Tell the website that it can retry this request later.
     question_words = {word.lower() for word in re.findall(r"[A-Za-z0-9]+", question) if len(word) > 2}
-    # Keep meaningful question words and ignore short words such as “to” and “is”.
-    fact_rows = database.execute("SELECT id, category, title, plain_summary, last_verified_at FROM facts WHERE destination_id = ? AND status = 'approved' AND EXISTS (SELECT 1 FROM fact_sources AS fs JOIN sources AS s ON s.id = fs.source_id WHERE fs.fact_id = facts.id AND s.active = 1) ORDER BY category, title", (destination_id,)).fetchall()
-    # Retrieve only approved facts for the selected destination.
+    # Keep meaningful question words while skipping short common terms.
     matching_facts = []
-    # Prepare a list for facts whose wording overlaps with the question.
-    for fact_row in fact_rows:
-    # Compare the question with each approved fact's title, category, and summary.
-        fact = row_to_dict(fact_row)
-        # Convert the stored fact into a regular dictionary.
+    # Prepare a list for published facts that match the question.
+    for fact in fact_response.data:
+    # Compare the question with each published title, category, and summary.
         searchable_text = " ".join([fact["category"], fact["title"], fact["plain_summary"]]).lower()
-        # Combine public fact text into one searchable string.
-        if question_words.intersection(re.findall(r"[A-Za-z0-9]+", searchable_text)):
-        # Keep a fact when at least one meaningful question word matches it.
-            source_rows = database.execute("SELECT s.id, s.title, s.organization, s.url, s.checked_at, fs.source_location, fs.retrieved_at FROM sources AS s JOIN fact_sources AS fs ON fs.source_id = s.id WHERE fs.fact_id = ? AND s.active = 1 ORDER BY s.title", (fact["id"],)).fetchall()
-            # Fetch active citations for the fact before it can support an answer.
-            fact["sources"] = [row_to_dict(source_row) for source_row in source_rows]
-            # Attach those citations to the fact returned to the traveler.
-            if fact["sources"]:
-            # Do not return a matching claim if it has no currently active source.
-                matching_facts.append(fact)
-                # Keep the fact only when the evidence link is available.
+        # Combine the public fact text into one searchable string.
+        fact_words = set(re.findall(r"[A-Za-z0-9]+", searchable_text))
+        # Make a set of fact terms for keyword comparison.
+        if question_words.intersection(fact_words) and fact["sources"]:
+        # Include a fact only when it matches and has source citations.
+            matching_facts.append(fact)
+            # Add the verified fact to the answer set.
     if not matching_facts:
-    # Clearly abstain when verified sourced records cannot answer the question.
-        return jsonify({"answer": "RoamReady does not have a verified answer for that question yet. Check the official destination sources or ask the team to review this topic.", "citations": [], "limitation": "No matching approved fact with an active source was found."})
-        # Return an explicit limitation instead of guessing about travel guidance.
+    # Abstain when the database has no matching published source-backed fact.
+        return jsonify({"answer": "RoamReady does not have a verified answer for that question yet. Check the linked official sources or ask the team to review this topic.", "citations": [], "limitation": "No matching published fact with a source was found."})
+        # Explain the lack of evidence instead of guessing about travel rules.
     answer = " ".join(fact["plain_summary"] for fact in matching_facts)
-    # Build the response only from approved summaries already stored in the database.
+    # Compose the response only from published summaries stored in Supabase.
     citations = [{"fact_id": fact["id"], "title": fact["title"], "last_verified_at": fact["last_verified_at"], "sources": fact["sources"]} for fact in matching_facts]
-    # Provide fact IDs, verification dates, and evidence links for every summary.
-    return jsonify({"answer": answer, "citations": citations, "limitation": "This response uses matching approved records only; confirm current rules with the linked official source."})
-    # Return the source-grounded response and explain its limits.
-
+    # Include the fact IDs, verification dates, and source links for every claim.
+    return jsonify({"answer": answer, "citations": citations, "limitation": "This response uses published records only; confirm current rules with the linked official source."})
+    # Return the evidence-backed answer and its limitation.
 
 @app.errorhandler(404)
-# Give unknown API routes the same predictable JSON error shape as other failures.
+# Return missing routes in the same JSON format as other API failures.
 def not_found(error):
-# Convert Flask's default missing-route response into a JSON message.
-    return jsonify({"error": {"code": "not_found", "message": "The requested API route was not found."}}), 404
-    # Send HTTP 404 with a short message suitable for the front end.
-
+# Convert Flask's default missing-route page into a readable response.
+    return api_error("The requested API route was not found.", 404)
+    # Keep route errors understandable for the front-end team.
 
 if __name__ == "__main__":
-# Initialize local tables and start the development server only when run directly.
-    initialize_database()
-    # Prepare the SQLite database before the first request arrives.
+# Start the local development server when this file is run directly.
     app.run(host="127.0.0.1", port=int(os.getenv("PORT", "5000")), debug=False)
-    # Listen locally on port 5000 without enabling the interactive debugger.
+    # Listen locally without enabling Flask's interactive debugger.
+
