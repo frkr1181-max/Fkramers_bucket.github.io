@@ -1,36 +1,37 @@
 -- Create account-owned trip records with validation and row-level ownership rules.
 CREATE TABLE public.user_trips (
--- Create one saved trip record for each trip a signed-in user plans.
     id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
--- Give each trip a stable identifier that the API can use for edits and retrieval.
     owner_id uuid NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
--- Link the trip to its Supabase Auth account and remove it when that account is deleted.
     destination_slug text NOT NULL REFERENCES public.destinations(slug) ON DELETE RESTRICT,
--- Link the trip to a country already present in the shared destination catalog.
-    start_date date NOT NULL,
--- Store the first day of the user's travel dates.
-    end_date date NOT NULL,
--- Store the last day of the user's travel dates.
-    trip_purpose text NOT NULL CHECK (trip_purpose IN ('leisure', 'work', 'study', 'emergency')),
--- Restrict the saved purpose to the four choices shown in the prototype screenshot.
     trip_name text CHECK (trip_name IS NULL OR length(btrim(trip_name)) BETWEEN 1 AND 80),
--- Keep the optional trip label short and reject whitespace-only names.
-    trip_description text CHECK (trip_description IS NULL OR length(btrim(trip_description)) BETWEEN 1 AND 1000),
--- Keep the optional free-text description within a modest length limit.
+    trip_purpose text NOT NULL DEFAULT 'tourism'
+        CHECK (trip_purpose IN ('tourism', 'business', 'study', 'work', 'family', 'long-term', 'transit')),
+    start_date date,
+    end_date date,
+    estimated_duration_value integer CHECK (estimated_duration_value IS NULL OR estimated_duration_value > 0),
+    estimated_duration_unit text
+        CHECK (estimated_duration_unit IS NULL OR estimated_duration_unit IN ('day', 'week', 'month', 'year')),
+    travel_experience text
+        CHECK (travel_experience IS NULL OR travel_experience IN ('first-solo', 'some')),
+    completed_checklist jsonb NOT NULL DEFAULT '{}'::jsonb
+        CHECK (jsonb_typeof(completed_checklist) = 'object'),
     created_at timestamptz NOT NULL DEFAULT now(),
--- Record when the user first saved the trip.
     updated_at timestamptz NOT NULL DEFAULT now(),
--- Record when the backend last saved an edit to the trip.
-    CONSTRAINT user_trips_valid_dates CHECK (end_date >= start_date)
--- Prevent a trip from ending before it starts.
+    CONSTRAINT user_trips_valid_date_range CHECK (
+        end_date IS NULL OR (start_date IS NOT NULL AND end_date > start_date)
+    ),
+    CONSTRAINT user_trips_duration_pair CHECK (
+        (estimated_duration_value IS NULL) = (estimated_duration_unit IS NULL)
+    ),
+    CONSTRAINT user_trips_no_exact_and_estimated_end CHECK (
+        end_date IS NULL OR estimated_duration_value IS NULL
+    )
 );
 -- Finish creating the user-owned trip table.
 CREATE INDEX user_trips_owner_updated_idx ON public.user_trips (owner_id, updated_at DESC);
--- Make it efficient to list one user's trips from newest update to oldest.
+
 ALTER TABLE public.user_trips ENABLE ROW LEVEL SECURITY;
--- Require row policies for all access to this public-schema table.
 REVOKE ALL ON TABLE public.user_trips FROM anon, authenticated;
--- Start with no client access before granting only the authenticated operations below.
 GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE public.user_trips TO authenticated;
 -- Give signed-in users the table operations needed by the trip workflow.
 CREATE POLICY user_trips_select_own ON public.user_trips FOR SELECT TO authenticated USING ((SELECT auth.uid()) IS NOT NULL AND owner_id = (SELECT auth.uid()));

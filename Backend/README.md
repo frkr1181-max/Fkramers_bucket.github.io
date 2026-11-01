@@ -1,6 +1,6 @@
 # RoamReady backend
 
-This folder contains a Flask API connected to the existing RoamReady Supabase project. The code follows the team's beginner-friendly Python style, with an explanatory comment directly under each executable line.
+This folder contains an experimental Flask read-only example connected to the RoamReady Supabase project. The canonical backend is the FastAPI application at the repository root (`app/`). Do not run both APIs as competing production services; use the root FastAPI app for ongoing integration. The code here follows the team's beginner-friendly Python style, with an explanatory comment directly under each executable line.
 
 ## Connect and run locally
 

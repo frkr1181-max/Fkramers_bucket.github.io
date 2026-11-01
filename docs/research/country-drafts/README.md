@@ -31,6 +31,10 @@ These are organized research drafts generated from the four supplied country-ban
 | South Africa | [south-africa.md](south-africa.md) | 76 | Country Information bank  - David.csv |
 | South Korea | [south-korea.md](south-korea.md) | 36 | Country Information bank  - Aahana.csv |
 
+## Extra sources added
+
+Each country draft now includes direct U.S. State Department advisory and CDC Travelers’ Health links, plus the main-source URLs present in its supplied CSV when available. England and Scotland point to the United Kingdom pages. These are review leads, not completed fact checks. The State Department and CDC directories were checked on 2026-11-01; destination-specific pages and dynamic claims still need verification before user display.
+
 ## Review status
 
 - All countries in the current catalog have a draft (24 total).

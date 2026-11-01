@@ -116,6 +116,24 @@ This draft organizes the supplied material into RoamReady’s ten guide topics. 
 
 **Review before display:** Check the current source, U.S.-passport applicability, purpose/stay conditions, effective date, simple wording, and checked date.
 
+
+## Additional official source entry points (checked 2026-11-01)
+
+These are direct official source leads for current U.S.-traveler guidance. Their directory pages were checked on 2026-11-01; individual destination pages and every nearby claim have not all been independently verified. Recheck dynamic details at the time of use.
+
+- [U.S. Department of State travel advisory and country information — Mexico](https://travel.state.gov/en/international-travel/travel-advisories/mexico.html) — U.S.-specific advisories, local laws, entry notes, and embassy contact details. For England and Scotland, this is the United Kingdom page.
+- [CDC Travelers’ Health — Mexico](https://wwwnc.cdc.gov/travel/destinations/traveler/none/mexico) — destination health recommendations and notices. For England and Scotland, this is the United Kingdom page.
+- [CDC destination directory](https://wwwnc.cdc.gov/travel/destinations/list) — directory of country Traveler View pages.
+- [U.S. State Department advisory directory](https://travel.state.gov/en/international-travel/travel-advisories.html) — current advisory levels and dated country advisory updates.
+
+### Additional source-bank main references
+
+- [Source-bank main reference](https://travel.state.gov/en/international-travel/travel-advisories/mexico.html) — listed in the supplied CSV main-sources row; review for authority, applicability, and freshness before use.
+- [Source-bank main reference](https://visitmexico.com/en/seccion/informacion-basica-para-viajar-a-mexico) — listed in the supplied CSV main-sources row; review for authority, applicability, and freshness before use.
+- [Source-bank main reference](https://wwwnc.cdc.gov/travel/destinations/traveler/vfr/mexico) — listed in the supplied CSV main-sources row; review for authority, applicability, and freshness before use.
+- [Source-bank main reference](https://www.aicm.com.mx/passengers/services/service-providers/transportation) — listed in the supplied CSV main-sources row; review for authority, applicability, and freshness before use.
+- [Source-bank main reference](https://www.worldstandards.eu/electricity/plug-voltage-by-country/mexico/) — listed in the supplied CSV main-sources row; review for authority, applicability, and freshness before use.
+
 ## Next publication step
 
 For each topic, a reviewer should turn only verified claims into small fact records with direct citations and applicability (purpose, stay length, dates where needed). Keep changing data—entry rules, advisories, CDC notices, forecasts, currency, app availability, phone packages, and emergency contacts—dated and rechecked. Do not publish this draft as traveler advice until review is complete.

@@ -24,6 +24,8 @@ python -m collectors.import_candidates data/candidates/govuk-fcdo-japan.json
 
 The importer writes only to `source_candidates`, uses the content-version candidate ID to avoid duplicates, and leaves existing rows unchanged. Review candidates in the Supabase Table Editor. To publish guidance, rewrite and verify it, then add it as a separate row in `travel_facts` with source citations and `published = true`.
 
+Candidates can include `min_stay_days`, `max_stay_days`, and `applies_to_purposes` to store source-backed conditions. Day limits are inclusive. For example, an entry fact that applies only to a short visit can use `max_stay_days: 90`; a longer-stay fact can use `min_stay_days: 91`. The purpose list uses `tourism`, `business`, `study`, `work`, `family`, `long-term`, and `transit`. Leave a field empty only when the source supports an unrestricted fact. `applicability_status` defaults to `needs_review`; a reviewer must mark the fact `general` or `conditional` before an approved fact can be returned by the API. The regular candidate `status` remains `needs_review` until human review.
+
 ## Daily schedule
 
 GitHub Actions runs the five monitored pages daily at 09:17 UTC and also supports a manual run from the Actions tab. The matrix runs one request at a time so the collector does not hit GOV.UK pages concurrently. To enable it, add these repository Actions secrets in GitHub Settings → Secrets and variables → Actions:
