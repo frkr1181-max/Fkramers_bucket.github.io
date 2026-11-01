@@ -1,4 +1,4 @@
--- DESIGN PROPOSAL ONLY: this file is not in supabase/migrations and has not been applied to the live project.
+-- Create account-owned trip records with validation and row-level ownership rules.
 CREATE TABLE public.user_trips (
 -- Create one saved trip record for each trip a signed-in user plans.
     id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -24,7 +24,7 @@ CREATE TABLE public.user_trips (
     CONSTRAINT user_trips_valid_dates CHECK (end_date >= start_date)
 -- Prevent a trip from ending before it starts.
 );
--- Finish creating the proposed user-owned trip table.
+-- Finish creating the user-owned trip table.
 CREATE INDEX user_trips_owner_updated_idx ON public.user_trips (owner_id, updated_at DESC);
 -- Make it efficient to list one user's trips from newest update to oldest.
 ALTER TABLE public.user_trips ENABLE ROW LEVEL SECURITY;
@@ -33,11 +33,11 @@ REVOKE ALL ON TABLE public.user_trips FROM anon, authenticated;
 -- Start with no client access before granting only the authenticated operations below.
 GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE public.user_trips TO authenticated;
 -- Give signed-in users the table operations needed by the trip workflow.
-CREATE POLICY user_trips_select_own ON public.user_trips FOR SELECT TO authenticated USING (owner_id = (SELECT auth.uid()));
+CREATE POLICY user_trips_select_own ON public.user_trips FOR SELECT TO authenticated USING ((SELECT auth.uid()) IS NOT NULL AND owner_id = (SELECT auth.uid()));
 -- Allow a signed-in user to read only trips linked to their own Auth ID.
-CREATE POLICY user_trips_insert_own ON public.user_trips FOR INSERT TO authenticated WITH CHECK (owner_id = (SELECT auth.uid()));
+CREATE POLICY user_trips_insert_own ON public.user_trips FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) IS NOT NULL AND owner_id = (SELECT auth.uid()));
 -- Allow inserts only when the new row belongs to the signed-in user.
-CREATE POLICY user_trips_update_own ON public.user_trips FOR UPDATE TO authenticated USING (owner_id = (SELECT auth.uid())) WITH CHECK (owner_id = (SELECT auth.uid()));
--- Require both the old and new row to stay owned by the signed-in user during an edit.
-CREATE POLICY user_trips_delete_own ON public.user_trips FOR DELETE TO authenticated USING (owner_id = (SELECT auth.uid()));
+CREATE POLICY user_trips_update_own ON public.user_trips FOR UPDATE TO authenticated USING ((SELECT auth.uid()) IS NOT NULL AND owner_id = (SELECT auth.uid())) WITH CHECK ((SELECT auth.uid()) IS NOT NULL AND owner_id = (SELECT auth.uid()));
+-- Require both the existing and updated row to belong to the signed-in user.
+CREATE POLICY user_trips_delete_own ON public.user_trips FOR DELETE TO authenticated USING ((SELECT auth.uid()) IS NOT NULL AND owner_id = (SELECT auth.uid()));
 -- Allow a signed-in user to delete only trips linked to their own Auth ID.
