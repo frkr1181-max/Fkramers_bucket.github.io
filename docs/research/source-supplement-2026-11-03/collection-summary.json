@@ -1,0 +1,76 @@
+{
+  "checked_date": "2026-11-03",
+  "audience": "US passport holders",
+  "status": "needs_review",
+  "source_banks": [
+    {
+      "file": "Country Information bank  - Aahana.csv",
+      "sha256": "555698c9b77c23f9c44d562b557e4d00e352890c093de0881378d2435d545856"
+    },
+    {
+      "file": "Country Information bank  - David.csv",
+      "sha256": "ec0aafbaef5db41c2a8b452725f240b2b83bad2d7b329edf63b34118d10b169e"
+    },
+    {
+      "file": "Country Information bank  - Dion.csv",
+      "sha256": "0a30d4c81c4ec29f84aef02972f37877a7fd463733d1012d5838c402ffc1a3f6"
+    },
+    {
+      "file": "Country Information bank  - Hilna.csv",
+      "sha256": "601884f40ffd3b657b85dadab18def246a8a4629eda2ce1c1beb5a09f0a73ab5"
+    }
+  ],
+  "countries": [
+    "Algeria",
+    "Argentina",
+    "Australia",
+    "Austria",
+    "Belgium",
+    "Bosnia and Herzegovina",
+    "Egypt",
+    "England",
+    "France",
+    "Germany",
+    "Iraq",
+    "Japan",
+    "Mexico",
+    "Netherlands",
+    "New Zealand",
+    "Norway",
+    "Panama",
+    "Paraguay",
+    "Qatar",
+    "Saudi Arabia",
+    "Scotland",
+    "Senegal",
+    "South Africa",
+    "South Korea"
+  ],
+  "distinct_bank_urls": 491,
+  "bank_urls_with_recorded_attempt": 491,
+  "bank_urls_without_recorded_attempt": [],
+  "all_source_urls": 632,
+  "collection_quality": {
+    "blocked_or_gateway": 6,
+    "limited_text_or_app_shell": 19,
+    "pdf_text_extracted_needs_review": 4,
+    "request_failed": 162,
+    "text_extracted_needs_review": 440,
+    "wrong_destination_redirect": 1
+  },
+  "bank_url_collection_quality": {
+    "blocked_or_gateway": 4,
+    "limited_text_or_app_shell": 14,
+    "pdf_text_extracted_needs_review": 4,
+    "request_failed": 137,
+    "text_extracted_needs_review": 332
+  },
+  "raw_cache_is_private_and_gitignored": true,
+  "claim_verification_complete": false,
+  "limitations": [
+    "All bank URLs were attempted; not every response contained usable content.",
+    "Hashes apply to extracted text, not original HTML response bytes. PDF binary hashes are separately recorded.",
+    "Most older HTML fetches recorded a check date only. Cache save timestamps are explicitly identified.",
+    "HTTP success, extraction, and source authority do not establish U.S. applicability or factual accuracy."
+  ]
+}
