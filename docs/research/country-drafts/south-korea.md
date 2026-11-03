@@ -1,139 +1,102 @@
-# South Korea — research output draft
+# South Korea country guide — research draft for review
 
-**Audience:** U.S. passport holders planning a country-level trip.
-**Status:** Research draft only. Source-bank claims have not been independently verified and are not approved for display or Supabase publication.
-**Source-bank file:** Country Information bank  - Aahana.csv
-**Prepared:** 2026-11-01 (source URLs and notes retained from the supplied research bank; this is not a fresh verification date).
+**Audience:** U.S. citizens traveling on U.S. passports for tourism, business, study, work, transit, or longer stays.  
+**Research checked:** November 3, 2026. Live official pages were opened for the key claims below; see notes for limitations.  
+**Source-bank file:** `Country Information bank  - Aahana.csv` (the project draft names this source bank, but the CSV itself was not present in the checked workspace).  
+**Status:** 12 sourced facts were auto-approved and published to Supabase on November 3, 2026. They cover the ten guide topics, with separate entry facts for short visits, long stays, and work/study. The longer narrative and research notes in this file remain a review draft and were not imported verbatim. The K-ETA fact must be refreshed before January 1, 2027.
 
-This draft organizes the supplied material into RoamReady’s ten guide topics. It is intended to make the research reviewable. A URL is a lead to check, not proof that the nearby claim is current or applies to a U.S. passport holder. Confirm purpose, length of stay, effective date, and jurisdiction before writing traveler-facing facts.
+This is country-level preparation, not a trip itinerary or a visa decision. Rules depend on passport, purpose, length of stay, route, and personal circumstances. Recheck changing requirements before launch and before travel.
 
-## Country guide topics
+## 1. Entry, passport, and stay type
 
-### Entry and Documents
+- **Up to 90 days:** U.S. citizens may enter South Korea without a visa for tourism or qualifying short-term business. The U.S. State Department says a U.S. passport must be valid at entry; it does not list a minimum remaining-validity period. A visa-free visit does not authorize local employment, paid teaching, or other activities outside the permitted short-stay purpose. The U.S. State Department and Korean consular guidance should be checked for the exact activity. [U.S. Department of State, South Korea travel advisory and entry information](https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html) (checked November 3, 2026); [Republic of Korea Consulate General in Philadelphia, visa information](https://overseas.mofa.go.kr/us-philly-en/wpge/m_26418/contents.do) (checked November 3, 2026).
+- **K-ETA:** Korea’s official K-ETA notice confirms a temporary exemption for eligible nationalities from January 1 through December 31, 2026. The U.S. State Department specifically says U.S. passport holders are exempt through December 31, 2026, and K-ETA will be required starting January 1, 2027 for the visa-waiver route. Before travel, verify current eligibility and effective dates on the [official K-ETA site](https://www.k-eta.go.kr/portal/board/viewboarddetail.do?bbsSn=299707&esntlPnotiMtYn=Y&locale=EN) (Korea Ministry of Justice, notice dated December 23, 2025; checked November 3, 2026) and [State Department page](https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html) (checked November 3, 2026). Some visa-exempt travelers may choose to apply for a K-ETA to avoid submitting an arrival card; an optional K-ETA has a fee. Do not confuse an exemption from K-ETA with a visa.
+- **Arrival card:** Most foreign visitors without a valid K-ETA must submit an arrival card. Korea’s official e-Arrival Card portal says the electronic card can be submitted during the 72 hours before arrival and costs nothing; it is not required for valid K-ETA holders, registered long-term residents, or certain other exempt groups. The paper card remains an alternative where accepted. Use only the official [Korea e-Arrival Card portal](https://www.e-arrivalcard.go.kr/portal/guide/eacTargetGuide.do?locale=EN) (Korean Ministry of Justice; checked November 3, 2026) and confirm the current rule. Incheon Airport notes that immigration may collect fingerprints and a facial image from foreign visitors aged 17 or older. [Incheon Airport, immigration and e-Arrival Card](https://www.airport.kr/ap_en/1448/subview.do) (checked November 3, 2026).
+- **Over 90 days or a different purpose:** Obtain the correct visa before travel for a stay longer than 90 days, employment, teaching, study, residence, or other non-qualifying purposes. The right visa depends on the activity. Use the [Korea Visa Portal](https://www.visa.go.kr/openPage.do?MENU_ID=10101) and the Korean embassy or consulate that serves the traveler's U.S. residence to check category, documents, and application timing. A Korean consular page says visa-free visitors cannot extend that 90-day stay; the State Department warns travelers not to rely on changing status in-country. [Korea Visa Portal](https://www.visa.go.kr/) and [Korean Consulate visa information](https://overseas.mofa.go.kr/us-philly-en/wpge/m_26418/contents.do) (checked November 3, 2026). Do not treat a short visit as a way to begin work or study.
+- **Customs and restricted goods:** Follow the customs channel signs and declare goods when required. Korea Customs says travelers bringing more than US$10,000 equivalent in foreign currency, Korean won, checks, or covered payment instruments must report it on arrival. This is a declaration threshold, not a ban. Goods such as food, plants, animal products, medicines, weapons, and high-value items can have separate rules. See [Korea Customs Service, foreign-currency declaration](https://www.customs.go.kr/english/cm/cntnts/cntntsView.do?cntntsId=5500&mi=10800) and [passenger customs procedures](https://www.customs.go.kr/kcs_english/cm/cntnts/cntntsView.do?cntntsId=2720&mi=8032) (checked November 3, 2026). U.S. citizens should separately check U.S. rules for items they bring home.
+- **Transit:** Whether a traveler needs to clear Korean immigration depends on the itinerary, airport, ticketing, and whether they leave the international transit area. Confirm with the airline and Korean authorities; a landside stop is an entry and is subject to entry rules.
 
-**Supplied research note (unverified):** U.S. Department of State. South Korea Travel Advisory. K-ETA Official travel advisory and links to additional south korea information. Korea Immigration Service. Korea Electronic Travel Authorization (K-ETA). Electronic travel authorization requirements, eligibility, applications, and exemptions.
+## 2. Getting there and border arrival
 
-**Provided sources to review:**
-- [www.k-eta.go.kr](https://www.k-eta.go.kr/)
+- Most long-haul international arrivals use Incheon International Airport (ICN), west of Seoul. Other airports handle some international services, including Gimpo (GMP), Busan/Gimhae (PUS), Jeju (CJU), Daegu (TAE), and Cheongju (CJJ); routes and services change. Incheon is not the only possible international entry point. Check the airport and airline information for the actual itinerary. [Korea Tourism Organization, transportation and airport information](https://english.visitkorea.or.kr/svc/contents/infoBscView.do?menuSn=470&vcontsId=140656) (checked November 3, 2026); [Incheon Airport arrivals and immigration](https://www.airport.kr/ap_en/1448/subview.do) (checked November 3, 2026).
+- At arrival, follow signs for immigration, baggage claim, quarantine where applicable, and customs. Have the passport, visa or K-ETA if applicable, arrival card if required, and lodging/contact details ready. Airport steps and terminal arrangements differ.
+- Incheon Airport has rail, bus, taxi, and other ground transport information. Check the live official airport page for the terminal and current service. [Incheon Airport transport options](https://www.airport.kr/ap_en/1511/subview.do) (checked November 3, 2026). Do not assume the first train or bus runs at the time of a late-night arrival.
 
-**Review before display:** Check the current source, U.S.-passport applicability, purpose/stay conditions, effective date, simple wording, and checked date.
+## 3. Getting around the country
 
-### Getting There
+- Intercity travel commonly uses high-speed and conventional rail, express/intercity buses, domestic flights, ferries, and rental cars. Within larger urban areas, metro, local buses, and taxis are common. Rural and island services can be less frequent; confirm schedules with the operator and leave time for transfers. Routes, operating hours, accessibility, and payment acceptance vary by operator and region.
+- **Navigation:** [NAVER Map](https://map.naver.com/) (official provider site; English interface and transit search shown in Korea Tourism Organization's 2026 visitor guide) and [KakaoMap](https://map.kakao.com/) (official provider site; English supported) offer route search. Korea Tourism Organization’s visitor guide links directly to [NAVER Map Android](https://play.google.com/store/apps/details?id=com.nhn.android.nmap) and [iOS](https://apps.apple.com/app/naver-map-navigation/id311867728), and [KakaoMap Android](https://play.google.com/store/apps/details?id=net.daum.android.map) and [iOS](https://apps.apple.com/app/kakaomap-korea-no-1-map/id304608425). Features and coverage can differ outside major areas. [KTO, international visitors’ transportation guide](https://english.visitkorea.or.kr/public/contents/travel/KoreaTransportationGuide_enu.pdf) (checked November 3, 2026).
+- **Train booking:** [KORAIL+](https://www.korail.com/) is the Korea Railroad Corporation's official booking service for its trains, including KTX. Its app listing identifies it as the official KORAIL app and lists English: [Google Play](https://play.google.com/store/apps/details?id=com.korail.talk) / [Apple App Store](https://apps.apple.com/gb/app/korail/id1000558562). Check the current service, payment acceptance, and ticket terms before relying on the app. Some routes or rail operators use other ticketing systems. [KTO, train information](https://english.visitkorea.or.kr/svc/contents/infoBscView.do?menuSn=470&vcontsId=140656) (checked November 3, 2026).
+- **Transit cards:** Reloadable Tmoney and EZL cards are broadly useful for local buses and metro fares where accepted. They are not universal payment cards; top-up and refund methods may be cash-only at some locations. WOWPASS and short-term city products have separate features and geographic limits. [KTO, transportation cards](https://english.visitkorea.or.kr/svc/contents/infoBscView.do?vcontsId=140663) (checked November 3, 2026). The Seoul Climate Card is a **Seoul-area** pass with defined coverage and conditions, not a nationwide pass.
+- **Taxis:** Taxis operate widely, but dispatch and payment options vary by place. [k.ride](https://kride.kakaomobility.com/) is Kakao Mobility’s visitor-oriented service; check current country coverage, language, and foreign-card requirements in the official [provider page](https://kride.kakaomobility.com/) and app listings. [KTO, ride-hailing apps](https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=197907) (checked November 3, 2026). Confirm the destination in Korean or on a map and check the vehicle/plate before boarding.
+- A U.S. driver's license alone may not be enough to rent or drive. Confirm the current international driving permit, license, insurance, age, and rental rules with Korean authorities and the rental company before travel.
 
-**Supplied research note (unverified):** Incheon International Airport Corporation. Incheon International Airport. Step-by-step arrivals: terminal entry, customs declarations, immigration, baggage claim, and arrival hall. Incheon International Airport Corporation. Airport Railroad Guide. Airport train access, terminal station locations, and links to fares and schedules. Incheon International Airport Corporation. Departure Procedures. Check-in, baggage drop, security screening, immigration, and boarding procedures.
+## 4. Money, payments, and customs cash declaration
 
-**Provided sources to review:**
-- [www.airport.kr](https://www.airport.kr/)
-- [www.airport.kr](https://www.airport.kr/ap_en/1511/subview.do)
-- [www.airport.kr](https://www.airport.kr/ap_en/1413/subview.do)
+- The currency is the South Korean won (KRW, ₩). For a current indicative USD/KRW conversion, use [Wise's USD-to-KRW converter](https://wise.com/us/currency-converter/usd-to-krw-rate) (checked November 3, 2026). The won is not officially fixed to the U.S. dollar. A card issuer, ATM, exchange counter, and cash service can each use a different rate and fees; the displayed rate is not a promised transaction rate.
+- Visitors can exchange cash at banks and authorized exchange counters, including airport counters. ATMs are common in cities and transport hubs, but not every machine accepts every foreign card. Look for machines marked for international cards, ask the card issuer about fees and cash withdrawal limits, and keep another payment method. [KTO, Korean currency and exchange](https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=374&vcontsId=140040) and [airport exchange information](https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=195350) (checked November 3, 2026).
+- Major hotels, department stores, and many shops accept credit cards, but small businesses, markets, transit top-ups, and some rural locations may be cash-only or may not accept a foreign card. Carry a modest amount of won and keep a backup card. [KTO, Korean currency](https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=374&vcontsId=140040) (checked November 3, 2026).
+- Tipping is generally not expected in restaurants and routine services; exceptions may include particular hotels or tourist-facing services, so follow any clearly stated service charge or local instructions. [KTO, Korean food and dining guidance](https://english.visitkorea.or.kr/svc/contents/infoBscView.do?menuSn=903&vcontsId=140727) (checked November 3, 2026).
+- Korea Customs requires a declaration when carrying in more than US$10,000 equivalent in covered foreign currency, Korean won, checks, or other payment instruments. Declare before leaving the customs area. U.S. customs separately requires a report when entering or leaving the United States with more than US$10,000 in currency or monetary instruments; this is a report, not a limit. [Korea Customs Service](https://www.customs.go.kr/english/cm/cntnts/cntntsView.do?cntntsId=5500&mi=10800) and [U.S. CBP, currency reporting](https://www.cbp.gov/travel/international-visitors/kbyg/money) (checked November 3, 2026). The exact Korean outbound rules can differ by residency and source/purpose of funds; check Customs for the personal case.
 
-**Review before display:** Check the current source, U.S.-passport applicability, purpose/stay conditions, effective date, simple wording, and checked date.
+## 5. Safety, weather, and disruptions
 
-### Getting Around
+- On November 3, 2026, the U.S. State Department page showed **Level 1: Exercise normal precautions**, issued May 28, 2025. It warns that demonstrations can disrupt transport and services, and that tensions on the Korean Peninsula can rise. Avoid demonstrations, monitor local information and official alerts, and follow civil-defense instructions. [U.S. Department of State, South Korea advisory](https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html) (checked November 3, 2026).
+- Common practical risks include traffic and road injuries, pickpocketing or theft in busy areas, nightlife-related assault, scams, and disruption near large public gatherings. State Department reporting describes sexual assaults, including assaults involving people met through social or dating apps; arrange first meetings in public, manage alcohol, and keep a trusted contact informed. These are risk precautions, not a statement that every visitor will face these risks. [State Department, safety and security](https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html) (checked November 3, 2026).
+- Follow local law. Drug laws are strict; some U.S. prescriptions are prohibited or require advance approval. Foreigners may not take part in political activity such as demonstrations under Korean immigration law; the State Department notes this rule. Men with South Korean and U.S. citizenship or family ties may have military-service obligations and should check with Korean authorities before travel. [State Department, local laws and customs](https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html) (checked November 3, 2026). Avoid photographing military or restricted facilities unless signs and authorities clearly allow it.
+- South Korea has four seasons. Spring and fall are often milder; summer is hot and humid; winter is cold and dry. Heavy rain and flooding are possible during the June–August monsoon period, and typhoons can affect the country from roughly May to November. These are seasonal patterns, not a forecast. Check forecasts, storm warnings, transport status, and official advisories close to departure and while traveling. [Korea Tourism Organization, climate and seasons](https://english.visitkorea.or.kr/svc/contents/infoBscView.do?vcontsId=140636) and [State Department, weather and natural disasters](https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html) (checked November 3, 2026). No trip dates were supplied, so this guide is not tailored to a particular forecast.
 
-**Supplied research note (unverified):** Korea Tourism Organization. Transportation Cards. Tmoney, EZL, WOWPASS, and Climate Card information, purchasing, reloading, and usage Korea Tourism Organization. Korea Travel Cheat Sheet: 3 New Transportation Services. Info about visitor friendly transit services, taxi assistance, and language support
+## 6. Health, care, and medicine
 
-**Provided sources to review:**
-- [english.visitkorea.or.kr](https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=140663)
-- [english.visitkorea.or.kr](https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=187149)
+- CDC's [South Korea Traveler View](https://wwwnc.cdc.gov/travel/destinations/traveler/none/south-korea) (CDC Travelers’ Health; checked November 3, 2026) advises travelers to be current on routine vaccines and eligible COVID-19 vaccines, and recommends hepatitis A vaccine for unvaccinated travelers age one or older. It says to consider typhoid vaccine for some itineraries, such as rural travel, longer stays, or visiting friends and relatives. Discuss personal health and vaccines with a clinician, ideally at least a month before travel.
+- CDC identifies malaria transmission in **some rural northern areas** of Incheon, Gangwon, and Gyeonggi provinces, including near the DMZ, during March–December. Preventive prescription medicine may be recommended for those areas; the risk does not apply uniformly to the whole country. CDC says Japanese encephalitis vaccine is not recommended for short urban visits but may be considered for certain rural, long, or outdoor trips. Check the maps and current recommendations on the [CDC country page](https://wwwnc.cdc.gov/travel/destinations/traveler/none/south-korea) and discuss the exact route with a clinician (checked November 3, 2026).
+- CDC displayed a Level 1 global measles notice dated May 28, 2025; this is a global notice, not evidence of a South Korea-specific outbreak. CDC recommends international travelers be fully vaccinated against measles with MMR. Check current notices shortly before departure. [CDC Travel Health Notices](https://wwwnc.cdc.gov/travel/notices) (checked November 3, 2026).
+- Medical treatment is available, but visitors are responsible for payment. State Department says many U.S. plans do not cover care abroad, Medicare and Medicaid generally do not cover overseas bills, and providers may ask for payment or reimbursement arrangements. Check coverage and consider medical evacuation insurance, especially for travel outside major urban areas. Carry insurer details, prescriptions, and a list of allergies/conditions. [State Department, health and insurance guidance](https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html) (checked November 3, 2026).
+- Do not assume that a medicine prescribed in the United States is legal to carry into Korea. Some medicines, especially stimulants, narcotics, and opioids, are illegal or require advance permission from Korea's Ministry of Food and Drug Safety. Check each ingredient and get written approval before travel if required; keep medicine in original packaging with the prescription. See [U.S. Embassy Korea, prescription medicine guidance](https://kr.usembassy.gov/services-prescription-medication/) and contact the [Korean Ministry of Food and Drug Safety](https://www.mfds.go.kr/eng/index.do) before packing (checked November 3, 2026). Source access to the specific Embassy medicines subpage was not confirmed during this check; see research notes.
 
-**Review before display:** Check the current source, U.S.-passport applicability, purpose/stay conditions, effective date, simple wording, and checked date.
+## 7. Local culture and respectful travel
 
-### Money and Payments
+- Everyday expectations vary by setting and region. Follow signs and staff instructions, speak at a moderate volume in shared spaces, queue where marked, and ask before photographing people or private events. Use two hands or support your right forearm when giving or receiving an item in a formal interaction; this is a respectful custom, not a legal rule.
+- Tipping is not generally expected. At a restaurant, a table call button may be used to ask for service; in self-service places, customers may return trays or sort waste as posted. [KTO, dining guidance](https://english.visitkorea.or.kr/svc/contents/infoBscView.do?menuSn=903&vcontsId=140727) (checked November 3, 2026).
+- Remove shoes where requested, including some homes, traditional lodgings, and places with floor seating. At temples and memorials, dress and behave respectfully and follow posted photography rules. Venue rules can differ; ask instead of assuming.
+- South Korea is not culturally or linguistically uniform. Service options, dialect, transport, and visitor support differ between the Seoul metropolitan area, other cities, rural areas, and islands. Keep a destination written in Korean for taxis and have offline translation available.
 
-**Supplied research note (unverified):** Korea Tourism Organization. Korean Currency & Exchange Info: Korean Currency. South Korean won, bill and coin denominations, credit card acceptance, currency exchange, and banking infor Korea Tourism Organization. Korean Currency & Exchange Info: Foreign Exchange Banks in Airports. Where travelers can exchange currency at Incheon and Gimpo airports, bank locations, services, and operating hours.
+## 8. Phones, internet, and staying connected
 
-**Provided sources to review:**
-- [english.visitkorea.or.kr](https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?vcontsId=140040)
-- [english.visitkorea.or.kr](https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=195350)
+- First ask the U.S. carrier about South Korea roaming rates, coverage, supported bands, hotspot use, calls/texts, and whether the phone is unlocked. Roaming keeps the U.S. number active but can cost more depending on the plan.
+- Local options include prepaid SIM/eSIM plans from [KT](https://m.roaming.kt.com/eng/esim) and [LG U+](https://www.lguplus.com/korea-sim/eng/pc/product/esim?tab=data). KT says tourist eSIM plans are for visits up to 90 days; some voice plans are sold at airport counters, while data-only options can be purchased online. LG U+ describes data eSIM plans for South Korea and publishes its own activation and coverage details. [KT, tourist eSIM](https://m.roaming.kt.com/eng/esim), [LG U+, Korea eSIM](https://www.lguplus.com/korea-sim/eng/pc/product/esim?tab=data), and [KTO, SIM and communications overview](https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=140041) (checked November 3, 2026). Options vary by device, plan length, voice/SMS needs, and where the traveler goes. Confirm compatibility and coverage with the provider; do not assume service everywhere.
+- Airport roaming counters also offer physical SIMs, Wi-Fi rentals, and carrier roaming in some terminals. [KTO communications overview](https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=140041) (checked November 3, 2026). Save offline maps, hotel details, emergency contacts, and copies of key documents before leaving Wi-Fi.
 
-**Review before display:** Check the current source, U.S.-passport applicability, purpose/stay conditions, effective date, simple wording, and checked date.
+## 9. Electricity, plugs, and technology
 
-### Safety
+- South Korea's standard supply is 220 volts at 60 hertz, with two round-pin outlets commonly found. European-style Type C and F plugs are commonly identified, but fit can vary by outlet. U.S. travelers generally need a plug adapter. [Korea Tourism Organization, electricity and communications](https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=140041) (checked November 3, 2026); [World Standards, South Korea plug and voltage](https://www.worldstandards.eu/electricity/plug-voltage-by-country/south-korea/) (checked November 3, 2026).
+- A plug adapter changes the shape only; it does not change voltage. Check the label on each device. Chargers labeled “100–240 V, 50/60 Hz” usually accept the local supply with a suitable plug adapter. A 120 V-only hair tool or appliance may need a voltage converter or should be left at home. Follow the manufacturer's instructions.
+- Check current rules for drones, satellite devices, professional camera equipment, and restricted technology with Korean authorities and the airline before packing. Do not fly a drone near military installations, airports, or restricted areas without confirming permission. Local restrictions may be location-specific.
 
-**Supplied research note (unverified):** U.S. Department of State. South Korea Travel Advisory. Safety advisory, security concerns, and official traveler guidance. Korea Tourism Organization. Disaster Safety Services for International Visitors in Korea. Emergency reporting numbers, interpretation assistance, and disaster safety apps.
+## 10. Emergency help and U.S. consular support
 
-**Provided sources to review:**
-- [travel.state.gov](https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html)
-- [english.visitkorea.or.kr](https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=217&vcontsId=248145)
+- Call **112 for police** and **119 for ambulance or fire**. The U.S. State Department verifies both. The Korea Tourism Organization's **1330** travel helpline offers multilingual travel information and interpretation support; it is not a replacement for 112/119 in an immediate emergency. [U.S. Department of State, emergency numbers](https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html) and [KTO, 1330 hotline](https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=187149) (checked November 3, 2026).
+- For the South Korean Emergency Call Center for International Callers, the State Department lists **+82-2-3210-0404**; request an English speaker. For U.S. consular help, the State Department lists the **U.S. Embassy in Seoul: +82-2-397-4114**, including after-hours emergencies. Check the live [U.S. Embassy Korea contact page](https://kr.usembassy.gov/contact/) for the current process. The U.S. Consulate in Busan is not a full-service consular post; confirm services before going. [State Department South Korea page](https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html) (checked November 3, 2026).
+- Save emergency contacts offline. Local responders handle immediate emergencies; U.S. consular staff can provide limited assistance but do not replace police, hospitals, lawyers, or insurers.
 
-**Review before display:** Check the current source, U.S.-passport applicability, purpose/stay conditions, effective date, simple wording, and checked date.
+## Research notes / items to verify
 
-### Health
+- **Source-bank availability:** The supplied South Korea draft names `Country Information bank  - Aahana.csv`, but the original CSV was not found in the checked project workspace. This draft uses the project's existing South Korea lead list and Japan's full guide as format/depth references, then adds sources opened directly during this check. Confirm the original bank filename and its full contents before treating this as a complete review of all supplied material.
+- **Date-sensitive entry:** U.S. K-ETA exemption is stated through December 31, 2026; the U.S. State page says K-ETA begins January 1, 2027. This is a high-risk traveler-facing fact and is currently published as a sourced Supabase fact. Refresh it before January 1, 2027 and recheck official K-ETA notice and passenger eligibility for each trip date. Verify whether K-ETA holders may skip the e-Arrival Card for the particular arrival.
+- **Entry source conflict/lag:** A Korean consular visa page contains older wording that references a K-ETA exemption only through 2024; another page gives newer details through 2026. The official K-ETA notice and current U.S. State page align for 2026. Keep the stale consular page out of traveler copy; recheck official Korean rules, especially for 2027 trips.
+- **Medicine access:** The State Department page directly confirms medicine restrictions and pre-approval requirement. The specific U.S. Embassy medicines page was not independently confirmed as accessible in this run. Obtain the current MFDS application instructions, covered ingredients, lead time, and contact route before publishing specific medicine examples.
+- **Currency:** A live USD/KRW conversion link is included without a quoted rate. Verify the converter works and label any future displayed rate with its timestamp, source, and fee caveat. Korean cash-declaration rules differ by arrival/departure and by resident status; the summary here is for general U.S. visitors entering Korea, with more exact cases to be reviewed.
+- **Transport and digital services:** Verify current geographic reach, foreign-card support, English-language functions, and official app store listings for route apps and taxi apps on Android and iOS. Coverage and app behavior can change; service may be weaker in rural or island areas. Region-only Seoul Climate Card note is not a nationwide claim.
+- **Health:** CDC recommendations, disease maps, notices, and malaria risk areas are dynamic. The CDC Traveler View was directly checked; reconfirm its dates and trip-specific recommendations. This guide is not medical advice.
+- **Technology:** Verify any device restrictions (especially drones and radio equipment) against Korean government rules for the intended place and device. Do not infer a nationwide ban from local restricted-area rules.
+- **Weather:** No travel dates were supplied. Seasonal patterns only; check the Korea Meteorological Administration and official advisories close to departure.
+- **Claims not fully established:** Countrywide cash/card acceptance, rural transport coverage, and cultural norms are summarized broadly and need a reviewer to test and refine examples. The supplied bank CSV was unavailable, so this draft cannot confirm every source lead in it.
 
-**Supplied research note (unverified):** Centers for Disease Control and Prevention. South Korea – Traveler View. vaccinations, health risks, and precautions. Korea Disease Control and Prevention Agency. Official Website. Infectious disease notices and public health information.
+## Review summary
 
-**Provided sources to review:**
-- [wwwnc.cdc.gov](https://wwwnc.cdc.gov/travel/destinations/traveler/none/south-korea)
-- [www.kdca.go.kr](https://www.kdca.go.kr/)
+**Well supported by directly checked official sources:** short-stay entry and K-ETA timing; arrival-card conditions; major arrival procedures; core transit modes and official route resources; cash declaration at entry; advisory level and key warnings; CDC vaccination and malaria guidance; emergency numbers and Embassy contact; electricity basics; and official local eSIM options.
 
-**Review before display:** Check the current source, U.S.-passport applicability, purpose/stay conditions, effective date, simple wording, and checked date.
+**Needs more research before traveler display:** exact visa pathways by long-stay purpose; any future K-ETA policy after 2026; current medicine approval process by ingredient; precise cash export rules for each traveler status; broad ATM/card acceptance; app availability/payment behavior across devices and regions; detailed local customs and device restrictions; and additional clinical/accessibility guidance.
 
-### Local Culture
+**High-risk facts to recheck immediately before display or travel:** visa/K-ETA/arrival-card eligibility; travel advisory and peninsula/security alerts; controlled medicines; CDC notices and regional malaria advice; declared cash thresholds; emergency telephone numbers; and weather/disaster alerts. The project Japan guide remains preserved at `docs/research/JAPAN_REVIEW_DRAFT.md`.
 
-**Supplied research note (unverified):** Korea Tourism Organization. VISITKOREA. VISITKOREA. Travel articles about etiquette, food, customs, and cultural expectations. Daily Life and SOcial Customs
-
-**Provided sources to review:**
-- [english.visitkorea.or.kr](https://english.visitkorea.or.kr/)
-- [www.britannica.com](https://www.britannica.com/place/South-Korea/Daily-life-and-social-customs)
-
-**Review before display:** Check the current source, U.S.-passport applicability, purpose/stay conditions, effective date, simple wording, and checked date.
-
-### Phones and Internet
-
-**Supplied research note (unverified):** Korea Tourism Organization. Electricity & Communications. Roaming, SIM cards, portable Wi-Fi rentals, mobile phone services, and dialing codes.
-
-**Provided sources to review:**
-- [english.visitkorea.or.kr](https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=140041)
-
-**Review before display:** Check the current source, U.S.-passport applicability, purpose/stay conditions, effective date, simple wording, and checked date.
-
-### Electricity and Tech
-
-**Supplied research note (unverified):** Korea Tourism Organization. Electricity & Communications. Electrical voltage, frequency, outlets, and adapter information. World Standards. Plug, Socket & Voltage by Country. Plug and socket standards by country.
-
-**Provided sources to review:**
-- [english.visitkorea.or.kr](https://english.visitkorea.or.kr/svc/contents/conte)
-- [www.worldstandards.eu](https://www.worldstandards.eu/electricity/plug-voltage-by-country/)
-
-**Review before display:** Check the current source, U.S.-passport applicability, purpose/stay conditions, effective date, simple wording, and checked date.
-
-### Emergency Information
-
-**Supplied research note (unverified):** U.S. Embassy & Consulate in the Republic of Korea. Official Embassy Website.
-
-**Provided sources to review:**
-- [kr.usembassy.gov](https://kr.usembassy.gov/)
-
-**Review before display:** Check the current source, U.S.-passport applicability, purpose/stay conditions, effective date, simple wording, and checked date.
-
-### Research Notes
-
-**Supplied research note (unverified):** A lot are from the same source (visitKOREA) can be used for many sections. Going to need to look more in depth into specific content in official embassy pages to look into how we would scrape
-
-**Source gap:** No direct URL was found in this topic cell. Find and verify an authoritative source before drafting guidance.
-
-**Review before display:** Check the current source, U.S.-passport applicability, purpose/stay conditions, effective date, simple wording, and checked date.
-
-
-## Additional official source entry points (checked 2026-11-01)
-
-These are direct official source leads for current U.S.-traveler guidance. Their directory pages were checked on 2026-11-01; individual destination pages and every nearby claim have not all been independently verified. Recheck dynamic details at the time of use.
-
-- [U.S. Department of State travel advisory and country information — South Korea](https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html) — U.S.-specific advisories, local laws, entry notes, and embassy contact details. For England and Scotland, this is the United Kingdom page.
-- [CDC Travelers’ Health — South Korea](https://wwwnc.cdc.gov/travel/destinations/traveler/none/south-korea) — destination health recommendations and notices. For England and Scotland, this is the United Kingdom page.
-- [CDC destination directory](https://wwwnc.cdc.gov/travel/destinations/list) — directory of country Traveler View pages.
-- [U.S. State Department advisory directory](https://travel.state.gov/en/international-travel/travel-advisories.html) — current advisory levels and dated country advisory updates.
-
-### Additional source-bank main references
-
-- [Source-bank main reference](https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html) — listed in the supplied CSV main-sources row; review for authority, applicability, and freshness before use.
-- [Source-bank main reference](https://www.k-eta.go.kr/) — listed in the supplied CSV main-sources row; review for authority, applicability, and freshness before use.
-- [Source-bank main reference](https://english.visitkorea.or.kr/) — listed in the supplied CSV main-sources row; review for authority, applicability, and freshness before use.
-- [Source-bank main reference](https://wwwnc.cdc.gov/travel/destinations/traveler/none/south-korea) — listed in the supplied CSV main-sources row; review for authority, applicability, and freshness before use.
-- [Source-bank main reference](https://www.airport.kr/ap_en/1439/subview.do) — listed in the supplied CSV main-sources row; review for authority, applicability, and freshness before use.
-- [Source-bank main reference](https://kr.usembassy.gov/) — listed in the supplied CSV main-sources row; review for authority, applicability, and freshness before use.
-
-## Next publication step
-
-For each topic, a reviewer should turn only verified claims into small fact records with direct citations and applicability (purpose, stay length, dates where needed). Keep changing data—entry rules, advisories, CDC notices, forecasts, currency, app availability, phone packages, and emergency contacts—dated and rechecked. Do not publish this draft as traveler advice until review is complete.
