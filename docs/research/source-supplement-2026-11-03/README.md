@@ -58,10 +58,10 @@ See the [collection and accuracy review](VERIFICATION_REPORT.md) for the complet
 ## Evidence and limitations
 
 - 632 distinct public URLs were attempted through the terminal in this pass. Selected important pages were also opened through web browsing when terminal access failed. The access log preserves both outcomes; a web success does not erase a terminal failure.
-- [Source access log](source-access-log.json) records requested/final URL, page title where available, date, result and country/topic use. It contains no copied page bodies. Raw extraction is retained locally in the Git-ignored `data/candidates/research-2026-11-03/source-cache/` directory.
+- [Source access log](source-access-log.json) records requested/final URL, page title where available, date, result and country/topic use. It contains no copied page bodies. The audit log says raw extraction was retained locally in the Git-ignored `data/candidates/research-2026-11-03/source-cache/` directory. That directory and the source-bank CSVs were not present in the checked workspace on November 4, 2026, so the cached bodies could not be re-opened here.
 - Source-bank files used: `Country Information bank  - David.csv`, `Country Information bank  - Dion.csv`, `Country Information bank  - Aahana.csv`, and `Country Information bank  - Hilna.csv` from Downloads. They were read only.
 - Dates are check/attempt dates, not a guarantee that the rule is effective throughout a future trip. Some sources are in local languages; some are broad entry points.
-- Existing drafts, the Japan reference and the untracked Word portfolio were left untouched. No Supabase operations or traveler-facing publication occurred. Git synchronization is tracked in the verification report.
+- Existing drafts and the Japan reference were left untouched by this source-collection audit. The audit itself made no Supabase operations. A later user-authorized South Korea publication and the cash-rule correction are recorded in the verification report. Git synchronization is also tracked there.
 
 ## Next writing step
 
