@@ -1,0 +1,127 @@
+{
+  "checked_at": "2026-11-05",
+  "api_checks": [
+    {
+      "country": "algeria",
+      "status": 200,
+      "short_tourism_facts": 6
+    },
+    {
+      "country": "argentina",
+      "status": 200,
+      "short_tourism_facts": 8
+    },
+    {
+      "country": "australia",
+      "status": 200,
+      "short_tourism_facts": 6
+    },
+    {
+      "country": "austria",
+      "status": 200,
+      "short_tourism_facts": 9
+    },
+    {
+      "country": "belgium",
+      "status": 200,
+      "short_tourism_facts": 7
+    },
+    {
+      "country": "bosnia-and-herzegovina",
+      "status": 200,
+      "short_tourism_facts": 7
+    },
+    {
+      "country": "egypt",
+      "status": 200,
+      "short_tourism_facts": 8
+    },
+    {
+      "country": "england",
+      "status": 200,
+      "short_tourism_facts": 9
+    },
+    {
+      "country": "france",
+      "status": 200,
+      "short_tourism_facts": 9
+    },
+    {
+      "country": "germany",
+      "status": 200,
+      "short_tourism_facts": 9
+    },
+    {
+      "country": "iraq",
+      "status": 200,
+      "short_tourism_facts": 6
+    },
+    {
+      "country": "japan",
+      "status": 200,
+      "short_tourism_facts": 14
+    },
+    {
+      "country": "mexico",
+      "status": 200,
+      "short_tourism_facts": 7
+    },
+    {
+      "country": "netherlands",
+      "status": 200,
+      "short_tourism_facts": 6
+    },
+    {
+      "country": "new-zealand",
+      "status": 200,
+      "short_tourism_facts": 6
+    },
+    {
+      "country": "norway",
+      "status": 200,
+      "short_tourism_facts": 9
+    },
+    {
+      "country": "panama",
+      "status": 200,
+      "short_tourism_facts": 10
+    },
+    {
+      "country": "paraguay",
+      "status": 200,
+      "short_tourism_facts": 10
+    },
+    {
+      "country": "qatar",
+      "status": 200,
+      "short_tourism_facts": 8
+    },
+    {
+      "country": "saudi-arabia",
+      "status": 200,
+      "short_tourism_facts": 8
+    },
+    {
+      "country": "scotland",
+      "status": 200,
+      "short_tourism_facts": 11
+    },
+    {
+      "country": "senegal",
+      "status": 200,
+      "short_tourism_facts": 10
+    },
+    {
+      "country": "south-africa",
+      "status": 200,
+      "short_tourism_facts": 10
+    },
+    {
+      "country": "south-korea",
+      "status": 200,
+      "short_tourism_facts": 10
+    }
+  ],
+  "conditional_visibility_checks": "passed",
+  "payload_sha256": "da69cda3d92cff6a16e74e4723393a6802c3d8c02b2afb3d5fc8eefa7b7d8429"
+}

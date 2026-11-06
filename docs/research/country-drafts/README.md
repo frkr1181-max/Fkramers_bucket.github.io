@@ -2,6 +2,8 @@
 
 **Audience:** U.S. passport holders. **Prepared:** 2026-11-01.
 
+**Publication update — November 5, 2026:** Selected claims from these drafts were independently reviewed, rewritten, and published. The database now contains 263 facts across these 24 destinations, including the 56 facts added to fill the listed topic gaps. Read the [formatted country guides](../country-guides/README.md) for the published information in Japan’s ten-section layout. Original draft prose is not approved wholesale. See the [initial publication report](../publication-2026-11-05/README.md) and [gap-fill record](../gap-fill-2026-11-05/README.md).
+
 These are organized research drafts generated from the four supplied country-bank CSVs. They preserve source leads and submitted notes by topic. They do not claim that sources were opened or checked today; no unreviewed note is approved traveler guidance. The existing Japan full guide remains at [JAPAN_REVIEW_DRAFT.md](../JAPAN_REVIEW_DRAFT.md), and its own review gaps still apply.
 
 | Country | Draft | Source leads found | Bank |
@@ -37,7 +39,7 @@ Each country draft now includes direct U.S. State Department advisory and CDC Tr
 
 ## Review status
 
-- All countries in the current catalog have a draft (24 total).
+- This batch contains 24 country drafts. The live destination catalog contains 36 destinations; the additional 12 do not have drafts in this batch.
 - Drafts are structured under the ten required categories and preserve the supplied research note/source links.
 - Source-bank links need independent review for accuracy, freshness, and authority. This batch is not ready to import into published facts.
 - Dynamic items should be rechecked against official authorities before traveler display; use user dates for seasonal weather and hazard relevance.

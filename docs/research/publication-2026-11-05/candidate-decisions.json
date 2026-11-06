@@ -1,0 +1,185 @@
+[
+  {
+    "id": "de853c2c-120d-44b7-bbdd-46089e82e925",
+    "candidate_id": "govuk-fcdo-japan-02",
+    "status": "rejected",
+    "note": "Reviewed for U.S.-passport publication. Original is a UK-jurisdiction FCDO scrape, with British-passport or UK-consular framing and overlapping material. Not promoted verbatim. Applicable Japan topics are covered by separately reviewed U.S.-audience travel_facts in publication-2026-11-05. Original retained for provenance."
+  },
+  {
+    "id": "dbbfc9cd-831b-4cd3-a6e2-e43327d0db4a",
+    "candidate_id": "manual-japan-safety-20261028-v1",
+    "status": "approved",
+    "published_fact_id": "c21c45c4-0f52-5a53-97f2-1403c58b7fe5",
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null,
+    "note": "Reviewed by Codex with publication authorized by project owner. Approved as adapted content, not verbatim source text. Public fact c21c45c4-0f52-5a53-97f2-1403c58b7fe5 contains the reviewed claim scope and current citations; additional details in the preserved candidate are not independently published by this approval. See publication-2026-11-05/facts.json."
+  },
+  {
+    "id": "889d06d2-cf2a-472c-991c-18fd496307fa",
+    "candidate_id": "govuk-fcdo-japan-01",
+    "status": "rejected",
+    "note": "Reviewed for U.S.-passport publication. Original is a UK-jurisdiction FCDO scrape, with British-passport or UK-consular framing and overlapping material. Not promoted verbatim. Applicable Japan topics are covered by separately reviewed U.S.-audience travel_facts in publication-2026-11-05. Original retained for provenance."
+  },
+  {
+    "id": "2fdbec06-d3bc-4b9f-ad14-869f6b4b50e4",
+    "candidate_id": "manual-japan-culture-20261028-v1",
+    "status": "approved",
+    "published_fact_id": "3b2cb82b-aaf9-5d78-8749-39f19039119c",
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null,
+    "note": "Reviewed by Codex with publication authorized by project owner. Approved as adapted content, not verbatim source text. Public fact 3b2cb82b-aaf9-5d78-8749-39f19039119c contains the reviewed claim scope and current citations; additional details in the preserved candidate are not independently published by this approval. See publication-2026-11-05/facts.json."
+  },
+  {
+    "id": "89e0d667-7402-4a94-b7b4-51481f348a1f",
+    "candidate_id": "manual-japan-arrival-20261028-v1",
+    "status": "approved",
+    "published_fact_id": "cbe680bf-aa42-5956-8afc-575f7d6a9602",
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null,
+    "note": "Reviewed by Codex with publication authorized by project owner. Approved as adapted content, not verbatim source text. Public fact cbe680bf-aa42-5956-8afc-575f7d6a9602 contains the reviewed claim scope and current citations; additional details in the preserved candidate are not independently published by this approval. See publication-2026-11-05/facts.json."
+  },
+  {
+    "id": "3091f0d7-3ff6-404c-9abc-5eb5ca6957e9",
+    "candidate_id": "manual-japan-health-cdc-20261028-v1",
+    "status": "approved",
+    "published_fact_id": "991be2d7-8443-5473-a81f-1f089865ff4d",
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null,
+    "note": "Reviewed by Codex with publication authorized by project owner. Approved as adapted content, not verbatim source text. Public fact 991be2d7-8443-5473-a81f-1f089865ff4d contains the reviewed claim scope and current citations; additional details in the preserved candidate are not independently published by this approval. See publication-2026-11-05/facts.json."
+  },
+  {
+    "id": "a1970e91-7bb1-4bfc-9f2b-8b051a055c55",
+    "candidate_id": "manual-japan-entry-work-20261029-v1",
+    "status": "approved",
+    "published_fact_id": "dedfe7a1-9ae0-5d13-9f32-6d434789a050",
+    "applicability_status": "conditional",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": [
+      "work"
+    ],
+    "note": "Reviewed by Codex with publication authorized by project owner. Approved as adapted content, not verbatim source text. Public fact dedfe7a1-9ae0-5d13-9f32-6d434789a050 contains the reviewed claim scope and current citations; additional details in the preserved candidate are not independently published by this approval. See publication-2026-11-05/facts.json."
+  },
+  {
+    "id": "8ab1a4a8-3fe3-4920-8abd-eb99da3401a4",
+    "candidate_id": "govuk-fcdo-japan-03",
+    "status": "rejected",
+    "note": "Reviewed for U.S.-passport publication. Original is a UK-jurisdiction FCDO scrape, with British-passport or UK-consular framing and overlapping material. Not promoted verbatim. Applicable Japan topics are covered by separately reviewed U.S.-audience travel_facts in publication-2026-11-05. Original retained for provenance."
+  },
+  {
+    "id": "57e1d874-2b57-4dba-b4ec-6bf2a054e5f7",
+    "candidate_id": "govuk-fcdo-japan-04",
+    "status": "rejected",
+    "note": "Reviewed for U.S.-passport publication. Original is a UK-jurisdiction FCDO scrape, with British-passport or UK-consular framing and overlapping material. Not promoted verbatim. Applicable Japan topics are covered by separately reviewed U.S.-audience travel_facts in publication-2026-11-05. Original retained for provenance."
+  },
+  {
+    "id": "ec7babb6-8e60-41d0-8d2a-4319a8954cad",
+    "candidate_id": "govuk-fcdo-japan-05",
+    "status": "rejected",
+    "note": "Reviewed for U.S.-passport publication. Original is a UK-jurisdiction FCDO scrape, with British-passport or UK-consular framing and overlapping material. Not promoted verbatim. Applicable Japan topics are covered by separately reviewed U.S.-audience travel_facts in publication-2026-11-05. Original retained for provenance."
+  },
+  {
+    "id": "59e38283-9568-464b-9b1d-777c2ebc73af",
+    "candidate_id": "govuk-fcdo-japan-06",
+    "status": "rejected",
+    "note": "Reviewed for U.S.-passport publication. Original is a UK-jurisdiction FCDO scrape, with British-passport or UK-consular framing and overlapping material. Not promoted verbatim. Applicable Japan topics are covered by separately reviewed U.S.-audience travel_facts in publication-2026-11-05. Original retained for provenance."
+  },
+  {
+    "id": "ca8939c2-744c-4bbc-826d-eb13299c088e",
+    "candidate_id": "manual-japan-getting-around-20261028-v1",
+    "status": "approved",
+    "published_fact_id": "e76a6d87-a7f8-5b3e-9297-ee67f262bcde",
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null,
+    "note": "Reviewed by Codex with publication authorized by project owner. Approved as adapted content, not verbatim source text. Public fact e76a6d87-a7f8-5b3e-9297-ee67f262bcde contains the reviewed claim scope and current citations; additional details in the preserved candidate are not independently published by this approval. See publication-2026-11-05/facts.json."
+  },
+  {
+    "id": "fffca63d-3479-41a7-a890-23dc45aba5d5",
+    "candidate_id": "manual-japan-money-20261028-v1",
+    "status": "approved",
+    "published_fact_id": "118c671c-a829-5933-869b-4ededb2a56b0",
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null,
+    "note": "Reviewed by Codex with publication authorized by project owner. Approved as adapted content, not verbatim source text. Public fact 118c671c-a829-5933-869b-4ededb2a56b0 contains the reviewed claim scope and current citations; additional details in the preserved candidate are not independently published by this approval. See publication-2026-11-05/facts.json."
+  },
+  {
+    "id": "ae903426-6d88-4c81-9cae-f362d6f892c4",
+    "candidate_id": "manual-japan-entry-20261028-v1",
+    "status": "approved",
+    "published_fact_id": "11def21b-4ac9-59c0-9a64-564137a63922",
+    "applicability_status": "conditional",
+    "min_stay_days": 1,
+    "max_stay_days": 90,
+    "applies_to_purposes": [
+      "tourism"
+    ],
+    "note": "Reviewed by Codex with publication authorized by project owner. Approved as adapted content, not verbatim source text. Public fact 11def21b-4ac9-59c0-9a64-564137a63922 contains the reviewed claim scope and current citations; additional details in the preserved candidate are not independently published by this approval. See publication-2026-11-05/facts.json."
+  },
+  {
+    "id": "79278afd-cce5-403e-8eba-31efaf240e0c",
+    "candidate_id": "manual-japan-phones-20261028-v1",
+    "status": "approved",
+    "published_fact_id": "f3af8e48-688b-5507-b8ca-fe53a0bcbb34",
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null,
+    "note": "Reviewed by Codex with publication authorized by project owner. Approved as adapted content, not verbatim source text. Public fact f3af8e48-688b-5507-b8ca-fe53a0bcbb34 contains the reviewed claim scope and current citations; additional details in the preserved candidate are not independently published by this approval. See publication-2026-11-05/facts.json."
+  },
+  {
+    "id": "75ca9b19-4ba1-4e3a-8c3a-cb26b200b089",
+    "candidate_id": "manual-japan-electricity-20261028-v1",
+    "status": "approved",
+    "published_fact_id": "23b7db7d-7fca-5d10-9e0d-fd1d0a5466d9",
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null,
+    "note": "Reviewed by Codex with publication authorized by project owner. Approved as adapted content, not verbatim source text. Public fact 23b7db7d-7fca-5d10-9e0d-fd1d0a5466d9 contains the reviewed claim scope and current citations; additional details in the preserved candidate are not independently published by this approval. See publication-2026-11-05/facts.json."
+  },
+  {
+    "id": "d89a2c44-7ece-4be9-9778-634f044a4935",
+    "candidate_id": "manual-japan-emergency-20261028-v1",
+    "status": "approved",
+    "published_fact_id": "73511875-88fa-535d-9e04-3f9a9c202b48",
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null,
+    "note": "Reviewed by Codex with publication authorized by project owner. Approved as adapted content, not verbatim source text. Public fact 73511875-88fa-535d-9e04-3f9a9c202b48 contains the reviewed claim scope and current citations; additional details in the preserved candidate are not independently published by this approval. See publication-2026-11-05/facts.json."
+  },
+  {
+    "id": "6bdc76b2-1f66-4d18-bc00-914be4c66270",
+    "candidate_id": "manual-japan-health-medicines-20261028-v1",
+    "status": "approved",
+    "published_fact_id": "1b0bf5e1-a79e-5e78-94a7-a4d8dc7df54f",
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null,
+    "note": "Reviewed by Codex with publication authorized by project owner. Approved as adapted content, not verbatim source text. Public fact 1b0bf5e1-a79e-5e78-94a7-a4d8dc7df54f contains the reviewed claim scope and current citations; additional details in the preserved candidate are not independently published by this approval. See publication-2026-11-05/facts.json."
+  },
+  {
+    "id": "8aa3b27e-19e9-4353-a057-1cf25ab2a171",
+    "candidate_id": "manual-japan-entry-longstay-20261029-v1",
+    "status": "approved",
+    "published_fact_id": "273cfdfa-abc0-53a0-b088-8edfdeef05a0",
+    "applicability_status": "conditional",
+    "min_stay_days": 91,
+    "max_stay_days": null,
+    "applies_to_purposes": null,
+    "note": "Reviewed by Codex with publication authorized by project owner. Approved as adapted content, not verbatim source text. Public fact 273cfdfa-abc0-53a0-b088-8edfdeef05a0 contains the reviewed claim scope and current citations; additional details in the preserved candidate are not independently published by this approval. See publication-2026-11-05/facts.json."
+  }
+]
