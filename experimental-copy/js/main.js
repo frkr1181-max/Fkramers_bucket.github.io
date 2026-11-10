@@ -69,27 +69,29 @@ function noTrip() {
 
 // ---------- home ----------
 
-function home() {
-  return `<div class="page home">
-    <div class="band-wrap">${band(null, { arcs: false, fill: true })}
+// the teal hero with the account card, shared by Home (log in) and Sign up.
+// accounts aren't switched on yet, so the card's main button shows a note
+// instead of pretending to sign anyone in
+function accountHero({ title, lead, card, password, submit, other }) {
+  return `<div class="band-wrap">${band(null, { arcs: false, fill: true })}
     <div class="container">
       <section class="hero on-dark">
         <div>
-          <h1 tabindex="-1">Let’s gear up!</h1>
-          <p class="lead">Give us some basic details of your trip and we’ll create an easy to understand dashboard to assist in making sure you’re ready for anything.</p>
+          <h1 tabindex="-1">${title}</h1>
+          <p class="lead">${lead}</p>
           <form class="login" id="login" novalidate>
-            <h2>Log in</h2>
+            <h2>${card}</h2>
             <div class="fields">
               <div class="field"><label for="email">Email</label>
                 <div class="input"><input id="email" type="email" autocomplete="email" placeholder="you@example.com" /></div></div>
               <div class="field"><label for="password">Password</label>
-                <div class="input"><input id="password" type="password" autocomplete="current-password" placeholder="Enter your password" /></div></div>
+                <div class="input"><input id="password" type="password" autocomplete="${password.autocomplete}" placeholder="${password.placeholder}" /></div></div>
             </div>
-            <button class="btn btn-primary btn-l" type="submit">Log in <img src="${A}icon-arrow-right.svg" alt="" /></button>
+            <button class="btn btn-primary btn-l" type="submit">${submit} <img src="${A}icon-arrow-right.svg" alt="" /></button>
             <p class="notice" id="login-note" role="status" hidden>Accounts aren’t switched on yet. Continue as a guest to plan your trip.</p>
             <p class="or">or</p>
             <div class="options">
-              <a class="btn btn-secondary" href="#/plan">Sign up</a>
+              <a class="btn btn-secondary" href="${other.href}">${other.label}</a>
               <a class="btn btn-secondary" href="#/plan">Continue as guest</a>
             </div>
           </form>
@@ -99,11 +101,37 @@ function home() {
           <div class="badge"><img src="${A}logo-mark-hero.svg" alt="" /></div>
         </div>
       </section>
-    </div></div>
+    </div></div>`;
+}
+
+function home() {
+  return `<div class="page home">
+    ${accountHero({
+      title: "Let’s gear up!",
+      lead: "Give us some basic details of your trip and we’ll create an easy to understand dashboard to assist in making sure you’re ready for anything.",
+      card: "Log in",
+      password: { autocomplete: "current-password", placeholder: "Enter your password" },
+      submit: "Log in",
+      other: { href: "#/signup", label: "Sign up" },
+    })}
     <div class="container">
       ${howItWorks()}
       ${trustSection()}
     </div>
+  </div>`;
+}
+
+// Sign up (Aahana's comment #18): the same hero, a sign-up card, and no marketing sections
+function signup() {
+  return `<div class="page home signup">
+    ${accountHero({
+      title: "Create your account",
+      lead: "Save your trip plans to your profile and pick up where you left off on any device.",
+      card: "Sign up",
+      password: { autocomplete: "new-password", placeholder: "Create a password" },
+      submit: "Create account",
+      other: { href: "#/", label: "Log in" },
+    })}
   </div>`;
 }
 
@@ -268,16 +296,17 @@ function wirePlan() {
 
 // ---------- trip dashboard ----------
 
-function checklistItems(country) {
-  // the 8 tasks from the hi-fi (Nov 4), with the country swapped in
+// the same 8 tasks for every country (Aahana's comment #16), so nothing here
+// depends on which country the trip is for
+function checklistItems() {
   return [
     "Check your passport is valid for your whole stay",
-    `Check that your medicines are allowed in ${country}`,
+    "Check that your medicines are allowed where you’re going",
     "Buy travel insurance that covers medical care",
     "Enroll in STEP so the U.S. Embassy can reach you",
     "Set up an eSIM or pocket Wi-Fi",
     "Tell your bank you’re traveling",
-    `Check the entry rules for ${country}`,
+    "Check if you need a visa or an arrival form",
     "Save your emergency numbers for offline use",
   ];
 }
@@ -312,7 +341,7 @@ async function tripView() {
         <span class="arrow"><img src="${A}icon-arrow-small.svg" alt="" /></span>
       </span></a></li>`).join("");
 
-  const tasks = checklistItems(country).map((label, i) => `<li>
+  const tasks = checklistItems().map((label, i) => `<li>
       <button class="task" type="button" aria-pressed="${done.has(i)}" data-task="${i}">
         <span class="box">${CHECK}</span><span class="label">${esc(label)}</span>
       </button></li>`).join("");
@@ -493,6 +522,7 @@ const ROUTES = {
   trip: { nav: "trip", title: "My trip", view: tripView, wire: wireTrip },
   guide: { nav: "trip", title: "Guide", view: guideView, wire: wireGuide },
   about: { nav: "about", title: "About", view: about, wire: () => {} },
+  signup: { nav: null, title: "Sign up", view: signup, wire: wireHome },
 };
 
 async function render() {

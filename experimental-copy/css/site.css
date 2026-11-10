@@ -141,6 +141,7 @@ h1[tabindex="-1"]:focus { outline: none; }
 /* ---------- home ---------- */
 .hero { position: relative; display: grid; grid-template-columns: 620px 1fr; padding: 72px 0 96px; min-height: 715px; color: var(--rr-color-text-on-brand); }
 .hero > div:first-child { position: relative; z-index: 1; }
+.signup { padding-bottom: 80px; }
 .hero h1 { font-weight: 900; font-size: var(--rr-display-l); line-height: 0.96; letter-spacing: -0.03em; }
 .hero .lead { margin-top: 20px; max-width: 580px; font-weight: 500; font-size: 20px; line-height: 1.4; }
 .login {
@@ -261,9 +262,10 @@ textarea.input-area:focus { border-color: var(--rr-color-border-strong); outline
 }
 .chips img { width: 18px; height: 18px; }
 
-.tiles { margin-top: 40px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 0; list-style: none; }
+/* 32px between tiles (Aahana's comment #15: less tight and cluttered) */
+.tiles { margin-top: 40px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; padding: 0; list-style: none; }
 .tile {
-  display: flex; flex-direction: column; height: 252px; overflow: hidden; text-decoration: none;
+  display: flex; flex-direction: column; height: 264px; overflow: hidden; text-decoration: none;
   background: var(--rr-color-bg-surface); border-radius: var(--rr-radius-lg); box-shadow: var(--rr-shadow-card);
 }
 .tile:focus-visible { outline-color: var(--rr-color-focus-on-dark); outline-offset: 4px; }
@@ -445,7 +447,7 @@ dialog.guest .inner { display: grid; gap: 16px; }
   .purposes { grid-template-columns: repeat(2, 1fr); }
   .dates { grid-template-columns: 1fr; }
   .trip-band-content { padding-block-start: 32px; }
-  .tiles { gap: 12px; }
+  .tiles { gap: 16px; }
   .tile { height: auto; min-height: 168px; }
   .tile-band { height: 80px; }
   .tile-body { padding: 14px 16px; }
