@@ -8,11 +8,12 @@ const snapshot=await read('../data/guide-snapshot.json');
 assert.equal(data.countries.length,35);
 let connected=0;
 for(const country of data.countries){
- assert.ok(country.cards.flatMap(c=>c.subcards).filter(s=>s.id==='pocket-wifi').every(s=>s.passages.length>0));
+ assert.ok(country.cards.flatMap(c=>c.subcards).every(s=>s.passages.length>0),'Saved topics must omit every unsupported country-specific card');
  const facts=snapshot.facts.filter(f=>f.destination_slug===country.country);
  if(facts.length)connected++;
  for(const guide of GUIDES){
   const topics=topicsForGuide(country.country,guide.id,facts,data);
+  assert.ok(topics.every(t=>t.facts.length),'Public topics must not be empty placeholders');
   const ids=new Set(topics.map(t=>t.id));assert.equal(ids.size,topics.length);
   for(const fact of facts.filter(f=>guide.categories.includes(f.category))){
    const excerpts=topics.flatMap(t=>t.facts).filter(f=>f.id===fact.id);
@@ -39,6 +40,12 @@ assert.ok(entry.find(t=>t.id==='passport').facts.every(f=>/passport|blank page/i
 assert.ok(!entry.find(t=>t.id==='passport').facts.some(f=>/90 days in 180/.test(f.plain_summary)));
 assert.ok(entry.find(t=>t.id==='visas').facts.some(f=>/90 days in 180/.test(f.plain_summary)));
 const changed=france.map(f=>({...f,plain_summary:f.plain_summary+' Updated live guidance.'}));
-assert.equal(topicsForGuide('france','entry',changed,data).find(t=>t.id==='overview').facts.length,2);
+assert.equal(topicsForGuide('france','entry',changed,data).find(t=>t.id==='overview').facts.length,changed.filter(f=>f.category==='entry').length);
 assert.ok(!topicsForGuide('france','entry',snapshot.facts.filter(f=>f.destination_slug==='qatar'),data).flatMap(t=>t.facts).length);
+const japan=await read('../data/japan-subcards.json');
+assert.deepEqual(topicsForGuide('japan','entry',[],japan),[],'Draft research alone must not create public cards');
+const passportFact=snapshot.facts.find(f=>f.destination_slug==='japan'&&f.title==='Passport and permission checks');
+const japanTopics=topicsForGuide('japan','entry',[passportFact],japan);
+assert.ok(japanTopics.length>0,'A supported Japan topic must remain visible');
+assert.ok(japanTopics.every(t=>t.facts.length&&t.facts.every(f=>f.id===passportFact.id)),'Trip filtering must hide unsupported Japan topics too');
 console.log('Country-topic checks passed: 35 non-Japan destinations, 35 catalog mappings, every saved fact connected, isolated passages, dates/sources/eligibility retained, changed live records preserved.');

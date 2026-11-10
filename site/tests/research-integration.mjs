@@ -8,7 +8,7 @@ const snapshot=await read('../data/guide-snapshot.json');
 const japan=await read('../data/japan-subcards.json');
 assert.equal(report.research_destinations,24);
 assert.equal(report.sections,240);
-assert.equal(snapshot.facts.length,575);
+assert.equal(snapshot.facts.length,857);
 const guideFor={entry:'entry',arrival:'there','getting-around':'around',money:'money',safety:'safety',health:'health',phones:'phones',electricity:'phones',emergency:'safety',culture:'culture'};
 for(const country of report.countries){
  const source=original.countries.find(c=>c.slug===country.country);
@@ -24,4 +24,4 @@ assert.ok(!('additional_research' in japan));
 const main=await readFile(new URL('../js/main.js',import.meta.url),'utf8');
 assert.ok(!main.includes('Original Japan research archive'));
 assert.ok(!main.includes('renderAdditionalJapan'));
-console.log('Research integration checks passed: 240 preserved sections, 24 country guides, 575 saved facts, no public archive panel.');
+console.log('Research integration checks passed: 240 preserved sections, 24 country guides, 857 saved facts, no public archive panel.');

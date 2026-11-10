@@ -1,6 +1,6 @@
 let pending;
 export async function loadCountryTopics(){
- if(!pending)pending=fetch('data/country-topics.json').then(response=>{
+ if(!pending)pending=fetch('data/country-topics.json?v=20261110-original24').then(response=>{
   if(!response.ok)throw new Error('Country topics could not load. Please try again.');
   return response.json();
  }).catch(error=>{pending=null;throw error;});
@@ -34,5 +34,5 @@ export function countrySubcards(data,country,guide,eligibleFacts){
   if(!overview){overview={id:'overview',title:'Planning overview',facts:[],research:[]};subs.push(overview);}
   overview.facts.push(...remaining);
  }
- return subs;
+ return subs.filter(sub=>sub.facts.length);
 }

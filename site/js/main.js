@@ -1,13 +1,13 @@
 // page shell: a small hash router and the five views (home, plan, trip, guide, about).
 // every piece of text from the database goes through esc() before it reaches the page.
 
-import { getDestinations, getFacts, onSourceChange, retryLive } from "./api.js?v=20261110-pages";
+import { getDestinations, getFacts, onSourceChange, retryLive } from "./api.js?v=20261110-original24";
 import { GUIDES, STAGES, PURPOSES, guideById, groupFacts, emergencyNumbers, purposeById } from "./guides.js";
 import { tripFromQuery, tripToQuery, rememberDescription, tripDays, formatRange, factQuery } from "./trip.js";
 
 import { loadJapanResearch } from "./japan-subcards.js";
-import { loadCountryTopics } from "./country-topics.js";
-import { topicsForGuide } from "./topics.js";
+import { loadCountryTopics } from "./country-topics.js?v=20261110-original24";
+import { topicsForGuide } from "./topics.js?v=20261110-original24";
 import { session, signIn, signUp, signOut } from "./auth.js";
 import { listTrips, loadTrip, saveTrip, deleteTrip, fromRow, savedChecks } from "./saved-trips.js";
 

@@ -1,0 +1,143 @@
+{
+  "checked_at": "2026-11-10",
+  "countries": [
+    {
+      "country": "algeria",
+      "new_facts": 11,
+      "eligible_tourism_facts": 21,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "argentina",
+      "new_facts": 13,
+      "eligible_tourism_facts": 24,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "australia",
+      "new_facts": 18,
+      "eligible_tourism_facts": 28,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "austria",
+      "new_facts": 12,
+      "eligible_tourism_facts": 23,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "belgium",
+      "new_facts": 12,
+      "eligible_tourism_facts": 23,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "bosnia-and-herzegovina",
+      "new_facts": 13,
+      "eligible_tourism_facts": 24,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "egypt",
+      "new_facts": 13,
+      "eligible_tourism_facts": 23,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "england",
+      "new_facts": 13,
+      "eligible_tourism_facts": 24,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "france",
+      "new_facts": 12,
+      "eligible_tourism_facts": 23,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "germany",
+      "new_facts": 14,
+      "eligible_tourism_facts": 25,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "iraq",
+      "new_facts": 12,
+      "eligible_tourism_facts": 22,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "mexico",
+      "new_facts": 15,
+      "eligible_tourism_facts": 26,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "netherlands",
+      "new_facts": 13,
+      "eligible_tourism_facts": 24,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "new-zealand",
+      "new_facts": 14,
+      "eligible_tourism_facts": 24,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "norway",
+      "new_facts": 13,
+      "eligible_tourism_facts": 24,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "panama",
+      "new_facts": 12,
+      "eligible_tourism_facts": 23,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "paraguay",
+      "new_facts": 11,
+      "eligible_tourism_facts": 22,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "qatar",
+      "new_facts": 9,
+      "eligible_tourism_facts": 19,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "saudi-arabia",
+      "new_facts": 11,
+      "eligible_tourism_facts": 21,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "scotland",
+      "new_facts": 13,
+      "eligible_tourism_facts": 24,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "senegal",
+      "new_facts": 11,
+      "eligible_tourism_facts": 22,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "south-africa",
+      "new_facts": 11,
+      "eligible_tourism_facts": 22,
+      "all_new_facts_present": true
+    },
+    {
+      "country": "south-korea",
+      "new_facts": 6,
+      "eligible_tourism_facts": 16,
+      "all_new_facts_present": true
+    }
+  ]
+}

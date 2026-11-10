@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[2]
 
 # the published fact batches, in the order they were written to the database
 FACT_FILES = [
+    ROOT / "docs/research/publication-2026-11-10-original-countries/facts.json",
     ROOT / "docs/research/publication-2026-11-10-missing-countries/facts.json",
     ROOT / "docs/research/integration-2026-11-10/previously-published-facts.json",
     ROOT / "docs/research/publication-2026-11-05/facts.json",

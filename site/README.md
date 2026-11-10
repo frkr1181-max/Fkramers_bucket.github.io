@@ -41,3 +41,5 @@ All researched countries now use focused card/topic navigation. After rebuilding
 November 10 missing-country publication: 259 additional source-reviewed facts across Brazil, Cabo Verde, Canada, Colombia, Croatia, Czechia, Spain, Sweden, Switzerland, Türkiye, Uruguay and Uzbekistan. All 36 dropdown destinations now have facts in all ten categories (575 total). New facts use explicit focused-topic mappings and existing trip filters. Original 316 records preserved. See docs/research/publication-2026-11-10-missing-countries/README.md for sources, limits and checks.
 
 Country-specific applicability: non-Japan Pocket Wi-Fi cards are omitted unless a published local passage supports them. Japan retains its verified rental topic.
+
+Original-country follow-up publication: 282 additional facts, 857 total, Australia 28. All 380 original follow-up records have a documented disposition. Empty public topic cards are omitted; existing 575 records and all original research are preserved. See docs/research/publication-2026-11-10-original-countries/README.md.

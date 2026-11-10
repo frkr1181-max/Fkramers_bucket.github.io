@@ -56,6 +56,7 @@ def choose(fact,text,previous):
 
 def main():
     explicit=json.loads((ROOT/'docs/research/publication-2026-11-10-missing-countries/topic-mapping.json').read_text())
+    explicit.update(json.loads((ROOT/'docs/research/publication-2026-11-10-original-countries/topic-mapping.json').read_text()))
     facts=read_facts(); destinations=json.loads((ROOT/'site/data/guide-snapshot.json').read_text())['destinations'];countries=[]
     for country in destinations:
         if country['slug']=='japan':continue
@@ -80,9 +81,10 @@ def main():
                 if sub is None:
                     sub={'id':'overview','title':'Planning overview','passages':[]};card['subcards'].append(sub)
                 sub['passages'].append({'fact_id':fact['id'],'original_summary':fact['plain_summary'],'text':text,'sentence_index':index})
-        # Do not advertise Japan-specific rental options without local published support.
+        # Keep only country topics backed by published passages. Preserve the
+        # research separately; an empty design slot is not a traveler-facing card.
         for card in cards:
-            card['subcards']=[sub for sub in card['subcards'] if sub['id']!='pocket-wifi' or sub['passages']]
+            card['subcards']=[sub for sub in card['subcards'] if sub['passages']]
         countries.append({'country':country['slug'],'cards':cards})
     payload={'organized_at':'2026-11-10','scope':'Exact passages from saved published facts; original source dates and trip conditions retained. No draft promotion.','countries':countries}
     (ROOT/'site/data/country-topics.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
