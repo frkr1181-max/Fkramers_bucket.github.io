@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 100%; height: 100%; position: relative; background: white">
+    <div style="width: 1440px; height: 72px; padding-left: 128px; padding-right: 128px; left: 0px; top: 0px; position: absolute; background: var(--surface-muted, #D9D9D9); justify-content: space-between; align-items: center; display: inline-flex">
+        <div style="color: var(--text-primary, black); font-size: 32px; font-family: Outfit; font-weight: 700; line-height: 40px; word-wrap: break-word">RoamReady</div>
+        <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 40px; display: flex">
+            <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 32px; display: flex">
+                <div data-state="Default" style="padding-top: 6px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
+                    <div style="color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">Home</div>
+                    <div style="align-self: stretch; height: 2px; opacity: 0; background: var(--icon-default, black)"></div>
+                </div>
+                <div data-state="Default" style="padding-top: 6px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
+                    <div style="color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">Plan a trip</div>
+                    <div style="align-self: stretch; height: 2px; opacity: 0; background: var(--icon-default, black)"></div>
+                </div>
+                <div data-state="Active" style="padding-top: 6px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
+                    <div style="color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 600; line-height: 24px; word-wrap: break-word">My trip</div>
+                    <div style="align-self: stretch; height: 2px; background: var(--icon-default, black)"></div>
+                </div>
+                <div data-state="Default" style="padding-top: 6px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
+                    <div style="color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">Help</div>
+                    <div style="align-self: stretch; height: 2px; opacity: 0; background: var(--icon-default, black)"></div>
+                </div>
+                <div data-state="Default" style="padding-top: 6px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
+                    <div style="color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">About</div>
+                    <div style="align-self: stretch; height: 2px; opacity: 0; background: var(--icon-default, black)"></div>
+                </div>
+            </div>
+            <div style="width: 40px; height: 40px; background: var(--surface-page, white); border-radius: 20px; outline: 1px var(--border-strong, black) solid; outline-offset: -1px; justify-content: center; align-items: center; display: flex">
+                <div style="width: 24px; height: 24px; position: relative">
+                    <div style="width: 14px; height: 6px; left: 5px; top: 15px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                    <div style="width: 8px; height: 8px; left: 8px; top: 3px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="width: 1440px; padding-top: 32px; padding-bottom: 80px; padding-left: 128px; padding-right: 128px; left: 0px; top: 72px; position: absolute; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex">
+        <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+            <div style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: flex-end; display: inline-flex">
+                <div style="overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                    <div style="color: var(--text-primary, black); font-size: 40px; font-family: Outfit; font-weight: 700; line-height: 48px; word-wrap: break-word">Your trip to Tokyo</div>
+                    <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 24px; display: inline-flex">
+                        <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <div style="width: 18px; height: 18px; left: 3px; top: 4px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                            </div>
+                            <div style="color: var(--text-secondary, #5C5C5C); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">Mar 15 – 28, 2027 · 14 days</div>
+                        </div>
+                        <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <div style="width: 16px; height: 14px; left: 4px; top: 6px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                <div style="width: 8px; height: 16px; left: 8px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                <div style="width: 4px; height: 4px; left: 14px; top: 18px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                <div style="width: 4px; height: 4px; left: 6px; top: 18px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                            </div>
+                            <div style="color: var(--text-secondary, #5C5C5C); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">Vacation</div>
+                        </div>
+                        <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <div style="width: 14px; height: 6px; left: 5px; top: 15px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                <div style="width: 8px; height: 8px; left: 8px; top: 3px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                            </div>
+                            <div style="color: var(--text-secondary, #5C5C5C); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">First solo trip</div>
+                        </div>
+                        <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                            <div style="width: 24px; height: 24px; position: relative">
+                                <div style="width: 20px; height: 20px; left: 2px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                <div style="width: 8px; height: 20px; left: 8px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                            </div>
+                            <div style="color: var(--text-secondary, #5C5C5C); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">U.S. passport rules</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                    <div data-icon="Left" data-type="Secondary" style="height: 40px; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: var(--surface-page, white); border-radius: 8px; outline: 1px var(--border-strong, black) solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <div style="width: 6px; height: 6px; left: 15px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                            <div style="width: 6px; height: 6px; left: 3px; top: 9px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                            <div style="width: 6px; height: 6px; left: 15px; top: 16px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                            <div style="width: 6.83px; height: 3.98px; left: 8.59px; top: 13.51px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                            <div style="width: 6.82px; height: 3.98px; left: 8.59px; top: 6.51px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                        </div>
+                        <div style="color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 500; line-height: 24px; word-wrap: break-word">Share plan</div>
+                    </div>
+                    <div data-icon="Left" data-type="Secondary" style="height: 40px; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: var(--surface-page, white); border-radius: 8px; outline: 1px var(--border-strong, black) solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <div style="width: 20.03px; height: 20.01px; left: 2px; top: 1.99px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                            <div style="width: 4px; height: 4px; left: 15px; top: 5px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                        </div>
+                        <div style="color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 500; line-height: 24px; word-wrap: break-word">Edit trip</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+            <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+                    <div style="overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                        <div data-status="Not started" style="width: 284px; height: 172px; padding-left: 24px; padding-right: 24px; padding-top: 20px; padding-bottom: 20px; background: var(--surface-page, white); border-radius: 8px; outline: 1px var(--border-default, #CECECE) solid; outline-offset: -1px; flex-direction: column; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                            <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                                    <div style="width: 40px; height: 40px; background: var(--surface-subtle, #F0F0F0); overflow: hidden; border-radius: 8px; justify-content: center; align-items: center; display: flex">
+                                        <div style="width: 24px; height: 24px; position: relative">
+                                            <div style="width: 16px; height: 20px; left: 4px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                            <div style="width: 6px; height: 6px; left: 14px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                        </div>
+                                    </div>
+                                    <div style="flex: 1 1 0; color: var(--text-primary, black); font-size: 18px; font-family: Outfit; font-weight: 600; line-height: 24px; word-wrap: break-word">Entry & documents</div>
+                                </div>
+                                <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                    <div style="align-self: stretch; color: var(--text-secondary, #5C5C5C); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">Visas, passport rules, arrival forms and what you can bring.</div>
+                                </div>
+                            </div>
+                            <div style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+                                <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                                    <div style="width: 24px; height: 24px; position: relative">
+                                        <div style="width: 20px; height: 20px; left: 2px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                        <div style="width: 4px; height: 8px; left: 12px; top: 6px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                    </div>
+                                    <div style="color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Not started</div>
+                                </div>
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <div style="width: 7px; height: 14px; left: 12px; top: 5px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-status="Not started" style="width: 284px; height: 172px; padding-left: 24px; padding-right: 24px; padding-top: 20px; padding-bottom: 20px; background: var(--surface-page, white); border-radius: 8px; outline: 1px var(--border-default, #CECECE) solid; outline-offset: -1px; flex-direction: column; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                            <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                                    <div style="width: 40px; height: 40px; background: var(--surface-subtle, #F0F0F0); overflow: hidden; border-radius: 8px; justify-content: center; align-items: center; display: flex">
+                                        <div style="width: 24px; height: 24px; position: relative">
+                                            <div style="width: 20px; height: 12px; left: 2px; top: 6px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                            <div style="width: 4px; height: 4px; left: 10px; top: 10px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                        </div>
+                                    </div>
+                                    <div style="flex: 1 1 0; color: var(--text-primary, black); font-size: 18px; font-family: Outfit; font-weight: 600; line-height: 24px; word-wrap: break-word">Money & payments</div>
+                                </div>
+                                <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                    <div style="align-self: stretch; color: var(--text-secondary, #5C5C5C); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">Local currency, cards, cash and ATM fees.</div>
+                                </div>
+                            </div>
+                            <div style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+                                <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                                    <div style="width: 24px; height: 24px; position: relative">
+                                        <div style="width: 20px; height: 20px; left: 2px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                        <div style="width: 4px; height: 8px; left: 12px; top: 6px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                    </div>
+                                    <div style="color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Not started</div>
+                                </div>
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <div style="width: 7px; height: 14px; left: 12px; top: 5px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-status="Not started" style="width: 284px; height: 172px; padding-left: 24px; padding-right: 24px; padding-top: 20px; padding-bottom: 20px; background: var(--surface-page, white); border-radius: 8px; outline: 1px var(--border-default, #CECECE) solid; outline-offset: -1px; flex-direction: column; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                            <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                                    <div style="width: 40px; height: 40px; background: var(--surface-subtle, #F0F0F0); overflow: hidden; border-radius: 8px; justify-content: center; align-items: center; display: flex">
+                                        <div style="width: 24px; height: 24px; position: relative">
+                                            <div style="width: 14px; height: 20px; left: 5px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                        </div>
+                                    </div>
+                                    <div style="flex: 1 1 0; color: var(--text-primary, black); font-size: 18px; font-family: Outfit; font-weight: 600; line-height: 24px; word-wrap: break-word">Phones & tech</div>
+                                </div>
+                                <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                    <div style="align-self: stretch; color: var(--text-secondary, #5C5C5C); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">eSIMs, Wi-Fi, plugs and voltage.</div>
+                                </div>
+                            </div>
+                            <div style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+                                <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                                    <div style="width: 24px; height: 24px; position: relative">
+                                        <div style="width: 20px; height: 20px; left: 2px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                        <div style="width: 4px; height: 8px; left: 12px; top: 6px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                    </div>
+                                    <div style="color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Not started</div>
+                                </div>
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <div style="width: 7px; height: 14px; left: 12px; top: 5px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-status="Not started" style="width: 284px; height: 172px; padding-left: 24px; padding-right: 24px; padding-top: 20px; padding-bottom: 20px; background: var(--surface-page, white); border-radius: 8px; outline: 1px var(--border-default, #CECECE) solid; outline-offset: -1px; flex-direction: column; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                            <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                                    <div style="width: 40px; height: 40px; background: var(--surface-subtle, #F0F0F0); overflow: hidden; border-radius: 8px; justify-content: center; align-items: center; display: flex">
+                                        <div style="width: 24px; height: 24px; position: relative">
+                                            <div style="width: 20px; height: 18px; left: 2px; top: 3px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                            <div style="width: 17.55px; height: 7px; left: 3.22px; top: 8.50px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                        </div>
+                                    </div>
+                                    <div style="flex: 1 1 0; color: var(--text-primary, black); font-size: 18px; font-family: Outfit; font-weight: 600; line-height: 24px; word-wrap: break-word">Health</div>
+                                </div>
+                                <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                    <div style="align-self: stretch; color: var(--text-secondary, #5C5C5C); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">Insurance, vaccines, pharmacies and medicine rules.</div>
+                                </div>
+                            </div>
+                            <div style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+                                <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                                    <div style="width: 24px; height: 24px; position: relative">
+                                        <div style="width: 20px; height: 20px; left: 2px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                        <div style="width: 4px; height: 8px; left: 12px; top: 6px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                    </div>
+                                    <div style="color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Not started</div>
+                                </div>
+                                <div style="width: 24px; height: 24px; position: relative">
+                                    <div style="width: 7px; height: 14px; left: 12px; top: 5px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                    <div style="width: 584px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+                        <div style="overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div data-status="Not started" style="width: 284px; height: 172px; padding-left: 24px; padding-right: 24px; padding-top: 20px; padding-bottom: 20px; background: var(--surface-page, white); border-radius: 8px; outline: 1px var(--border-default, #CECECE) solid; outline-offset: -1px; flex-direction: column; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                                <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                    <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                                        <div style="width: 40px; height: 40px; background: var(--surface-subtle, #F0F0F0); overflow: hidden; border-radius: 8px; justify-content: center; align-items: center; display: flex">
+                                            <div style="width: 24px; height: 24px; position: relative">
+                                                <div style="width: 18.19px; height: 18.19px; left: 3px; top: 2.81px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                            </div>
+                                        </div>
+                                        <div style="flex: 1 1 0; color: var(--text-primary, black); font-size: 18px; font-family: Outfit; font-weight: 600; line-height: 24px; word-wrap: break-word">Getting there</div>
+                                    </div>
+                                    <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                        <div style="align-self: stretch; color: var(--text-secondary, #5C5C5C); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">Airports, arrival steps and getting into the city.</div>
+                                    </div>
+                                </div>
+                                <div style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+                                    <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                                        <div style="width: 24px; height: 24px; position: relative">
+                                            <div style="width: 20px; height: 20px; left: 2px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                            <div style="width: 4px; height: 8px; left: 12px; top: 6px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                        </div>
+                                        <div style="color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Not started</div>
+                                    </div>
+                                    <div style="width: 24px; height: 24px; position: relative">
+                                        <div style="width: 7px; height: 14px; left: 12px; top: 5px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-status="Not started" style="width: 284px; height: 172px; padding-left: 24px; padding-right: 24px; padding-top: 20px; padding-bottom: 20px; background: var(--surface-page, white); border-radius: 8px; outline: 1px var(--border-default, #CECECE) solid; outline-offset: -1px; flex-direction: column; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                                <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                    <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                                        <div style="width: 40px; height: 40px; background: var(--surface-subtle, #F0F0F0); overflow: hidden; border-radius: 8px; justify-content: center; align-items: center; display: flex">
+                                            <div style="width: 24px; height: 24px; position: relative">
+                                                <div style="width: 8px; height: 7.90px; left: 8px; top: 3.10px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                                <div style="width: 1px; height: 1px; left: 8px; top: 14px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                                <div style="width: 1px; height: 1px; left: 15px; top: 14px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                                <div style="width: 16px; height: 17px; left: 4px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                                <div style="width: 2px; height: 3px; left: 6px; top: 19px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                                <div style="width: 2px; height: 3px; left: 16px; top: 19px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                            </div>
+                                        </div>
+                                        <div style="flex: 1 1 0; color: var(--text-primary, black); font-size: 18px; font-family: Outfit; font-weight: 600; line-height: 24px; word-wrap: break-word">Getting around</div>
+                                    </div>
+                                    <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                        <div style="align-self: stretch; color: var(--text-secondary, #5C5C5C); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">Trains, buses, transit cards and taxis.</div>
+                                    </div>
+                                </div>
+                                <div style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+                                    <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                                        <div style="width: 24px; height: 24px; position: relative">
+                                            <div style="width: 20px; height: 20px; left: 2px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                            <div style="width: 4px; height: 8px; left: 12px; top: 6px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                        </div>
+                                        <div style="color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Not started</div>
+                                    </div>
+                                    <div style="width: 24px; height: 24px; position: relative">
+                                        <div style="width: 7px; height: 14px; left: 12px; top: 5px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 584px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+                        <div style="overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                            <div data-status="Not started" style="width: 284px; height: 172px; padding-left: 24px; padding-right: 24px; padding-top: 20px; padding-bottom: 20px; background: var(--surface-page, white); border-radius: 8px; outline: 1px var(--border-default, #CECECE) solid; outline-offset: -1px; flex-direction: column; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                                <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                    <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                                        <div style="width: 40px; height: 40px; background: var(--surface-subtle, #F0F0F0); overflow: hidden; border-radius: 8px; justify-content: center; align-items: center; display: flex">
+                                            <div style="width: 24px; height: 24px; position: relative">
+                                                <div style="width: 16px; height: 20px; left: 4px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                                <div style="width: 6px; height: 4px; left: 9px; top: 10px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                            </div>
+                                        </div>
+                                        <div style="flex: 1 1 0; color: var(--text-primary, black); font-size: 18px; font-family: Outfit; font-weight: 600; line-height: 24px; word-wrap: break-word">Safety</div>
+                                    </div>
+                                    <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                        <div style="align-self: stretch; color: var(--text-secondary, #5C5C5C); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">Travel advisories, emergency numbers and solo-travel tips.</div>
+                                    </div>
+                                </div>
+                                <div style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+                                    <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                                        <div style="width: 24px; height: 24px; position: relative">
+                                            <div style="width: 20px; height: 20px; left: 2px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                            <div style="width: 4px; height: 8px; left: 12px; top: 6px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                        </div>
+                                        <div style="color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Not started</div>
+                                    </div>
+                                    <div style="width: 24px; height: 24px; position: relative">
+                                        <div style="width: 7px; height: 14px; left: 12px; top: 5px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-status="Not started" style="width: 284px; height: 172px; padding-left: 24px; padding-right: 24px; padding-top: 20px; padding-bottom: 20px; background: var(--surface-page, white); border-radius: 8px; outline: 1px var(--border-default, #CECECE) solid; outline-offset: -1px; flex-direction: column; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                                <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                    <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                                        <div style="width: 40px; height: 40px; background: var(--surface-subtle, #F0F0F0); overflow: hidden; border-radius: 8px; justify-content: center; align-items: center; display: flex">
+                                            <div style="width: 24px; height: 24px; position: relative">
+                                                <div style="width: 14px; height: 6px; left: 2px; top: 15px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                                <div style="width: 8px; height: 8px; left: 5px; top: 3px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                                <div style="width: 3px; height: 5.87px; left: 19px; top: 15.13px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                                <div style="width: 3.01px; height: 7.75px; left: 16px; top: 3.13px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                            </div>
+                                        </div>
+                                        <div style="flex: 1 1 0; color: var(--text-primary, black); font-size: 18px; font-family: Outfit; font-weight: 600; line-height: 24px; word-wrap: break-word">Local culture</div>
+                                    </div>
+                                    <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                        <div style="align-self: stretch; color: var(--text-secondary, #5C5C5C); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">Etiquette, tipping, customs and local laws.</div>
+                                    </div>
+                                </div>
+                                <div style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+                                    <div style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                                        <div style="width: 24px; height: 24px; position: relative">
+                                            <div style="width: 20px; height: 20px; left: 2px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                            <div style="width: 4px; height: 8px; left: 12px; top: 6px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                        </div>
+                                        <div style="color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Not started</div>
+                                    </div>
+                                    <div style="width: 24px; height: 24px; position: relative">
+                                        <div style="width: 7px; height: 14px; left: 12px; top: 5px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+            <div style="width: 784px; padding: 24px; background: var(--surface-page, white); overflow: hidden; border-radius: 8px; outline: 1px var(--border-default, #CECECE) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+                <div style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+                    <div style="overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="color: var(--text-primary, black); font-size: 24px; font-family: Outfit; font-weight: 600; line-height: 32px; word-wrap: break-word">Before you leave</div>
+                        <div style="color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Ordered by deadline.</div>
+                    </div>
+                </div>
+                <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                    <div style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+                        <div style="color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 600; line-height: 24px; word-wrap: break-word">0 of 8 done</div>
+                        <div style="color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">147 days to go</div>
+                    </div>
+                    <div data-progress="0%" style="align-self: stretch; height: 8px; position: relative; background: var(--surface-muted, #D9D9D9); border-radius: 4px"></div>
+                </div>
+                <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                    <div data-state="To do" style="align-self: stretch; padding-top: 16px; padding-bottom: 16px; border-bottom: 1px var(--border-default, #CECECE) solid; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <div style="width: 18px; height: 18px; left: 3px; top: 3px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
+                            <div style="align-self: stretch; color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">Check your passport is valid for your whole stay</div>
+                            <div style="align-self: stretch; color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Do now</div>
+                        </div>
+                    </div>
+                    <div data-state="To do" style="align-self: stretch; padding-top: 16px; padding-bottom: 16px; border-bottom: 1px var(--border-default, #CECECE) solid; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <div style="width: 18px; height: 18px; left: 3px; top: 3px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
+                            <div style="align-self: stretch; color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">Check that your medicines are allowed in Japan</div>
+                            <div style="align-self: stretch; color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Do by Feb 15 · Import certificates take at least 2 weeks</div>
+                        </div>
+                    </div>
+                    <div data-state="To do" style="align-self: stretch; padding-top: 16px; padding-bottom: 16px; border-bottom: 1px var(--border-default, #CECECE) solid; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <div style="width: 18px; height: 18px; left: 3px; top: 3px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
+                            <div style="align-self: stretch; color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">Buy travel insurance that covers medical care</div>
+                            <div style="align-self: stretch; color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Do by Feb 15</div>
+                        </div>
+                    </div>
+                    <div data-state="To do" style="align-self: stretch; padding-top: 16px; padding-bottom: 16px; border-bottom: 1px var(--border-default, #CECECE) solid; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <div style="width: 18px; height: 18px; left: 3px; top: 3px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
+                            <div style="align-self: stretch; color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">Enroll in STEP so the U.S. Embassy can reach you</div>
+                            <div style="align-self: stretch; color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Do by Mar 1</div>
+                        </div>
+                    </div>
+                    <div data-state="To do" style="align-self: stretch; padding-top: 16px; padding-bottom: 16px; border-bottom: 1px var(--border-default, #CECECE) solid; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <div style="width: 18px; height: 18px; left: 3px; top: 3px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
+                            <div style="align-self: stretch; color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">Set up an eSIM or pocket Wi-Fi</div>
+                            <div style="align-self: stretch; color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Do by Mar 8</div>
+                        </div>
+                    </div>
+                </div>
+                <div data-icon="Right" style="justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                    <div style="color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 600; line-height: 24px; word-wrap: break-word">See all 8 tasks</div>
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <div style="width: 7px; height: 14px; left: 12px; top: 5px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 384px; align-self: stretch; padding: 24px; background: var(--surface-page, white); overflow: hidden; border-radius: 8px; outline: 1px var(--border-default, #CECECE) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                <div style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+                    <div style="color: var(--text-primary, black); font-size: 24px; font-family: Outfit; font-weight: 600; line-height: 32px; word-wrap: break-word">Trip essentials</div>
+                </div>
+                <div style="align-self: stretch; color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Emergency numbers and contacts you can reach without data.</div>
+                <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                    <div style="align-self: stretch; padding-top: 12px; padding-bottom: 12px; border-bottom: 1px var(--border-default, #CECECE) solid; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <div style="width: 19.89px; height: 19.93px; left: 2.11px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                            <div style="align-self: stretch; color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Police</div>
+                            <div style="align-self: stretch; color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 600; line-height: 24px; word-wrap: break-word">110</div>
+                        </div>
+                    </div>
+                    <div style="align-self: stretch; padding-top: 12px; padding-bottom: 12px; border-bottom: 1px var(--border-default, #CECECE) solid; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <div style="width: 19.89px; height: 19.93px; left: 2.11px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                            <div style="align-self: stretch; color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Fire and ambulance</div>
+                            <div style="align-self: stretch; color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 600; line-height: 24px; word-wrap: break-word">119</div>
+                        </div>
+                    </div>
+                    <div style="align-self: stretch; padding-top: 12px; padding-bottom: 12px; border-bottom: 1px var(--border-default, #CECECE) solid; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <div style="width: 20px; height: 20px; left: 2px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                            <div style="width: 5.83px; height: 6px; left: 9.09px; top: 7px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                            <div style="align-self: stretch; color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Japan Visitor Hotline (24/7, English)</div>
+                            <div style="align-self: stretch; color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 600; line-height: 24px; word-wrap: break-word">+81-50-3816-2787</div>
+                        </div>
+                    </div>
+                    <div style="align-self: stretch; padding-top: 12px; padding-bottom: 12px; border-bottom: 1px var(--border-default, #CECECE) solid; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                        <div style="width: 24px; height: 24px; position: relative">
+                            <div style="width: 16px; height: 5px; left: 4px; top: 2px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                            <div style="align-self: stretch; color: var(--text-secondary, #5C5C5C); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">U.S. Embassy Tokyo</div>
+                            <div style="align-self: stretch; color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 600; line-height: 24px; word-wrap: break-word">+81-3-3224-5000</div>
+                        </div>
+                    </div>
+                </div>
+                <div data-icon="Left" data-type="Secondary" style="height: 40px; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: var(--surface-page, white); border-radius: 8px; outline: 1px var(--border-strong, black) solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <div style="width: 18px; height: 6px; left: 3px; top: 15px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                        <div style="width: 10px; height: 5px; left: 7px; top: 10px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                    </div>
+                    <div style="color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 500; line-height: 24px; word-wrap: break-word">Save for offline</div>
+                </div>
+            </div>
+        </div>
+        <div style="align-self: stretch; padding: 24px; background: var(--surface-subtle, #F0F0F0); overflow: hidden; border-radius: 8px; justify-content: space-between; align-items: center; display: inline-flex">
+            <div style="overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div style="width: 48px; height: 48px; background: var(--surface-page, white); overflow: hidden; border-radius: 8px; justify-content: center; align-items: center; display: flex">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <div style="width: 4px; height: 4px; left: 8px; top: 4px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                        <div style="width: 16px; height: 12px; left: 4px; top: 8px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                    </div>
+                </div>
+                <div style="overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                    <div style="overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                        <div style="color: var(--text-primary, black); font-size: 20px; font-family: Outfit; font-weight: 600; line-height: 28px; word-wrap: break-word">Have a question about your trip?</div>
+                        <div style="color: var(--text-secondary, #5C5C5C); font-size: 16px; font-family: Outfit; font-weight: 400; line-height: 24px; word-wrap: break-word">Roam answers questions about your trip in plain language. It can't give legal or emergency advice.</div>
+                    </div>
+                    <div style="overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="height: 32px; padding-left: 12px; padding-right: 12px; padding-top: 6px; padding-bottom: 6px; background: var(--surface-page, white); border-radius: 8px; outline: 1px var(--border-default, #CECECE) solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+                            <div style="color: var(--text-primary, black); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Do I need a visa for Japan?</div>
+                        </div>
+                        <div style="height: 32px; padding-left: 12px; padding-right: 12px; padding-top: 6px; padding-bottom: 6px; background: var(--surface-page, white); border-radius: 8px; outline: 1px var(--border-default, #CECECE) solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+                            <div style="color: var(--text-primary, black); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">How do I get from Narita to Shinjuku?</div>
+                        </div>
+                        <div style="height: 32px; padding-left: 12px; padding-right: 12px; padding-top: 6px; padding-bottom: 6px; background: var(--surface-page, white); border-radius: 8px; outline: 1px var(--border-default, #CECECE) solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+                            <div style="color: var(--text-primary, black); font-size: 14px; font-family: Outfit; font-weight: 400; line-height: 20px; word-wrap: break-word">Is Tokyo safe at night on my own?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-icon="Right" data-type="Primary" style="height: 40px; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: var(--surface-selected, #CECECE); border-radius: 8px; outline: 1px var(--border-strong, black) solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+                <div style="color: var(--text-primary, black); font-size: 16px; font-family: Outfit; font-weight: 500; line-height: 24px; word-wrap: break-word">Ask Roam</div>
+                <div style="width: 24px; height: 24px; position: relative">
+                    <div style="width: 7px; height: 14px; left: 12px; top: 5px; position: absolute; outline: 2px var(--icon-default, black) solid; outline-offset: -1px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="width: 1440px; height: 221px; padding-left: 128px; padding-right: 128px; padding-top: 48px; padding-bottom: 48px; left: 0px; top: 1551px; position: absolute; background: var(--surface-muted, #D9D9D9); flex-direction: column; justify-content: center; align-items: center; gap: 24px; display: inline-flex">
+        <div style="color: var(--text-primary, black); font-size: 24px; font-family: Outfit; font-weight: 600; line-height: 32px; word-wrap: break-word">Footer</div>
+    </div>
+</div>
+</body>
+</html>
