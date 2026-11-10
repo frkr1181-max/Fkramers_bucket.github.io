@@ -483,14 +483,20 @@ dialog.guest .inner { display: grid; gap: 16px; }
 
 /* the art (js/tile-art.js): the object's face is the accent color, its
    cut-out details are the band color, and its side is the accent's shade */
-.tile-art .face { fill: var(--thumb-accent); }
-.tile-art .side { fill: var(--thumb-side); }
+/* round corners (David, Nov 10: match the site's round look): each shape gets
+   a stroke in its own color with round joins, which rounds its corners */
+.tile-art * { stroke-linejoin: round; stroke-linecap: round; }
+.tile-art .face { fill: var(--thumb-accent); stroke: var(--thumb-accent); stroke-width: 6; }
+.tile-art .side { fill: var(--thumb-side); stroke: var(--thumb-side); stroke-width: 6; }
+.tile-art circle.face { stroke: none; }
+.tile-art .shade { fill: var(--thumb-side); }
 .tile-art .cut { fill: var(--thumb-main); }
-.tile-art .coin { stroke: var(--thumb-main); stroke-width: 3.5; stroke-linejoin: miter; }
-.tile-art .cut-line { fill: none; stroke: var(--thumb-main); stroke-width: 5; stroke-linejoin: miter; }
+.tile-art .cut.soft { stroke: var(--thumb-main); stroke-width: 3; }
+.tile-art .halo { fill: var(--thumb-main); stroke: var(--thumb-main); stroke-width: 12; }
+.tile-art .cut-line { fill: none; stroke: var(--thumb-main); stroke-width: 5; }
 .tile-art .cut-line.thin { stroke-width: 3; }
 .tile-art .cut-line.thick { stroke-width: 8; }
-.tile-art .lit-line { fill: none; stroke: var(--thumb-accent); stroke-width: 4.5; stroke-linejoin: miter; }
+.tile-art .lit-line { fill: none; stroke: var(--thumb-accent); stroke-width: 4.5; }
 
 /* two palette colors per thumbnail: a main (the band) and an accent (the
    object). no two neighbors, across or down, share a main color */
