@@ -2,6 +2,9 @@
    "RoamReady hi-fi design system" frame). names match the Figma variables so a value
    can be traced back: var(--rr-color-text-primary) is color/text/primary in Figma. */
 :root {
+  /* light mode only for now: native controls (date pickers, scrollbars) stay light */
+  color-scheme: only light;
+
   /* palette: the five brand colors plus the helpers the hi-fi uses */
   --rr-palette-navy: #222e50;
   --rr-palette-teal: #007991;

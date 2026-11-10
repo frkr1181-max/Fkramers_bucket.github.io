@@ -3,14 +3,14 @@
 
 import { getDestinations, getFacts, onSourceChange } from "./api.js";
 import { GUIDES, STAGES, PURPOSES, guideById, groupFacts, emergencyNumbers, purposeById } from "./guides.js";
-import { tripFromQuery, tripToQuery, rememberDescription, tripDays, formatRange, factQuery } from "./trip.js";
+import { tripFromQuery, tripToQuery, rememberDescription, tripDays, formatRange, factQuery, DEMO_TRIP } from "./trip.js";
 import { enter, wireDialogs, staggerMenu, shake } from "./motion.js";
 
 const main = document.querySelector("#main");
 const A = "assets/figma/";
 const PHOTO = { street: "assets/photos/street.webp", plan: "assets/photos/plan-street.webp", arrivals: "assets/photos/arrivals.webp" };
 
-let trip = null;               // the current guest trip, or null
+let trip = DEMO_TRIP ? { ...DEMO_TRIP } : null;  // the current guest trip (starts as the test trip), or null
 let destinations = [];         // [{ slug, name, ... }] from the API or the snapshot
 const done = new Set();        // checklist items ticked in this tab
 

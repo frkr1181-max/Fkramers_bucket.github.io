@@ -6,6 +6,18 @@
 import { purposeById } from "./guides.js";
 
 const FIELDS = ["country", "from", "to", "purpose", "name"];
+
+// experimental only: a saved test trip so every page has data the moment it
+// opens (David, Nov 10): Australia, 30 days in 2027, leisure. set this to null
+// to get the real "No trip yet" flow back before a demo or user test
+export const DEMO_TRIP = {
+  country: "australia",
+  from: "2027-03-01",
+  to: "2027-03-30",
+  purpose: "leisure",
+  name: "",
+  description: "",
+};
 let description = "";
 
 export function tripFromQuery(query) {

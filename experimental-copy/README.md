@@ -22,6 +22,8 @@ python3 -m http.server 5500 --directory experimental-copy
 
 Open `http://127.0.0.1:5500`. The tab title says "(experimental)" so it's never mistaken for `site/`.
 
+For quick testing, this copy starts with a saved test trip: Australia, Mar 1 – Mar 30, 2027 (30 days), Leisure. My trip and every guide open with it, and Plan a trip is prefilled. To get the real "No trip yet" flow back, set `DEMO_TRIP` to `null` in `js/trip.js`. The site is light mode only for now, even when the computer is set to dark mode.
+
 The API only accepts the origins listed in `FRONTEND_ORIGINS`, which allows port 5500 by default. To run `site/` and this copy side by side, serve this one on 5501 and add `http://127.0.0.1:5501` to `FRONTEND_ORIGINS` in your own `.env`. Don't commit that `.env`.
 
 ## The data
