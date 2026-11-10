@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#007991" />
+    <meta name="description" content="Official travel rules for your first solo trip, in plain language, with every fact linked to its source." />
+    <title>RoamReady (experimental)</title>
+    <link rel="icon" href="assets/figma/logo-mark.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;700;800;900&display=swap" />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container">
+        <a class="logo" href="#/" aria-label="RoamReady home">
+          <img class="mark" src="assets/figma/logo-mark.svg" alt="" width="53.514" height="44" />
+          <img class="wordmark" src="assets/figma/logo-wordmark.svg" alt="" width="135.981" height="26" />
+        </a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+        <nav class="nav" id="nav" aria-label="Main">
+          <a href="#/" data-route="home">Home</a>
+          <a href="#/plan" data-route="plan">Plan a trip</a>
+          <a href="#/trip" data-route="trip">My trip</a>
+          <a href="#/about" data-route="about">About</a>
+          <button class="avatar" type="button" data-open-guest>
+            <img src="assets/figma/icon-user.svg" alt="" width="22" height="22" />
+            <span class="avatar-label">Your profile</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1"></main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="top">
+          <div class="brand">
+            <div class="logo-dark">
+              <span class="badge-mark"><img src="assets/figma/logo-mark-badge.svg" alt="" width="43.784" height="36" /></span>
+              <img class="wordmark" src="assets/figma/logo-wordmark-dark.svg" alt="RoamReady" width="135.981" height="26" />
+            </div>
+            <p>Official travel info in plain language, for your first solo trip.</p>
+          </div>
+          <div class="cols">
+            <div>
+              <h2>Plan</h2>
+              <ul>
+                <li><a href="#/plan">Plan a trip</a></li>
+                <li><a href="#/trip">My trip</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2>About</h2>
+              <ul>
+                <li><a href="#/about">About RoamReady</a></li>
+                <li><button type="button" data-open-guest>Your profile</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="bottom">
+          <p>Entry rules shown are for U.S. passport holders. <span id="data-source"></span></p>
+          <p>© 2026 RoamReady</p>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="guest" id="guest" aria-labelledby="guest-title">
+      <div class="inner">
+        <h2 class="h3" id="guest-title">You're planning as a guest</h2>
+        <p>Your trip stays in this tab and isn't saved to an account. Accounts and saved trips are coming after the demo.</p>
+        <form method="dialog"><button class="btn btn-secondary" type="submit">Got it</button></form>
+      </div>
+    </dialog>
+
+    <dialog class="learn-more" id="learn-more" aria-labelledby="learn-more-title"></dialog>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
