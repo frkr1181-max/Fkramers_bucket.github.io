@@ -58,11 +58,11 @@ export const TILE_ART = {
     "M15 35H73V73H15ZM30 35V19H58V35H52V25H36V35Z",
     `<path class="cut soft" d="M41 43H47V51H55V57H47V65H41V57H33V51H41Z"/>`),
 
-  // a paper plane, with its fold
-  there: art("there", -6,
-    "M12 45L80 15L60 78L44 57Z",
-    `<path class="cut-line thin" d="M79 16L44 57"/>
-     <path class="shade" d="M44 58L48 74L55 64Z"/>`),
+  // an airliner seen from above, nose up: body, swept wings, tail, cockpit window
+  there: art("there", 10,
+    "M45 8Q52 14 52 24V30L82 44V52L52 46V66L62 74V80L45 76L28 80V74L38 66V46L8 52V44L38 30V24Q38 14 45 8Z",
+    `<path class="cut-line thin" d="M41 22Q45 17 49 22"/>
+     <path class="cut-line thin" d="M45 31V44"/>`),
 
   // the front of a train: round roof, windscreen, two lights, feet on the track
   around: art("around", -8,
@@ -70,10 +70,11 @@ export const TILE_ART = {
     `<path class="cut soft" d="M28 27H40V41H28ZM48 27H60V41H48Z"/>
      <circle class="cut" cx="32" cy="54" r="4"/><circle class="cut" cx="56" cy="54" r="4"/>`),
 
-  // a shield with a check mark
+  // a padlock: round shackle on top, body with a keyhole
   safety: art("safety", 9,
-    "M45 12L72 21V42Q72 62 45 78Q18 62 18 42V21Z",
-    `<path class="cut-line thick" d="M33 44L42 53L58 34"/>`),
+    "M20 34H70V78H20ZM30 34V24Q30 8 45 8Q60 8 60 24V34H52V24Q52 16 45 16Q38 16 38 24V34Z",
+    `<circle class="cut" cx="45" cy="48" r="5.5"/>
+     <path class="cut-line" d="M45 50V60"/>`),
 
   // two speech bubbles: how people talk and what's polite
   culture: art("culture", -9,

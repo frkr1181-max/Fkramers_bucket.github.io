@@ -464,14 +464,16 @@ dialog.guest .inner { display: grid; gap: 16px; }
    the arrow side by side (David, Nov 10: no empty white space in the cards).
    the thumbnail takes all the height the row doesn't need */
 .tile-band { flex: 1; min-height: 0; height: auto; overflow: hidden; background: var(--thumb-main); }
-/* the art is a big square that peeks up from behind the white title row
-   (David, Nov 10): it's 118% of the band's height (the tile minus its 56px
-   title row), never wider than 86% of the tile, starts just under the band's
-   top edge, and the band clips whatever hangs below */
+/* the art is a big square that peeks up from behind the white title row, so
+   only about its top half shows (David, Nov 10): it's 190% of the band's
+   height (the tile minus its 56px title row), capped at 130% of the tile's
+   width, and the band clips whatever hangs below or to the sides. the objects
+   start about 12% down their square, so it's pulled up a little to leave a
+   small gap above them */
 .tile-band { place-items: start center; }
 .tile-band .glyph {
-  --art: min(86cqw, calc((100cqh - 56px) * 1.18)); width: var(--art); height: var(--art);
-  margin-top: calc(var(--art) * 0.04);
+  --art: min(130cqw, calc((100cqh - 56px) * 1.9)); width: var(--art); height: var(--art);
+  margin-top: calc(var(--art) * -0.045);
 }
 .tile-body {
   flex: none; flex-direction: row; align-items: center; justify-content: space-between;
