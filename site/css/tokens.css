@@ -1,0 +1,93 @@
+/* design tokens copied from the Figma hi-fi (RoamReady-Prototype, High-fidelity Layout,
+   "RoamReady hi-fi design system" frame). names match the Figma variables so a value
+   can be traced back: var(--rr-color-text-primary) is color/text/primary in Figma. */
+:root {
+  /* palette: the five brand colors plus the helpers the hi-fi uses */
+  --rr-palette-navy: #222e50;
+  --rr-palette-teal: #007991;
+  --rr-palette-orange: #ffa62b;
+  --rr-palette-sage: #bcd8c1;
+  --rr-palette-snow: #fffbfe;
+  --rr-palette-white: #ffffff;
+  --rr-palette-cyan: #0096c7;
+  --rr-palette-muted: #596176;
+  --rr-palette-ice: #eef7fa;
+  --rr-palette-mist: #e3eaf0;
+  --rr-palette-line: #e8eef3;
+  --rr-palette-line-strong: #d7dfe7;
+  --rr-palette-input: #7c869a;
+  --rr-palette-teal-deep: #0b4f63;
+  --rr-palette-footer-text: #c9d1e3;
+  --rr-palette-teal-pale: #7fd3de;
+
+  /* semantic colors */
+  --rr-color-bg-page: var(--rr-palette-snow);
+  --rr-color-bg-surface: var(--rr-palette-white);
+  --rr-color-bg-subtle: var(--rr-palette-ice);
+  --rr-color-bg-muted: var(--rr-palette-mist);
+  --rr-color-bg-inverse: var(--rr-palette-navy);
+  --rr-color-bg-brand: var(--rr-palette-teal);
+  --rr-color-bg-brand-deep: var(--rr-palette-teal-deep);
+  --rr-color-bg-scrim: rgba(34, 46, 80, 0.6);
+  --rr-color-text-primary: var(--rr-palette-navy);
+  --rr-color-text-secondary: var(--rr-palette-muted);
+  --rr-color-text-inverse: var(--rr-palette-snow);
+  --rr-color-text-on-brand: var(--rr-palette-white);
+  --rr-color-text-link: var(--rr-palette-teal);
+  --rr-color-text-footer: var(--rr-palette-footer-text);
+  --rr-color-border-default: var(--rr-palette-line);
+  --rr-color-border-subtle: var(--rr-palette-line-strong);
+  --rr-color-border-input: var(--rr-palette-input);
+  --rr-color-border-strong: var(--rr-palette-navy);
+  --rr-color-border-on-brand: var(--rr-palette-white);
+  --rr-color-focus: var(--rr-palette-cyan);
+  --rr-color-focus-on-dark: #ffc65c;
+  --rr-color-action-primary: var(--rr-palette-orange);
+  --rr-color-action-selected: var(--rr-palette-navy);
+
+  /* the three trip stages that group the guides */
+  --rr-color-stage-plan: var(--rr-palette-teal);
+  --rr-color-stage-arrive: var(--rr-palette-orange);
+  --rr-color-stage-know: var(--rr-palette-sage);
+
+  /* one color per guide, and the pale tint used behind topic-card icons.
+     the entry, money, there and safety tints are from Figma; the other four
+     follow the same recipe (the guide color laid over white) */
+  --rr-guide-entry: #007991;   --rr-guide-tint-entry: #c2dfe5;
+  --rr-guide-money: #3fb0d0;   --rr-guide-tint-money: #c2e6f0;
+  --rr-guide-phones: #5dbbd4;  --rr-guide-tint-phones: #cdeaf2;
+  --rr-guide-health: #9ad9e8;  --rr-guide-tint-health: #d9f0f6;
+  --rr-guide-there: #ffa62b;   --rr-guide-tint-there: #ffe1b7;
+  --rr-guide-around: #ffc65c;  --rr-guide-tint-around: #ffe8bd;
+  --rr-guide-safety: #7fcb97;  --rr-guide-tint-safety: #c9e9d3;
+  --rr-guide-culture: #bcd8c1; --rr-guide-tint-culture: #dfede2;
+
+  /* shape and space */
+  --rr-radius-sm: 12px;
+  --rr-radius-md: 20px;
+  --rr-radius-lg: 28px;
+  --rr-radius-pill: 999px;
+  --rr-content-width: 1184px;
+  --rr-gutter: 24px;
+
+  /* elevation styles from Figma ("Hi-fi/Elevation card" and "lifted") */
+  --rr-shadow-card: 0 1px 2px rgba(34, 46, 80, 0.06), 0 12px 28px -12px rgba(34, 46, 80, 0.22);
+  --rr-shadow-lifted: 0 1px 2px rgba(10, 20, 40, 0.08), 0 24px 48px -20px rgba(10, 20, 40, 0.45);
+
+  /* type: Gabarito only, sizes from the Hi-fi text styles */
+  --rr-font: "Gabarito", Arial, sans-serif;
+  --rr-display-l: 72px;
+  --rr-h1: 56px;
+  --rr-h1-guide: 50px;
+  --rr-h2: 44px;
+}
+
+@media (max-width: 760px) {
+  :root {
+    --rr-gutter: 16px;
+    --rr-display-l: 48px;
+    --rr-h1: 40px;   /* Hi-fi/Heading/H1 mobile */
+    --rr-h1-guide: 36px;
+    --rr-h2: 32px;
+  }
+}
