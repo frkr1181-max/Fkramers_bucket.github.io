@@ -368,7 +368,7 @@ async function tripView() {
           <div>
             <div class="trip-title">
               <h1 tabindex="-1">${esc(trip.name || `Your trip to ${country}`)}</h1>
-              <a class="btn-icon-on-dark" href="${tripLink("plan")}" aria-label="Edit trip name"><img src="${A}icon-edit-on-dark.svg" alt="" width="20" height="20" /></a>
+              <a class="btn-icon-on-dark" href="${tripLink("plan")}" aria-label="Edit trip"><img src="${A}icon-edit-on-dark.svg" alt="" width="20" height="20" /></a>
             </div>
             <ul class="chips">${chips.map(([icon, text]) => `<li><img src="${icon}" alt="" />${esc(text)}</li>`).join("")}</ul>
           </div>

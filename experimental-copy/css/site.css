@@ -402,7 +402,6 @@ dialog.guest .inner { display: grid; gap: 16px; }
 @media (max-width: 1240px) {
   .hero { grid-template-columns: minmax(0, 620px) 1fr; }
   .hero-art { margin-right: -160px; }
-  .tiles { grid-template-columns: repeat(3, 1fr); }
   .plan-below { grid-template-columns: 1fr 340px; }
 }
 @media (max-width: 1040px) {
@@ -412,7 +411,6 @@ dialog.guest .inner { display: grid; gap: 16px; }
   .trust { grid-template-columns: 1fr; }
   .plan-row { grid-template-columns: 1fr; }
   .plan-below { grid-template-columns: 1fr; }
-  .tiles { grid-template-columns: repeat(2, 1fr); }
   .guide-columns { grid-template-columns: 1fr; }
   .sidebar .guide-nav { display: none; }
 }
@@ -426,13 +424,6 @@ dialog.guest .inner { display: grid; gap: 16px; }
   .plan-form { padding: 24px 20px; }
   .purposes { grid-template-columns: repeat(2, 1fr); }
   .dates { grid-template-columns: 1fr; }
-  .trip-band-content { padding-block-start: 32px; }
-  .tiles { gap: 16px; }
-  .tile { height: auto; min-height: 168px; }
-  .tile-band { height: 80px; }
-  .tile-body { padding: 14px 16px; }
-  .tile-body .blurb { display: none; }  /* phone dashboard: title only, as in the hi-fi phone view */
-  .tile .title-m { font-size: 18px; }
   .plan-below { padding-block-end: 64px; }
   .guide { --band-h: 240px; }
   .guide-title { gap: 16px; }
@@ -444,6 +435,52 @@ dialog.guest .inner { display: grid; gap: 16px; }
   .site-footer .cols a, .site-footer .cols button { display: flex; align-items: center; min-height: 44px; }  /* 44px phone targets, as in Footer/Mobile */
 }
 @media (max-width: 400px) {
-  .tiles { grid-template-columns: 1fr 1fr; }
   .purposes { gap: 8px; }
+}
+
+/* ---------- dashboard hero fits one screen (David, Nov 10) ----------
+   the title, chips and all 8 guide tiles fit in the first screen, and the
+   photo band ends in a gentle curve with the checklist peeking out below it,
+   so it's clear there's more to scroll to. tile height follows the window:
+   100svh minus the header (72), band padding (32 + 64), the title block
+   (about 100), the gap above the tiles (24), the gap between rows (32) and
+   the peek (72), split across 2 rows, kept between 150 and 240px */
+.trip .band-wrap { border-radius: 0 0 50% 50% / 0 0 56px 56px; }
+.trip-band-content { padding-block: 32px 64px; }
+.trip-title h1 { font-size: clamp(34px, 1.4vw + 2.6vh, 48px); }
+.chips { margin-top: 12px; }
+.chips li { height: 32px; padding: 0 12px; font-size: 14px; }
+.chips img { width: 16px; height: 16px; }
+.tiles {
+  margin-top: 24px; gap: 32px; grid-template-columns: repeat(4, minmax(0, 1fr));  /* 32px gaps: Aahana's comment #15 */
+  --tile-h: clamp(150px, calc((100svh - 396px) / 2), 240px);
+}
+.tile { height: var(--tile-h); container-type: size; }
+.tile-band { height: 44%; }
+.tile-band .whisk { width: auto; height: 108%; aspect-ratio: 1; }
+.tile-band .glyph { width: clamp(30px, 17cqh, 44px); height: clamp(30px, 17cqh, 44px); }
+.tile-body { padding: 12px 16px; }
+.tile .title-m { font-size: 19px; }
+.tile .arrow { width: 32px; height: 32px; }
+/* short or narrow tiles drop the description and keep the title */
+@container (max-height: 205px) { .tile-body .blurb { display: none; } }
+@container (max-width: 230px) { .tile-body .blurb { display: none; } }
+.plan-below { padding-block-start: 24px; }
+
+/* phones: two columns of compact tiles, icon on the left */
+@media (max-width: 600px) {
+  .trip .band-wrap { border-radius: 0 0 50% 50% / 0 0 32px 32px; }
+  .trip-band-content { padding-block: 24px 44px; }
+  .trip-title h1 { font-size: 30px; line-height: 1.05; }
+  .trip-head { gap: 0; }
+  .trip-head .btn-light { display: none; }  /* the pencil beside the title edits the trip */
+  .chips li { height: 30px; font-size: 13px; }
+  .tiles { margin-top: 16px; gap: 16px; grid-template-columns: 1fr 1fr; }
+  .tile { height: 64px; flex-direction: row; container-type: normal; }
+  .tile-band { height: auto; width: 56px; }
+  .tile-band .whisk { display: none; }
+  .tile-band .glyph { width: 28px; height: 28px; }
+  .tile-body { flex-direction: row; align-items: center; padding: 0 10px; }
+  .tile-body .blurb, .tile .arrow { display: none; }
+  .tile .title-m { font-size: 15px; line-height: 1.15; }
 }
