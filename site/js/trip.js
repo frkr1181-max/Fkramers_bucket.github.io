@@ -53,7 +53,8 @@ export function formatRange(trip) {
 
 // what the facts API needs to filter conditional facts for this trip
 export function factQuery(trip) {
-  const days = tripDays(trip);
+  // the API accepts 1 to 36500 days; a typo like 2127 for 2027 stays in range
+  const days = tripDays(trip) === null ? null : Math.min(tripDays(trip), 36500);
   return {
     stayMin: days,
     stayMax: days,

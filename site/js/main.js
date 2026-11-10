@@ -16,6 +16,17 @@ const done = new Set();        // checklist items ticked in this tab
 const esc = (value) =>
   String(value ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 
+// only http(s) links from the data become hrefs, so a bad row can't sneak in a
+// javascript: link. returns the normalized URL, or null
+function safeUrl(value) {
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" || url.protocol === "http:" ? url.href : null;
+  } catch {
+    return null;
+  }
+}
+
 const countryName = (slug) => destinations.find((d) => d.slug === slug)?.name ?? "";
 const tripLink = (path) => `#/${path}${trip ? `?${tripToQuery(trip)}` : ""}`;
 
@@ -35,6 +46,7 @@ function sourceRows(sources) {
   // one row per official page; the row shows the organization only (design rule, Nov 5)
   const seen = new Set();
   return sources
+    .map((s) => ({ ...s, url: safeUrl(s.url) }))
     .filter((s) => s.url && !seen.has(s.url) && seen.add(s.url))
     .map((s) => `<li><a class="source" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">
         <span class="icon-circle"><img src="${A}source-landmark.svg" alt="" /></span>
@@ -232,7 +244,7 @@ function wirePlan() {
     // show each error and tie it to its field only while it applies
     const flag = (fieldId, input, errorId, bad) => {
       document.querySelector(fieldId).classList.toggle("invalid", bad);
-      input.toggleAttribute("aria-invalid", bad);
+      input.setAttribute("aria-invalid", String(bad));
       if (bad) input.setAttribute("aria-describedby", errorId);
       else input.removeAttribute("aria-describedby");
     };
@@ -279,8 +291,10 @@ async function tripView() {
   const purpose = purposeById(trip.purpose);
   const facts = await getFacts(trip.country, factQuery(trip));
   const groups = groupFacts(facts);
-  const numbers = emergencyNumbers(facts);
-  const embassy = facts.find((f) => f.category === "emergency")?.sources?.[0];
+  const emergency = emergencyNumbers(facts);
+  // the emergency fact's source is the State Department country page, which
+  // lists the embassy's contacts; label the row by what the page is
+  const consular = facts.find((f) => f.category === "emergency")?.sources?.find((s) => safeUrl(s.url));
 
   const chips = [
     days ? [`${A}chip-calendar.svg`, `${formatRange(trip)} · ${days} ${days === 1 ? "day" : "days"}`] : null,
@@ -303,13 +317,16 @@ async function tripView() {
         <span class="box">${CHECK}</span><span class="label">${esc(label)}</span>
       </button></li>`).join("");
 
-  const contactRows = numbers.map((row) => `<li><a class="contact" href="tel:${esc(row.number.replace(/\s/g, ""))}">
-      <span class="icon-circle"><img src="${A}icon-phone.svg" alt="" /></span>
-      <span><span class="what">${esc(row.label)}</span><span class="number">${esc(row.number)}</span></span></a></li>`).join("");
-  const embassyRow = embassy ? `<li><a class="contact" href="${esc(embassy.url)}" target="_blank" rel="noopener noreferrer">
+  // each number is its own tel: link, so "17 or 1548" can be tapped either way
+  const contactRows = (emergency?.rows ?? []).map((row) => `<li class="contact">
+      <span class="icon-circle"><img src="${A}${row.label.includes("Embassy") ? "icon-landmark" : "icon-phone"}.svg" alt="" /></span>
+      <span><span class="what">${esc(row.label)}</span><span class="number">${row.numbers.map((n) =>
+        `<a href="tel:${esc(n.replace(/-/g, ""))}">${esc(n)}</a>`).join(" or ")}</span></span></li>`).join("");
+  const contactText = emergency?.text ? `<p class="emergency-text">${esc(emergency.text)}</p>` : "";
+  const consularRow = consular ? `<li><a class="contact" href="${esc(safeUrl(consular.url))}" target="_blank" rel="noopener noreferrer">
       <span class="icon-circle"><img src="${A}icon-landmark.svg" alt="" /></span>
-      <span><span class="what">U.S. Embassy</span><span class="number text">Contacts and help</span></span>
-      <span class="visually-hidden">(opens in a new tab)</span></a></li>` : "";
+      <span><span class="what">U.S. consular help</span><span class="number text">${esc(consular.organization)}</span></span>
+      <img class="ext" src="${A}icon-external.svg" alt="" /><span class="visually-hidden">(opens in a new tab)</span></a></li>` : "";
 
   return `<div class="page trip">
     <div class="band-wrap">
@@ -335,8 +352,8 @@ async function tripView() {
       </section>
       <section class="card essentials" aria-labelledby="essentials">
         <h2 class="h3" id="essentials">Trip essentials</h2>
-        ${contactRows || embassyRow ? `<ul>${contactRows}${embassyRow}</ul>`
-          : `<p class="small fallback">No reviewed emergency numbers for ${esc(country)} yet. Check the Safety guide.</p>`}
+        ${emergency ? `${contactText}<ul>${contactRows}${consularRow}</ul>`
+          : `<p class="small fallback">No reviewed emergency numbers for ${esc(country)} yet. Check the <a href="${tripLink("guide/safety")}">Safety guide</a>.</p>`}
       </section>
     </div>
   </div>`;
@@ -479,7 +496,8 @@ const ROUTES = {
 };
 
 async function render() {
-  const [path, query = ""] = location.hash.replace(/^#\/?/, "").split("?");
+  const hash = location.hash.startsWith("#/") ? location.hash : "#/";
+  const [path, query = ""] = hash.replace(/^#\/?/, "").split("?");
   const [name, param] = path.split("/");
   const route = ROUTES[name] ?? { nav: null, title: "Page not found", view: notFound, wire: () => {} };
 
@@ -538,8 +556,21 @@ onSourceChange(({ mode, newestCheck }) => {
   }
 });
 
-window.addEventListener("hashchange", render);
-render().catch((error) => {
+// the skip link points at #main, which isn't a route: move focus there instead
+// of letting the router treat it as an unknown page
+document.querySelector(".skip-link").addEventListener("click", (event) => {
+  event.preventDefault();
+  main.focus();
+});
+
+function showLoadError(error) {
+  main.removeAttribute("aria-busy");
   main.innerHTML = `<div class="container"><div class="card empty" style="margin:48px 0"><h1 class="h3" tabindex="-1">The guides couldn’t load</h1>
     <p>${esc(error.message)} Refresh the page to try again.</p></div></div>`;
+}
+
+// only "#/..." addresses are routes; anything else (an in-page anchor) is left alone
+window.addEventListener("hashchange", () => {
+  if (location.hash === "" || location.hash.startsWith("#/")) render().catch(showLoadError);
 });
+render().catch(showLoadError);

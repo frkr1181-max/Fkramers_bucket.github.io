@@ -73,23 +73,54 @@ export function groupFacts(facts) {
   return groups;
 }
 
-// emergency facts are written as "Police: 110. Ambulance or fire: 119. ..."
-// pull out each "label: number" pair so the dashboard can show them as number
-// rows. anything that doesn't match that pattern is left for the guide page.
-export function emergencyNumbers(facts) {
-  const numbers = [];
-  for (const fact of facts.filter((f) => f.category === "emergency")) {
-    const text = fact.plain_summary;
-    for (const match of text.matchAll(/([A-Z][A-Za-z ,/()-]{2,40}?):\s*(\d{2,4}(?:\s?\d{2,4})?)\b/g)) {
-      numbers.push({ label: match[1].trim(), number: match[2] });
-    }
-    // "Call 911 for emergencies." style
-    if (!numbers.length) {
-      const call = text.match(/\bCall (\d{2,4})\b/);
-      if (call) numbers.push({ label: "Emergencies", number: call[1] });
-    }
+// emergency facts are written in plain sentences by the research team, in a few
+// shapes: "Police: 17 or 1548.", "For police, call 101.", "Call 911 for police,
+// ambulance, or fire.", "lists 911 for emergencies, 104 for police", "Embassy
+// Pretoria: +27-12-431-4000". emergencyNumbers() turns those into number rows for
+// the dashboard. if any number in the text can't be matched to a label, it
+// returns { text } instead, so the dashboard shows the sentences as written
+// rather than a list with a number missing or mislabeled.
+const NUM = String.raw`\+?\d[\d-]{0,15}\d`;
+const numbersIn = (text) => text.match(new RegExp(NUM, "g")) || [];
+const BOILERPLATE = /^Local services handle/;
+
+function tidyLabel(label) {
+  const clean = label.replace(/^(an?|the) /i, "").trim();
+  const withUs = /^Embassy /.test(clean) ? `U.S. ${clean}` : clean;
+  return withUs.charAt(0).toUpperCase() + withUs.slice(1);
+}
+
+function parseEmergency(text) {
+  // split into sentences without breaking "U.S."
+  const sentences = text
+    .split(/(?<=[a-z0-9)])\.\s+(?=[A-Z+])/)
+    .map((s) => s.replace(/\.$/, ""))
+    .filter((s) => !BOILERPLATE.test(s));
+  const rows = [];
+  const add = (label, numbers) => {
+    const last = rows[rows.length - 1];
+    // "Police: 17 or 1548" becomes one row with two numbers
+    if (last && last.label === tidyLabel(label)) last.numbers.push(...numbers);
+    else rows.push({ label: tidyLabel(label), numbers: [...numbers] });
+  };
+  const either = String.raw`${NUM}(?:\s+or\s+${NUM})*`;
+  for (const s of sentences) {
+    let m;
+    const pairs = [...s.matchAll(new RegExp(String.raw`([A-Z][A-Za-z ,/-]{2,40}?):\s*(${either})`, "g"))];
+    if (pairs.length) { pairs.forEach((p) => add(p[1], numbersIn(p[2]))); continue; }
+    if ((m = s.match(new RegExp(String.raw`^For (?:an? |immediate |urgent )*(.+?)(?: emergencies| help)?, call (${either})`, "i")))) { add(m[1], numbersIn(m[2])); continue; }
+    if ((m = s.match(new RegExp(String.raw`(Embassy \w+)(?: number is|:)\s*(${NUM})`)))) { add(m[1], [m[2]]); continue; }
+    if ((m = s.match(new RegExp(String.raw`call (${NUM})(?: for (?:an? )?(?:immediate )?([a-z ,]+?))?(?: in [A-Z]\w+)?$`, "i")))) { add(m[2] || "emergencies", [m[1]]); continue; }
+    const listed = [...s.matchAll(new RegExp(String.raw`(${NUM}) for (?:an? |general )?([a-z ,]*?(?:emergencies|emergency help|emergency|police|ambulance|fire))`, "g"))];
+    if (listed.length) { listed.forEach((p) => add(p[2], [p[1]])); continue; }
+    if ((m = s.match(new RegExp(String.raw`^(.+?) is available at (${NUM})`)))) { add(m[1], [m[2]]); continue; }
   }
-  // the same number can appear twice when two facts mention it
-  const seen = new Set();
-  return numbers.filter((row) => !seen.has(row.number) && seen.add(row.number));
+  const found = new Set(rows.flatMap((row) => row.numbers));
+  const complete = rows.length && sentences.flatMap(numbersIn).every((n) => found.has(n));
+  return complete ? { rows } : { text: sentences.join(". ") + "." };
+}
+
+export function emergencyNumbers(facts) {
+  const fact = facts.find((f) => f.category === "emergency");
+  return fact ? parseEmergency(fact.plain_summary) : null;
 }

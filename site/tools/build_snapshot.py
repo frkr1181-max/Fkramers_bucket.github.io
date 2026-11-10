@@ -21,9 +21,11 @@ FACT_FILES = [
     ROOT / "docs/research/gap-fill-2026-11-05/facts.json",
 ]
 
-# the destination catalog lives in the migration that seeds it, so the names
-# here always match what GET /api/destinations returns
-CATALOG_MIGRATION = ROOT / "supabase/migrations/20261025233333_country_catalog_and_backend.sql"
+# the destination catalog is seeded by the migrations (the first one adds 24
+# countries, the roster one adds 12 more), so the list here matches what
+# GET /api/destinations returns. countries with no published facts yet show
+# "No reviewed info" in every guide, the same as on the live site
+MIGRATIONS = ROOT / "supabase/migrations"
 
 OUT = ROOT / "site/data/guide-snapshot.json"
 
@@ -38,12 +40,16 @@ SOURCE_FIELDS = ["title", "organization", "url", "checked_at"]
 
 
 def read_destinations() -> list[dict]:
-    sql = CATALOG_MIGRATION.read_text(encoding="utf-8")
-    rows = re.findall(r"\('([a-z-]+)', '([^']+)', '([A-Z]{2})', '([^']+)', '([^']+)'\)", sql)
-    return sorted(
-        ({"slug": s, "name": n, "iso_alpha2": iso, "region": r, "research_owner": o} for s, n, iso, r, o in rows),
-        key=lambda d: d["name"],
-    )
+    row = re.compile(r"\('([a-z-]+)', '([^']+)', '([A-Z]{2})', '([^']+)', '([^']+)'(?:, (true|false))?\)")
+    catalog: dict[str, dict] = {}
+    for path in sorted(MIGRATIONS.glob("*.sql")):  # oldest first, by timestamp
+        if "destinations" not in (sql := path.read_text(encoding="utf-8")):
+            continue
+        for slug, name, iso, region, owner, active in row.findall(sql):
+            if active == "false" or slug in catalog:  # later inserts use ON CONFLICT DO NOTHING
+                continue
+            catalog[slug] = {"slug": slug, "name": name, "iso_alpha2": iso, "region": region, "research_owner": owner}
+    return sorted(catalog.values(), key=lambda d: d["name"])
 
 
 def read_facts() -> list[dict]:

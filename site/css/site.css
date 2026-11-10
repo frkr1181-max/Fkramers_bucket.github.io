@@ -304,12 +304,18 @@ textarea.input-area:focus { border-color: var(--rr-color-border-strong); outline
 .essentials { padding: 28px 24px 20px; }
 .essentials ul { list-style: none; padding: 0; margin: 12px 0 0; }
 .contact { display: flex; align-items: center; gap: 14px; padding: 12px 0; text-decoration: none; }
+.contact .number { margin-top: -6px; }
 .contact .icon-circle { width: 40px; height: 40px; background: var(--rr-color-bg-subtle); }
 .contact .icon-circle img { width: 20px; height: 20px; }
 .contact .number { display: block; font-weight: 900; font-size: 26px; line-height: 1.1; color: var(--rr-color-text-primary); }
-.contact .number.text { font-size: 20px; line-height: 1.2; }
+.contact .number a { text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; }  /* 44px tap targets */
+.contact { padding: 4px 0; }
+.contact .number a:hover { text-decoration: underline; }
+.contact .number.text { font-size: 18px; line-height: 1.25; font-weight: 800; }
 .contact .what { display: block; font-size: 15px; color: var(--rr-color-text-secondary); }
+.contact .ext { width: 20px; height: 20px; margin-left: auto; flex: none; }
 a.contact:hover .number { text-decoration: underline; }
+.emergency-text { margin-top: 12px; }
 .essentials .fallback { margin-top: 12px; }
 
 /* ---------- guide page ---------- */

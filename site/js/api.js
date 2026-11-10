@@ -5,9 +5,29 @@
 //   GET /api/destinations                      -> [{ slug, name, iso_alpha2, region, research_owner }]
 //   GET /api/destinations/{slug}/facts?...     -> [TravelFact]  (app/schemas/facts.py)
 //
-// add ?api=https://your-host to the page URL to point at another backend.
+// add ?api=http://localhost:8000 (any local port) to the page URL to point at
+// another backend. other hosts must be added to DEPLOYED_API_HOSTS first, so a
+// shared link can't make the site show some other server's "facts".
 
-const API_BASE = new URLSearchParams(window.location.search).get("api") || "http://127.0.0.1:8000";
+const DEFAULT_API = "http://127.0.0.1:8000";
+const DEPLOYED_API_HOSTS = []; // for example "roamready-api.onrender.com" once the API is hosted
+
+function chooseApiBase() {
+  const asked = new URLSearchParams(window.location.search).get("api");
+  if (!asked) return DEFAULT_API;
+  try {
+    const url = new URL(asked);
+    const local = url.protocol === "http:" && ["localhost", "127.0.0.1"].includes(url.hostname);
+    const deployed = url.protocol === "https:" && DEPLOYED_API_HOSTS.includes(url.hostname);
+    if (local || deployed) return url.origin;
+  } catch {
+    // not a URL; fall through
+  }
+  console.warn("[RoamReady] ignoring ?api= value that isn't an allowed host:", asked);
+  return DEFAULT_API;
+}
+
+const API_BASE = chooseApiBase();
 const TIMEOUT_MS = 4000;
 const SNAPSHOT_URL = "data/guide-snapshot.json";
 
@@ -39,13 +59,20 @@ async function getJson(path) {
     const response = await fetch(new URL(path, API_BASE), { signal: controller.signal });
     if (!response.ok) {
       const detail = await response.json().catch(() => ({}));
-      throw new Error(detail.detail || `Request failed (${response.status})`);
+      const error = new Error(typeof detail.detail === "string" ? detail.detail : `Request failed (${response.status})`);
+      error.status = response.status;
+      throw error;
     }
     return await response.json();
   } finally {
     clearTimeout(timer);
   }
 }
+
+// switch to the saved copy only when the backend is unreachable or broken
+// (no answer, timeout, 5xx). a 4xx means our request was wrong, and the saved
+// copy would hide that by showing facts the API refused
+const backendDown = (error) => !error.status || error.status >= 500;
 
 async function loadSnapshot() {
   if (!snapshot) {
@@ -86,6 +113,7 @@ export async function getDestinations() {
       if (mode !== "live") setMode("live");
       return rows;
     } catch (error) {
+      if (!backendDown(error)) throw error;
       console.info("[RoamReady] API not reachable, using the saved guide data:", error.message);
       await loadSnapshot();
       setMode("snapshot");
@@ -111,7 +139,9 @@ export async function getFacts(slug, { stayMin = null, stayMax = null, purpose =
     try {
       facts = await getJson(`/api/destinations/${encodeURIComponent(slug)}/facts${qs ? `?${qs}` : ""}`);
     } catch (error) {
+      if (!backendDown(error)) throw error;
       console.info("[RoamReady] facts request failed, using the saved guide data:", error.message);
+      await loadSnapshot(); // load first, so the footer note can show the copy's date
       setMode("snapshot");
     }
   }

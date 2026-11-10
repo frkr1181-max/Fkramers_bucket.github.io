@@ -48,6 +48,48 @@
    "research_owner": "Dion"
   },
   {
+   "slug": "brazil",
+   "name": "Brazil",
+   "iso_alpha2": "BR",
+   "region": "South America",
+   "research_owner": "Divya"
+  },
+  {
+   "slug": "cabo-verde",
+   "name": "Cabo Verde",
+   "iso_alpha2": "CV",
+   "region": "Africa",
+   "research_owner": "Divya"
+  },
+  {
+   "slug": "canada",
+   "name": "Canada",
+   "iso_alpha2": "CA",
+   "region": "North America",
+   "research_owner": "Divya"
+  },
+  {
+   "slug": "colombia",
+   "name": "Colombia",
+   "iso_alpha2": "CO",
+   "region": "South America",
+   "research_owner": "Divya"
+  },
+  {
+   "slug": "croatia",
+   "name": "Croatia",
+   "iso_alpha2": "HR",
+   "region": "Europe",
+   "research_owner": "Divya"
+  },
+  {
+   "slug": "czechia",
+   "name": "Czechia",
+   "iso_alpha2": "CZ",
+   "region": "Europe",
+   "research_owner": "Divya"
+  },
+  {
    "slug": "egypt",
    "name": "Egypt",
    "iso_alpha2": "EG",
@@ -172,6 +214,48 @@
    "iso_alpha2": "KR",
    "region": "Asia",
    "research_owner": "Aahana"
+  },
+  {
+   "slug": "spain",
+   "name": "Spain",
+   "iso_alpha2": "ES",
+   "region": "Europe",
+   "research_owner": "Frankie"
+  },
+  {
+   "slug": "sweden",
+   "name": "Sweden",
+   "iso_alpha2": "SE",
+   "region": "Europe",
+   "research_owner": "Frankie"
+  },
+  {
+   "slug": "switzerland",
+   "name": "Switzerland",
+   "iso_alpha2": "CH",
+   "region": "Europe",
+   "research_owner": "Frankie"
+  },
+  {
+   "slug": "turkiye",
+   "name": "Türkiye",
+   "iso_alpha2": "TR",
+   "region": "Europe",
+   "research_owner": "Frankie"
+  },
+  {
+   "slug": "uruguay",
+   "name": "Uruguay",
+   "iso_alpha2": "UY",
+   "region": "South America",
+   "research_owner": "Frankie"
+  },
+  {
+   "slug": "uzbekistan",
+   "name": "Uzbekistan",
+   "iso_alpha2": "UZ",
+   "region": "Asia",
+   "research_owner": "Frankie"
   }
  ],
  "facts": [

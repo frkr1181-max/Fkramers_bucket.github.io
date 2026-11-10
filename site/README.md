@@ -17,14 +17,14 @@ python3 -m http.server 5500 --directory site
 
 Open `http://127.0.0.1:5500`. Port 5500 matters, because it's one of the origins the API allows in `FRONTEND_ORIGINS`.
 
-**No backend running?** The site still works. After 4 seconds without an answer it switches to `data/guide-snapshot.json`, and the footer says "Guide data is a saved copy from …" instead of "… comes live from the RoamReady database." To point at a different API, add `?api=https://your-host` to the address.
+**No backend running?** The site still works. After 4 seconds without an answer it switches to `data/guide-snapshot.json`, and the footer says "Guide data is a saved copy from …" instead of "… comes live from the RoamReady database." To point at a different local API, add `?api=http://localhost:8001` to the address. A hosted API has to be added to `DEPLOYED_API_HOSTS` in `js/api.js` first, so a shared link can't swap in another server's data.
 
 ## What's in the demo
 
 | Page | Address | Data |
 |---|---|---|
 | Home | `#/` | none (static hero, steps and source types) |
-| Plan a trip | `#/plan` | the 24 countries from `GET /api/destinations` |
+| Plan a trip | `#/plan` | the active countries from `GET /api/destinations` (36; 24 have published facts so far) |
 | My trip | `#/trip?country=japan&from=2027-03-15&to=2027-03-28&purpose=leisure` | facts for the trip: emergency numbers, and whether each guide has reviewed info |
 | Guide | `#/guide/entry?…` (also `money`, `phones`, `health`, `there`, `around`, `safety`, `culture`) | one card per published fact; Learn more shows the full fact and its own sources |
 | About | `#/about` | none |
@@ -44,8 +44,8 @@ Log in shows a note that accounts aren't switched on yet. Sign up and Continue a
 | `js/api.js` | **The only file that talks to the backend**, plus the snapshot fallback |
 | `js/guides.js` | **The adapter**: 10 categories into 8 guides, 4 purposes onto the API's 7, and emergency-number parsing |
 | `js/trip.js` | The guest trip: reading it from the address, trip length, date format |
-| `data/guide-snapshot.json` | Saved copy of the 24 countries and 252 published facts |
-| `tools/build_snapshot.py` | Rebuilds the snapshot from `docs/research/*/facts.json` and the catalog migration |
+| `data/guide-snapshot.json` | Saved copy of the 36 active countries and 252 published facts |
+| `tools/build_snapshot.py` | Rebuilds the snapshot from `docs/research/*/facts.json` and the catalog migrations |
 | `assets/figma/` | Icons, logo lockups and decor exported from the Figma file |
 | `assets/photos/` | The three band photos, resized to 1920px WebP (they're placeholders in Figma too) |
 
@@ -70,3 +70,5 @@ This rebuilds the saved copy from the repo's published fact files. It holds 252 
 - **Emergency** has no matching purpose in the data, so it sends none and only general facts show.
 - The 8 checklist tasks are the hi-fi's, with the country name swapped in. Two Japan-only tasks became general ones: "Register on Visit Japan Web" is now "Check the entry rules for {country}", and "Save your emergency card" is now "Save your emergency numbers".
 - Guides that combine two categories (Phones & tech, Safety) show them in one list.
+- The 12 countries added by the roster migration (Brazil, Canada, Spain and others) have no published facts yet, so every guide shows "No reviewed info". Hide them from Plan a trip until they do?
+- Trip essentials turns the emergency fact's sentences into number rows. If a future fact is written in a shape the parser doesn't know, it shows the sentences as written instead of a partial list.
