@@ -40,3 +40,15 @@ Published 28 reviewed additions on November 10 (44 Japan facts total); original 
 ## Permanent topic navigation
 
 The approved full-page preview was implemented in the canonical `site/` without copying preview-only Auth stubs or forcing snapshot mode. All guide Learn more controls are ordinary links to topic routes. Japan supports all 32 subcards; other destinations use stable fact IDs within their guide category. Full detail content, citations, verification dates and optional official excerpts are preserved. Saved-trip topic routes authenticate and fetch the owned trip before displaying account data. Added frontend checks cover route-topic resolution, all 32 Japan topics, other-country categories, missing topics and eligibility.
+
+## Japan card relevance cleanup
+
+Replaced broad keyword-derived placement with an explicit topic-to-fact map. Visa excludes passport text. Passport displays the exact passport-only passage of its original fact, retaining the same citation, ID and verification date. Broad duplicated money, connection, transport and etiquette facts are no longer repeated across unrelated cards. All 32 topics retain eligible published information; each guide’s cards have non-overlapping fact assignments. The original 44 database facts and research files were not modified or deleted. Added checks enforce within-guide uniqueness, Passport-only text and preservation of the full original fact.
+
+Passport/Visa expansion (2026-11-10): 15 additional officially sourced facts published, 59 Japan facts total. Seven Passport sections; eight additional Visa facts, with conditional work/study guidance filtered by trip purpose. Live five-day tourism response: 56 eligible facts. Existing data preserved. Backend tests: 27 passed; frontend topic and eligibility checks passed.
+
+## Original country research integration — November 10
+
+Removed the historical Japan research accordion and its public payload; retained all original research files. Linked 240 original sections across 24 researched destinations to saved published fact IDs. Restored 11 already-published South Korea records to the static fallback. All 316 snapshot facts exactly match the live export for text, dates, source fields and eligibility. Explicitly included Japan voltage/frequency detail in Electricity. No database writes or deletions. Four frontend check suites and all 27 backend tests passed. See [integration report](research/integration-2026-11-10/README.md).
+
+November 10 missing-country publication: 259 additional source-reviewed facts across Brazil, Cabo Verde, Canada, Colombia, Croatia, Czechia, Spain, Sweden, Switzerland, Türkiye, Uruguay and Uzbekistan. All 36 dropdown destinations now have facts in all ten categories (575 total). New facts use explicit focused-topic mappings and existing trip filters. Original 316 records preserved. See docs/research/publication-2026-11-10-missing-countries/README.md for sources, limits and checks.

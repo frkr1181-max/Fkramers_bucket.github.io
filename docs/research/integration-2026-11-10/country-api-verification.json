@@ -1,0 +1,121 @@
+{
+  "checked_at": "2026-11-10",
+  "trip": "five-day tourism",
+  "countries": [
+    {
+      "country": "algeria",
+      "eligible_facts": 10,
+      "status": "passed"
+    },
+    {
+      "country": "argentina",
+      "eligible_facts": 11,
+      "status": "passed"
+    },
+    {
+      "country": "australia",
+      "eligible_facts": 10,
+      "status": "passed"
+    },
+    {
+      "country": "austria",
+      "eligible_facts": 11,
+      "status": "passed"
+    },
+    {
+      "country": "belgium",
+      "eligible_facts": 11,
+      "status": "passed"
+    },
+    {
+      "country": "bosnia-and-herzegovina",
+      "eligible_facts": 11,
+      "status": "passed"
+    },
+    {
+      "country": "egypt",
+      "eligible_facts": 10,
+      "status": "passed"
+    },
+    {
+      "country": "england",
+      "eligible_facts": 11,
+      "status": "passed"
+    },
+    {
+      "country": "france",
+      "eligible_facts": 11,
+      "status": "passed"
+    },
+    {
+      "country": "germany",
+      "eligible_facts": 11,
+      "status": "passed"
+    },
+    {
+      "country": "iraq",
+      "eligible_facts": 10,
+      "status": "passed"
+    },
+    {
+      "country": "mexico",
+      "eligible_facts": 11,
+      "status": "passed"
+    },
+    {
+      "country": "netherlands",
+      "eligible_facts": 11,
+      "status": "passed"
+    },
+    {
+      "country": "new-zealand",
+      "eligible_facts": 10,
+      "status": "passed"
+    },
+    {
+      "country": "norway",
+      "eligible_facts": 11,
+      "status": "passed"
+    },
+    {
+      "country": "panama",
+      "eligible_facts": 11,
+      "status": "passed"
+    },
+    {
+      "country": "paraguay",
+      "eligible_facts": 11,
+      "status": "passed"
+    },
+    {
+      "country": "qatar",
+      "eligible_facts": 10,
+      "status": "passed"
+    },
+    {
+      "country": "saudi-arabia",
+      "eligible_facts": 10,
+      "status": "passed"
+    },
+    {
+      "country": "scotland",
+      "eligible_facts": 11,
+      "status": "passed"
+    },
+    {
+      "country": "senegal",
+      "eligible_facts": 11,
+      "status": "passed"
+    },
+    {
+      "country": "south-africa",
+      "eligible_facts": 11,
+      "status": "passed"
+    },
+    {
+      "country": "south-korea",
+      "eligible_facts": 10,
+      "status": "passed"
+    }
+  ]
+}

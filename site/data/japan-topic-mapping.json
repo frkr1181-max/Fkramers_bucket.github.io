@@ -1,0 +1,196 @@
+{
+  "entry:visas": {
+    "fact_titles": [
+      "Short tourist stays",
+      "Paid work needs the correct status",
+      "Stays beyond the short-visit allowance",
+      "Onward travel and support during a visitor stay",
+      "Visa approval and admission are different",
+      "Visa entry window is not your permitted stay",
+      "Apply through the mission for your residence",
+      "Allow time for visa processing",
+      "Visa exemption follows nationality, not a green card",
+      "Airside transit versus entering Japan",
+      "Work, study and long stays: Certificate of Eligibility"
+    ]
+  },
+  "entry:passport": {
+    "fact_titles": [
+      "Passport validity and the six-month question",
+      "Blank pages for entry stamps",
+      "Damage versus normal passport wear",
+      "A reported lost passport cannot be reused",
+      "Online renewal changes travel-document validity",
+      "Check passport rules for connecting flights",
+      "Carry your original identity document in Japan"
+    ]
+  },
+  "entry:forms": {
+    "fact_titles": [
+      "Visit Japan Web and arrival documents",
+      "Cash declaration is reporting, not a spending limit",
+      "Prepare your Visit Japan Web registration",
+      "The immigration arrival record is a separate requirement",
+      "Each traveler needs their own immigration QR code",
+      "Save the correct arrival QR code and update it after changes",
+      "Paper arrival forms remain available",
+      "Have flight and accommodation details ready",
+      "A customs declaration is required even without taxable purchases",
+      "Use the QR code with your passport at customs",
+      "Choose the correct customs channel",
+      "Shipped baggage needs documents completed at arrival"
+    ]
+  },
+  "entry:medicine": {
+    "fact_titles": [
+      "Check each medicine before packing"
+    ]
+  },
+  "money:currency": {
+    "fact_titles": [
+      "Yen and backup payment preparation"
+    ]
+  },
+  "money:cash": {
+    "fact_titles": [
+      "ATM access and withdrawal costs"
+    ]
+  },
+  "money:cards": {
+    "fact_titles": [
+      "Payment cards and Suica or PASMO"
+    ]
+  },
+  "money:tax-free": {
+    "fact_titles": [
+      "Tax-free refunds for purchases from November 2026"
+    ]
+  },
+  "phones:esim": {
+    "fact_titles": [
+      "SIM and eSIM device checks"
+    ]
+  },
+  "phones:pocket-wifi": {
+    "fact_titles": [
+      "Pocket Wi-Fi rental and coverage checks"
+    ]
+  },
+  "phones:wifi": {
+    "fact_titles": [
+      "Airport and accommodation Wi-Fi"
+    ]
+  },
+  "phones:electricity": {
+    "fact_titles": [
+      "Japan voltage and regional frequency",
+      "Device labels and voltage conversion"
+    ]
+  },
+  "health:insurance": {
+    "fact_titles": [
+      "Medical insurance and evacuation preparation"
+    ]
+  },
+  "health:vaccines": {
+    "fact_titles": [
+      "CDC vaccine planning for Japan",
+      "Japanese encephalitis depends on itinerary",
+      "Measles notice and practical health precautions"
+    ],
+    "excerpts": {
+      "Measles notice and practical health precautions": "CDC’s Japan page links a global measles notice, not a declaration of a Japan-specific outbreak. Check MMR protection under CDC’s international-travel recommendations."
+    }
+  },
+  "health:medicines": {
+    "fact_titles": [
+      "Check each medicine before packing"
+    ]
+  },
+  "health:care": {
+    "fact_titles": [
+      "Finding care and paying for treatment"
+    ]
+  },
+  "there:airport-1": {
+    "fact_titles": [
+      "Narita Airport rail choices"
+    ]
+  },
+  "there:airport-2": {
+    "fact_titles": [
+      "Haneda terminal and onward transport"
+    ]
+  },
+  "there:arrival-steps": {
+    "fact_titles": [
+      "Narita international arrival sequence",
+      "Customs and arrival preparation"
+    ]
+  },
+  "there:city-transfer": {
+    "fact_titles": [
+      "Narita buses and taxi transfers"
+    ]
+  },
+  "around:subway": {
+    "fact_titles": [
+      "Tokyo subway ticket coverage"
+    ]
+  },
+  "around:trains": {
+    "fact_titles": [
+      "Japan Rail Pass coverage and train conditions"
+    ]
+  },
+  "around:buses": {
+    "fact_titles": [
+      "Local and highway bus planning"
+    ]
+  },
+  "around:taxis": {
+    "fact_titles": [
+      "Taxi payment and destination checks"
+    ]
+  },
+  "safety:advisories": {
+    "fact_titles": [
+      "U.S. advisory and regional precautions"
+    ]
+  },
+  "safety:emergencies": {
+    "fact_titles": [
+      "Emergency numbers and visitor hotline"
+    ]
+  },
+  "safety:hazards": {
+    "fact_titles": [
+      "Earthquake and weather alert preparation"
+    ]
+  },
+  "safety:solo": {
+    "fact_titles": [
+      "Solo travel and nightlife precautions"
+    ]
+  },
+  "culture:etiquette": {
+    "fact_titles": [
+      "Shoes and shared-space etiquette"
+    ]
+  },
+  "culture:tipping": {
+    "fact_titles": [
+      "Tipping customs and exceptions"
+    ]
+  },
+  "culture:venue": {
+    "fact_titles": [
+      "Onsen bathing and tattoo rules"
+    ]
+  },
+  "culture:laws": {
+    "fact_titles": [
+      "Identification and local conduct rules"
+    ]
+  }
+}

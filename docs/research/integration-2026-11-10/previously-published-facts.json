@@ -1,0 +1,429 @@
+[
+  {
+    "id": "25123486-03f5-4af5-89f9-281d64598a2a",
+    "country_code": "KR",
+    "destination_slug": "south-korea",
+    "category": "arrival",
+    "title": "Arrival card, immigration, and customs",
+    "plain_summary": "Most foreign visitors without a valid K-ETA must submit an arrival card. Korea’s free e-Arrival Card can be submitted during the 72 hours before arrival; valid K-ETA holders and some other groups are exempt. Follow airport signs for immigration, baggage, quarantine when applicable, and customs. Customs rules apply to goods and cash; cash declaration guidance is under review because official Korean and U.S. sources disagree.",
+    "official_text_excerpt": null,
+    "last_verified_at": "2026-11-03",
+    "sources": [
+      {
+        "url": "https://www.e-arrivalcard.go.kr/portal/guide/eacTargetGuide.do?locale=EN",
+        "title": "e-Arrival Card eligibility and guide",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "South Korea",
+        "organization": "Korea Ministry of Justice",
+        "roamready_scope_role": "Destination government authority; use for the specific rule or service it administers",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      },
+      {
+        "url": "https://www.airport.kr/ap_en/1448/subview.do",
+        "title": "Immigration and e-Arrival Card",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "Incheon Airport",
+        "organization": "Incheon International Airport",
+        "roamready_scope_role": "Use only for the specific service or claim it directly supports; verify currentness and geographic scope",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      },
+      {
+        "url": "https://www.customs.go.kr/english/cm/cntnts/cntntsView.do?cntntsId=5500&mi=10800",
+        "title": "Declaration of Foreign Currency",
+        "checked_at": "2026-11-04",
+        "jurisdiction": "South Korea",
+        "organization": "Korea Customs Service",
+        "roamready_scope_role": "Destination government authority; use for the specific rule or service it administers",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      },
+      {
+        "url": "https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html",
+        "title": "South Korea Travel Advisory — currency on entry and exit",
+        "checked_at": "2026-11-04",
+        "jurisdiction": "U.S. citizens",
+        "organization": "U.S. Department of State",
+        "roamready_scope_role": "U.S. traveler guidance; primary for U.S. advisory/consular framing and U.S.-specific facts; cross-check destination rules",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "f7457b41-b80d-40d6-80a5-c75a585a44de",
+    "country_code": "KR",
+    "destination_slug": "south-korea",
+    "category": "culture",
+    "title": "Dining and respectful conduct",
+    "plain_summary": "Tipping is generally not expected in restaurants. Follow posted rules at homes, temples, and other venues, including shoe removal and photography guidance. Customs differ by setting; observe local signs and ask when unsure.",
+    "official_text_excerpt": null,
+    "last_verified_at": "2026-11-03",
+    "sources": [
+      {
+        "url": "https://english.visitkorea.or.kr/svc/contents/infoBscView.do?menuSn=903&vcontsId=140727",
+        "title": "About Korean Food and restaurant guidance",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "South Korea",
+        "organization": "Korea Tourism Organization",
+        "roamready_scope_role": "Official tourism practical guidance; supporting context for legal, medical, or security claims",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "83f80b04-c74d-42c2-b3d2-0c65b00a7d99",
+    "country_code": "KR",
+    "destination_slug": "south-korea",
+    "category": "electricity",
+    "title": "Voltage, frequency, and plug adapter",
+    "plain_summary": "South Korea’s standard supply is 220 volts at 60 hertz, with two round-pin outlets common. U.S. travelers generally need a plug adapter. A plug adapter does not change voltage: check each device label, and use a voltage converter or leave behind any device that is not rated for 220 V.",
+    "official_text_excerpt": null,
+    "last_verified_at": "2026-11-03",
+    "sources": [
+      {
+        "url": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=140041",
+        "title": "Electricity & Communications",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "South Korea",
+        "organization": "Korea Tourism Organization",
+        "roamready_scope_role": "Official tourism practical guidance; supporting context for legal, medical, or security claims",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      },
+      {
+        "url": "https://www.worldstandards.eu/electricity/plug-voltage-by-country/south-korea/",
+        "title": "Plug, socket and voltage by country: South Korea",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "South Korea",
+        "organization": "World Standards",
+        "roamready_scope_role": "Secondary technical corroboration; do not use as sole authority when local sources are available",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "d7d102de-2ed4-4246-afb3-2733746493d6",
+    "country_code": "KR",
+    "destination_slug": "south-korea",
+    "category": "emergency",
+    "title": "Police, ambulance, fire, and U.S. Embassy",
+    "plain_summary": "Call 112 for police and 119 for ambulance or fire. The Korea Tourism Organization’s 1330 line provides multilingual travel information and interpretation, but is not a replacement for emergency services. The U.S. State Department lists +82-2-397-4114 for the U.S. Embassy in Seoul, including after-hours emergencies. Check live contact details before travel.",
+    "official_text_excerpt": null,
+    "last_verified_at": "2026-11-03",
+    "sources": [
+      {
+        "url": "https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html",
+        "title": "South Korea emergency numbers and Embassy contacts",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "U.S. citizens",
+        "organization": "U.S. Department of State",
+        "roamready_scope_role": "U.S. traveler guidance; primary for U.S. advisory/consular framing and U.S.-specific facts; cross-check destination rules",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      },
+      {
+        "url": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=187149",
+        "title": "1330 Korea Travel Helpline",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "South Korea",
+        "organization": "Korea Tourism Organization",
+        "roamready_scope_role": "Official tourism practical guidance; supporting context for legal, medical, or security claims",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "e8ee4435-59cc-4b85-9403-5292b552d8c6",
+    "country_code": "KR",
+    "destination_slug": "south-korea",
+    "category": "entry",
+    "title": "Short visit for tourism or qualifying business",
+    "plain_summary": "U.S. citizens may visit visa-free for tourism or qualifying business for up to 90 days with a valid U.S. passport. The U.S. State Department says K-ETA is exempt through December 31, 2026 and required from January 1, 2027 for this visa-waiver route. Confirm the rule for your travel date and activity with Korean authorities before departure.",
+    "official_text_excerpt": null,
+    "last_verified_at": "2026-11-03",
+    "sources": [
+      {
+        "url": "https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html",
+        "title": "South Korea Travel Advisory and entry information",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "U.S. citizens on U.S. passports",
+        "organization": "U.S. Department of State",
+        "roamready_scope_role": "U.S. traveler guidance; primary for U.S. advisory/consular framing and U.S.-specific facts; cross-check destination rules",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      },
+      {
+        "url": "https://www.k-eta.go.kr/portal/board/viewboarddetail.do?bbsSn=299707&esntlPnotiMtYn=Y&locale=EN",
+        "title": "Notice on Extension of K-ETA Temporary Exemption",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "South Korea",
+        "organization": "Korea Ministry of Justice, K-ETA",
+        "roamready_scope_role": "Destination government authority; use for the specific rule or service it administers",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      }
+    ],
+    "published": true,
+    "applicability_status": "conditional",
+    "min_stay_days": 1,
+    "max_stay_days": 90,
+    "applies_to_purposes": [
+      "tourism",
+      "business"
+    ]
+  },
+  {
+    "id": "7b5f0659-4ded-4f92-966f-02de42400514",
+    "country_code": "KR",
+    "destination_slug": "south-korea",
+    "category": "entry",
+    "title": "Stays longer than 90 days",
+    "plain_summary": "A stay longer than 90 days requires the visa that matches the reason for travel. Work, teaching, study, and residence need the correct visa even when a traveler plans a shorter stay. Apply through the official Korean visa system or the Korean consular office responsible for your U.S. residence; do not assume a short-visit entry can be extended or changed in Korea.",
+    "official_text_excerpt": null,
+    "last_verified_at": "2026-11-03",
+    "sources": [
+      {
+        "url": "https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html",
+        "title": "South Korea Travel Advisory and entry information",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "U.S. citizens on U.S. passports",
+        "organization": "U.S. Department of State",
+        "roamready_scope_role": "U.S. traveler guidance; primary for U.S. advisory/consular framing and U.S.-specific facts; cross-check destination rules",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      },
+      {
+        "url": "https://www.visa.go.kr/",
+        "title": "Korea Visa Portal",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "South Korea",
+        "organization": "Korea Ministry of Justice",
+        "roamready_scope_role": "Destination government authority; use for the specific rule or service it administers",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      }
+    ],
+    "published": true,
+    "applicability_status": "conditional",
+    "min_stay_days": 91,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "088e9cd3-59f1-4c90-a8d3-6e6269be878b",
+    "country_code": "KR",
+    "destination_slug": "south-korea",
+    "category": "entry",
+    "title": "Work or study needs the right visa",
+    "plain_summary": "If you plan to work or study, check the visa required for that activity before travel. A visa-free short visit does not grant permission to work, teach, or study. Confirm the requirements for your exact activity with the Korean embassy or consulate serving your U.S. residence.",
+    "official_text_excerpt": null,
+    "last_verified_at": "2026-11-03",
+    "sources": [
+      {
+        "url": "https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html",
+        "title": "South Korea Travel Advisory and entry information",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "U.S. citizens on U.S. passports",
+        "organization": "U.S. Department of State",
+        "roamready_scope_role": "U.S. traveler guidance; primary for U.S. advisory/consular framing and U.S.-specific facts; cross-check destination rules",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      },
+      {
+        "url": "https://www.visa.go.kr/",
+        "title": "Korea Visa Portal",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "South Korea",
+        "organization": "Korea Ministry of Justice",
+        "roamready_scope_role": "Destination government authority; use for the specific rule or service it administers",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      }
+    ],
+    "published": true,
+    "applicability_status": "conditional",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": [
+      "study",
+      "work"
+    ]
+  },
+  {
+    "id": "b84e92fe-6cca-4160-aa3b-cac4aac5af1f",
+    "country_code": "KR",
+    "destination_slug": "south-korea",
+    "category": "getting-around",
+    "title": "Country transport and navigation",
+    "plain_summary": "Intercity trains, express and local buses, domestic flights, ferries, metro, and taxis are common options. Services, schedules, payments, and accessibility vary by operator and region; rural and island routes can be less frequent. Korea Tourism Organization lists NAVER Map and KakaoMap for route search, KORAIL+ for KORAIL trains, and k.ride for visitor taxi booking. Check current coverage and payment support in each official app or provider page.",
+    "official_text_excerpt": null,
+    "last_verified_at": "2026-11-03",
+    "sources": [
+      {
+        "url": "https://english.visitkorea.or.kr/public/contents/travel/KoreaTransportationGuide_enu.pdf",
+        "title": "International visitors’ transportation guide",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "South Korea",
+        "organization": "Korea Tourism Organization",
+        "roamready_scope_role": "Official tourism practical guidance; supporting context for legal, medical, or security claims",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      },
+      {
+        "url": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=197907",
+        "title": "Ride-hailing Apps in Korea",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "South Korea",
+        "organization": "Korea Tourism Organization",
+        "roamready_scope_role": "Official tourism practical guidance; supporting context for legal, medical, or security claims",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "d3761110-8c3b-468c-be5b-1c393f07df30",
+    "country_code": "KR",
+    "destination_slug": "south-korea",
+    "category": "health",
+    "title": "CDC vaccines, regional malaria, and care costs",
+    "plain_summary": "Check the CDC South Korea Traveler View and speak with a clinician about vaccines and medicines before travel. CDC recommends hepatitis A vaccine for unvaccinated travelers and identifies malaria risk in some rural northern parts of Incheon, Gangwon, and Gyeonggi provinces, including near the DMZ, during March–December. The malaria advice is regional, not countrywide. U.S. insurance may not cover care abroad; check coverage and consider medical evacuation insurance. Review medicine import rules before packing prescriptions.",
+    "official_text_excerpt": null,
+    "last_verified_at": "2026-11-03",
+    "sources": [
+      {
+        "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/south-korea",
+        "title": "South Korea Traveler View",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "U.S. travel health guidance",
+        "organization": "Centers for Disease Control and Prevention",
+        "roamready_scope_role": "Primary U.S. travel-health guidance",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      },
+      {
+        "url": "https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html",
+        "title": "South Korea Travel Advisory, health and insurance",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "U.S. citizens",
+        "organization": "U.S. Department of State",
+        "roamready_scope_role": "U.S. traveler guidance; primary for U.S. advisory/consular framing and U.S.-specific facts; cross-check destination rules",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      },
+      {
+        "url": "https://www.mfds.go.kr/eng/brd/m_60/view.do?seq=72497",
+        "title": "Manual on Permit to Bring in Narcotics to Korea",
+        "checked_at": "2026-11-04",
+        "jurisdiction": "South Korea",
+        "organization": "Ministry of Food and Drug Safety",
+        "roamready_scope_role": "Destination government authority; use for the specific rule or service it administers",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "18d64506-d68a-4109-aa4f-ff1e5f06fa51",
+    "country_code": "KR",
+    "destination_slug": "south-korea",
+    "category": "phones",
+    "title": "SIM, eSIM, and roaming options",
+    "plain_summary": "Ask your U.S. carrier about South Korea roaming, costs, device compatibility, and coverage. Local prepaid SIM and eSIM options are available from carriers including KT and LG U+; check the current plan, coverage, data and voice limits, device compatibility, and activation rules with the provider. Coverage can vary by location, so do not assume service everywhere.",
+    "official_text_excerpt": null,
+    "last_verified_at": "2026-11-03",
+    "sources": [
+      {
+        "url": "https://m.roaming.kt.com/eng/esim",
+        "title": "KT tourist eSIM",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "South Korea",
+        "organization": "KT",
+        "roamready_scope_role": "Provider plan and product information; coverage applies only as the provider describes",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      },
+      {
+        "url": "https://www.lguplus.com/korea-sim/eng/pc/product/esim?tab=data",
+        "title": "LG U+ Korea eSIM",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "South Korea",
+        "organization": "LG U+",
+        "roamready_scope_role": "Provider plan and product information; coverage applies only as the provider describes",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      },
+      {
+        "url": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=140041",
+        "title": "Electricity & Communications",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "South Korea",
+        "organization": "Korea Tourism Organization",
+        "roamready_scope_role": "Official tourism practical guidance; supporting context for legal, medical, or security claims",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "9f497cd9-ac8d-45f1-9ad8-4720e9a034ed",
+    "country_code": "KR",
+    "destination_slug": "south-korea",
+    "category": "safety",
+    "title": "Current advisory, laws, and weather risks",
+    "plain_summary": "The U.S. State Department lists South Korea at Level 1, Exercise normal precautions (issued May 28, 2025; checked November 3, 2026). It warns that demonstrations can disrupt services and that tensions on the Korean Peninsula can rise. Avoid demonstrations and follow local alerts. Drug laws are strict, and some U.S. prescriptions are restricted. Heavy rain and flooding can occur in summer; typhoons may affect the country from May to November. Recheck the advisory and forecasts close to travel.",
+    "official_text_excerpt": null,
+    "last_verified_at": "2026-11-03",
+    "sources": [
+      {
+        "url": "https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html",
+        "title": "South Korea Travel Advisory",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "U.S. citizens",
+        "organization": "U.S. Department of State",
+        "roamready_scope_role": "U.S. traveler guidance; primary for U.S. advisory/consular framing and U.S.-specific facts; cross-check destination rules",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      },
+      {
+        "url": "https://english.visitkorea.or.kr/svc/contents/infoBscView.do?vcontsId=140636",
+        "title": "Climate & Seasons",
+        "checked_at": "2026-11-03",
+        "jurisdiction": "South Korea",
+        "organization": "Korea Tourism Organization",
+        "roamready_scope_role": "Official tourism practical guidance; supporting context for legal, medical, or security claims",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      },
+      {
+        "url": "https://www.weather.go.kr/neng/forecast/warning.do",
+        "title": "Current Severe Weather Status",
+        "checked_at": "2026-11-04",
+        "jurisdiction": "South Korea",
+        "organization": "Korea Meteorological Administration",
+        "roamready_scope_role": "Destination government authority; use for the specific rule or service it administers",
+        "roamready_scope_reviewed_at": "2026-11-04"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  }
+]

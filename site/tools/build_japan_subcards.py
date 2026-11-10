@@ -36,6 +36,14 @@ for card in country['cards']:
   approved=publication_map.get(f"{card['id']}:{sub['id']}",[])
   sub['fact_titles']=list(dict.fromkeys(approved+sub['fact_titles']))
   for note in sub['research']:note['published_as']=approved
-payload={'country':'japan','organized_at':'2026-11-10','publication_status':'Reviewed Japan additions published November 10; original research is preserved as an archive.','cards':country['cards'],'additional_research':country['source_leads']}
+# Explicit editorial placement supersedes the earlier keyword-matching baseline.
+editorial=json.loads((ROOT/'site/data/japan-topic-mapping.json').read_text())
+for card in country['cards']:
+ for sub in card['subcards']:
+  chosen=editorial[f"{card['id']}:{sub['id']}"]
+  sub['fact_titles']=chosen['fact_titles']
+  sub['excerpts']=chosen.get('excerpts',{})
+  sub['display_titles']=chosen.get('display_titles',{})
+payload={'country':'japan','organized_at':'2026-11-10','publication_status':'Reviewed Japan facts integrated into the guide topics; original research retained in project documentation.','cards':country['cards']}
 (ROOT/'site/data/japan-subcards.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
-print('Packaged 32 Japan subcards, 11 follow-up records, one supplemental Narita note and 10 existing research sections; no database writes.')
+print('Packaged 32 Japan subcards, 11 follow-up records, one supplemental Narita note; historical notes retained in project documentation; no database writes.')

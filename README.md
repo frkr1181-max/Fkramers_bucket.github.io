@@ -41,7 +41,7 @@ The source monitor polls five approved GOV.UK FCDO Content API pages daily, chec
 
 ### Country guides
 
-The [country guide index](docs/research/country-guides/README.md) links all 24 destinations in the same ten-section format as Japan. The original guides organize 263 published facts; [28 additional Japan facts](docs/research/publication-2026-11-10-japan/README.md) bring the live total to 291. Facts retain sources, checked dates, and trip conditions.
+The [country guide index](docs/research/country-guides/README.md) links all 24 destinations in the same ten-section format as Japan. The original guides organize 263 published facts. Subsequent Japan additions and the [twelve-country publication](docs/research/publication-2026-11-10-missing-countries/README.md) bring the saved collection to 575 facts across all 36 dropdown destinations. Facts retain sources, checked dates, and trip conditions.
 
 ### Initial endpoints
 

@@ -1,0 +1,256 @@
+[
+  {
+    "id": "8fbce3f1-6e39-59da-b334-6642e3ce8e58",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Prepare your Visit Japan Web registration",
+    "plain_summary": "Create an account with an email address, register your personal and passport information, then add your entry/return plan. Open that plan and complete its immigration and customs information before displaying the arrival QR code. Simply creating an account does not complete the arrival procedures.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Visit Japan Web: official setup and arrival steps",
+        "organization": "Digital Agency, Government of Japan",
+        "url": "https://services.digital.go.jp/en/visit-japan-web/guide/",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "557b371a-afe0-54b6-b13a-6541838cb78b",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "The immigration arrival record is a separate requirement",
+    "plain_summary": "Foreign nationals newly entering Japan must submit a foreign national arrival record (ED card). Visit Japan Web provides electronic submission; immigration examination is still required. Complete the record before reaching the examination area, and check the intended-stay field carefully.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Foreign national arrival record: electronic and paper submission",
+        "organization": "Immigration Services Agency of Japan",
+        "url": "https://www.moj.go.jp/isa/immigration/procedures/translation.html",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "857a9dac-965d-5f33-84de-abdd49e6ab08",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Each traveler needs their own immigration QR code",
+    "plain_summary": "Enter accompanying family members individually in Visit Japan Web and generate and present a QR code for each person. Do not assume one person’s immigration QR code covers the entire family. This differs from the paper customs form, which permits one written declaration per family.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Foreign national arrival record: electronic and paper submission",
+        "organization": "Immigration Services Agency of Japan",
+        "url": "https://www.moj.go.jp/isa/immigration/procedures/translation.html",
+        "checked_at": "2026-11-10"
+      },
+      {
+        "title": "Official English customs declaration form C-5360-B",
+        "organization": "Japan Customs",
+        "url": "https://www.customs.go.jp/kaisei/youshiki/form_C/C5360-B.pdf",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "8f585b75-c951-594a-b6e2-f6123d2902e3",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Save the correct arrival QR code and update it after changes",
+    "plain_summary": "The Immigration Services Agency permits screenshots of the arrival QR code. If you correct registered information, regenerate the QR code and replace the old screenshot. The arrival code is for immigration/customs; the separate tax-free shopping code has different instructions.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Foreign national arrival record: electronic and paper submission",
+        "organization": "Immigration Services Agency of Japan",
+        "url": "https://www.moj.go.jp/isa/immigration/procedures/translation.html",
+        "checked_at": "2026-11-10"
+      },
+      {
+        "title": "Visit Japan Web: official setup and arrival steps",
+        "organization": "Digital Agency, Government of Japan",
+        "url": "https://services.digital.go.jp/en/visit-japan-web/guide/",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "2c42c2c8-f4ff-5d36-9f7d-377ad7f0434d",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Paper arrival forms remain available",
+    "plain_summary": "If you cannot use the electronic service, a paper foreign national arrival record can be submitted; fill it in English or Japanese. Japan Customs also accepts its paper declaration, which can be printed on A4 paper in advance. These are separate immigration and customs documents.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Foreign national arrival record: electronic and paper submission",
+        "organization": "Immigration Services Agency of Japan",
+        "url": "https://www.moj.go.jp/isa/immigration/procedures/translation.html",
+        "checked_at": "2026-11-10"
+      },
+      {
+        "title": "Customs declaration: electronic and paper options",
+        "organization": "Japan Customs",
+        "url": "https://www.customs.go.jp/english/passenger/declaration/declaration_app.html",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "24de37e1-9bbd-5d08-8243-af497952a91b",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Have flight and accommodation details ready",
+    "plain_summary": "The customs form asks for your flight or vessel, embarkation point, arrival date, passport number, personal details, accommodation address in Japan and telephone number. Keep your booking details available so you can enter the actual address and contact information accurately.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Official English customs declaration form C-5360-B",
+        "organization": "Japan Customs",
+        "url": "https://www.customs.go.jp/kaisei/youshiki/form_C/C5360-B.pdf",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "0088d65c-0eb1-5c98-a67f-0d69c97df02b",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "A customs declaration is required even without taxable purchases",
+    "plain_summary": "All passengers entering Japan must submit the Declaration of Accompanied Articles and Unaccompanied Articles. Electronic submission through Visit Japan Web is recommended, but having nothing taxable does not remove the declaration requirement. Answer the questions about your belongings accurately.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Customs declaration: electronic and paper options",
+        "organization": "Japan Customs",
+        "url": "https://www.customs.go.jp/english/passenger/declaration/declaration_app.html",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "c1cf372c-96a9-5556-a831-273a95587ca3",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Use the QR code with your passport at customs",
+    "plain_summary": "At a customs electronic declaration terminal, scan the arrival QR code and your IC passport and follow the instructions before using the electronic gate. Electronic declaration does not prevent a baggage inspection. Follow airport staff directions for the available terminal or inspection desk.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Customs declaration: electronic and paper options",
+        "organization": "Japan Customs",
+        "url": "https://www.customs.go.jp/english/passenger/declaration/declaration_app.html",
+        "checked_at": "2026-11-10"
+      },
+      {
+        "title": "Visit Japan Web: official setup and arrival steps",
+        "organization": "Digital Agency, Government of Japan",
+        "url": "https://services.digital.go.jp/en/visit-japan-web/guide/",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "a6d42866-8b43-5f75-9eb8-892dc19f40dc",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Choose the correct customs channel",
+    "plain_summary": "The green channel is for travelers without goods subject to duty/tax or prohibited/restricted imports; all other travelers use the red channel. If unsure how to declare an item, ask a customs officer before leaving the inspection area.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Passenger clearance and red/green channels",
+        "organization": "Japan Customs",
+        "url": "https://www.customs.go.jp/english/summary/passenger.htm",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "dad51556-a934-59ec-9c04-308aa5375649",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Shipped baggage needs documents completed at arrival",
+    "plain_summary": "If you have unaccompanied articles, submit two customs declaration copies at arrival and keep the original returned with the customs confirmation seal. It is needed when those goods clear customs later. Clearance is generally limited to six months after arrival; the arrival certification cannot simply be recreated if omitted or lost.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Declaring unaccompanied articles at arrival",
+        "organization": "Japan Customs",
+        "url": "https://www.customs.go.jp/english/c-answer_e/keitaibetsuso/7103_e.htm",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  }
+]
