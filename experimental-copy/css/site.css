@@ -453,6 +453,15 @@ dialog.guest .inner { display: grid; gap: 16px; }
    (about 100), the gap above the tiles (24), the gap between rows (32) and
    the peek (72), split across 2 rows, kept between 150 and 240px */
 .trip .band-wrap { border-radius: 0 0 50% 50% / 0 0 56px 56px; }
+/* the dashboard photo is less blue (David, Nov 10): the teal wash made the
+   teal tiles sink into it. the photo is shown in gray under a navy scrim, so
+   the band reads as a quiet slate and the colored tiles stand out. the arcs
+   and the band's shape are untouched */
+.trip .band { background: var(--rr-color-bg-inverse); }
+.trip .band .photo { filter: grayscale(1); }
+.trip .band .overlay {
+  background: linear-gradient(180deg, var(--rr-color-bg-scrim-strong) 0%, var(--rr-color-bg-scrim) 45%, var(--rr-color-bg-scrim-soft) 100%);
+}
 .trip-band-content { padding-block: 32px 64px; }
 .trip-title h1 { font-size: clamp(34px, 1.4vw + 2.6vh, 48px); }
 .chips { margin-top: 12px; }

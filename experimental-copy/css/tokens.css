@@ -32,6 +32,9 @@
   --rr-color-bg-brand: var(--rr-palette-teal);
   --rr-color-bg-brand-deep: var(--rr-palette-teal-deep);
   --rr-color-bg-scrim: rgba(34, 46, 80, 0.6);
+  /* navy laid over the dashboard photo, strongest at the top where the title sits */
+  --rr-color-bg-scrim-strong: rgba(34, 46, 80, 0.74);
+  --rr-color-bg-scrim-soft: rgba(34, 46, 80, 0.52);
   --rr-color-text-primary: var(--rr-palette-navy);
   --rr-color-text-secondary: var(--rr-palette-muted);
   --rr-color-text-inverse: var(--rr-palette-snow);
