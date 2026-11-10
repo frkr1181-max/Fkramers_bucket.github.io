@@ -150,4 +150,4 @@ Built by `tools/build_photos.py`; don't edit by hand.
 | `countries/uzbekistan/plan.webp` | [File:Bobur koʻchasining Shota Rustaveli koʻchasi bilan kesishmasi.jpg](https://commons.wikimedia.org/wiki/File:Bobur_ko%CA%BBchasining_Shota_Rustaveli_ko%CA%BBchasi_bilan_kesishmasi.jpg) | CC0 |
 | `universal/arrive.webp` | [File:Airport in the evening (Unsplash).jpg](https://commons.wikimedia.org/wiki/File:Airport_in_the_evening_(Unsplash).jpg) | CC0 |
 | `universal/hero.webp` | [File:Sunset from a plane (Unsplash).jpg](https://commons.wikimedia.org/wiki/File:Sunset_from_a_plane_(Unsplash).jpg) | CC0 |
-| `universal/plan.webp` | [Unsplash photo rFKBUwLg_WQ](https://unsplash.com/photos/man-standing-inside-airport-looking-at-led-flight-schedule-bulletin-board-rFKBUwLg_WQ) | Unsplash License |
+| `universal/plan.webp` | [Unsplash photo PbnZDWjK4gY](https://unsplash.com/photos/a-person-with-a-backpack-looking-at-the-city-PbnZDWjK4gY) | Unsplash License |
