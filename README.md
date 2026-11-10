@@ -50,8 +50,11 @@ The [country guide index](docs/research/country-guides/README.md) links all 24 d
 - `GET /api/health` checks that the API is running.
 - `GET /api/auth/config` returns only the public Supabase URL and publishable key for a future Auth client.
 - `GET /api/auth/me` returns the current user's ID and email.
+<<<<<<< Updated upstream
 - `GET/POST /api/trips` lists or creates the signed-in user's trips.
 - `GET/PUT/DELETE /api/trips/{trip_id}` reads, replaces editable fields, or deletes an owned trip. `PUT` accepts the full trip payload. Unknown fields, including client-supplied identity or credentials, are rejected.
+=======
+>>>>>>> Stashed changes
 - `GET /api/destinations` lists active research countries (public; RLS-limited).
 - `GET /api/destinations/{destination_slug}/facts?category=entry&stay_days_min=1&stay_days_max=90&purpose=tourism` returns published facts relevant to a short tourism trip (public; RLS-limited; filters are optional, and conditional facts are hidden when trip details are missing).
 - Fact rows must be marked `general` or `conditional` after a reviewer checks their purpose and stay-length limits. Facts marked `needs_review` are never returned. Use inclusive `min_stay_days` / `max_stay_days` limits and `applies_to_purposes` to record the source's conditions.
@@ -78,9 +81,12 @@ Do not commit `.env` files or credentials. Add environment-variable names to `.e
 4. Guests can read only published rows through the public guide API under RLS. Importing candidates remains a trusted backend operation and never uses a browser key to write review data.
 
 The country catalog, fact table, and candidate table have RLS enabled. The GitHub public-read migration grants `anon` select access only to active destinations and published facts; `source_candidates` remains private. FastAPI uses the publishable key for guide reads. Schema: [initial migration](supabase/migrations/20261022224810_source_review_and_travel_facts.sql), [country catalog migration](supabase/migrations/20261025233333_country_catalog_and_backend.sql), and [public-read migration](supabase/migrations/202610290001_roamready_public_reads_and_destination_roster.sql).
+<<<<<<< Updated upstream
 
 ### Backend trip validation
 
 Install `requirements-dev.txt` using Python 3.10+, then run `python -m pytest tests/test_trips.py -q`. The 25 backend checks cover authentication, validation, ownership filters, and use of the user token with the publishable key.
 
 The hosted table's owner CRUD and cross-account isolation were also verified in a rolled-back SQL transaction on November 5, 2026. No test users or trips were retained. Email and password remain in Supabase Auth; trips reference the account through `owner_id`. This work is limited to backend architecture and data. Frontend design, account screens, session-storage behavior, and user flows await the final design plan.
+=======
+>>>>>>> Stashed changes

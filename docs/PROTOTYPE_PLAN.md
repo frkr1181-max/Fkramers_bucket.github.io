@@ -1,6 +1,10 @@
 # RoamReady two-week prototype plan
 
+<<<<<<< Updated upstream
 **Target demo: Friday, November 13, 2026.** This plan aims for one complete, source-grounded trip-preparation flow, not the full destination coverage or automation described as long-term goals. The proposal, research bank, and screens describe different scopes, so this document makes the two-week working scope explicit.
+=======
+**Target demo: Thursday, November 12, 2026.** This plan aims for one complete, source-grounded trip-preparation flow, not the full destination coverage or automation described as long-term goals. The proposal, research bank, and screens describe different scopes, so this document makes the two-week working scope explicit.
+>>>>>>> Stashed changes
 
 ## Scope for the demo
 
@@ -8,9 +12,15 @@ Build a country-level trip preparation flow for travelers using a U.S. passport,
 
 RoamReady covers country research and preparation. It does not compare or book flights or accommodations, create day-by-day itineraries, or provide live trip-planning prices. Anyone can use the guest flow to choose a country, enter trip purpose and flexible timing, open its topic guide, and use the general preparation checklist shown in the mid-fidelity design. Guest trip details live only in page memory and are cleared on refresh or page close. Offer account creation or sign-in as an optional way to save a trip to the user's profile. Account-backed saving requires Supabase Auth and a trips table with owner-only row-level security. A saved trip should remain available offline after it has been saved/synced on the device; source links can open when a connection is available, while saved guidance shows its checked date. Public guide reads use the publishable key and RLS policies; account trip routes remain authenticated. Do not collect passport, health, or precise-location details. Make trip filters visible only when relevant reviewed data is actually filtered by those conditions.
 
+<<<<<<< Updated upstream
 The account-owned trip schema is defined in `supabase/migrations/20261029225934_user_trips.sql`; it supports the current planner's optional exact dates or estimated stay length and seven purposes (`tourism`, `business`, `study`, `work`, `family`, `long-term`, `transit`). GitHub's latest build notes say this migration has been applied; check the target project's migration history before attempting to apply it again. The FastAPI trip routes and frontend saving still need implementation. Keep booking and accommodation data out of the trip record. Public guide reads use the publishable key and RLS; account trip routes remain signed-in and owner-only.
 
 Before applying the `202610290001` public-read migration or the later `20261029222847` and `20261029225934` migrations, compare the files with the target Supabase migration history. Do not replay migrations that are already recorded remotely; reconcile any gap before applying later timestamps.
+=======
+The saved-trip schema proposal matches the current planner: optional exact dates or estimated stay length and seven trip purposes (`tourism`, `business`, `study`, `work`, `family`, `long-term`, `transit`). It remains design-only and needs migration-history review before use. Keep booking and accommodation data out of the trip record. The upstream public-read migration adds anonymous RLS policies; the FastAPI catalog and facts routes now use the publishable key so these policies apply. User trip routes remain signed-in and owner-only.
+
+Before applying or pushing the upstream `202610290001` public-read migration, compare it with the Supabase migration history. The local applicability migration is timestamped `20261029222847`; if that later migration is already applied remotely while the earlier public-read migration is missing, the histories need to be reconciled deliberately rather than pushing blindly.
+>>>>>>> Stashed changes
 
 The initial front-end scaffold is intentionally a static preview. Guest trip details exist only in memory and are cleared on refresh. It contains no verified travel claims and does not yet call the API or sign in. The schedule below brings those pieces together.
 
@@ -65,7 +75,11 @@ Recommended API routes:
 
 The public facts route uses the publishable key and Supabase RLS to return only `published = true` rows; it supports optional category, stay-range, and purpose filters. Raw scraper output goes to `source_candidates`; reviewers must rewrite and verify claims before adding published facts.
 
+<<<<<<< Updated upstream
 The schemas are in `supabase/migrations/`: `destinations` is the country catalog, `source_candidates` stores unreviewed material, `travel_facts` stores reviewed claims with citations, and `user_trips` stores account-owned trip details. Anonymous RLS permits reads only for active destinations and published facts; `source_candidates` remains private. The FastAPI guide routes use the publishable key for these public reads. The user-trip table has owner-only RLS policies in [migration 20261029225934_user_trips.sql](../supabase/migrations/20261029225934_user_trips.sql), but the FastAPI trip routes and frontend account saving still need implementation.
+=======
+The schema is in `supabase/migrations/`: `destinations` is the country catalog, `source_candidates` stores unreviewed material, and `travel_facts` stores reviewed claims with citations and a `published` flag. The GitHub public-read migration grants `anon` read access to active destinations and published facts under RLS. `source_candidates` remains private. Trip records use owner-only select/insert/update/delete policies; never persist guest plans. The proposed trip schema is in the trip storage plan and must be reviewed before becoming a migration.
+>>>>>>> Stashed changes
 
 ## Data workflow
 
@@ -95,6 +109,7 @@ Do not copy the example URL or placeholder date into a real record.
 
 | Day | Date | Main work | Owners | Exit check |
 | --- | --- | --- | --- | --- |
+<<<<<<< Updated upstream
 | 1 | Mon, Nov 2 | Align run instructions and API contract; start both local servers. Decide which country guide will be complete for the demo. | All; Divya coordinates | Everyoshow mene can run both servers; demo country and owners are recorded. |
 | 2 | Tue, Nov 3 | Verify demo-country entry, transport, safety, and emergency facts against official sources. | David + Dion + Frankie (research); Hilna + Divya (data shape) | Every demo claim has a source, reviewer, and checked date. |
 | 3 | Wed, Nov 4 | Connect the country picker and country facts endpoint to the guest flow. | David + Divya (frontend); Hilna (API) | Country selection and published fact loading work from the browser. |
@@ -105,6 +120,18 @@ Do not copy the example URL or placeholder date into a real record.
 | 8 | Wed, Nov 11 | Add local offline copies for signed-in trips and run short usability sessions. | Dion + Frankie (sessions), David + Aahana (changes) | Synced guide opens offline; largest usability issues are recorded and fixed. |
 | 9 | Thu, Nov 12 | Verify citations, keyboard use, narrow layout, account isolation, and the demo script. | All; Divya tracks remaining work | No unsupported travel statements; each demo step has a fallback. |
 | 10 | Fri, Nov 13 | Rehearse from a clean browser, present the prototype, and record limitations and next decisions. | All | A teammate can follow the README and complete the demo path. |
+=======
+| 1 | Fri, Oct 30 | Align run instructions and API contract; start both local servers. Decide which country guide will be complete for the demo. | All; Divya coordinates | Everyone can run both servers; demo country and owners are recorded. |
+| 2 | Mon, Nov 2 | Verify demo-country entry, transport, safety, and emergency facts against official sources. | David + Dion + Frankie (research); Hilna + Divya (data shape) | Every demo claim has a source, reviewer, and checked date. |
+| 3 | Tue, Nov 3 | Connect the country picker and country facts endpoint to the guest flow. | David + Divya (frontend); Hilna (API) | Country selection and published fact loading work from the browser. |
+| 4 | Wed, Nov 4 | Finish the overview, country-wide topic guide, citations, and general checklist. | David + Aahana; Frankie reviews language | Guest can move through preparation topics and checklist. |
+| 5 | Thu, Nov 5 | Complete one source-grounded country guide and verify conditional facts for trip length and purpose. | Research owners + Hilna + Divya | Unsupported or unreviewed facts are not presented as current advice. |
+| 6 | Fri, Nov 6 | Implement optional Supabase Auth and review the owner-only saved-trip migration before applying it. | Hilna + David; Divya checks data plan | Guests retain access; signed-in users can save only their own trips. |
+| 7 | Mon, Nov 9 | Add trip CRUD and connect account saves; persist general checklist progress if the schema is approved. | Hilna + David; Divya reviews data shape | Saved trips reload for their owner; no guest data is written. |
+| 8 | Tue, Nov 10 | Add local offline copies for signed-in trips and run short usability sessions. | Dion + Frankie (sessions), David + Aahana (changes) | Synced guide opens offline; largest usability issues are recorded and fixed. |
+| 9 | Wed, Nov 11 | Verify citations, keyboard use, narrow layout, account isolation, and the demo script. | All; Divya tracks remaining work | No unsupported travel statements; each demo step has a fallback. |
+| 10 | Thu, Nov 12 | Rehearse from a clean browser, present the prototype, and record limitations and next decisions. | All | A teammate can follow the README and complete the demo path. |
+>>>>>>> Stashed changes
 
 ## Team ownership
 
