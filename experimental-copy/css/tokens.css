@@ -51,7 +51,7 @@
   /* the three trip stages that group the guides */
   --rr-color-stage-plan: var(--rr-palette-teal);
   --rr-color-stage-arrive: var(--rr-palette-orange);
-  --rr-color-stage-know: var(--rr-palette-sage);
+  --rr-color-stage-know: var(--rr-palette-navy);  /* was sage; navy stands apart from teal (David, Nov 10) */
 
   /* one color per guide, and the pale tint used behind topic-card icons.
      the entry, money, there and safety tints are from Figma; the other four

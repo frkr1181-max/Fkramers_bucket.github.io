@@ -13,7 +13,8 @@
 
 const DEPTH = [1, 2, 3, 4, 5, 6];
 
-// outline: the object's silhouette (one path). details: what sits on its face
+// outline: the object's silhouette (one path). details: what sits on its face.
+// tilt is in degrees and always positive, so every object leans to the right
 function art(id, tilt, outline, details) {
   const side = DEPTH.map((n) => `<use href="#tile-art-${id}" x="${n}" y="${n}"/>`).join("");
   return `<svg class="glyph tile-art" viewBox="0 0 96 96" aria-hidden="true" focusable="false">
@@ -31,7 +32,7 @@ const onTop = (d) => `<path class="halo" d="${d}"/><path class="face" d="${d}"/>
 
 export const TILE_ART = {
   // a passport: booklet with a round emblem and two lines of text
-  entry: art("entry", -12,
+  entry: art("entry", 12,
     "M29 15H63V75H29Z",
     `<circle class="cut-line" cx="46" cy="37" r="9"/>
      <path class="cut-line" d="M37 57H55M41 67H51"/>`),
@@ -46,7 +47,7 @@ export const TILE_ART = {
      <circle class="cut" cx="65" cy="25" r="4.5"/>`),
 
   // a phone with signal curves on its screen
-  phones: art("phones", -10,
+  phones: art("phones", 10,
     "M30 12H58V78H30Z",
     `<path class="cut soft" d="M33 18H55V66H33Z"/>
      <path class="lit-line" d="M35 40Q44 30 53 40M39 48Q44 42.5 49 48"/>
@@ -65,7 +66,7 @@ export const TILE_ART = {
      <path class="cut-line thin" d="M45 31V44"/>`),
 
   // the front of a train: round roof, windscreen, two lights, feet on the track
-  around: art("around", -8,
+  around: art("around", 8,
     "M21 30Q21 13 38 13H50Q67 13 67 30V65H21ZM27 65V75H35V65ZM53 65V75H61V65Z",
     `<path class="cut soft" d="M28 27H40V41H28ZM48 27H60V41H48Z"/>
      <circle class="cut" cx="32" cy="54" r="4"/><circle class="cut" cx="56" cy="54" r="4"/>`),
@@ -76,9 +77,9 @@ export const TILE_ART = {
     `<circle class="cut" cx="45" cy="48" r="5.5"/>
      <path class="cut-line" d="M45 50V60"/>`),
 
-  // two speech bubbles: how people talk and what's polite
-  culture: art("culture", -9,
-    "M11 17H63V49H38L27 60V49H11Z",
-    `<circle class="cut" cx="24" cy="33" r="4"/><circle class="cut" cx="37" cy="33" r="4"/><circle class="cut" cx="50" cy="33" r="4"/>
-     ${onTop("M50 50H80V68H70V77L61 68H50Z")}`),
+  // two speech bubbles: how people talk and what's polite (big one on the right)
+  culture: art("culture", 9,
+    "M79 17H27V49H52L63 60V49H79Z",
+    `<circle class="cut" cx="40" cy="33" r="4"/><circle class="cut" cx="53" cy="33" r="4"/><circle class="cut" cx="66" cy="33" r="4"/>
+     ${onTop("M40 50H10V68H20V77L29 68H40Z")}`),
 };

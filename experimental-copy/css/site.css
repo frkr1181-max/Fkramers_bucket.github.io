@@ -237,7 +237,7 @@ textarea.input-area:focus { border-color: var(--rr-color-border-strong); outline
 .stage-pill { justify-self: start; padding: 4px 14px; border-radius: var(--rr-radius-pill); font-weight: 700; font-size: 16px; }
 .stage-pill.plan-stage { background: var(--rr-color-stage-plan); color: var(--rr-color-text-on-brand); }
 .stage-pill.arrive-stage { background: var(--rr-color-stage-arrive); }
-.stage-pill.know-stage { background: var(--rr-color-stage-know); }
+.stage-pill.know-stage { background: var(--rr-color-stage-know); color: var(--rr-color-text-on-brand); }
 .stage ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
 .stage li { display: flex; align-items: center; gap: 12px; font-weight: 700; }
 .swatch { width: 32px; height: 32px; border-radius: 10px; display: grid; place-items: center; flex: none; }
@@ -389,7 +389,7 @@ dialog.learn-more::backdrop { background: rgba(34, 46, 80, 0.6); }
 .logo-dark .badge-mark img { width: 43.784px; height: 36px; }
 .logo-dark .wordmark { width: 135.981px; height: 26px; }
 .site-footer .cols { display: flex; gap: 64px; }
-.site-footer .cols h2 { font-weight: 800; font-size: 15px; color: var(--rr-color-stage-know); }
+.site-footer .cols h2 { font-weight: 800; font-size: 15px; color: var(--rr-palette-sage); }
 .site-footer .cols ul { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 12px; }
 .site-footer .cols a, .site-footer .cols button { color: var(--rr-color-text-inverse); text-decoration: none; background: none; border: 0; padding: 0; font-size: 17px; }
 .site-footer .cols a:hover, .site-footer .cols button:hover { text-decoration: underline; }
@@ -503,7 +503,7 @@ dialog.guest .inner { display: grid; gap: 16px; }
 
 /* two palette colors per thumbnail: a main (the band) and an accent (the
    object). the band color groups the tiles by trip stage (David, Nov 10):
-   Plan is teal, Arrive is orange, Know is sage, the same stage colors as the
+   Plan is teal, Arrive is orange, Know is navy, the same stage colors as the
    Plan a trip page. the accent tells the tiles in a stage apart */
 .tile--entry, .tile--money, .tile--phones, .tile--health { --thumb-main: var(--rr-color-stage-plan); }
 .tile--there, .tile--around { --thumb-main: var(--rr-color-stage-arrive); }
@@ -514,8 +514,8 @@ dialog.guest .inner { display: grid; gap: 16px; }
 .tile--health  { --thumb-accent: var(--rr-palette-snow);   --thumb-side: var(--rr-shade-snow); }
 .tile--there   { --thumb-accent: var(--rr-palette-navy);   --thumb-side: var(--rr-shade-navy); }
 .tile--around  { --thumb-accent: var(--rr-palette-teal);   --thumb-side: var(--rr-shade-teal); }
-.tile--safety  { --thumb-accent: var(--rr-palette-teal);   --thumb-side: var(--rr-shade-teal); }
-.tile--culture { --thumb-accent: var(--rr-palette-navy);   --thumb-side: var(--rr-shade-navy); }
+.tile--safety  { --thumb-accent: var(--rr-palette-sage);   --thumb-side: var(--rr-shade-sage); }
+.tile--culture { --thumb-accent: var(--rr-palette-orange); --thumb-side: var(--rr-shade-orange); }
 .plan-below { padding-block-start: 24px; }
 
 /* phones: two columns of compact tiles, icon on the left */
