@@ -13,13 +13,29 @@
 
 const DEPTH = [1, 2, 3, 4, 5, 6];
 
+// per-object fine tuning, in the 96-unit drawing space: scale grows an object
+// about its center, dy moves it down (negative = up). the dy values were
+// measured in the browser so every object's highest point sits the same
+// distance below the top of its thumbnail (David, Nov 10)
+const NUDGE = {
+  entry: { dy: 2.3 },
+  money: { dy: -4.7 },
+  phones: { dy: 5.2 },
+  health: { scale: 1.14, dy: 2.1 },
+  there: { dy: 6 },
+  around: { dy: 2.4 },
+  safety: { dy: 6.4 },
+  culture: { dy: 0 },  // the reference: the others are lined up to this one
+};
+
 // outline: the object's silhouette (one path). details: what sits on its face.
 // tilt is in degrees and always positive, so every object leans to the right
 function art(id, tilt, outline, details) {
+  const { scale = 1, dy = 0 } = NUDGE[id] || {};
   const side = DEPTH.map((n) => `<use href="#tile-art-${id}" x="${n}" y="${n}"/>`).join("");
   return `<svg class="glyph tile-art" viewBox="0 0 96 96" aria-hidden="true" focusable="false">
     <defs><path id="tile-art-${id}" d="${outline}"/></defs>
-    <g transform="rotate(${tilt} 48 48)">
+    <g transform="translate(0 ${dy}) rotate(${tilt} 48 48) translate(48 48) scale(${scale}) translate(-48 -48)">
       <g class="side">${side}</g>
       <use class="face" href="#tile-art-${id}"/>
       ${details}
@@ -48,8 +64,8 @@ export const TILE_ART = {
 
   // a phone with signal curves on its screen
   phones: art("phones", 10,
-    "M30 12H58V78H30Z",
-    `<path class="cut soft" d="M33 18H55V66H33Z"/>
+    "M27 12H61V78H27Z",
+    `<path class="cut soft" d="M30 18H58V66H30Z"/>
      <path class="lit-line" d="M35 40Q44 30 53 40M39 48Q44 42.5 49 48"/>
      <circle class="face" cx="44" cy="56" r="3.5"/>
      <path class="cut-line thin" d="M40 73.5H48"/>`),
