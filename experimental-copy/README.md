@@ -36,11 +36,20 @@ python3 experimental-copy/tools/build_snapshot.py
 
 It writes only into `experimental-copy/data/`. Experiments with made-up or reshaped data belong in a separate file in `data/`, never in the backend or in `site/`.
 
+## Motion
+
+The bouncy feel lives in two files, so it's easy to tune or remove:
+
+- `css/motion.css`: every animation and transition. Entrances spring in, buttons squish on press and spring back, tiles and topic cards lift on hover (mouse only), checklist boxes pop and the tick draws itself, dialogs spring in and fade out, and fields shake when they need fixing.
+- `js/motion.js`: picks what animates on each page and staggers it, starts below-the-fold sections when they scroll into view, draws the band arcs once per visit, and runs the dialog exits.
+- The spring curves are tokens in `css/tokens.css` (`--rr-spring-bouncy`, `--rr-spring-playful`), sampled from Apple-style springs. Change a spring there and every animation using it follows.
+- With "reduce motion" turned on in the operating system, everything fades instead of moving.
+
 ## Rules for experiments
 
 - Keep `js/api.js` as the only file that calls the backend, and `js/guides.js` as the only file that maps design names to data names. If an experiment needs a new API route, ask Frankie or Divya. Don't add it here.
 - Every database string goes through `esc()`, and every link must pass `safeUrl()` (`js/main.js`).
-- Colors, radii and type sizes come from `css/tokens.css`, which matches the Figma variables.
+- Colors, radii, type sizes and motion curves come from `css/tokens.css`. Only `transform` and `opacity` should move.
 - When an experiment is worth keeping, copy the changed files into `site/` in its own pull request, so the team reviews what the demo will show.
 
 Everything else (pages, files, what's not built yet) is the same as in [`site/README.md`](../site/README.md).

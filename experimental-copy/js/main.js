@@ -4,6 +4,7 @@
 import { getDestinations, getFacts, onSourceChange } from "./api.js";
 import { GUIDES, STAGES, PURPOSES, guideById, groupFacts, emergencyNumbers, purposeById } from "./guides.js";
 import { tripFromQuery, tripToQuery, rememberDescription, tripDays, formatRange, factQuery } from "./trip.js";
+import { enter, wireDialogs, staggerMenu, shake } from "./motion.js";
 
 const main = document.querySelector("#main");
 const A = "assets/figma/";
@@ -278,6 +279,8 @@ function wirePlan() {
     };
     flag("#f-country", form.country, "country-error", !match);
     flag("#f-dates", form.to, "dates-error", Boolean(datesBad));
+    if (!match) shake(form.country.closest(".input"));
+    if (datesBad) shake(form.to.closest(".input"));
     if (!match) return form.country.focus();
     if (datesBad) return form.to.focus();
 
@@ -488,8 +491,6 @@ function wireGuide(id) {
       dialog.showModal();
     });
   });
-  // clicking the dimmed backdrop closes the dialog too
-  dialog.onclick = (event) => { if (event.target === dialog) dialog.close(); };
 }
 
 // ---------- about ----------
@@ -555,6 +556,8 @@ async function render() {
 
   closeMenu();
   window.scrollTo(0, 0);
+  // the bouncy entrance for whatever just arrived (js/motion.js)
+  enter(main);
   // move focus to the new page's heading so screen readers announce it
   if (rendered) main.querySelector("h1")?.focus({ preventScroll: true });
   rendered = true;
@@ -574,6 +577,9 @@ menuButton.addEventListener("click", () => {
   nav.classList.toggle("open", open);
   menuButton.setAttribute("aria-expanded", String(open));
 });
+
+wireDialogs(document.querySelectorAll("dialog"));
+staggerMenu(nav);
 
 document.querySelectorAll("[data-open-guest]").forEach((button) =>
   button.addEventListener("click", () => document.querySelector("#guest").showModal()));
