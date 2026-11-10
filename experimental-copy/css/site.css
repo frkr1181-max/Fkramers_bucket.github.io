@@ -7,6 +7,10 @@
 
 html { -webkit-text-size-adjust: 100%; }
 
+/* light mode only, set again below :root so a host page in dark mode (like the
+   claude.ai artifact viewer) can't turn dialogs, pickers or scrollbars dark */
+body, dialog { color-scheme: only light; }
+
 body {
   margin: 0;
   background: var(--rr-color-bg-page);
@@ -361,7 +365,8 @@ a.contact:hover .number { text-decoration: underline; }
 /* Learn more: the full fact, its official wording and its own sources */
 dialog.learn-more {
   width: min(640px, calc(100vw - 32px)); max-height: calc(100vh - 48px); padding: 0; border: 0;
-  border-radius: var(--rr-radius-lg); box-shadow: var(--rr-shadow-lifted); color: var(--rr-color-text-primary);
+  border-radius: var(--rr-radius-lg); box-shadow: var(--rr-shadow-lifted);
+  background: var(--rr-color-bg-surface); color: var(--rr-color-text-primary);
 }
 dialog.learn-more::backdrop { background: rgba(34, 46, 80, 0.6); }
 .learn-more .tint { height: 12px; }
@@ -394,7 +399,7 @@ dialog.learn-more::backdrop { background: rgba(34, 46, 80, 0.6); }
 .site-footer .bottom { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 15px; color: var(--rr-color-text-footer); }
 
 /* guest profile dialog */
-dialog.guest { width: min(460px, calc(100vw - 32px)); border: 0; padding: 28px; border-radius: var(--rr-radius-lg); box-shadow: var(--rr-shadow-lifted); color: var(--rr-color-text-primary); }
+dialog.guest { width: min(460px, calc(100vw - 32px)); border: 0; padding: 28px; border-radius: var(--rr-radius-lg); box-shadow: var(--rr-shadow-lifted); background: var(--rr-color-bg-surface); color: var(--rr-color-text-primary); }
 dialog.guest::backdrop { background: rgba(34, 46, 80, 0.6); }
 dialog.guest .inner { display: grid; gap: 16px; }
 
