@@ -5,6 +5,7 @@ import { getDestinations, getFacts, onSourceChange } from "./api.js";
 import { GUIDES, STAGES, PURPOSES, guideById, groupFacts, emergencyNumbers, purposeById } from "./guides.js";
 import { tripFromQuery, tripToQuery, rememberDescription, tripDays, formatRange, factQuery, DEMO_TRIP } from "./trip.js";
 import { enter, wireDialogs, staggerMenu, shake } from "./motion.js";
+import { TILE_ART } from "./tile-art.js";
 
 const main = document.querySelector("#main");
 const A = "assets/figma/";
@@ -322,7 +323,6 @@ async function tripView() {
   const days = tripDays(trip);
   const purpose = purposeById(trip.purpose);
   const facts = await getFacts(trip.country, factQuery(trip));
-  const groups = groupFacts(facts);
   const emergency = emergencyNumbers(facts);
   // the emergency fact's source is the State Department country page, which
   // lists the embassy's contacts; label the row by what the page is
@@ -334,13 +334,12 @@ async function tripView() {
     [`${A}chip-passport.svg`, "U.S. passport rules"],
   ].filter(Boolean);
 
-  const tiles = GUIDES.map((g) => `<li><a class="tile" href="${tripLink(`guide/${g.id}`)}">
-      <span class="tile-band" style="background:${g.color}">
-        <img class="whisk" src="${A}decor-whisk-rings.svg" alt="" /><img class="glyph" src="${g.icon}" alt="" />
-      </span>
+  // each tile is a colored thumbnail (art from tile-art.js, its two colors set
+  // by the tile--<id> class in site.css) over one row: the title and the arrow
+  const tiles = GUIDES.map((g) => `<li><a class="tile tile--${g.id}" href="${tripLink(`guide/${g.id}`)}">
+      <span class="tile-band">${TILE_ART[g.id]}</span>
       <span class="tile-body">
-        <span><span class="title-m">${g.title}</span>
-        <span class="small blurb">${groups[g.id].length ? g.blurb : "No reviewed info for this country yet."}</span></span>
+        <span class="title-m">${g.title}</span>
         <span class="arrow"><img src="${A}icon-arrow-small.svg" alt="" /></span>
       </span></a></li>`).join("");
 

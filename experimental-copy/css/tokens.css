@@ -65,6 +65,14 @@
   --rr-guide-safety: #7fcb97;  --rr-guide-tint-safety: #c9e9d3;
   --rr-guide-culture: #bcd8c1; --rr-guide-tint-culture: #dfede2;
 
+  /* the shaded side of each palette color, for the dashboard tile art: the
+     color mixed 72/28 with navy (navy itself is lightened so its side shows) */
+  --rr-shade-orange: #c18435;
+  --rr-shade-sage: #91a8a1;
+  --rr-shade-snow: #c1c2cd;
+  --rr-shade-teal: #0a647f;
+  --rr-shade-navy: #5a668c;
+
   /* shape and space */
   --rr-radius-sm: 12px;
   --rr-radius-md: 20px;

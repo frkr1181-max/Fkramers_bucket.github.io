@@ -264,11 +264,9 @@ textarea.input-area:focus { border-color: var(--rr-color-border-strong); outline
 }
 .tile:focus-visible { outline-color: var(--rr-color-focus-on-dark); outline-offset: 4px; }
 .tile-band { position: relative; height: 104px; flex: none; display: grid; place-items: center; }
-.tile-band .whisk { position: absolute; width: 112px; height: 112px; left: 50%; top: 50%; translate: -50% -50%; }
 .tile-band .glyph { position: relative; width: 48px; height: 48px; }
 .tile-body { flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 18px 20px 16px; }
-.tile-body .title-m, .tile-body .blurb { display: block; }
-.tile-body .blurb { margin-top: 4px; }
+.tile-body .title-m { display: block; }
 .arrow {
   align-self: flex-end; width: 36px; height: 36px; border-radius: 50%;
   background: var(--rr-color-bg-subtle); display: grid; place-items: center; flex: none;
@@ -461,15 +459,49 @@ dialog.guest .inner { display: grid; gap: 16px; }
   --tile-h: clamp(150px, calc((100svh - 396px) / 2), 240px);
 }
 .tile { height: var(--tile-h); container-type: size; }
-.tile-band { height: 44%; }
-.tile-band .whisk { width: auto; height: 108%; aspect-ratio: 1; }
-.tile-band .glyph { width: clamp(30px, 17cqh, 44px); height: clamp(30px, 17cqh, 44px); }
-.tile-body { padding: 12px 16px; }
-.tile .title-m { font-size: 19px; }
-.tile .arrow { width: 32px; height: 32px; }
-/* short or narrow tiles drop the description and keep the title */
-@container (max-height: 205px) { .tile-body .blurb { display: none; } }
-@container (max-width: 230px) { .tile-body .blurb { display: none; } }
+
+/* tile = a colored thumbnail on top, then one white row with the title and
+   the arrow side by side (David, Nov 10: no empty white space in the cards).
+   the thumbnail takes all the height the row doesn't need */
+.tile-band { flex: 1; min-height: 0; height: auto; overflow: hidden; background: var(--thumb-main); }
+/* a slanted lighter slab behind the object, so the band isn't one flat color */
+.tile-band::before {
+  content: ""; position: absolute; inset: -20% 18% -20% 30%;
+  background: var(--rr-palette-white); opacity: 0.14; transform: skewX(-18deg);
+}
+/* the art is a square that fits both ways: 82% of the band's height (the tile
+   minus its 56px title row) and never wider than 76% of the tile */
+.tile-band .glyph { --art: min(150px, 76cqw, calc((100cqh - 56px) * 0.82)); width: var(--art); height: var(--art); }
+.tile-body {
+  flex: none; flex-direction: row; align-items: center; justify-content: space-between;
+  gap: 12px; min-height: 56px; padding: 8px 12px 8px 18px;
+}
+.tile .title-m { font-size: 19px; line-height: 1.15; }
+.tile .arrow { width: 36px; height: 36px; align-self: center; }
+/* narrow tiles keep the title and drop the arrow */
+@container (max-width: 190px) { .tile .arrow { display: none; } .tile .title-m { font-size: 16px; } }
+
+/* the art (js/tile-art.js): the object's face is the accent color, its
+   cut-out details are the band color, and its side is the accent's shade */
+.tile-art .face { fill: var(--thumb-accent); }
+.tile-art .side { fill: var(--thumb-side); }
+.tile-art .cut { fill: var(--thumb-main); }
+.tile-art .coin { stroke: var(--thumb-main); stroke-width: 3.5; stroke-linejoin: miter; }
+.tile-art .cut-line { fill: none; stroke: var(--thumb-main); stroke-width: 5; stroke-linejoin: miter; }
+.tile-art .cut-line.thin { stroke-width: 3; }
+.tile-art .cut-line.thick { stroke-width: 8; }
+.tile-art .lit-line { fill: none; stroke: var(--thumb-accent); stroke-width: 4.5; stroke-linejoin: miter; }
+
+/* two palette colors per thumbnail: a main (the band) and an accent (the
+   object). no two neighbors, across or down, share a main color */
+.tile--entry   { --thumb-main: var(--rr-palette-teal);   --thumb-accent: var(--rr-palette-orange); --thumb-side: var(--rr-shade-orange); }
+.tile--money   { --thumb-main: var(--rr-palette-navy);   --thumb-accent: var(--rr-palette-sage);   --thumb-side: var(--rr-shade-sage); }
+.tile--phones  { --thumb-main: var(--rr-palette-orange); --thumb-accent: var(--rr-palette-navy);   --thumb-side: var(--rr-shade-navy); }
+.tile--health  { --thumb-main: var(--rr-palette-sage);   --thumb-accent: var(--rr-palette-teal);   --thumb-side: var(--rr-shade-teal); }
+.tile--there   { --thumb-main: var(--rr-palette-navy);   --thumb-accent: var(--rr-palette-orange); --thumb-side: var(--rr-shade-orange); }
+.tile--around  { --thumb-main: var(--rr-palette-sage);   --thumb-accent: var(--rr-palette-navy);   --thumb-side: var(--rr-shade-navy); }
+.tile--safety  { --thumb-main: var(--rr-palette-teal);   --thumb-accent: var(--rr-palette-snow);   --thumb-side: var(--rr-shade-snow); }
+.tile--culture { --thumb-main: var(--rr-palette-orange); --thumb-accent: var(--rr-palette-teal);   --thumb-side: var(--rr-shade-teal); }
 .plan-below { padding-block-start: 24px; }
 
 /* phones: two columns of compact tiles, icon on the left */
@@ -482,10 +514,9 @@ dialog.guest .inner { display: grid; gap: 16px; }
   .chips li { height: 30px; font-size: 13px; }
   .tiles { margin-top: 16px; gap: 16px; grid-template-columns: 1fr 1fr; }
   .tile { height: 64px; flex-direction: row; container-type: normal; }
-  .tile-band { height: auto; width: 56px; }
-  .tile-band .whisk { display: none; }
-  .tile-band .glyph { width: 28px; height: 28px; }
-  .tile-body { flex-direction: row; align-items: center; padding: 0 10px; }
-  .tile-body .blurb, .tile .arrow { display: none; }
+  .tile-band { flex: none; height: auto; width: 56px; }
+  .tile-band .glyph { width: 40px; height: 40px; }
+  .tile-body { flex: 1; min-height: 0; padding: 0 10px; }
+  .tile .arrow { display: none; }
   .tile .title-m { font-size: 15px; line-height: 1.15; }
 }
