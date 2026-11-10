@@ -9,7 +9,7 @@
 // another backend. other hosts must be added to DEPLOYED_API_HOSTS first, so a
 // shared link can't make the site show some other server's "facts".
 
-import { API_BASE, SAVED_GUIDES_ONLY } from "./config.js";
+import { API_BASE, SAVED_GUIDES_ONLY } from "./config.js?v=20261110-pages";
 
 const TIMEOUT_MS = 4000;
 const SNAPSHOT_URL = "data/guide-snapshot.json";
