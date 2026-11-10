@@ -502,15 +502,20 @@ dialog.guest .inner { display: grid; gap: 16px; }
 .tile-art .lit-line { fill: none; stroke: var(--thumb-accent); stroke-width: 4.5; }
 
 /* two palette colors per thumbnail: a main (the band) and an accent (the
-   object). no two neighbors, across or down, share a main color */
-.tile--entry   { --thumb-main: var(--rr-palette-teal);   --thumb-accent: var(--rr-palette-orange); --thumb-side: var(--rr-shade-orange); }
-.tile--money   { --thumb-main: var(--rr-palette-navy);   --thumb-accent: var(--rr-palette-sage);   --thumb-side: var(--rr-shade-sage); }
-.tile--phones  { --thumb-main: var(--rr-palette-orange); --thumb-accent: var(--rr-palette-navy);   --thumb-side: var(--rr-shade-navy); }
-.tile--health  { --thumb-main: var(--rr-palette-sage);   --thumb-accent: var(--rr-palette-teal);   --thumb-side: var(--rr-shade-teal); }
-.tile--there   { --thumb-main: var(--rr-palette-navy);   --thumb-accent: var(--rr-palette-orange); --thumb-side: var(--rr-shade-orange); }
-.tile--around  { --thumb-main: var(--rr-palette-sage);   --thumb-accent: var(--rr-palette-navy);   --thumb-side: var(--rr-shade-navy); }
-.tile--safety  { --thumb-main: var(--rr-palette-teal);   --thumb-accent: var(--rr-palette-snow);   --thumb-side: var(--rr-shade-snow); }
-.tile--culture { --thumb-main: var(--rr-palette-orange); --thumb-accent: var(--rr-palette-teal);   --thumb-side: var(--rr-shade-teal); }
+   object). the band color groups the tiles by trip stage (David, Nov 10):
+   Plan is teal, Arrive is orange, Know is sage, the same stage colors as the
+   Plan a trip page. the accent tells the tiles in a stage apart */
+.tile--entry, .tile--money, .tile--phones, .tile--health { --thumb-main: var(--rr-color-stage-plan); }
+.tile--there, .tile--around { --thumb-main: var(--rr-color-stage-arrive); }
+.tile--safety, .tile--culture { --thumb-main: var(--rr-color-stage-know); }
+.tile--entry   { --thumb-accent: var(--rr-palette-orange); --thumb-side: var(--rr-shade-orange); }
+.tile--money   { --thumb-accent: var(--rr-palette-sage);   --thumb-side: var(--rr-shade-sage); }
+.tile--phones  { --thumb-accent: var(--rr-palette-navy);   --thumb-side: var(--rr-shade-navy); }
+.tile--health  { --thumb-accent: var(--rr-palette-snow);   --thumb-side: var(--rr-shade-snow); }
+.tile--there   { --thumb-accent: var(--rr-palette-navy);   --thumb-side: var(--rr-shade-navy); }
+.tile--around  { --thumb-accent: var(--rr-palette-teal);   --thumb-side: var(--rr-shade-teal); }
+.tile--safety  { --thumb-accent: var(--rr-palette-teal);   --thumb-side: var(--rr-shade-teal); }
+.tile--culture { --thumb-accent: var(--rr-palette-navy);   --thumb-side: var(--rr-shade-navy); }
 .plan-below { padding-block-start: 24px; }
 
 /* phones: two columns of compact tiles, icon on the left */
