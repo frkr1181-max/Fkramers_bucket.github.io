@@ -1,0 +1,1573 @@
+[
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/algeria.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/algeria.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/algeria",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/algeria",
+    "title": "Algeria - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 23480,
+    "sha256": "6101ccbdb55ee29f332dd46d2cf399eee0075fc2d1d15a20897512a1c87e34e2"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/argentina.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/argentina.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/argentina",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/argentina",
+    "title": "Argentina - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 25843,
+    "sha256": "8d1122786b13f58bbf728e51b2387d99202a9f17b348032a4c818054b84a2a33"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/australia.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/australia.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/australia",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/australia",
+    "title": "Australia - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 23397,
+    "sha256": "dd6cb2cfab367f8b86b33e7632d81ff389fe1c2c78748fb70bda751746164706"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/austria.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/austria.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/austria",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/austria",
+    "title": "Austria - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 19758,
+    "sha256": "f1aaae1980d6174311ef30ff32f7f33438d1c626134fc2bd84073f46b2cd17af"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/belgium.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/belgium.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/belgium",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/belgium",
+    "title": "Belgium - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 19920,
+    "sha256": "9e89ddb0812d8a4537c3ec75c1dded4bb53fbab2eb807862346a7f09df7069ca"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/bosnia-and-herzegovina.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/bosnia-and-herzegovina.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/bosnia-and-herzegovina",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/bosnia-and-herzegovina",
+    "title": "Bosnia and Herzegovina - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 22460,
+    "sha256": "6b2351bfa959739e2857f2f7d4a08109e828d75c85845b050e8f14a76afafa5d"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/egypt.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/egypt.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/egypt",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/egypt",
+    "title": "Egypt - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 25004,
+    "sha256": "ed579597ae3b7b9b14366d6f4826e608a432c960c4292253f0bc705d60b8c864"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/united-kingdom.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/united-kingdom.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/united-kingdom",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/united-kingdom",
+    "title": "United Kingdom, including England, Scotland, Wales, and Northern Ireland - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 21219,
+    "sha256": "9672af096c0a2af68bc28b8d918213e7ad70ad447b2a72fce561d98cb49269aa"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/france.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/france.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/france",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/france",
+    "title": "France - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 20409,
+    "sha256": "d2da7f54e8cb2123be2697638d85a03f68592c1d3bf3e427b473b92800d0e129"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/germany.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/germany.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/germany",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/germany",
+    "title": "Germany - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 20983,
+    "sha256": "3e7097d39c06783d1e79cf19fec8ecf798fac5a8c57128226edc37859a2e6c77"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/iraq.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/iraq.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/iraq",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/iraq",
+    "title": "Iraq - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 24568,
+    "sha256": "030e4da3fb52cd92f65ba033064e4266672f83051473d6a023b009687cf947c1"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/japan",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/japan",
+    "title": "Japan - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 21159,
+    "sha256": "c59838f04d2196c418312d1305473fdccab6268ac9c559d58fa90ef2412ae53e"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/mexico.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/mexico.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/mexico",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/mexico",
+    "title": "Mexico - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 29661,
+    "sha256": "9d164e738dde84c67ee492176188773af1f5d68860ff8ae2a9ef2df93b87f82d"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/netherlands.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/netherlands.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/netherlands",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/netherlands",
+    "title": "The Netherlands - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 20014,
+    "sha256": "31eea7f29c36801e0f17f7f20b52363e87a598318d83e43fc5ffaa69f0ddfc27"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/new-zealand.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/new-zealand.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/new-zealand",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/new-zealand",
+    "title": "New Zealand - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 20010,
+    "sha256": "b1cf993368589c7417b4161c735dfe54adac1d176a8c83ea1f23e25fc3503430"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/norway.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/norway.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/norway",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/norway",
+    "title": "Norway - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 20254,
+    "sha256": "d10c72b59058db2d9361a3a5c4cf9ae63426dd8b287a40b1c4b8717143e3d349"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/panama.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/panama.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/panama",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/panama",
+    "title": "Panama - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 27994,
+    "sha256": "9e64e85f1ca9520aae6d08648f430876d469a3c8f03abd4a3975ac727a2c68b2"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/paraguay.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/paraguay.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/paraguay",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/paraguay",
+    "title": "Paraguay - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 25305,
+    "sha256": "33814dc5bfb00fe10c60b336106a0970ca3cce0185f0f342a487cae23697cb3e"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/qatar.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/qatar.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/qatar",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/qatar",
+    "title": "Qatar - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 22525,
+    "sha256": "abf6af20e66a839549758af9e616eed63af3f2a6f6450179ac2520717e79f39d"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/saudi-arabia.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/saudi-arabia.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/saudi-arabia",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/saudi-arabia",
+    "title": "Saudi Arabia - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 27156,
+    "sha256": "237d7a09e72e8059d3a794289d8e42259a930f80cc16b80f7b89209f7ea1fe11"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/senegal.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/senegal.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/senegal",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/senegal",
+    "title": "Senegal - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 26348,
+    "sha256": "47f663bd255975ee5f157c4ebcbc7bab04ee8b777c560981f2e6117f59f9c32c"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/south-africa.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/south-africa.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/south-africa",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/south-africa",
+    "title": "South Africa - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 27961,
+    "sha256": "9793fbd6a69008d78ebc57479d1402de053a400655e000b6822c9f1dce8e2b89"
+  },
+  {
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://travel.state.gov/en/international-travel/travel-advisories/south-korea.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/south-korea",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/south-korea",
+    "title": "South Korea - Traveler view | Travelers' Health | CDC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 23091,
+    "sha256": "6ddb860ce83c1a89364024902dacd343c18fe5b4c8a06ef47aa597b29bf6d1db"
+  },
+  {
+    "url": "https://www.customs.go.kr/english/cm/cntnts/cntntsView.do?cntntsId=5500&mi=10800",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.customs.go.kr/english/cm/cntnts/cntntsView.do?cntntsId=5500&mi=10800",
+    "title": "영문사이트",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 5373,
+    "sha256": "3ff41a1f8b815753e04dc909f436f1fdcf72b9da304243dd4ee086913a78b060"
+  },
+  {
+    "url": "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=374&vcontsId=140040",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=374&vcontsId=140040",
+    "title": "Korean Currency & Exchange Info: Korean Currency-  VISITKOREA",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 3832,
+    "sha256": "4dc5ec13797a2bf36320e227b92937e9a8cf7341a47310d9e43bbe138d38942d"
+  },
+  {
+    "url": "https://www.egsa-alger.dz/",
+    "checked_at": "2026-11-05",
+    "status": "request_failed"
+  },
+  {
+    "url": "https://www.arpce.dz/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.arpce.dz/",
+    "title": "arpce.dz",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 142,
+    "sha256": "3f88708ec32fa45becb288ac8a11064062b90f8531f18f3e28cc47fc4f1af5a6"
+  },
+  {
+    "url": "https://www.aeropuertosargentina.com/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.aeropuertosargentina.com/",
+    "title": "",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "url": "https://turismo.buenosaires.gob.ar/en",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://turismo.buenosaires.gob.ar/en",
+    "title": "Official English Website for the City of Buenos Aires",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 6015,
+    "sha256": "9968f61081f1eef34060672240fa18854633b0c77b0e0c1fabc0aead5b6af627"
+  },
+  {
+    "url": "https://www.argentina.travel/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.argentina.travel/",
+    "title": "Visit Argentina",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 177,
+    "sha256": "359a80b91214bba58bcc8e4737608a155d1f66d3f85d46f794db2c2d7ac69517"
+  },
+  {
+    "url": "https://www.enacom.gob.ar/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.enacom.gob.ar/",
+    "title": "Ente Nacional de Comunicaciones",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 434,
+    "sha256": "48e17c42783a842fe23194a6be5a1aff485fcb7873e344082d68c8cbb6f20a96"
+  },
+  {
+    "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601",
+    "title": "",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 304,
+    "sha256": "94c56814766e99b99362e4e1befb9fb1f804ff96052a49f6b74f2afced8aceed"
+  },
+  {
+    "url": "https://www.australia.com/en-us",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.australia.com/en-us",
+    "title": "Travel to Australia - Australian Tourism Information - Tourism Australia",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 8555,
+    "sha256": "63b6e772cb2fc03f681cbf9d5099bfe263131e258ed68e473e56b2369b0e6850"
+  },
+  {
+    "url": "https://www.acma.gov.au/",
+    "checked_at": "2026-11-05",
+    "status": "request_failed"
+  },
+  {
+    "url": "https://www.viennaairport.com/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://viennaairport.com/passagiere",
+    "title": "Flughafen Wien - Passagiere",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 4051,
+    "sha256": "a22b25951791f1a3e7cf1fd9ca025273fc3232cf481aa739d9fc54c77c7d6975"
+  },
+  {
+    "url": "https://www.oebb.at/en/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.oebb.at/en/",
+    "title": "Home - ÖBB",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1852,
+    "sha256": "769f93a4059ab5b6ec3accbf2fd55687ea78944992f35005e7487a462fa84e70"
+  },
+  {
+    "url": "https://www.austria.info/en/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.austria.info/en-us/",
+    "title": "Holiday in Austria – tips and infos for your stay",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 4108,
+    "sha256": "12aa67bc81262a4cf7c6356b8e55937e8c237b549eef225145f2dbd94bd92483"
+  },
+  {
+    "url": "https://www.rtr.at/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.rtr.at/rtr/startseite.de.html",
+    "title": "Startseite | RTR",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 5283,
+    "sha256": "e051d24e3733be90c36484f63d3d5dc0fd05ad8329a57f67647e6bc191731c25"
+  },
+  {
+    "url": "https://www.brusselsairport.be/en/passengers",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://www.brusselsairport.be/en/passengers",
+    "status": "http_error"
+  },
+  {
+    "url": "https://www.belgiantrain.be/en",
+    "checked_at": "2026-11-05",
+    "status": "robots_not_permitted"
+  },
+  {
+    "url": "https://www.visitbelgium.com/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://visitbelgium.com/",
+    "title": "Visit Belgium, your next travel destination in Europe",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 711,
+    "sha256": "bc68e8bf422453b0641f6c284434e3765ed451bb89232365ca0cd0d79786c0f5"
+  },
+  {
+    "url": "https://www.bipt.be/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.bipt.be/gebruikers",
+    "title": "Gebruikers | BIPT",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1680,
+    "sha256": "3fe8936b09f80e6aba3b21bd123276c3adad5b25cc8651fefd22d1aa8a07ebcb"
+  },
+  {
+    "url": "https://www.sarajevo-airport.ba/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://sarajevo-airport.ba/",
+    "title": "Međunarodni aerodrom Sarajevo",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 2612,
+    "sha256": "a0f7c864cb9951c74a1c81ace0119636b336f56434270eb7d2d1a49f9ff9608f"
+  },
+  {
+    "url": "https://www.bhtourism.ba/",
+    "checked_at": "2026-11-05",
+    "status": "request_failed"
+  },
+  {
+    "url": "https://www.rak.ba/",
+    "checked_at": "2026-11-05",
+    "status": "request_failed"
+  },
+  {
+    "url": "https://visa2egypt.gov.eg/eVisa/FAQ",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://visa2egypt.gov.eg/eVisa/FAQ",
+    "title": "Egypt e-Visa Portal",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 2828,
+    "sha256": "4692d771cde14916eb4f658431cbc8c89e98b98cfa7c54698d1ce4a68445ec7b"
+  },
+  {
+    "url": "https://www.experienceegypt.eg/en/usefulinfo",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.experienceegypt.eg/en/usefulinfo",
+    "title": "Experience Egypt",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 19854,
+    "sha256": "8b748064b97a739e17fd74846ed5cce7833a9c68964ddc345a48942509ee7180"
+  },
+  {
+    "url": "https://www.gov.uk/eta",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.gov.uk/eta",
+    "title": "Get an electronic travel authorisation (ETA) to visit the UK: Overview - GOV.UK",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 2979,
+    "sha256": "654918f003a9786835c88d4e27d5bd18317dcc0f85449e1b8812de8926c75c36"
+  },
+  {
+    "url": "https://www.heathrow.com/transport-and-directions/by-rail-or-train",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.heathrow.com/transport-and-directions/by-rail-or-train",
+    "title": "By rail or train | Heathrow",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 2938,
+    "sha256": "41117d4f2bc457fef754b0caaec6d76509bb47cfd3b4b624f5b1dc844c23315e"
+  },
+  {
+    "url": "https://www.nationalrail.co.uk/journey-planner/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.nationalrail.co.uk/journey-planner/",
+    "title": "Journey Planner | Official Train Ticket Info | National Rail",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1161,
+    "sha256": "b93abf93f2c201bb1ddb6cc77a060923517c8b15af4208fed8c0ffd2d8683b78"
+  },
+  {
+    "url": "https://www.visitbritain.com/en/things-to-do/find-britains-quirkiest-traditions-and-events",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.visitbritain.com/en/things-to-do/find-britains-quirkiest-traditions-and-events",
+    "title": "British Traditions & Quirky Events | VisitBritain",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 17892,
+    "sha256": "c0ba87fed575ba681b1ebe8bc01eac908648eefc0594f8331cf03e390e11821b"
+  },
+  {
+    "url": "https://www.ofcom.org.uk/mobile",
+    "checked_at": "2026-11-05",
+    "status": "robots_not_permitted"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/united-kingdom/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/united-kingdom/",
+    "title": "Travel adaptor for United Kingdom / UK Electric Plug Type",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1572,
+    "sha256": "9a2067fdc5a23eb574feca6c4372c3331a77af99cbb71db089e61b742a5343a5"
+  },
+  {
+    "url": "https://www.france-visas.gouv.fr/en/faq",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.france-visas.gouv.fr/en/faq",
+    "title": "Frequently asked questions - France-Visas",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 24954,
+    "sha256": "165be827f2a8cd9bee087f03b694e3792fd5be5686476a7083b0d35c76737982"
+  },
+  {
+    "url": "https://www.iledefrance-mobilites.fr/en/acceder-aux-aeroports",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.iledefrance-mobilites.fr/en/acceder-aux-aeroports",
+    "title": "Access to airports | Île-de-France Mobilités",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1929,
+    "sha256": "d41d281e5d9022c052c1e025498be1aa42462f8a64b71449d4636700981ca76c"
+  },
+  {
+    "url": "https://www.sncf-connect.com/en-en/train-ticket/timetables",
+    "checked_at": "2026-11-05",
+    "status": "robots_not_permitted"
+  },
+  {
+    "url": "https://www.france.fr/en/article/discovering-french-culture/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.france.fr/en/article/discovering-french-culture/",
+    "title": "French Culture : Food, Traditions, Fashion, Art and Language",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 10495,
+    "sha256": "c53cd17a6b3d6eecd4d7683320c87a63db60f8e8f24c2693598862cfd5dc5cf0"
+  },
+  {
+    "url": "https://travel.orange.com/en/buy-a-sim/offers/france",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://travel.orange.com/en/buy-a-sim/offers/france",
+    "title": "eSIM France & travel data plan | Orange Travel",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 9698,
+    "sha256": "33ef82a70330b57f8fae0f0b20e424f602145b1a8c4002f3280513bd8b53b7e9"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/france/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/france/",
+    "title": "Travel Adaptor for France / France Plug Type",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1613,
+    "sha256": "16768e09732f6d3c67598a0da564b39623f050de3b33e21a44daf57ded956ee4"
+  },
+  {
+    "url": "https://www.auswaertiges-amt.de/en/visa-service/215870-215870",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.auswaertiges-amt.de/en/visa-service/215870-215870",
+    "title": "Visas for Germany - Federal Foreign Office",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 18387,
+    "sha256": "4673e5d05fc5d4232d8065ae464e025f1ea39e1cff033c29742efccbc035f187"
+  },
+  {
+    "url": "https://www.frankfurt-airport.com/en/transport-and-parking/to-from-the-airport/travel-by-train.html",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.frankfurt-airport.com/en/transport-and-parking/to-from-the-airport/travel-by-train.html",
+    "title": "Traveling by train to Frankfurt airport",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 3990,
+    "sha256": "babe19a922b3af6299ec74275f3d68d2f9f0d34b6a20ddaa76c0b3663f248020"
+  },
+  {
+    "url": "https://int.bahn.de/en",
+    "checked_at": "2026-11-05",
+    "status": "robots_not_permitted"
+  },
+  {
+    "url": "https://www.germany.travel/en/home.html",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.germany.travel/en/home.html",
+    "title": "Top Attractions and Insider Tips for your Holiday \n\t\t\t- Germany Travel",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 15579,
+    "sha256": "14d560f8b9a22fbbefb6e93734b7cf5075779796e795a79601177685fd3e3f2e"
+  },
+  {
+    "url": "https://www.telekom.de/shop/mobilfunk/esim",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.telekom.de/shop/mobilfunk/esim",
+    "title": "eSIM: Tarife & Informationen im Überblick | Telekom",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 14349,
+    "sha256": "a69607045827ef282a4261dc4aff63a559e2c54eb6b6e40da92ee25fb49cb6e5"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/germany/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/germany/",
+    "title": "Travel Adaptor for Germany / German Adapter Plug",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1574,
+    "sha256": "45da7342be02f6ff9aa0c1cb0bbcc91b981682cd5e82229b4a5f51cdf1451a31"
+  },
+  {
+    "url": "https://eservice.evisa.iq/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://eservice.evisa.iq/",
+    "title": "Mendix",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 6,
+    "sha256": "b45fd65c1f7cc9e94dbde9de19039ec68da19089f197c84decc799a397bf5f2f"
+  },
+  {
+    "url": "https://iraqiairways.com.iq/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://iraqiairways.com.iq/",
+    "title": "الشركة العامة للخطوط الجوية العراقية",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 6240,
+    "sha256": "744d25b761c044a0a074ef3609b8a3b6d224ca222b917eac71952de4fce7c499"
+  },
+  {
+    "url": "https://www.eia.krd/english/airport-guide/departure/to-from-airport",
+    "checked_at": "2026-11-05",
+    "status": "robots_not_permitted"
+  },
+  {
+    "url": "https://whc.unesco.org/en/statesparties/iq",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://whc.unesco.org/en/statesparties/iq",
+    "title": "Iraq - UNESCO World Heritage Convention",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 9475,
+    "sha256": "ff8cbaac1b442b6d9e4382a41528735e86e8effe08b4b83464312d46edf4c22d"
+  },
+  {
+    "url": "https://www.iq.zain.com/en/prepaid/new-sim",
+    "checked_at": "2026-11-05",
+    "status": "request_failed"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/iraq/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/iraq/",
+    "title": "Travel Adaptor for Iraq / Plug Type and Outlet",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1707,
+    "sha256": "d32f7d66b02cce996aede9dd0662e37ecb250fe045e2eab029fa2a44386afd5a"
+  },
+  {
+    "url": "https://www.mofa.go.jp/j_info/visit/visa/short/novisa.html",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://www.mofa.go.jp/j_info/visit/visa/short/novisa.html",
+    "status": "http_error"
+  },
+  {
+    "url": "https://www.narita-airport.jp/en/access/train/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.narita-airport.jp/en/access/train/",
+    "title": "Rail | NARITA INTERNATIONAL AIRPORT",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 3010,
+    "sha256": "f1797c877d022c017781581bbe364537b4da33268d7088cea2ccebd00ece5e13"
+  },
+  {
+    "url": "https://www.japan.travel/en/plan/getting-around/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.japan.travel/en/plan/getting-around/",
+    "title": "Transportation in japan | Plan | Travel Japan（Japan National Tourism Organization）",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 10435,
+    "sha256": "1699104634a06c3ee16ffe7a227666a52525d0a7d8cc37333b9f3b7259e4b551"
+  },
+  {
+    "url": "https://www.japan.travel/en/guide/understanding-and-mastering-japanese-manners-and-etiquette/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.japan.travel/en/guide/understanding-and-mastering-japanese-manners-and-etiquette/",
+    "title": "Understanding and Mastering Japanese Manners and Etiquette | Guide | Travel Japan - Japan National Tourism Organization (Official Site)",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 17169,
+    "sha256": "14e4e92f3e988cc0ed9bc3a36d70d928089c6d77faa7bf1cfdc45445003961de"
+  },
+  {
+    "url": "https://www.japan.travel/en/plan/wifi-and-connectivity/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.japan.travel/en/plan/wifi-and-connectivity/",
+    "title": "Wi-Fi in Japan | Travel Japan | JNTO",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 11424,
+    "sha256": "875e08de2795bc68214293fa4c9fbdf7b9536da0cd9b6e44b504a105e5ebc8ab"
+  },
+  {
+    "url": "https://www.japan.travel/en/plan/plug-and-electricity/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.japan.travel/en/plan/plug-and-electricity/",
+    "title": "Japan Electrical Outlet | Travel Japan | JNTO",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 8804,
+    "sha256": "2b7ad514c563f9c4571b0070829fab2daee63ae4a4235aecedacd99c2ca3f3df"
+  },
+  {
+    "url": "https://visitmexico.com/en/pagina/preguntas-frecuentes",
+    "checked_at": "2026-11-05",
+    "status": "request_failed"
+  },
+  {
+    "url": "https://visitmexico.com/en/pagina/movilidad",
+    "checked_at": "2026-11-05",
+    "status": "request_failed"
+  },
+  {
+    "url": "https://visitmexico.com/en/pagina/conectividad",
+    "checked_at": "2026-11-05",
+    "status": "request_failed"
+  },
+  {
+    "url": "https://www.netherlandsworldwide.nl/travel-netherlands",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.netherlandsworldwide.nl/travel-netherlands",
+    "title": "What do I need to travel to the Netherlands? | NetherlandsWorldwide",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1508,
+    "sha256": "36ac3bdb87d010d6f61ba296562010b1554775da58ac152c744c06b88fe76db7"
+  },
+  {
+    "url": "https://www.schiphol.nl/en/prepare-for-your-flight-at-schiphol/passports-and-travel-documents/",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://www.schiphol.nl/en/prepare-for-your-flight-at-schiphol/passports-and-travel-documents/",
+    "status": "http_error"
+  },
+  {
+    "url": "https://www.holland.com/global/tourism/getting-around/information/getting-around-in-the-netherland",
+    "checked_at": "2026-11-05",
+    "http_status": 404,
+    "final_url": "https://www.holland.com/global/tourism/getting-around/information/getting-around-in-the-netherland",
+    "status": "http_error"
+  },
+  {
+    "url": "https://www.holland.com/global/tourism/get-inspired/nl-in-7-stories/cycling-in-the-netherlands",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.holland.com/global/tourism/experience/nl-in-7-stories/cycling-in-the-netherlands",
+    "title": "Cycling in the Netherlands: top tips & locations - Holland.com",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 8002,
+    "sha256": "1dec04333b156210225f1898611bd9003808532ac79ebffcea996a56e764cd7f"
+  },
+  {
+    "url": "https://discovernetherlands.travel/essentials/esim-and-connectivity",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://discovernetherlands.travel/essentials/esim-and-connectivity",
+    "title": "eSIM, roaming and staying connected · Discover Netherlands",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 9737,
+    "sha256": "0286ff339a4e016b8ee1620526262ed874a1b8ab5543ab79db67d465f5ac90c1"
+  },
+  {
+    "url": "https://www.immigration.govt.nz/visas/visitor-visa/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.immigration.govt.nz/visas/visitor-visa/",
+    "title": "Visitor Visa » Immigration New Zealand",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 22531,
+    "sha256": "77bcf2755967ab018e46b8c0e7bb45a19965a49ef4ef4dbc73c1ada8b59cb6f4"
+  },
+  {
+    "url": "https://www.newzealand.com/us/getting-here/",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://www.newzealand.com/us/getting-here/",
+    "status": "http_error"
+  },
+  {
+    "url": "https://www.newzealand.com/us/getting-around/",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://www.newzealand.com/us/getting-around/",
+    "status": "http_error"
+  },
+  {
+    "url": "https://www.newzealand.com/uk/maori-culture/",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://www.newzealand.com/uk/maori-culture/",
+    "status": "http_error"
+  },
+  {
+    "url": "https://www.newzealand.com/sg/feature/internet-and-wifi-access-in-new-zealand/",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://www.newzealand.com/sg/feature/internet-and-wifi-access-in-new-zealand/",
+    "status": "http_error"
+  },
+  {
+    "url": "https://www.udi.no/en/want-to-apply/visit-and-holiday/to-visit-norway-without-a-visa/?c=usa",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.udi.no/en/want-to-apply/visit-and-holiday/to-visit-norway-without-a-visa/?c=usa",
+    "title": "Visit Norway without a visa - UDI",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 3746,
+    "sha256": "2b3f9042e32f708bda20b8971be318facc7cbeca3e55695f419e5e13220f1370"
+  },
+  {
+    "url": "https://www.visitnorway.com/plan-your-trip/getting-here/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.visitnorway.com/plan-your-trip/getting-here/",
+    "title": "Getting here | How to get to Norway | Transport alternatives",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 10150,
+    "sha256": "25d3fad2b097f739cf706fa30dd3ca3fc3b5c361fcb6367fa7a803c1d19bd9ad"
+  },
+  {
+    "url": "https://www.visitnorway.com/plan-your-trip/getting-around/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.visitnorway.com/plan-your-trip/getting-around/",
+    "title": "Getting around | Travel around Norway any way you like",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 11302,
+    "sha256": "b8f1d65774fa79086243a174f7dd159ad81a362cf3c2013f4606565b78da4fb3"
+  },
+  {
+    "url": "https://www.visitnorway.com/plan-your-trip/visitor-guidelines/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.visitnorway.com/plan-your-trip/visitor-guidelines/",
+    "title": "Visitor guidelines – be a great guest in Norway",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 11867,
+    "sha256": "59a72cae8c0441f67e3d3c196f866309c9a724afd250fa0e5e299702aed5942e"
+  },
+  {
+    "url": "https://www.visitnorway.com/plan-your-trip/travel-tips-a-z/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.visitnorway.com/plan-your-trip/travel-tips-a-z/",
+    "title": "Travel tips A-Z - Official travel guide to Norway - visitnorway.com",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 16354,
+    "sha256": "dec00cdbf196dbbd0289698a02ae50b6d773b54b393bb467ce78625308e78f17"
+  },
+  {
+    "url": "https://www.migracion.gob.pa/turistas/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.migracion.gob.pa/turistas/",
+    "title": "Turistas – Servicio Nacional de Migración – Panamá",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1712,
+    "sha256": "fffe6c5eff2d88c6991aec4b4f749505aab340af5b55201f201a624d696c2175"
+  },
+  {
+    "url": "https://www.tourismpanama.com/travel-around-panama/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.tourismpanama.com/travel-around-panama/",
+    "title": "Guide to getting around and exploring Panamá.",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 11275,
+    "sha256": "7c6123c75e70a122489e82af3ed5323a2b4dc25c307674f818303ac56f8838e2"
+  },
+  {
+    "url": "https://www.tourismpanama.com/culture-cuisine/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.tourismpanama.com/culture-cuisine/",
+    "title": "Panama Culture & Cuisine | Indigenous People, Food & Coffee",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 3816,
+    "sha256": "48f15a71d4565bd7d8e9199965e0b29ad6ec19d6cb6a75712c2ef911ea3f53ba"
+  },
+  {
+    "url": "https://ayuda.tigo.com.pa/hc/centro-de-ayuda/articles/144175189814911-conoce-todo-sobre-el-servicio-prepago",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://ayuda.tigo.com.pa/hc/centro-de-ayuda/articles/144175189814911-conoce-todo-sobre-el-servicio-prepago",
+    "title": "Conoce todo sobre el servicio Prepago",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 3396,
+    "sha256": "d6b1d9d9537af99313542fa52e72bd4635539d9f2c5b59bf7297784b7d9a99f9"
+  },
+  {
+    "url": "https://www.mre.gov.py/visas-new/",
+    "checked_at": "2026-11-05",
+    "http_status": 403,
+    "final_url": "https://www.mre.gov.py/visas-new/",
+    "status": "http_error"
+  },
+  {
+    "url": "https://visitparaguay.travel/places/aeropuerto-internacional-silvio-pettirossi",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://visitparaguay.travel/places/aeropuerto-internacional-silvio-pettirossi",
+    "title": "AEROPUERTO INTERNACIONAL SILVIO PETTIROSSI",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 2564,
+    "sha256": "2cca40ddad770bde497b4e799f28879d5baae5b3328044ec4aad48260c962032"
+  },
+  {
+    "url": "https://mopc.gov.py/viceministerios/viceministerio-de-transporte/preguntas-frecuentes/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://mopc.gov.py/viceministerios/viceministerio-de-transporte/preguntas-frecuentes/",
+    "title": "Preguntas Frecuentes – MOPC",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 3079,
+    "sha256": "507e7264bbcb66ee8d0ca3e68711759dbc850c8bf30cef10c6043d143410260a"
+  },
+  {
+    "url": "https://visitparaguay.travel/planea-tu-viaje",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://visitparaguay.travel/planea-tu-viaje",
+    "title": "Planea tu viaje",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 9029,
+    "sha256": "96c06096bb5acb3350a367e586019d8908a10ad88d0a9d5292e0b3470fcd25f6"
+  },
+  {
+    "url": "http://www.conatel.gov.py/conatel/wp-content/uploads/2019/10/go-080724-142-rd0656.pdf",
+    "checked_at": "2026-11-05",
+    "status": "request_failed"
+  },
+  {
+    "url": "https://portal.moi.gov.qa/qatarvisas/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://portal.moi.gov.qa/qatarvisas/",
+    "title": "Qatar Visit Visas",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 2109,
+    "sha256": "5f56567f42134770f22a51ab14e29adec0022db48b398188303bd6cb1e1cd4e5"
+  },
+  {
+    "url": "https://dohahamadairport.com/airport-guide/to-from-the-airport/metro",
+    "checked_at": "2026-11-05",
+    "status": "request_failed"
+  },
+  {
+    "url": "https://corp.qr.com.qa/English/Projects/Pages/DohaMetro.aspx",
+    "checked_at": "2026-11-05",
+    "status": "request_failed"
+  },
+  {
+    "url": "https://visitqatar.com/intl-en/plan-your-trip/travel-tips",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://visitqatar.com/intl-en/plan-your-trip/travel-tips",
+    "title": "Qatar Travel Tips: Dress Code, Currency & Safety | Visit Qatar",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 8759,
+    "sha256": "c14fd88910e9c8b5f17b87134ac0e790db20fac2363cfe638613371ceec9ae97"
+  },
+  {
+    "url": "https://www.ooredoo.qa/web/en/visitor-sim/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.ooredoo.qa/web/en/visitor-sim/",
+    "title": "Ooredoo Visitor SIM Card | SIM for Tourists | Ooredoo Qatar",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 2943,
+    "sha256": "51847ec419209fb1889d97cb924a9ffb07bc135ba15c83c228b74b1f70f65117"
+  },
+  {
+    "url": "https://visa.visitsaudi.com/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://visa.visitsaudi.com/",
+    "title": "Saudi eVisa | The Official website for Tourist Visa to Saudi Arabia",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 2028,
+    "sha256": "19dab816219f8c94dd22a78f97f601ff619d98ed76a55ba70261866613602ad4"
+  },
+  {
+    "url": "https://www.kkia.sa/en/parking-and-transport/metro",
+    "checked_at": "2026-11-05",
+    "status": "robots_not_permitted"
+  },
+  {
+    "url": "https://www.rcrc.gov.sa/en/projects/king-abdulaziz-project-for-riyadh-public-transport-2/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.rcrc.gov.sa/en/projects/riyadh-public-transport-project-2/",
+    "title": "King Abdulaziz Public Transport Project - Royal Commission for Riyadh City",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 19504,
+    "sha256": "9f9c5e297b79901db1f92df9235c3575538dc9e7928a7bb1dfdcefa5d3edd392"
+  },
+  {
+    "url": "https://visa.visitsaudi.com/home/publicdecorum",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://visa.visitsaudi.com/home/publicdecorum",
+    "title": "Saudi eVisa | The Official website for Tourist Visa to Saudi Arabia",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1382,
+    "sha256": "b4832315f016ea03a48cc618f60759a81585432334cd758a3d00cb1e2127e0d9"
+  },
+  {
+    "url": "https://www.stc.com.sa/content/stc/sa/en/personal/mobile/packages/sawa-ziyara.html",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.stc.com.sa/en/personal/mobile/packages/sawa-ziyara.html",
+    "title": "stc KSA | stc sawa visitor Packages For KSA Visitors",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 7768,
+    "sha256": "49709942e6889a09b541f9597065b76646a31f170172811f810c655cc3e2c6d4"
+  },
+  {
+    "url": "https://saso.gov.sa/en/consumer_awareness/awareness_campaigns/plugs_and_sockets_campaign/Pages/campagine_about.aspx",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://saso.gov.sa/en/consumer_awareness/awareness_campaigns/plugs_and_sockets_campaign/Pages/campagine_about.aspx",
+    "title": "Electrical Plugs and Sockets Campaign​",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 7246,
+    "sha256": "0adc4a4f905fd07d292d33acbc6ce467cb8a3ab5cf7861cfa46f3908be7e436d"
+  },
+  {
+    "url": "https://www.edinburghairport.com/transport-links/trams",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.edinburghairport.com/transport-links/trams",
+    "title": "By Tram | Edinburgh Airport",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 2158,
+    "sha256": "c8aa3dcf02bc11bd67ca0f47338c480a1b4b28a50c3352b7fe8e28bfdec5f218"
+  },
+  {
+    "url": "https://www.travelinescotland.com/journey-planner",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.travelinescotland.com/journey-planner",
+    "title": "",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "url": "https://www.visitscotland.com/travel-planning/scotland-faqs",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.visitscotland.com/planning/travel-information/scotland-faqs",
+    "title": "Frequently Asked Questions about Scotland | VisitScotland",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 12671,
+    "sha256": "a7dd401a2d88669e7ed3a2a0c87b13de73811472cc366b873ce886484d8d8165"
+  },
+  {
+    "url": "https://www.ofcom.org.uk/mobile-coverage-checker/frequently-asked-questions",
+    "checked_at": "2026-11-05",
+    "status": "robots_not_permitted"
+  },
+  {
+    "url": "https://diplomatie.gouv.sn/index.php/visiter-le-senegal",
+    "checked_at": "2026-11-05",
+    "status": "request_failed"
+  },
+  {
+    "url": "https://www.dakaraeroport.com/en",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.dakaraeroport.com/en",
+    "title": "Dakar Airport",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 3169,
+    "sha256": "c7b25db9a422ee0c0832244c6055bebfb43771d700068f0e5174fc82890935cc"
+  },
+  {
+    "url": "https://demdikk.sn/reseau-interurbain/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://demdikk.sn/reseau-interurbain/",
+    "title": "Réseau Interurbain - Dakar Dem Dikk",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 6860,
+    "sha256": "fd68f742b3976a78adf5caf1bb5211504949922d83c26147a5dddd6986fa81a5"
+  },
+  {
+    "url": "https://mcat.gouv.sn/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://mcat.gouv.sn/",
+    "title": "Ministère de la Culture, de l'Artisanat et du Tourisme",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 5078,
+    "sha256": "1f3155430659d3bd85f7be2c18a282e652b2e247ae636ded4db2e5953a01cca4"
+  },
+  {
+    "url": "https://www.orange.sn/assistance/tutoriels/votre-sejour-commence-avec-le-meilleur-reseau-du-senegal-sim-teeru-2",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.orange.sn/assistance/tutoriels/votre-sejour-commence-avec-le-meilleur-reseau-du-senegal-sim-teeru-2",
+    "title": "Votre séjour commence avec le meilleur réseau du Sénégal : SIM TEERU 2 | Orange SN",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 3417,
+    "sha256": "bb671ae329d7ace3e74078f5d5129870e527299ddc61f3b260f493781602a812"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/senegal/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/senegal/",
+    "title": "Travel adaptor for Senegal",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1772,
+    "sha256": "f44ee7fdd76f08119a7fa46459d955c1e9ae081fdddb9509a91aea50ccc52586"
+  },
+  {
+    "url": "http://www.home-affairs.gov.za/index.php/countries-exempt-from-sa-visas",
+    "checked_at": "2026-11-05",
+    "status": "request_failed"
+  },
+  {
+    "url": "https://www.airports.co.za/airports/or-tambo-international-airport/transport/public-transport",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.airports.co.za/airports/or-tambo-international-airport/transport/public-transport",
+    "title": "Public Transport",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 6204,
+    "sha256": "58924604e39fbd16e6f53a5a3253df53404f6248da30d64d8a4a1ca42b40570d"
+  },
+  {
+    "url": "https://www.gautrain.co.za/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.gautrain.co.za/",
+    "title": "Gautrain | For people on the move",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 3207,
+    "sha256": "9972adb932fa8ed9537045518dbe7a8cc637ba1e6f3ecd56cceb55be8ccdda2a"
+  },
+  {
+    "url": "https://www.gov.za/about-sa/public-holidays",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.gov.za/about-sa/public-holidays",
+    "title": "Public holidays in South Africa | South African Government",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 8960,
+    "sha256": "652ec04235989663b8ba6cf2233e251b26c06be3db56f787e6842e6d2136af12"
+  },
+  {
+    "url": "https://www.justice.gov.za/m_statements/2026/20260326-RICA.html",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.justice.gov.za/m_statements/2026/20260326-RICA.html",
+    "title": "Minister Kubayi convenes urgent meeting on Rica and Sim Card Registration Challenges, 26 Mar 2026",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 7661,
+    "sha256": "b37142b73a050eb8aa263a0cf0a83ca1a6cc728888ed7ce636332d9ff9236350"
+  },
+  {
+    "url": "https://loadshedding.eskom.co.za/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://loadshedding.eskom.co.za/",
+    "title": "Eskom load shedding",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1442,
+    "sha256": "7ae562ecd6fa8f3bc1973015e90c60f677f53631fde6ecc00982f214f75bd109"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/algeria/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/algeria/",
+    "title": "Travel Adaptor for Algeria",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1552,
+    "sha256": "77ebd3a334e282361a2e5ef18d937bde17c26432cabb9050577b087267b809da"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/argentina/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/argentina/",
+    "title": "Travel Adaptor for Argentina",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1577,
+    "sha256": "6b672ffeefbf82d9df2df24531c73369d54ef072413404c861e5b1c89fc46b29"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/australia/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/australia/",
+    "title": "Travel Adaptor for Australia / Plug & Outlet Type",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1598,
+    "sha256": "2e6ea27d326c5f9414f7d7572333f08c7e39d36173d6bcae6cae6b001616e4f8"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/austria/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/austria/",
+    "title": "Travel Adaptor for Austria / Plug & Outlet Type",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1573,
+    "sha256": "ebb8487a818864ffe17bbde862d6310a75444b241c96684246fea9fcd2f6afd9"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/belgium/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/belgium/",
+    "title": "Travel Adaptor for Belgium/ Plug & Outlet Type",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1619,
+    "sha256": "973b580671e99758522f17a54ca61dfbc30061260babf9bc34f9db1170a798ac"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/bosnia-and-herzegovina/",
+    "checked_at": "2026-11-05",
+    "http_status": 404,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/bosnia-and-herzegovina/",
+    "status": "http_error"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/egypt/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/egypt/",
+    "title": "Travel Adaptor for Egypt / Plug & Outlet Type",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1563,
+    "sha256": "5b893795bd957000107d66d5253292837733e8441746480458e2c49d53e5df02"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/england/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/england/",
+    "title": "Travel Adaptor for England / Plug & Outlet Type",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1534,
+    "sha256": "15576e978230ac444221f75d3711bd11e2458894c7bde46ca52935b055161cc2"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/france/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/france/",
+    "title": "Travel Adaptor for France / France Plug Type",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1613,
+    "sha256": "16768e09732f6d3c67598a0da564b39623f050de3b33e21a44daf57ded956ee4"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/germany/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/germany/",
+    "title": "Travel Adaptor for Germany / German Adapter Plug",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1574,
+    "sha256": "45da7342be02f6ff9aa0c1cb0bbcc91b981682cd5e82229b4a5f51cdf1451a31"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/iraq/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/iraq/",
+    "title": "Travel Adaptor for Iraq / Plug Type and Outlet",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1707,
+    "sha256": "d32f7d66b02cce996aede9dd0662e37ecb250fe045e2eab029fa2a44386afd5a"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/japan/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/japan/",
+    "title": "Travel Adaptor for Japan/ Japan Plug Type",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1566,
+    "sha256": "c995498a36c36f68e39bd08efbb5bea2d3b19a9004b1c48d0b081dbf91b226ed"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/mexico/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/mexico/",
+    "title": "Travel Adaptor for Mexico",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1554,
+    "sha256": "fb7f0b0fbab10f2e3d42327d41625f2c9538b3854e90cc3aff4fd0fc893edbf1"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/netherlands/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/netherlands/",
+    "title": "Travel Adaptor for Netherlands / Plug Type and Outlet",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1595,
+    "sha256": "142a524c25e64b9231c48feadd0ccdafba179139d9864c4851d57bf7a1ae74fb"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/new-zealand/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/new-zealand/",
+    "title": "Travel Adaptor for New Zealand",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1587,
+    "sha256": "5f7a8a2583d479a8076389628269a4883fe8423bcfc4610d2af05f7c1f6d7a26"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/norway/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/norway/",
+    "title": "Travel Adaptor for Norway /  Norway Plug Type",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1567,
+    "sha256": "35603e623a9188d02c102bb719b9e092ae79fca80b022efa35c29688c0e2f905"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/panama/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/panama/",
+    "title": "Travel Adaptor for Panama",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1554,
+    "sha256": "76461f4f486e421e219bee04403cec46ae90bb1f9e55aa5a626dbe54d7165a6c"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/paraguay/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/paraguay/",
+    "title": "Travel Adaptor for Paraguay",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1505,
+    "sha256": "c7eef1f2ed29ba68a116c20def5105a6b57718a32681f94f21c0e46060ade04a"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/qatar/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/qatar/",
+    "title": "Travel Adaptor for Qatar",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1503,
+    "sha256": "d187fb1296d2021f7e60c5e751a5f4024174bccec5df52d99b5702104bb33f66"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/saudi-arabia/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/saudi-arabia/",
+    "title": "Travel adaptor for Saudi Arabia",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1538,
+    "sha256": "d5fd540cee96f1ea95dfa5f5efa956476dd248e2ee1450bfad786f63d836f95b"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/scotland/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/scotland/",
+    "title": "Travel adaptor for Scotland",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1518,
+    "sha256": "a21748bad402499c2e5c786b80cdbddd3e402e98c598501fa57ba32c7246e2a7"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/senegal/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/senegal/",
+    "title": "Travel adaptor for Senegal",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1772,
+    "sha256": "f44ee7fdd76f08119a7fa46459d955c1e9ae081fdddb9509a91aea50ccc52586"
+  },
+  {
+    "url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/south-africa/",
+    "checked_at": "2026-11-05",
+    "http_status": 200,
+    "final_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/south-africa/",
+    "title": "Travel adaptor for South Africa / South Africa Plug Type",
+    "status": "text_obtained_needs_claim_review",
+    "characters": 1791,
+    "sha256": "614f4bc821c389fd8f1ea97cd855df5b52cfaf40c7065986e01f5b7f12844a7f"
+  }
+]
