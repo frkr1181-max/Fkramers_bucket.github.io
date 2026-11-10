@@ -169,7 +169,9 @@ function trustSection() {
   </section>`;
 }
 
-// the hero rings are inlined so their strokes can draw on (the page's one motion moment)
+// the hero rings are inlined so css can make them drift slowly. they no longer
+// draw themselves on: entrances happen only on the dashboard (David, Nov 10),
+// and motion.css has no rule for the draw/pop classes added below
 async function animateRings() {
   const holder = document.querySelector("#rings");
   if (!holder) return;

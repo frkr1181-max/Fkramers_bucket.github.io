@@ -4,56 +4,34 @@
 
 const reduceMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-// what animates on each page, in the order it should arrive.
-// "rise" is for big blocks (cards, titles), "pop" for small repeated pieces.
-// base is when the group starts, in ms after the page appears.
-// the dashboard's checklist and trip essentials are left out on purpose: they
-// sit below the tiles and are simply there from the start, with no entrance
-// and no scroll-in (David, Nov 10)
+// entrances happen on one screen only: the trip dashboard (David, Nov 10).
+// its title, chips and guide tiles arrive in that order; everything else on
+// it, and every other page, is simply there when the page opens, with no
+// entrance and nothing that waits for a scroll.
+// "rise" is for big blocks, "pop" for small repeated pieces.
+// base is when the group starts, in ms after the page appears
 const GROUPS = [
-  { kind: "rr-rise", base: 0, selector: ".page-title, .hero > div:first-child > h1, .hero > div:first-child > .lead, .trip-head, .guide-head" },
-  { kind: "rr-rise", base: 90, selector: ".login, .plan-form, .plan-preview, .sidebar, .empty, .sources" },
-  { kind: "rr-pop", base: 60, selector: ".chips > li" },
-  { kind: "rr-pop", base: 120, selector: ".tiles > li, .topics > li" },
-  { kind: "rr-pop", base: 220, selector: ".plan-preview .stage" },
-  { kind: "rr-pop", base: 200, selector: ".source-list > li" },
-  { kind: "rr-pop", base: 0, selector: ".steps > li, .trust-tiles > li" },
-  { kind: "rr-rise", base: 120, selector: ".trust-photo" },
+  { kind: "rr-rise", base: 0, selector: ".trip .trip-head" },
+  { kind: "rr-pop", base: 60, selector: ".trip .chips > li" },
+  { kind: "rr-pop", base: 120, selector: ".trip .tiles > li" },
 ];
 
-let observer = null;
-
 export function enter(root) {
-  observer?.disconnect();
-  const below = [];
   for (const group of GROUPS) {
     root.querySelectorAll(group.selector).forEach((el, i) => {
       el.classList.add(group.kind);
       el.style.setProperty("--i", i);
       el.style.setProperty("--base", `${group.base}ms`);
-      // anything starting below the fold waits until it scrolls into view
-      if (el.getBoundingClientRect().top > window.innerHeight) below.push(el);
     });
-  }
-  if (below.length && "IntersectionObserver" in window && !reduceMotion()) {
-    below.forEach((el) => el.classList.add("rr-wait"));
-    observer = new IntersectionObserver((entries) => {
-      for (const entry of entries) {
-        if (!entry.isIntersecting) continue;
-        entry.target.classList.remove("rr-wait");
-        observer.unobserve(entry.target);
-      }
-    }, { rootMargin: "0px 0px -80px 0px" });
-    below.forEach((el) => observer.observe(el));
   }
   drawArcsOnce(root);
 }
 
-// the band arcs draw themselves on the first page that has them, once per visit
+// the dashboard's band arcs draw themselves the first time it opens, once per visit
 // (the Figma spec: "arcs draw on once in 0.9s"). later pages keep the static image
 let arcsDrawn = false;
 async function drawArcsOnce(root) {
-  const img = root.querySelector(".band img.arcs");
+  const img = root.querySelector(".trip .band img.arcs");
   if (arcsDrawn || !img || reduceMotion()) return;
   arcsDrawn = true;
   try {

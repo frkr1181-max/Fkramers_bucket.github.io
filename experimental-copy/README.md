@@ -42,8 +42,8 @@ It writes only into `experimental-copy/data/`. Experiments with made-up or resha
 
 The bouncy feel lives in two files, so it's easy to tune or remove:
 
-- `css/motion.css`: every animation and transition. Entrances spring in, buttons squish on press and spring back, tiles and topic cards lift on hover (mouse only), checklist boxes pop and the tick draws itself, dialogs spring in and fade out, and fields shake when they need fixing.
-- `js/motion.js`: picks what animates on each page and staggers it, starts below-the-fold sections when they scroll into view, draws the band arcs once per visit, and runs the dialog exits.
+- `css/motion.css`: every animation and transition. Buttons squish on press and spring back, tiles and topic cards lift on hover (mouse only), checklist boxes pop and the tick draws itself, dialogs spring in and fade out, and fields shake when they need fixing.
+- `js/motion.js`: the entrances, which happen on the trip dashboard only: its title, chips and guide tiles spring in and its band arcs draw once per visit. Every other page, and the rest of the dashboard, is simply there when it opens, and nothing waits for a scroll. It also runs the dialog exits.
 - The spring curves are tokens in `css/tokens.css` (`--rr-spring-bouncy`, `--rr-spring-playful`), sampled from Apple-style springs. Change a spring there and every animation using it follows.
 - With "reduce motion" turned on in the operating system, everything fades instead of moving.
 
