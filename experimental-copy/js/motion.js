@@ -6,14 +6,17 @@ const reduceMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)")
 
 // what animates on each page, in the order it should arrive.
 // "rise" is for big blocks (cards, titles), "pop" for small repeated pieces.
-// base is when the group starts, in ms after the page appears
+// base is when the group starts, in ms after the page appears.
+// the dashboard's checklist and trip essentials are left out on purpose: they
+// sit below the tiles and are simply there from the start, with no entrance
+// and no scroll-in (David, Nov 10)
 const GROUPS = [
   { kind: "rr-rise", base: 0, selector: ".page-title, .hero > div:first-child > h1, .hero > div:first-child > .lead, .trip-head, .guide-head" },
-  { kind: "rr-rise", base: 90, selector: ".login, .plan-form, .plan-preview, .sidebar, .empty, .card.checklist, .card.essentials, .sources" },
+  { kind: "rr-rise", base: 90, selector: ".login, .plan-form, .plan-preview, .sidebar, .empty, .sources" },
   { kind: "rr-pop", base: 60, selector: ".chips > li" },
   { kind: "rr-pop", base: 120, selector: ".tiles > li, .topics > li" },
   { kind: "rr-pop", base: 220, selector: ".plan-preview .stage" },
-  { kind: "rr-pop", base: 200, selector: ".checklist li, .essentials li, .source-list > li" },
+  { kind: "rr-pop", base: 200, selector: ".source-list > li" },
   { kind: "rr-pop", base: 0, selector: ".steps > li, .trust-tiles > li" },
   { kind: "rr-rise", base: 120, selector: ".trust-photo" },
 ];
