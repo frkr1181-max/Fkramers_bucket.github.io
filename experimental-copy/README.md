@@ -52,7 +52,14 @@ After adding or removing country photos, run:
 python3 experimental-copy/tools/build_photos.py
 ```
 
-It rewrites `js/country-photos.js`, the list of which photos exist. The three universal photos are still the Tokyo placeholders from the first build.
+It rewrites `js/country-photos.js`, the list of which photos exist, and `assets/photos/SOURCES.md`, the list of where each photo came from.
+
+Every photo is from Wikimedia Commons and is marked CC0 or public domain there, so none needs a license or a credit line. To find and add more, use `tools/photo_tool.py` (it needs Pillow: `python -m pip install pillow`). It refuses any file with another license, crops to 16:9, saves a 1600 x 900 `.webp`, and writes a small `.json` beside it with the Commons page and license:
+
+```bash
+python3 experimental-copy/tools/photo_tool.py search "Sydney harbour skyline"
+python3 experimental-copy/tools/photo_tool.py add --slug australia --slot main --file "File:Exact Commons title.jpg"
+```
 
 ## Motion
 

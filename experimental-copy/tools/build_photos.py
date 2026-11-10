@@ -28,13 +28,35 @@ HEADER = """// written by tools/build_photos.py. don't edit by hand: add or remo
 """
 
 
+def write_sources() -> None:
+    """One readable list of where every photo came from, built from the .json files."""
+    rows = []
+    for record in sorted(PHOTOS.parent.glob("**/*.json")):
+        info = json.loads(record.read_text(encoding="utf-8"))
+        where = record.with_suffix(".webp").relative_to(PHOTOS.parent).as_posix()
+        rows.append(f"| `{where}` | [{info['file']}]({info['page']}) | {info['license']} |")
+    lines = [
+        "# Photo sources",
+        "",
+        "Every photo listed here is from Wikimedia Commons and is marked CC0 or public domain there,",
+        "so it needs no permission and no credit. This list is kept so anyone can check that.",
+        "Built by `tools/build_photos.py`; don't edit by hand.",
+        "",
+        "| Photo | Commons file | License |",
+        "|---|---|---|",
+        *rows,
+    ]
+    (PHOTOS.parent / "SOURCES.md").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
+
+
 def main() -> None:
     # the country slugs the site knows, to catch a misspelled folder name
     known = {d["slug"] for d in json.loads(SNAPSHOT.read_text(encoding="utf-8"))["destinations"]}
     found: dict[str, list[str]] = {}
     for folder in sorted(p for p in PHOTOS.glob("*") if p.is_dir()):
         slots = [slot for slot in SLOTS if (folder / f"{slot}.webp").is_file()]
-        extra = sorted(f.name for f in folder.iterdir() if f.is_file() and f.stem not in SLOTS)
+        # each photo may have a .json beside it (where it came from), written by photo_tool.py
+        extra = sorted(f.name for f in folder.iterdir() if f.is_file() and (f.stem not in SLOTS or f.suffix not in (".webp", ".json")))
         if folder.name not in known:
             print(f"skipped {folder.name}/: not a country slug in guide-snapshot.json")
             continue
@@ -44,6 +66,7 @@ def main() -> None:
             found[folder.name] = slots
     body = json.dumps(found, indent=2)
     OUT.write_text(f"{HEADER}export const COUNTRY_PHOTOS = {body};\n", encoding="utf-8", newline="\n")
+    write_sources()
     missing = sorted(known - set(found))
     print(f"{len(found)} of {len(known)} countries have photos; wrote {OUT.relative_to(ROOT.parent)}")
     if missing:

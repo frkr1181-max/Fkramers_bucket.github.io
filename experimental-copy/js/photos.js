@@ -13,9 +13,9 @@
 //   universal/hero.webp, universal/plan.webp, universal/arrive.webp
 //   countries/<country slug>/main.webp, plan.webp, arrive.webp, know.webp
 //
-// a country doesn't need all 4. a missing slot uses that country's main photo,
-// and a country with no photos at all uses the universal ones, so a page never
-// shows an empty band. country-photos.js lists which files exist; rebuild it
+// a country doesn't need all 4. a missing slot repeats one of that country's
+// other photos (its main one if it has it), and a country with no photos at
+// all uses the universal ones, so a page never shows an empty band. country-photos.js lists which files exist; rebuild it
 // with `python experimental-copy/tools/build_photos.py` after adding photos.
 
 import { COUNTRY_PHOTOS } from "./country-photos.js";
@@ -36,6 +36,8 @@ const STAND_IN = { main: "hero", plan: "plan", arrive: "arrive", know: "arrive" 
 // own list, never pasted into a path unless it's a country we have photos for
 export function countryPhoto(slug, slot) {
   const have = Object.hasOwn(COUNTRY_PHOTOS, slug) ? COUNTRY_PHOTOS[slug] : [];
-  const pick = have.includes(slot) ? slot : have.includes("main") ? "main" : null;
+  // no slot is ever left empty (David, Nov 10): a missing one repeats another
+  // of the country's photos, its main one first, otherwise whichever it has
+  const pick = have.includes(slot) ? slot : have.includes("main") ? "main" : have[0] ?? null;
   return pick ? `${DIR}countries/${slug}/${pick}.webp` : UNIVERSAL[STAND_IN[slot] ?? "hero"];
 }
