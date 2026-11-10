@@ -1,0 +1,46 @@
+[
+  {
+    "country": "japan",
+    "card": "arrival",
+    "subcards": [
+      "airports",
+      "arrival-steps"
+    ],
+    "title": "Narita international arrivals",
+    "text": "At Narita, complete immigration, collect checked baggage, and pass customs before entering the arrivals lobby. Follow airport signs to your onward transport. These steps are specific to Narita.",
+    "source_title": "Narita International Airport — International arrival procedure",
+    "url": "https://www.narita-airport.jp/en/airportguide/inter-arr/",
+    "checked_at": "2026-11-09",
+    "status": "new_research_draft",
+    "verification_scope": "Official-source search result inspected this session; full page and operator details require review before publication."
+  },
+  {
+    "country": "qatar",
+    "card": "arrival",
+    "subcards": [
+      "airports",
+      "city-transfer"
+    ],
+    "title": "Hamad Airport transport options",
+    "text": "Visit Qatar lists bus, Karwa taxi, and metro options for Hamad International Airport in Doha. Check current operator service and the route to your accommodation.",
+    "source_title": "Visit Qatar — Hamad International Airport",
+    "url": "https://visitqatar.com/intl-en/plan-your-trip/hamad-international-airport",
+    "checked_at": "2026-11-09",
+    "status": "new_research_draft",
+    "verification_scope": "Official-source search result inspected this session; full page and operator details require review before publication."
+  },
+  {
+    "country": "qatar",
+    "card": "arrival",
+    "subcards": [
+      "city-transfer"
+    ],
+    "title": "Airport metro connection",
+    "text": "Visit Qatar describes a metro connection between Hamad International Airport Terminal 1 and Doha. Check current operating hours before relying on the metro for your arrival.",
+    "source_title": "Visit Qatar — Doha Metro",
+    "url": "https://visitqatar.com/intl-en/plan-your-trip/getting-around/doha-metro",
+    "checked_at": "2026-11-09",
+    "status": "new_research_draft",
+    "verification_scope": "Official-source search result inspected this session; full page and operator details require review before publication."
+  }
+]

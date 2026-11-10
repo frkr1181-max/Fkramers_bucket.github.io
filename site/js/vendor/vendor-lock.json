@@ -1,0 +1,7 @@
+{
+  "package": "@supabase/auth-js",
+  "version": "2.119.0",
+  "url": "https://esm.sh/@supabase/auth-js@2.119.0/es2022/auth-js.bundle.mjs",
+  "sha256": "0856a094f5fc3730c106692d69b98e5b2cf61086d27f66d657e2566df002e4ff",
+  "npm_integrity": "sha512-WI7KqJRxqZjm77PlRO/VfKretL4SG8g8stWfBmpyx9To+fFapZlSbXA8QkduoMvr72rRpIF24ZLrjktBrp+ZFA=="
+}

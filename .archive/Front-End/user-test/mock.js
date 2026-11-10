@@ -1,4 +1,4 @@
-/* A browser-only user-test copy. The source Figma file is never changed. */
+/* Main guest front end. Japan reads published facts through FastAPI. */
 'use strict';
 const countries=window.COUNTRIES;
 const root=document.body.firstElementChild;
@@ -34,15 +34,17 @@ function show(title){document.querySelector('#panel-title').textContent=title;bo
 document.querySelector('#close-panel').onclick=()=>panel.close();
 panel.addEventListener('click',e=>{if(e.target===panel){const r=panel.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)panel.close();}});
 function interactive(e,fn,label){e.setAttribute('role','button');e.tabIndex=0;if(label)e.setAttribute('aria-label',label);e.onclick=fn;e.onkeydown=ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();fn();}};}
-const note=el('p','User-testing mock · Supplied country research is unverified. Prepared November 1, 2026; this is not a verification date.','test-note');main.prepend(note);
-footer.replaceChildren(el('div','RoamReady'),el('div','Research and preparation for U.S. passport holders · User-testing prototype'));
+function guideNotice(){return trip.country==='japan'?'Japan guide · Open a topic for published facts matched to your trip. Check source dates and current official guidance before departure.':'Research preview · This country uses unverified draft notes and supplied sources.';}
+const note=el('p',guideNotice(),'test-note');main.prepend(note);
+footer.replaceChildren(el('div','RoamReady'),el('div','Research and preparation for U.S. passport holders · Guest prototype'));
 function renderTrip(){
+ note.textContent=guideNotice();
  heading.textContent=trip.name ? `${trip.name} · ${country().name}` : `Your trip to ${country().name}`;
  purpose.textContent=trip.purpose;
  const fmt=s=>new Intl.DateTimeFormat('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'}).format(new Date(s+'T00:00:00Z'));
  timing.textContent=trip.start&&trip.end?`${fmt(trip.start)} – ${fmt(trip.end)} · ${Math.round((Date.parse(trip.end)-Date.parse(trip.start))/86400000)+1} days`:`Estimated stay · ${trip.length} days`;
  countdown.textContent=trip.start?`${Math.max(0,Math.ceil((Date.parse(trip.start+'T00:00:00')-Date.now())/86400000))} days to go`:'Flexible travel dates';
- document.title=`RoamReady — ${country().name} user-test mock`;
+ document.title=`RoamReady — ${country().name} trip preparation`;
 }
 function planDialog(){
  show('Plan a trip');
@@ -66,14 +68,44 @@ const titleMap={
 };
 function normalize(s){return s.toLowerCase().replaceAll('&','and').replace(/[^a-z]/g,'');}
 function sectionsFor(title){return country().topics.filter(s=>(titleMap[title]||[]).some(t=>normalize(t)===normalize(s.title)));}
+let guideRequest=0;
 function guide(title){
+ const request=++guideRequest;
  show(`${country().name} · ${title}`);
+ if(trip.country==='japan'){renderPublishedGuide(title,request);return;}
  body.append(el('p','Research draft — supplied notes and sources, not verified travel advice. Prepared November 1, 2026. Open the linked sources to check current requirements and applicability.','draft'));
  const nav=el('div',undefined,'topic-nav');for(const t of Object.keys(titleMap)){const b=el('button',t);b.setAttribute('aria-pressed',String(t===title));b.onclick=()=>guide(t);nav.append(b);}body.append(nav);
  const sections=sectionsFor(title);
  if(!sections.length)body.append(el('p','No supplied research is available for this topic.'));
  for(const s of sections){const section=el('section',undefined,'guide-section');section.append(el('h2',s.title));if(s.draftParagraphs){section.append(el('p','Existing Japan guide draft · Research checked '+s.draftDate+' · Still awaiting review.','muted'));for(const paragraph of s.draftParagraphs)section.append(el('p',paragraph));}else if(s.note)section.append(el('p',s.note));section.append(el('h3','Sources supplied by the team'));
  const list=el('ul');for(const source of s.sources){const li=el('li');const a=el('a',source.title);a.href=source.url;a.target='_blank';a.rel='noopener noreferrer';li.append(a);list.append(li);}if(!s.sources.length)section.append(el('p','No source link was supplied.'));else section.append(list);body.append(section);}
+}
+const apiCategories={
+ 'Entry & documents':['entry'],'Money & payments':['money'],'Phones & tech':['phones','electricity'],
+ Health:['health'],'Getting there':['arrival'],'Getting around':['getting-around'],Safety:['safety','emergency'],'Local culture':['culture']
+};
+async function renderPublishedGuide(title,request){
+ const selectedTrip={...trip};
+ const nav=el('div',undefined,'topic-nav');
+ for(const t of Object.keys(titleMap)){const button=el('button',t);button.setAttribute('aria-pressed',String(t===title));button.onclick=()=>guide(t);nav.append(button);}body.append(nav);
+ const content=el('div');content.setAttribute('aria-live','polite');content.setAttribute('aria-busy','true');content.append(el('p','Loading published Japan guidance…'));body.append(content);
+ try{
+  const facts=await window.RoamGuide.loadFacts(selectedTrip);
+  if(request!==guideRequest||!panel.open||!content.isConnected)return;
+  content.replaceChildren(el('p','Published guidance for your selected trip purpose and stay length. Review the linked official sources before departure.','muted'));
+  const matching=facts.filter(f=>apiCategories[title].includes(f.category));
+  if(!matching.length)content.append(el('p','No published guidance is available for this topic and trip. Try another topic or check official sources directly.'));
+  for(const fact of matching){
+   const section=el('section',undefined,'guide-section');section.append(el('h2',fact.title),el('p',fact.plain_summary),el('p',`Last verified: ${fact.last_verified_at}`,'muted'));
+   if(fact.applicability_status==='conditional')section.append(el('p','Conditional guidance matched to your trip. Confirm your personal eligibility with the source.','muted'));
+   section.append(el('h3','Sources'));
+   for(const source of fact.sources){const row=el('p'),link=el('a',source.title);link.href=window.RoamGuide.sourceUrl(source.url);link.target='_blank';link.rel='noopener noreferrer';row.append(link,el('span',` · ${source.organization} · Checked ${source.checked_at}`));section.append(row);}content.append(section);
+  }
+ }catch(error){
+  if(request!==guideRequest||!panel.open||!content.isConnected)return;
+  content.replaceChildren(el('p','Japan’s published guide is unavailable right now. Please try again.','draft'));
+  const retry=el('button','Try again');retry.onclick=()=>guide(title);content.append(retry);
+ }finally{content.setAttribute('aria-busy','false');}
 }
 for(const card of root.querySelectorAll('[data-status]')){card.classList.add('topic-card');card.parentElement.classList.add('card-row');const title=Object.keys(titleMap).find(t=>card.textContent.includes(t));if(title)interactive(card,()=>guide(title),`Open ${title}`);}
 function refreshChecks(){counter.textContent=`${done.size} of ${tasks.length} done`;root.querySelectorAll('.task-checkbox').forEach(c=>c.checked=done.has(Number(c.dataset.index)));}
@@ -83,16 +115,24 @@ function bind(text,fn,parent=false){const e=leaf(text);if(e)interactive(parent?e
 bind('Edit trip',plan,true);bind('Plan a trip',plan,true);bind('My trip',dashboard,true);
 bind('See all 8 tasks',checklist,true);
 bind('Home',home,true);
-bind('Help',()=>{show('How to use RoamReady');body.append(el('p','Choose Plan a trip to select one of 24 countries. Open a topic card to read the team’s research notes and source links. Check off preparation tasks as you go. Guest trip details clear when this page reloads.','muted'));},true);
+bind('Help',()=>{show('How to use RoamReady');body.append(el('p','Choose Plan a trip to select one of 24 countries. Japan loads published guidance for your trip; other countries show draft research. Open a topic card to see its sources. Check off preparation tasks as you go. Guest trip details clear when this page reloads.','muted'));},true);
 bind('About',()=>{show('About RoamReady');body.append(el('p','RoamReady is a country research and preparation prototype for travelers using a U.S. passport. It covers entry, transport, money, safety, health, culture, connectivity, electricity, and emergency information.','muted'));},true);
-bind('Share plan',()=>{show('Copy trip summary');body.append(el('p','Copy this summary to share your test trip. Checklist progress and personal details are not included.','muted'));const area=el('textarea');area.value=`RoamReady — ${country().name}\n${timing.textContent}\n${trip.purpose}\nUser-testing mock. Country content is unverified research.`;area.rows=6;area.style.width='100%';area.readOnly=true;body.append(area);area.select();},true);
+bind('Share plan',()=>{show('Copy trip summary');body.append(el('p','Copy this summary to share your test trip. Checklist progress and personal details are not included.','muted'));const area=el('textarea');area.value=`RoamReady — ${country().name}\n${timing.textContent}\n${trip.purpose}\n${trip.country==='japan'?'Japan guide uses published facts; check current official guidance.':'Country content is unverified research.'}`;area.rows=6;area.style.width='100%';area.readOnly=true;body.append(area);area.select();},true);
 // Replace the export's illustrative emergency numbers with source-backed research links.
 const essentials=leaf('Trip essentials').parentElement.parentElement;
 essentials.replaceChildren(el('h2','Trip essentials'),el('p','Review emergency information for your destination and save the contacts you need.','muted'));
-const emergency=el('button','Emergency information & sources');emergency.onclick=()=>{show(`${country().name} · Emergency information`);const s=country().topics.find(t=>normalize(t.title)==='emergencyinformation');body.append(el('p','Unverified research — confirm current contacts in the supplied sources.','draft'));if(s){body.append(el('p',s.note,'muted'));for(const source of s.sources){const p=el('p');const a=el('a',source.title);a.href=source.url;a.target='_blank';a.rel='noopener noreferrer';p.append(a);body.append(p);}}else body.append(el('p','No emergency source was supplied.'));};essentials.append(emergency);
-const download=el('button','Download research & checklist');
-// Downloads contain only the selected country, test trip, and checklist.
-download.onclick=()=>{const blob=new Blob([JSON.stringify({trip,country:country(),status:'Unverified research draft',checklist:tasks.map((task,i)=>({task,done:done.has(i)}))},null,2)],{type:'application/json'});const a=el('a');a.href=URL.createObjectURL(blob);a.download=`roamready-${trip.country}-research.json`;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);toast('Downloaded research and checklist.');};essentials.append(download);
+const emergency=el('button','Emergency information & sources');emergency.onclick=()=>guide('Safety');essentials.append(emergency);
+const download=el('button','Download guide & checklist');
+download.onclick=async()=>{
+ const selectedTrip={...trip};const selectedCountry=country();const selectedTasks=tasks.map((task,i)=>({task,done:done.has(i)}));
+ download.disabled=true;
+ try{
+  const published=selectedTrip.country==='japan';
+  const facts=published?await window.RoamGuide.loadFacts(selectedTrip):null;
+  const payload={trip:selectedTrip,status:published?'Published guide snapshot; recheck official sources before travel':'Unverified research draft',downloaded_at:new Date().toISOString(),...(published?{facts}:{country:selectedCountry}),checklist:selectedTasks};
+  const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=el('a');a.href=URL.createObjectURL(blob);a.download=`roamready-${selectedTrip.country}-guide.json`;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);toast('Downloaded guide and checklist.');
+ }catch(error){toast('Guide could not be downloaded. Please try again when the guide is available.');}finally{download.disabled=false;}
+};essentials.append(download);
 essentials.parentElement.classList.add('lower-row');
 const question=leaf('Have a question about your trip?');question.parentElement.parentElement.parentElement.parentElement.classList.add('question-panel');
 leaf("Roam answers questions about your trip in plain language. It can't give legal or emergency advice.").textContent='Explore the source-linked country research. A live AI assistant is not connected in this mock.';
@@ -113,7 +153,7 @@ function home(){
  const row=el('div',undefined,'home-select'),select=el('select');select.id='home-country';for(const c of countries){const o=el('option',c.name);o.value=c.slug;select.append(o);}select.value=trip.country;
  const start=el('button','Start planning →','primary');start.onclick=()=>{if(trip.country!==select.value)done=new Set();trip.country=select.value;renderTrip();refreshChecks();plan();};row.append(select,start);intro.append(row,el('p','Country research for U.S. passport holders.','muted'));const image=el('div',undefined,'wireframe-image');image.setAttribute('aria-label','Image placeholder from the reference wireframe');hero.append(intro,image);page.append(hero);
  const how=el('section',undefined,'home-section');how.append(el('h2','How RoamReady works'),el('p','Three steps from browsing to boarding.','muted'));const steps=el('div',undefined,'step-grid');[['Tell us about your trip','Add where you’re going, your dates and what you want to prepare for.'],['Get your checklist and guide','See what to review before you leave and where to find country information.'],['Check the official source','Every topic links to the supplied sources so you can confirm the details yourself.']].forEach(([title,desc],i)=>{const card=el('article',undefined,'step-card');card.append(el('span',`Step ${i+1}`),el('h3',title),el('p',desc));steps.append(card);});how.append(steps);page.append(how);
- const trust=el('section',undefined,'home-section');trust.append(el('h2','Information you can trust'),el('p','Follow official source links and check the guidance that applies to your trip.','muted'));const layout=el('div',undefined,'trust-layout'),grid=el('div',undefined,'trust-grid');[['U.S. Department of State','Entry rules, travel advisories and embassy contacts.'],['Destination governments','Visa rules, customs and official requirements.'],['Airports and transit','Arrivals, transport and getting around.'],['Official tourism boards','Local culture and practical information.']].forEach(([title,desc])=>{const card=el('article',undefined,'step-card');card.append(el('h3',title),el('p',desc));grid.append(card);});const example=el('article',undefined,'step-card');example.append(el('h3',`Explore ${country().name} entry information`),el('p','Read the team’s existing research and open the source links. Draft content is awaiting verification.'));const b=el('button','Open entry research →');b.onclick=()=>guide('Entry & documents');example.append(b);layout.append(grid,example);trust.append(layout);page.append(trust);
+ const trust=el('section',undefined,'home-section');trust.append(el('h2','Information you can trust'),el('p','Follow official source links and check the guidance that applies to your trip.','muted'));const layout=el('div',undefined,'trust-layout'),grid=el('div',undefined,'trust-grid');[['U.S. Department of State','Entry rules, travel advisories and embassy contacts.'],['Destination governments','Visa rules, customs and official requirements.'],['Airports and transit','Arrivals, transport and getting around.'],['Official tourism boards','Local culture and practical information.']].forEach(([title,desc])=>{const card=el('article',undefined,'step-card');card.append(el('h3',title),el('p',desc));grid.append(card);});const example=el('article',undefined,'step-card');example.append(el('h3',`Explore ${country().name} entry information`),el('p',trip.country==='japan'?'Read published entry facts matched to your purpose and stay length, with sources and verification dates.':'Read the team’s existing research and open the source links. Draft content is awaiting verification.'));const b=el('button','Open entry research →');b.onclick=()=>guide('Entry & documents');example.append(b);layout.append(grid,example);trust.append(layout);page.append(trust);
 }
 function plan(){
  planDialog();

@@ -1,0 +1,92 @@
+{
+  "money:tax-free": [
+    "Tax-free refunds for purchases from November 2026"
+  ],
+  "phones:pocket-wifi": [
+    "Pocket Wi-Fi rental and coverage checks"
+  ],
+  "health:insurance": [
+    "Medical insurance and evacuation preparation"
+  ],
+  "health:care": [
+    "Finding care and paying for treatment"
+  ],
+  "there:airport-1": [
+    "Narita international arrival sequence"
+  ],
+  "there:arrival-steps": [
+    "Narita international arrival sequence",
+    "Visit Japan Web and arrival documents"
+  ],
+  "there:airport-2": [
+    "Haneda terminal and onward transport"
+  ],
+  "there:city-transfer": [
+    "Narita buses and taxi transfers"
+  ],
+  "around:subway": [
+    "Tokyo subway ticket coverage"
+  ],
+  "around:taxis": [
+    "Taxi payment and destination checks"
+  ],
+  "safety:hazards": [
+    "Earthquake and weather alert preparation"
+  ],
+  "safety:solo": [
+    "Solo travel and nightlife precautions"
+  ],
+  "culture:tipping": [
+    "Tipping customs and exceptions"
+  ],
+  "entry:forms": [
+    "Visit Japan Web and arrival documents"
+  ],
+  "around:trains": [
+    "Japan Rail Pass coverage and train conditions"
+  ],
+  "money:currency": [
+    "Yen and backup payment preparation"
+  ],
+  "money:cash": [
+    "ATM access and withdrawal costs"
+  ],
+  "money:cards": [
+    "Payment cards and Suica or PASMO"
+  ],
+  "phones:esim": [
+    "SIM and eSIM device checks"
+  ],
+  "phones:wifi": [
+    "Airport and accommodation Wi-Fi"
+  ],
+  "phones:electricity": [
+    "Device labels and voltage conversion"
+  ],
+  "health:vaccines": [
+    "CDC vaccine planning for Japan",
+    "Japanese encephalitis depends on itinerary",
+    "Measles notice and practical health precautions"
+  ],
+  "culture:venue": [
+    "Onsen bathing and tattoo rules"
+  ],
+  "culture:laws": [
+    "Identification and local conduct rules"
+  ],
+  "entry:medicine": [
+    "Identification and local conduct rules"
+  ],
+  "health:medicines": [
+    "Identification and local conduct rules"
+  ],
+  "safety:emergencies": [
+    "Emergency numbers and visitor hotline"
+  ],
+  "culture:etiquette": [
+    "Shoes and shared-space etiquette"
+  ],
+  "around:buses": [
+    "Local and highway bus planning"
+  ]
+}

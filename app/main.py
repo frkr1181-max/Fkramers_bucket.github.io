@@ -1,6 +1,9 @@
 """FastAPI application entry point and route registration."""
 
+from pathlib import Path
+
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.routes import auth, destinations, health, trips
@@ -25,6 +28,7 @@ def create_app() -> FastAPI:
     application.include_router(auth.router, prefix="/api")
     application.include_router(trips.router, prefix="/api")
     application.include_router(destinations.router, prefix="/api")
+    application.mount("/", StaticFiles(directory=Path(__file__).resolve().parents[1] / "site", html=True), name="frontend")
     return application
 
 

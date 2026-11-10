@@ -1,3 +1,5 @@
+> Updated publication: [28 reviewed additions, including October 29 material, published November 10](../publication-2026-11-10-japan/README.md). The original collection below is preserved. The app combines it with the reviewed additions.
+
 # Japan country guide
 
 **Audience:** U.S. passport holders.  

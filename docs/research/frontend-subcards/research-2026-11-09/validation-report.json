@@ -1,0 +1,21 @@
+{
+  "original_gaps": 380,
+  "records": 380,
+  "country_count": 24,
+  "outcomes": {
+    "procedural_guidance": 82,
+    "unresolved": 18,
+    "provider_listed_option": 25,
+    "draft_answer": 87,
+    "scoped_airport_example": 33,
+    "preparedness_guidance": 48,
+    "operator_planning_guidance": 59,
+    "custom_guidance": 22,
+    "design_adaptation": 6
+  },
+  "unique_cited_sources": 231,
+  "all_original_gap_ids_accounted_for": true,
+  "all_source_references_valid": true,
+  "all_records_unpublished": true,
+  "check_completed_at": "2026-11-10"
+}

@@ -1,0 +1,1473 @@
+{
+  "country": "japan",
+  "organized_at": "2026-11-10",
+  "publication_status": "Reviewed Japan additions published November 10; original research is preserved as an archive.",
+  "cards": [
+    {
+      "id": "entry",
+      "title": "Entry & documents",
+      "subcards": [
+        {
+          "id": "visas",
+          "title": "Visa",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-1-1",
+            "japan-1-2",
+            "japan-1-3",
+            "japan-1-4"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "Paid work needs the correct status",
+            "Passport and permission checks",
+            "Short tourist stays",
+            "Stays beyond the short-visit allowance"
+          ],
+          "research": []
+        },
+        {
+          "id": "passport",
+          "title": "Passport",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-1-2"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "Passport and permission checks"
+          ],
+          "research": []
+        },
+        {
+          "id": "forms",
+          "title": "Arrival forms",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-2-5"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "Visit Japan Web and arrival documents",
+            "Customs and arrival preparation"
+          ],
+          "research": []
+        },
+        {
+          "id": "medicine",
+          "title": "Medicine",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-2-5",
+            "japan-6-11"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "Identification and local conduct rules",
+            "Customs and arrival preparation",
+            "Check each medicine before packing"
+          ],
+          "research": []
+        }
+      ],
+      "topic_fact_ids": [
+        "japan-1-1",
+        "japan-1-2",
+        "japan-1-3",
+        "japan-1-4",
+        "japan-2-5",
+        "japan-2-6",
+        "japan-6-11",
+        "japan-6-12"
+      ]
+    },
+    {
+      "id": "money",
+      "title": "Money & payments",
+      "subcards": [
+        {
+          "id": "currency",
+          "title": "Currency",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-4-8",
+            "japan-4-9"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "Yen and backup payment preparation",
+            "Cash declaration is reporting, not a spending limit",
+            "Currency and payment planning"
+          ],
+          "research": []
+        },
+        {
+          "id": "cash",
+          "title": "Cash & ATMs",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-4-8",
+            "japan-4-9"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "ATM access and withdrawal costs",
+            "Cash declaration is reporting, not a spending limit",
+            "Currency and payment planning"
+          ],
+          "research": []
+        },
+        {
+          "id": "cards",
+          "title": "Cards & IC cards",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-4-8",
+            "japan-4-9"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "Payment cards and Suica or PASMO",
+            "Cash declaration is reporting, not a spending limit",
+            "Currency and payment planning"
+          ],
+          "research": []
+        },
+        {
+          "id": "tax-free",
+          "title": "Tax-free shopping",
+          "status": "research_needed",
+          "fact_ids": [],
+          "coverage_note": "No matching published fact in the repository. Check the source leads; do not invent an answer.",
+          "follow_up_research": {
+            "record_id": "japan:money:tax-free",
+            "outcome": "draft_answer",
+            "file": "research-2026-11-09/japan.md"
+          },
+          "fact_titles": [
+            "Tax-free refunds for purchases from November 2026"
+          ],
+          "research": [
+            {
+              "id": "japan:money:tax-free",
+              "country": "japan",
+              "country_name": "Japan",
+              "card": "money",
+              "card_title": "Money & payments",
+              "subcard": "tax-free",
+              "subcard_title": "Tax-free shopping",
+              "researched_at": "2026-11-09",
+              "publication_status": "research_draft",
+              "research_outcome": "draft_answer",
+              "text": "For purchases from November 1, 2026, eligible shoppers pay the tax-inclusive price. Refund follows departure customs confirmation that the goods leave Japan. Keep goods and purchase records available.",
+              "source_ids": [
+                "90a6e2a04d4d"
+              ],
+              "common_note_ids": [],
+              "limitations": [
+                "Eligibility, goods, deadlines and operator fees must be checked for the actual purchase. No refund is guaranteed."
+              ],
+              "published": false,
+              "sources": [
+                {
+                  "id": "90a6e2a04d4d",
+                  "url": "https://www.customs.go.jp/kaigairyoko/taxrefund.htm",
+                  "title": "Tax Exemption (Refund) Program for Foreign Visitors : Japan Customs",
+                  "checked_at": "2026-11-09",
+                  "method": "public_page_retrieval",
+                  "evidence_scope": "Page text inspected; scope limited to the associated summary.",
+                  "publisher_updated_at": null,
+                  "organization": "Tax Exemption (Refund) Program for Foreign Visitors : Japan Customs"
+                }
+              ],
+              "shared_notes": [],
+              "published_as": [
+                "Tax-free refunds for purchases from November 2026"
+              ]
+            }
+          ]
+        }
+      ],
+      "topic_fact_ids": [
+        "japan-4-8",
+        "japan-4-9"
+      ]
+    },
+    {
+      "id": "phones",
+      "title": "Phones & tech",
+      "subcards": [
+        {
+          "id": "esim",
+          "title": "eSIM",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-8-14"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "SIM and eSIM device checks",
+            "Airport Wi-Fi and connection planning"
+          ],
+          "research": []
+        },
+        {
+          "id": "pocket-wifi",
+          "title": "Pocket Wi-Fi",
+          "status": "research_needed",
+          "fact_ids": [],
+          "coverage_note": "No matching published fact in the repository. Check the source leads; do not invent an answer.",
+          "follow_up_research": {
+            "record_id": "japan:tech:pocket-wifi",
+            "outcome": "provider_listed_option",
+            "file": "research-2026-11-09/japan.md"
+          },
+          "fact_titles": [
+            "Pocket Wi-Fi rental and coverage checks"
+          ],
+          "research": [
+            {
+              "id": "japan:tech:pocket-wifi",
+              "country": "japan",
+              "country_name": "Japan",
+              "card": "tech",
+              "card_title": "Phones & tech",
+              "subcard": "pocket-wifi",
+              "subcard_title": "Pocket Wi-Fi",
+              "researched_at": "2026-11-09",
+              "publication_status": "research_draft",
+              "research_outcome": "provider_listed_option",
+              "text": "See the provider coverage and booking checks in the shared portable-hotspot note.",
+              "source_ids": [
+                "ea6a7d38262c"
+              ],
+              "common_note_ids": [
+                "portable-hotspot"
+              ],
+              "limitations": [
+                "Country is on the published list. Current inventory, delivery eligibility, plan price and route coverage remain to be confirmed with the provider."
+              ],
+              "published": false,
+              "sources": [
+                {
+                  "id": "ea6a7d38262c",
+                  "url": "https://support.travelwifi.com/hc/en-us/articles/17685823197329-Regional-rental-day-plans",
+                  "title": "TravelWifi — Regional rental day plans",
+                  "checked_at": "2026-11-09",
+                  "method": "web_search_or_open",
+                  "evidence_scope": "Relevant official/provider search result or web-open content inspected; no uninspected details asserted.",
+                  "publisher_updated_at": null,
+                  "organization": "TravelWifi — Regional rental day plans"
+                }
+              ],
+              "shared_notes": [
+                {
+                  "text": "TravelWifi’s published Global Rental Plan lists these destinations. Confirm current country coverage, data limits, delivery and return arrangements before booking. The router relies on local mobile reception; a listed country does not guarantee service along every route.",
+                  "source_ids": [
+                    "ea6a7d38262c"
+                  ],
+                  "scope": "Provider coverage list inspected November 9, 2026; source updated September 12, 2024. Current checkout availability and shipping were not tested.",
+                  "listed_destinations": [
+                    "algeria",
+                    "argentina",
+                    "australia",
+                    "austria",
+                    "belgium",
+                    "bosnia-and-herzegovina",
+                    "egypt",
+                    "england",
+                    "france",
+                    "germany",
+                    "iraq",
+                    "japan",
+                    "mexico",
+                    "netherlands",
+                    "new-zealand",
+                    "norway",
+                    "panama",
+                    "paraguay",
+                    "qatar",
+                    "saudi-arabia",
+                    "scotland",
+                    "south-africa",
+                    "south-korea"
+                  ],
+                  "sources": [
+                    {
+                      "id": "ea6a7d38262c",
+                      "url": "https://support.travelwifi.com/hc/en-us/articles/17685823197329-Regional-rental-day-plans",
+                      "title": "TravelWifi — Regional rental day plans",
+                      "checked_at": "2026-11-09",
+                      "method": "web_search_or_open",
+                      "evidence_scope": "Relevant official/provider search result or web-open content inspected; no uninspected details asserted.",
+                      "publisher_updated_at": null,
+                      "organization": "TravelWifi — Regional rental day plans"
+                    }
+                  ]
+                }
+              ],
+              "published_as": [
+                "Pocket Wi-Fi rental and coverage checks"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wifi",
+          "title": "Free Wi-Fi",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-8-14"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "Airport and accommodation Wi-Fi",
+            "Airport Wi-Fi and connection planning"
+          ],
+          "research": []
+        },
+        {
+          "id": "electricity",
+          "title": "Plugs & voltage",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-9-15"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "Device labels and voltage conversion",
+            "Japan voltage and regional frequency"
+          ],
+          "research": []
+        }
+      ],
+      "topic_fact_ids": [
+        "japan-8-14",
+        "japan-9-15"
+      ]
+    },
+    {
+      "id": "health",
+      "title": "Health",
+      "subcards": [
+        {
+          "id": "insurance",
+          "title": "Travel insurance",
+          "status": "research_needed",
+          "fact_ids": [],
+          "coverage_note": "No matching published fact in the repository. Check the source leads; do not invent an answer.",
+          "follow_up_research": {
+            "record_id": "japan:health:insurance",
+            "outcome": "procedural_guidance",
+            "file": "research-2026-11-09/japan.md"
+          },
+          "fact_titles": [
+            "Medical insurance and evacuation preparation"
+          ],
+          "research": [
+            {
+              "id": "japan:health:insurance",
+              "country": "japan",
+              "country_name": "Japan",
+              "card": "health",
+              "card_title": "Health",
+              "subcard": "insurance",
+              "subcard_title": "Travel insurance",
+              "researched_at": "2026-11-09",
+              "publication_status": "research_draft",
+              "research_outcome": "procedural_guidance",
+              "text": "Check cover for your full Japan itinerary and activities.",
+              "source_ids": [
+                "26c971d711c4"
+              ],
+              "common_note_ids": [
+                "insurance-check"
+              ],
+              "limitations": [],
+              "published": false,
+              "sources": [
+                {
+                  "id": "26c971d711c4",
+                  "url": "https://www.gov.uk/foreign-travel-advice/japan/health",
+                  "title": "UK FCDO — Japan — health",
+                  "checked_at": "2026-11-09",
+                  "method": "government_content_api",
+                  "evidence_scope": "Country conditions only. UK passport, NHS/GHIC/EHIC eligibility, UK licences and consular benefits are not applied to U.S. travelers.",
+                  "publisher_updated_at": null,
+                  "retrieval_url": "https://www.gov.uk/api/content/foreign-travel-advice/japan",
+                  "organization": "UK FCDO — Japan — health"
+                }
+              ],
+              "shared_notes": [
+                {
+                  "text": "Check whether your U.S. health insurance pays for overseas treatment. Consider separate medical and evacuation cover, and check exclusions for pre-existing conditions and planned activities. Trip-cancellation cover alone may not cover medical treatment. Ask how hospitals are paid and how to reach emergency assistance.",
+                  "source_ids": [
+                    "d9e93d297069"
+                  ],
+                  "scope": "General coverage questions, not an insurance-product recommendation or a claim of entry compliance.",
+                  "sources": [
+                    {
+                      "id": "d9e93d297069",
+                      "url": "https://wwwnc.cdc.gov/travel/page/insurance",
+                      "title": "\r\n                  \r\nTravel Insurance | Travelers' Health | CDC\r\n               ",
+                      "checked_at": "2026-11-09",
+                      "method": "public_page_retrieval",
+                      "evidence_scope": "Page text inspected; scope limited to the associated summary.",
+                      "publisher_updated_at": null,
+                      "organization": "Travel Insurance | Travelers' Health | CDC"
+                    }
+                  ]
+                }
+              ],
+              "published_as": [
+                "Medical insurance and evacuation preparation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vaccines",
+          "title": "Vaccines",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-6-12"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "CDC vaccine planning for Japan",
+            "Japanese encephalitis depends on itinerary",
+            "Measles notice and practical health precautions",
+            "Health preparation for your itinerary"
+          ],
+          "research": []
+        },
+        {
+          "id": "medicines",
+          "title": "Medicine rules",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-6-11"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "Identification and local conduct rules",
+            "Check each medicine before packing"
+          ],
+          "research": []
+        },
+        {
+          "id": "care",
+          "title": "Doctors & pharmacies",
+          "status": "research_needed",
+          "fact_ids": [],
+          "coverage_note": "No matching published fact in the repository. Check the source leads; do not invent an answer.",
+          "follow_up_research": {
+            "record_id": "japan:health:care",
+            "outcome": "draft_answer",
+            "file": "research-2026-11-09/japan.md"
+          },
+          "fact_titles": [
+            "Finding care and paying for treatment"
+          ],
+          "research": [
+            {
+              "id": "japan:health:care",
+              "country": "japan",
+              "country_name": "Japan",
+              "card": "health",
+              "card_title": "Health",
+              "subcard": "care",
+              "subcard_title": "Doctors & pharmacies",
+              "researched_at": "2026-11-09",
+              "publication_status": "research_draft",
+              "research_outcome": "draft_answer",
+              "text": "Healthcare can be expensive, and facilities may ask to check insurance before treatment. Use the English-speaking provider directory and keep funds available for payment.",
+              "source_ids": [
+                "26c971d711c4"
+              ],
+              "common_note_ids": [],
+              "limitations": [
+                "Provider-finding and payment preparation only; individual pharmacy opening hours, stock and foreign-prescription acceptance require a local check."
+              ],
+              "published": false,
+              "sources": [
+                {
+                  "id": "26c971d711c4",
+                  "url": "https://www.gov.uk/foreign-travel-advice/japan/health",
+                  "title": "UK FCDO — Japan — health",
+                  "checked_at": "2026-11-09",
+                  "method": "government_content_api",
+                  "evidence_scope": "Country conditions only. UK passport, NHS/GHIC/EHIC eligibility, UK licences and consular benefits are not applied to U.S. travelers.",
+                  "publisher_updated_at": null,
+                  "retrieval_url": "https://www.gov.uk/api/content/foreign-travel-advice/japan",
+                  "organization": "UK FCDO — Japan — health"
+                }
+              ],
+              "shared_notes": [],
+              "published_as": [
+                "Finding care and paying for treatment"
+              ]
+            }
+          ]
+        }
+      ],
+      "topic_fact_ids": [
+        "japan-6-11",
+        "japan-6-12"
+      ]
+    },
+    {
+      "id": "there",
+      "title": "Getting there",
+      "subcards": [
+        {
+          "id": "airport-1",
+          "title": "Narita Airport",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-2-6"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "Narita international arrival sequence",
+            "Narita Airport rail choices"
+          ],
+          "research": [
+            {
+              "id": "japan:narita-arrivals-supplement",
+              "text": "At Narita, complete immigration, collect checked baggage, and pass customs before entering the arrivals lobby. Follow airport signs to your onward transport. These steps are specific to Narita.",
+              "researched_at": "2026-11-09",
+              "published": false,
+              "publication_status": "research_draft",
+              "shared_notes": [],
+              "limitations": [
+                "Official-source search result inspected this session; full page and operator details require review before publication."
+              ],
+              "sources": [
+                {
+                  "title": "Narita International Airport — International arrival procedure",
+                  "url": "https://www.narita-airport.jp/en/airportguide/inter-arr/",
+                  "checked_at": "2026-11-09"
+                }
+              ],
+              "published_as": [
+                "Narita international arrival sequence"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "airport-2",
+          "title": "Haneda Airport",
+          "status": "research_needed",
+          "fact_ids": [],
+          "coverage_note": "No matching published fact in the repository. Check the source leads; do not invent an answer.",
+          "follow_up_research": {
+            "record_id": "japan:arrival:airport-2",
+            "outcome": "scoped_airport_example",
+            "file": "research-2026-11-09/japan.md"
+          },
+          "fact_titles": [
+            "Haneda terminal and onward transport"
+          ],
+          "research": [
+            {
+              "id": "japan:arrival:airport-2",
+              "country": "japan",
+              "country_name": "Japan",
+              "card": "arrival",
+              "card_title": "Getting there",
+              "subcard": "airport-2",
+              "subcard_title": "Alternative arrival airport (Haneda Airport in design)",
+              "researched_at": "2026-11-09",
+              "publication_status": "research_draft",
+              "research_outcome": "scoped_airport_example",
+              "text": "Haneda Airport is a location-specific arrival example. Check your ticket’s airport and terminal, then use the official passenger information for onward travel.",
+              "source_ids": [
+                "6e6fce3ce13d"
+              ],
+              "common_note_ids": [],
+              "limitations": [
+                "Not a nationwide arrival instruction or a recommendation to choose this airport. Flight availability and terminal details require a trip-specific check."
+              ],
+              "display_title": "Haneda Airport",
+              "published": false,
+              "sources": [
+                {
+                  "id": "6e6fce3ce13d",
+                  "url": "https://www.tokyo-haneda.com/en/toward",
+                  "title": "Go to Haneda | Haneda Airport Passenger Terminal",
+                  "checked_at": "2026-11-09",
+                  "method": "public_page_retrieval",
+                  "evidence_scope": "Page text inspected; scope limited to the associated summary.",
+                  "publisher_updated_at": null,
+                  "organization": "Go to Haneda | Haneda Airport Passenger Terminal"
+                }
+              ],
+              "shared_notes": [],
+              "published_as": [
+                "Haneda terminal and onward transport"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "arrival-steps",
+          "title": "Arrival steps",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-2-5"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "Narita international arrival sequence",
+            "Visit Japan Web and arrival documents",
+            "Customs and arrival preparation"
+          ],
+          "research": [
+            {
+              "id": "japan:narita-arrivals-supplement",
+              "text": "At Narita, complete immigration, collect checked baggage, and pass customs before entering the arrivals lobby. Follow airport signs to your onward transport. These steps are specific to Narita.",
+              "researched_at": "2026-11-09",
+              "published": false,
+              "publication_status": "research_draft",
+              "shared_notes": [],
+              "limitations": [
+                "Official-source search result inspected this session; full page and operator details require review before publication."
+              ],
+              "sources": [
+                {
+                  "title": "Narita International Airport — International arrival procedure",
+                  "url": "https://www.narita-airport.jp/en/airportguide/inter-arr/",
+                  "checked_at": "2026-11-09"
+                }
+              ],
+              "published_as": [
+                "Narita international arrival sequence",
+                "Visit Japan Web and arrival documents"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "city-transfer",
+          "title": "Buses & taxis",
+          "status": "research_needed",
+          "fact_ids": [],
+          "coverage_note": "No matching published fact in the repository. Check the source leads; do not invent an answer.",
+          "follow_up_research": {
+            "record_id": "japan:arrival:city-transfer",
+            "outcome": "operator_planning_guidance",
+            "file": "research-2026-11-09/japan.md"
+          },
+          "fact_titles": [
+            "Narita buses and taxi transfers"
+          ],
+          "research": [
+            {
+              "id": "japan:arrival:city-transfer",
+              "country": "japan",
+              "country_name": "Japan",
+              "card": "arrival",
+              "card_title": "Getting there",
+              "subcard": "city-transfer",
+              "subcard_title": "Buses & taxis",
+              "researched_at": "2026-11-09",
+              "publication_status": "research_draft",
+              "research_outcome": "operator_planning_guidance",
+              "text": "Use the linked airport or transport operator’s published ground-transport information. Confirm the pickup location, destination and fare before setting off.",
+              "source_ids": [
+                "24a8fbb2e846"
+              ],
+              "common_note_ids": [],
+              "limitations": [
+                "Only the linked location/operator is covered. This does not verify every taxi company, bus route or current fare."
+              ],
+              "published": false,
+              "sources": [
+                {
+                  "id": "24a8fbb2e846",
+                  "url": "https://www.narita-airport.jp/en/access/train/",
+                  "title": "Rail | NARITA INTERNATIONAL AIRPORT",
+                  "checked_at": "2026-11-09",
+                  "method": "public_page_retrieval",
+                  "evidence_scope": "Page text inspected; scope limited to the associated summary.",
+                  "publisher_updated_at": null,
+                  "organization": "Rail | NARITA INTERNATIONAL AIRPORT"
+                }
+              ],
+              "shared_notes": [],
+              "published_as": [
+                "Narita buses and taxi transfers"
+              ]
+            }
+          ]
+        }
+      ],
+      "topic_fact_ids": [
+        "japan-2-5",
+        "japan-2-6"
+      ]
+    },
+    {
+      "id": "around",
+      "title": "Getting around",
+      "subcards": [
+        {
+          "id": "subway",
+          "title": "Subway",
+          "status": "research_needed",
+          "fact_ids": [],
+          "coverage_note": "No matching published fact in the repository. Check the source leads; do not invent an answer.",
+          "follow_up_research": {
+            "record_id": "japan:transport:subway",
+            "outcome": "operator_planning_guidance",
+            "file": "research-2026-11-09/japan.md"
+          },
+          "fact_titles": [
+            "Tokyo subway ticket coverage"
+          ],
+          "research": [
+            {
+              "id": "japan:transport:subway",
+              "country": "japan",
+              "country_name": "Japan",
+              "card": "transport",
+              "card_title": "Getting around",
+              "subcard": "subway",
+              "subcard_title": "Subway",
+              "researched_at": "2026-11-10",
+              "publication_status": "research_draft",
+              "research_outcome": "operator_planning_guidance",
+              "text": "Tokyo Metro’s visitor ticket covers Tokyo Metro and Toei Subway lines for its stated validity. It does not automatically cover JR or every airport train. Check the exact route and ticket.",
+              "source_ids": [
+                "2cbc3a6fb1ee"
+              ],
+              "common_note_ids": [],
+              "limitations": [
+                "Scope is limited to the source and location described. No unverified price, timetable or individual eligibility is implied."
+              ],
+              "published": false,
+              "sources": [
+                {
+                  "id": "2cbc3a6fb1ee",
+                  "url": "https://www.tokyometro.jp/en/ticket/travel/index.html",
+                  "title": "Tokyo Metro — Tokyo Subway Ticket",
+                  "checked_at": "2026-11-10",
+                  "method": "web_search_or_open",
+                  "evidence_scope": "Relevant official/provider search result or web-open content inspected; no uninspected details asserted.",
+                  "publisher_updated_at": null,
+                  "organization": "Tokyo Metro — Tokyo Subway Ticket"
+                }
+              ],
+              "shared_notes": [],
+              "published_as": [
+                "Tokyo subway ticket coverage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "trains",
+          "title": "JR trains",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-3-7"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "Japan Rail Pass coverage and train conditions",
+            "Countrywide transport planning"
+          ],
+          "research": []
+        },
+        {
+          "id": "buses",
+          "title": "Buses",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-3-7"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "Local and highway bus planning",
+            "Countrywide transport planning"
+          ],
+          "research": []
+        },
+        {
+          "id": "taxis",
+          "title": "Taxis",
+          "status": "research_needed",
+          "fact_ids": [],
+          "coverage_note": "No matching published fact in the repository. Check the source leads; do not invent an answer.",
+          "follow_up_research": {
+            "record_id": "japan:transport:taxis",
+            "outcome": "operator_planning_guidance",
+            "file": "research-2026-11-09/japan.md"
+          },
+          "fact_titles": [
+            "Taxi payment and destination checks"
+          ],
+          "research": [
+            {
+              "id": "japan:transport:taxis",
+              "country": "japan",
+              "country_name": "Japan",
+              "card": "transport",
+              "card_title": "Getting around",
+              "subcard": "taxis",
+              "subcard_title": "Taxis",
+              "researched_at": "2026-11-09",
+              "publication_status": "research_draft",
+              "research_outcome": "operator_planning_guidance",
+              "text": "Use the linked airport or transport operator’s published ground-transport information. Confirm the pickup location, destination and fare before setting off.",
+              "source_ids": [
+                "24a8fbb2e846"
+              ],
+              "common_note_ids": [],
+              "limitations": [
+                "Only the linked location/operator is covered. This does not verify every taxi company, bus route or current fare."
+              ],
+              "published": false,
+              "sources": [
+                {
+                  "id": "24a8fbb2e846",
+                  "url": "https://www.narita-airport.jp/en/access/train/",
+                  "title": "Rail | NARITA INTERNATIONAL AIRPORT",
+                  "checked_at": "2026-11-09",
+                  "method": "public_page_retrieval",
+                  "evidence_scope": "Page text inspected; scope limited to the associated summary.",
+                  "publisher_updated_at": null,
+                  "organization": "Rail | NARITA INTERNATIONAL AIRPORT"
+                }
+              ],
+              "shared_notes": [],
+              "published_as": [
+                "Taxi payment and destination checks"
+              ]
+            }
+          ]
+        }
+      ],
+      "topic_fact_ids": [
+        "japan-3-7"
+      ]
+    },
+    {
+      "id": "safety",
+      "title": "Safety",
+      "subcards": [
+        {
+          "id": "advisories",
+          "title": "Travel advisory",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-5-10"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "U.S. advisory and regional precautions"
+          ],
+          "research": []
+        },
+        {
+          "id": "emergencies",
+          "title": "Emergency numbers",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-10-16"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "Emergency numbers and visitor hotline",
+            "Emergency help and U.S. assistance"
+          ],
+          "research": []
+        },
+        {
+          "id": "hazards",
+          "title": "Earthquakes",
+          "status": "research_needed",
+          "fact_ids": [],
+          "coverage_note": "No matching published fact in the repository. Check the source leads; do not invent an answer.",
+          "follow_up_research": {
+            "record_id": "japan:safety:hazards",
+            "outcome": "preparedness_guidance",
+            "file": "research-2026-11-09/japan.md"
+          },
+          "fact_titles": [
+            "Earthquake and weather alert preparation"
+          ],
+          "research": [
+            {
+              "id": "japan:safety:hazards",
+              "country": "japan",
+              "country_name": "Japan",
+              "card": "safety",
+              "card_title": "Safety",
+              "subcard": "hazards",
+              "subcard_title": "Natural hazards (Earthquakes in design)",
+              "researched_at": "2026-11-09",
+              "publication_status": "research_draft",
+              "research_outcome": "preparedness_guidance",
+              "text": "Prepare for earthquakes and other natural hazards. Save official warning information and follow local evacuation instructions. Seasonal heat and storm guidance should match your travel dates.",
+              "source_ids": [
+                "0aa458f8e482"
+              ],
+              "common_note_ids": [],
+              "limitations": [
+                "General hazards or alert-service guidance, not an active warning or a forecast for the traveler’s dates."
+              ],
+              "published": false,
+              "sources": [
+                {
+                  "id": "0aa458f8e482",
+                  "url": "https://www.gov.uk/foreign-travel-advice/japan/safety-and-security",
+                  "title": "UK FCDO — Japan — safety and security",
+                  "checked_at": "2026-11-09",
+                  "method": "government_content_api",
+                  "evidence_scope": "Country conditions only. UK passport, NHS/GHIC/EHIC eligibility, UK licences and consular benefits are not applied to U.S. travelers.",
+                  "publisher_updated_at": null,
+                  "retrieval_url": "https://www.gov.uk/api/content/foreign-travel-advice/japan",
+                  "organization": "UK FCDO — Japan — safety and security"
+                }
+              ],
+              "shared_notes": [],
+              "published_as": [
+                "Earthquake and weather alert preparation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "solo",
+          "title": "Solo travel",
+          "status": "research_needed",
+          "fact_ids": [],
+          "coverage_note": "No matching published fact in the repository. Check the source leads; do not invent an answer.",
+          "follow_up_research": {
+            "record_id": "japan:safety:solo",
+            "outcome": "preparedness_guidance",
+            "file": "research-2026-11-09/japan.md"
+          },
+          "fact_titles": [
+            "Solo travel and nightlife precautions"
+          ],
+          "research": [
+            {
+              "id": "japan:safety:solo",
+              "country": "japan",
+              "country_name": "Japan",
+              "card": "safety",
+              "card_title": "Safety",
+              "subcard": "solo",
+              "subcard_title": "Solo travel",
+              "researched_at": "2026-11-09",
+              "publication_status": "research_draft",
+              "research_outcome": "preparedness_guidance",
+              "text": "Keep your passport with you and check local safety information before going out alone. Know the route back and follow official warnings during disruptions.",
+              "source_ids": [
+                "0aa458f8e482"
+              ],
+              "common_note_ids": [],
+              "limitations": [
+                "Practical precautions, not a safety guarantee. Read the existing U.S. advisory and regional restrictions first."
+              ],
+              "published": false,
+              "sources": [
+                {
+                  "id": "0aa458f8e482",
+                  "url": "https://www.gov.uk/foreign-travel-advice/japan/safety-and-security",
+                  "title": "UK FCDO — Japan — safety and security",
+                  "checked_at": "2026-11-09",
+                  "method": "government_content_api",
+                  "evidence_scope": "Country conditions only. UK passport, NHS/GHIC/EHIC eligibility, UK licences and consular benefits are not applied to U.S. travelers.",
+                  "publisher_updated_at": null,
+                  "retrieval_url": "https://www.gov.uk/api/content/foreign-travel-advice/japan",
+                  "organization": "UK FCDO — Japan — safety and security"
+                }
+              ],
+              "shared_notes": [],
+              "published_as": [
+                "Solo travel and nightlife precautions"
+              ]
+            }
+          ]
+        }
+      ],
+      "topic_fact_ids": [
+        "japan-5-10",
+        "japan-10-16"
+      ]
+    },
+    {
+      "id": "culture",
+      "title": "Local culture",
+      "subcards": [
+        {
+          "id": "etiquette",
+          "title": "Etiquette",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-7-13"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "Shoes and shared-space etiquette",
+            "Shoes and venue-specific etiquette"
+          ],
+          "research": []
+        },
+        {
+          "id": "tipping",
+          "title": "Tipping",
+          "status": "research_needed",
+          "fact_ids": [],
+          "coverage_note": "No matching published fact in the repository. Check the source leads; do not invent an answer.",
+          "follow_up_research": {
+            "record_id": "japan:culture:tipping",
+            "outcome": "custom_guidance",
+            "file": "research-2026-11-09/japan.md"
+          },
+          "fact_titles": [
+            "Tipping customs and exceptions"
+          ],
+          "research": [
+            {
+              "id": "japan:culture:tipping",
+              "country": "japan",
+              "country_name": "Japan",
+              "card": "culture",
+              "card_title": "Local culture",
+              "subcard": "tipping",
+              "subcard_title": "Tipping",
+              "researched_at": "2026-11-09",
+              "publication_status": "research_draft",
+              "research_outcome": "custom_guidance",
+              "text": "Tipping is generally not expected in restaurants, taxis and hotels. Some private guides may accept a discreet gratuity; ask about the arrangement rather than applying a fixed percentage.",
+              "source_ids": [
+                "cf7b32acbb98"
+              ],
+              "common_note_ids": [],
+              "limitations": [
+                "A custom, not a mandatory charge. Check the actual bill and venue policy."
+              ],
+              "published": false,
+              "sources": [
+                {
+                  "id": "cf7b32acbb98",
+                  "url": "https://www.japan.travel/en/plan/tipping-in-japan/",
+                  "title": "Tipping in Japan | Travel Japan | JNTO",
+                  "checked_at": "2026-11-09",
+                  "method": "public_page_retrieval",
+                  "evidence_scope": "Page text inspected; scope limited to the associated summary.",
+                  "publisher_updated_at": null,
+                  "organization": "Tipping in Japan | Travel Japan | JNTO"
+                }
+              ],
+              "shared_notes": [],
+              "published_as": [
+                "Tipping customs and exceptions"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "venue",
+          "title": "Onsen & tattoos",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-7-13"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "Onsen bathing and tattoo rules",
+            "Shoes and venue-specific etiquette"
+          ],
+          "research": []
+        },
+        {
+          "id": "laws",
+          "title": "Local laws",
+          "status": "supporting_information_found",
+          "fact_ids": [
+            "japan-7-13"
+          ],
+          "coverage_note": "Partial supporting information; not a claim that every detail of this subcard is answered.",
+          "fact_titles": [
+            "Identification and local conduct rules",
+            "Shoes and venue-specific etiquette"
+          ],
+          "research": []
+        }
+      ],
+      "topic_fact_ids": [
+        "japan-7-13"
+      ]
+    }
+  ],
+  "additional_research": [
+    {
+      "title": "Entry and Documents",
+      "note": "U.S. State Dept: Japan entry, visa and passport rules [HTML]: MOFA Japan: visa-exempt countries, 90-day stays [HTML]: Japan Customs: duty-free limits, ¥1M cash declaration [HTML]: Digital Agency: Visit Japan Web arrival QR codes [HTML]:",
+      "sources": [
+        {
+          "title": "State Dept: Japan entry, visa and passport rules",
+          "url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html"
+        },
+        {
+          "title": "MOFA Japan: visa-exempt countries, 90-day stays",
+          "url": "https://www.mofa.go.jp/j_info/visit/visa/short/novisa.html"
+        },
+        {
+          "title": "Japan Customs: duty-free limits, ¥1M cash declaration",
+          "url": "https://www.customs.go.jp/english/summary/passenger.htm"
+        },
+        {
+          "title": "Digital Agency: Visit Japan Web arrival QR codes",
+          "url": "https://www.digital.go.jp/en/services/visit_japan_web-en/"
+        },
+        {
+          "title": "Japan MOFA visa information",
+          "url": "https://www.mofa.go.jp/j_info/visit/visa/index.html"
+        }
+      ],
+      "draftParagraphs": [
+        "Japan lists the United States among countries whose nationals may enter visa-exempt for qualifying short-term stays. For most listed countries, the landing permission is 90 days. For U.S. citizens visiting for tourism or qualifying business, the U.S. State Department says the passport must remain valid for the full stay, a return or onward ticket should be available, and visitors may not work in Japan's local economy or change to another status while there.",
+        "For a planned stay over 90 days, Japan's Ministry of Foreign Affairs says travelers should follow a work or long-stay visa route; in principle, they should obtain a Certificate of Eligibility through the Immigration Services Agency before applying for a visa at the Japanese mission responsible for where they live. The right route depends on the reason for travel, and a Certificate of Eligibility does not guarantee that a visa will be issued. Paid work also needs the correct status even when a stay is shorter than 90 days.",
+        "Treat visa-free entry as a limited short-stay pathway, not a general permission for any trip. Study, residency, extended stays, and some business activities require checking the Japanese status/visa rules before booking. Transit depends on itinerary, airport, whether the traveler passes immigration, and onward-country documents; confirm with the airline and Japanese authorities.",
+        "Keep passport, itinerary, accommodation/contact details, and any required onward travel evidence accessible. Confirm the passport is in good condition and check airline document rules. Dual nationals should check which passport they must use for each border."
+      ],
+      "draftDate": "October 28, 2026; health refreshed October 29, 2026"
+    },
+    {
+      "title": "Getting There",
+      "note": "Narita Airport: trains to central Tokyo [HTML]: Haneda Airport: train, monorail, bus, taxi [HTML]: Kansai Airport (KIX): access to Osaka and Kyoto [HTML]:",
+      "sources": [
+        {
+          "title": "Narita Airport: trains to central Tokyo",
+          "url": "https://www.narita-airport.jp/en/access/train/"
+        },
+        {
+          "title": "Haneda Airport: train, monorail, bus, taxi",
+          "url": "https://www.tokyo-haneda.com/en/toward"
+        },
+        {
+          "title": "Kansai Airport (KIX): access to Osaka and Kyoto",
+          "url": "https://www.kansai-airport.or.jp/en/access"
+        },
+        {
+          "title": "Japan Customs passenger clearance",
+          "url": "https://www.customs.go.jp/english/summary/passenger.htm"
+        },
+        {
+          "title": "Visit Japan Web English manual",
+          "url": "https://www.vjw.digital.go.jp/manual/main/visitjapanweb_manual_en.pdf"
+        },
+        {
+          "title": "Japan MHLW medicine import guidance",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iyakuhin/kojinyunyu/topics/tp010401-1_00001.html"
+        }
+      ],
+      "draftParagraphs": [
+        "Japan Customs describes arrival as a sequence that can involve quarantine, immigration, applicable animal/plant quarantine, and customs. Follow signs and instructions at the actual port of entry; airport layouts and steps differ.",
+        "Visit Japan Web offers electronic immigration and customs declaration procedures. Check the live official portal and its manual shortly before departure to confirm what can be completed online, whether it applies to the traveler, and what must still be presented in person. A QR code or online form does not replace passport, visa/status, or other required entry documents.",
+        "Declare goods and follow customs and quarantine rules. Food, plants, animal products, medicines, and high-value items can have special restrictions. Check official rules before packing rather than assuming an item is allowed because it is for personal use."
+      ],
+      "draftDate": "October 28, 2026; health refreshed October 29, 2026"
+    },
+    {
+      "title": "Getting Around",
+      "note": "JNTO: trains, buses, taxis, car rental [HTML]: JNTO: IC cards (Suica, PASMO) and cashless payments [HTML]: JNTO: Japan Rail Pass price increase (Oct 1, 2026) [HTML]: Toei Transportation: ODPT open data API and GTFS-JP (2019) [HTML, Japanese]:",
+      "sources": [
+        {
+          "title": "JNTO: trains, buses, taxis, car rental",
+          "url": "https://www.japan.travel/en/plan/getting-around/"
+        },
+        {
+          "title": "JNTO: IC cards (Suica, PASMO) and cashless payments",
+          "url": "https://www.japan.travel/en/plan/cashless-payments-in-japan/"
+        },
+        {
+          "title": "JNTO: Japan Rail Pass price increase (Oct 1, 2026)",
+          "url": "https://www.japan.travel/en/ca/news/price-increases-are-coming-to-the-nationwide-japan-rail-pass-2026/"
+        },
+        {
+          "title": "Toei Transportation: ODPT open data API and GTFS-JP (2019)",
+          "url": "https://www.kotsu.metro.tokyo.jp/pickup_information/news/subway/2019/sub_p_201905318600_h.html"
+        },
+        {
+          "title": "U.S. State Department Japan information",
+          "url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html"
+        },
+        {
+          "title": "Japan Rail Pass coverage and conditions",
+          "url": "https://japanrailpass.net/en/about_jrp/"
+        },
+        {
+          "title": "Japan National Police Agency traffic rules",
+          "url": "https://www.npa.go.jp/english/bureau/traffic/document/TrafficSafetyRules.pdf"
+        }
+      ],
+      "draftParagraphs": [
+        "Japan has extensive train, subway, and bus networks; service, payment methods, accessibility, operating hours, and English support vary by region and operator. Use the relevant operator's current route, fare, and disruption information. Allow extra time for transfers and the first/last mile, especially outside major corridors.",
+        "The Japan Rail Pass is valid only on defined participating Japan Railways (JR) services and subject to its current eligibility, purchase, reservation, and train-specific rules. It does not automatically cover every train, subway, bus, or private railway. Compare the full itinerary and current fare/pass rules before buying.",
+        "Taxis can help with luggage, late arrivals, or places without convenient transit; payment acceptance varies. Confirm destination in writing or on a map. If renting/driving, check current U.S. license and permit requirements with Japanese authorities and rental company before departure; do not assume a U.S. license alone is sufficient."
+      ],
+      "draftDate": "October 28, 2026; health refreshed October 29, 2026"
+    },
+    {
+      "title": "Money and Payments",
+      "note": "JNTO: yen, currency exchange, ATMs for foreign cards [HTML]: Bank of Japan: daily USD/JPY rates [HTML/PDF]: Japan Tourism Agency: tax-free refund system from Nov 2026 [HTML]: JNTO: tipping (not expected) [HTML]:",
+      "sources": [
+        {
+          "title": "JNTO: yen, currency exchange, ATMs for foreign cards",
+          "url": "https://www.japan.travel/en/plan/currency/"
+        },
+        {
+          "title": "Bank of Japan: daily USD/JPY rates",
+          "url": "https://www.boj.or.jp/en/statistics/market/forex/fxdaily/index.htm"
+        },
+        {
+          "title": "Japan Tourism Agency: tax-free refund system from Nov 2026",
+          "url": "https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00028.html"
+        },
+        {
+          "title": "JNTO: tipping (not expected)",
+          "url": "https://www.japan.travel/en/plan/tipping-in-japan/"
+        },
+        {
+          "title": "U.S. State Department Japan information",
+          "url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html"
+        },
+        {
+          "title": "Bank of Japan notes and coins",
+          "url": "https://www.boj.or.jp/en/note_tfjgs/note/valid/"
+        },
+        {
+          "title": "Japan Customs passenger clearance",
+          "url": "https://www.customs.go.jp/english/summary/passenger.htm"
+        }
+      ],
+      "draftParagraphs": [
+        "Japan's currency is the yen (¥ / JPY). Bank of Japan pages explain current and valid banknotes and coins. Carry a backup payment method and some yen for places that do not accept cards; card and ATM acceptance still depends on the merchant, card network, bank, hours, and location.",
+        "Ask the card issuer about international use, foreign transaction fees, travel notices, ATM fees, and fraud controls. When offered a choice at a card terminal or ATM, check the displayed currency and conversion terms before confirming. Exchange rates change; RoamReady should not publish a static USD/JPY rate without a timestamped live source.",
+        "Japan Customs requires a declaration when bringing into or taking out of Japan more than ¥1,000,000 or equivalent in covered cash and monetary instruments. This is a declaration threshold, not a maximum amount; check the Customs page for which instruments count and current procedures."
+      ],
+      "draftDate": "October 28, 2026; health refreshed October 29, 2026"
+    },
+    {
+      "title": "Safety",
+      "note": "U.S. State Dept: Level 1 advisory, local laws [HTML]: UK FCDO: safety, local laws, natural disasters [HTML]: Japan Meteorological Agency: earthquake and tsunami info [HTML]: JMA via e-Gov: disaster-warning XML feed [RSS/XML, Japanese]:",
+      "sources": [
+        {
+          "title": "State Dept: Level 1 advisory, local laws",
+          "url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html"
+        },
+        {
+          "title": "UK FCDO: safety, local laws, natural disasters",
+          "url": "https://www.gov.uk/foreign-travel-advice/japan"
+        },
+        {
+          "title": "Japan Meteorological Agency: earthquake and tsunami info",
+          "url": "https://www.jma.go.jp/jma/en/Activities/earthquake.html"
+        },
+        {
+          "title": "JMA via e-Gov: disaster-warning XML feed",
+          "url": "https://data.e-gov.go.jp/data/en/dataset/mlit_20170902_0034/resource/f121343a-97c0-4e58-8354-06dfd0488a1b"
+        },
+        {
+          "title": "Japan Meteorological Agency",
+          "url": "https://www.jma.go.jp/jma/indexe.html"
+        },
+        {
+          "title": "Japan Tourism Agency responsible-traveler resources",
+          "url": "https://www.mlit.go.jp/kankocho/responsible-traveler/en.html"
+        }
+      ],
+      "draftParagraphs": [
+        "At the research check date, the U.S. State Department listed Japan at Level 1, “Exercise normal precautions”; the advisory level itself was dated May 15, 2025. Recheck the current advisory, local notices, and airline updates before travel because risk ratings and conditions can change.",
+        "Official U.S. guidance identifies earthquakes, typhoons, tsunamis, landslides, and flooding among hazards to plan for. Travelers should know their accommodation's evacuation instructions, monitor local alerts and weather, and follow Japanese authorities' instructions. Conditions can interrupt rail, flights, roads, and access to services.",
+        "Use normal precautions with belongings and when going out. Laws around drugs, medicines, identification, driving, and other conduct can differ substantially from U.S. rules and may carry serious consequences. Read current country guidance; avoid turning a general country overview into assumptions about every neighborhood or venue."
+      ],
+      "draftDate": "October 28, 2026; health refreshed October 29, 2026"
+    },
+    {
+      "title": "Health",
+      "note": "CDC Travelers' Health: Japan vaccines and risks [blocks bots]: MHLW: bringing personal medicines into Japan [HTML]: Embassy of Japan (U.S.): medication import certificate steps [HTML]: TravelHealthPro (UK): Japan health risks [HTML]:",
+      "sources": [
+        {
+          "title": "CDC Travelers' Health: Japan vaccines and risks",
+          "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/japan"
+        },
+        {
+          "title": "MHLW: bringing personal medicines into Japan",
+          "url": "https://www.mhlw.go.jp/english/policy/health-medical/pharmaceuticals/01.html"
+        },
+        {
+          "title": "): medication import certificate steps",
+          "url": "https://www.us.emb-japan.go.jp/itpr_en/bringing-medications-to-japan.html"
+        },
+        {
+          "title": "TravelHealthPro (UK): Japan health risks",
+          "url": "https://travelhealthpro.org.uk/country/114/japan"
+        },
+        {
+          "title": "CDC Japan Traveler View",
+          "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/children.chronic/japan"
+        },
+        {
+          "title": "CDC Travel Health Notices",
+          "url": "https://wwwnc.cdc.gov/travel/notices"
+        },
+        {
+          "title": "Japan MHLW personal medicine import rules",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iyakuhin/kojinyunyu/topics/tp010401-1_00001.html"
+        },
+        {
+          "title": "U.S. State Department Japan information",
+          "url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html"
+        }
+      ],
+      "draftParagraphs": [
+        "CDC's Japan Traveler View was last reviewed August 25, 2026; we rechecked it October 29, 2026. It asks travelers to check vaccines and medicines and see a health professional at least a month before departure. It advises travelers to be up to date on routine vaccines and COVID-19 vaccines for which they are eligible. It says to consider hepatitis A vaccine for most travelers (and recommends it for some higher-risk activities such as street-food eating or rural travel); recommends hepatitis B vaccine for unvaccinated travelers younger than 60, while unvaccinated travelers 60 and older may get vaccinated; and recommends Japanese encephalitis vaccine for people moving to or spending long periods in affected areas or frequent travelers. For shorter trips, JE vaccine is a consideration when activities increase exposure (for example rural outdoor activities or lodging without screens/air conditioning), and is not recommended for short-term urban-only travel. These are CDC recommendations to discuss with a clinician, not individual medical advice.",
+        "The Japan page currently displays a Level 1 “Practice Usual Precautions” Travel Health Notice that links to Global Measles, dated May 28, 2025. That is a global notice, not a Japan-specific measles outbreak alert. CDC says all international travelers should be fully vaccinated against measles with MMR under its international travel recommendations. Check the live notice list and its date again before publication or travel.",
+        "The same CDC page lists dengue, leptospirosis, hantavirus, tuberculosis, and tick-borne encephalitis among its non-vaccine-preventable disease topics. CDC recommends practical precautions such as avoiding bug bites and contaminated floodwater, using safe food and water practices, preparing for outdoor conditions and heat, avoiding contact with unfamiliar animals, and seeking medical care after animal bites or scratches. Its health-care planning advice includes checking insurance, considering travel-health and medical-evacuation cover, carrying a local-language card for conditions/allergies/medicine names, and carrying prescription copies.",
+        "Do not assume a U.S. prescription makes a medicine legal to import. Japan's rules depend on ingredient, classification, quantity, and duration. Some medicines require prior Import Confirmation or other authorization; some are prohibited or controlled. Check each active ingredient with Japan's MHLW before packing and before departure. Do not rely on a brand name alone.",
+        "U.S. health insurance may not cover care abroad. State Department guidance says travelers should check coverage; medical facilities may require payment up front. Consider appropriate medical and evacuation coverage for the trip and keep insurer assistance details accessible."
+      ],
+      "draftDate": "October 28, 2026; health refreshed October 29, 2026"
+    },
+    {
+      "title": "Local Culture",
+      "note": "JNTO: etiquette, tattoos, onsen, smoking rules [HTML]: Cabinet Office: national holidays [HTML, Japanese]: e-Gov Data Portal: national holidays CSV [data download, Japanese]:",
+      "sources": [
+        {
+          "title": "JNTO: etiquette, tattoos, onsen, smoking rules",
+          "url": "https://www.japan.travel/en/guide/understanding-and-mastering-japanese-manners-and-etiquette/"
+        },
+        {
+          "title": "Cabinet Office: national holidays",
+          "url": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html"
+        },
+        {
+          "title": "e-Gov Data Portal: national holidays CSV",
+          "url": "https://data.e-gov.go.jp/data/en/dataset/cao_20190522_0002/resource/d9ad35a5-6c9c-4127-bdbe-aa138fdffe42"
+        },
+        {
+          "title": "Japan Tourism Agency responsible-traveler guidance",
+          "url": "https://www.mlit.go.jp/kankocho/responsible-traveler/en.html"
+        },
+        {
+          "title": "U.S. State Department Japan information",
+          "url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html"
+        }
+      ],
+      "draftParagraphs": [
+        "Japan is not culturally uniform; customs, expectations, and facility rules vary. Observe signs and local instructions, ask before photographing people or private spaces, keep shared areas clean, and be considerate of noise and other travelers. The Japan Tourism Agency specifically promotes considerate photography, cleaning up, and avoiding large luggage in crowded places.",
+        "Remove shoes where requested and follow posted directions at homes, some accommodations, religious sites, and other facilities. On public transport, keep calls and noise low, queue where marked, and keep bags from blocking doors or seats. These are practical etiquette cues, not a claim that every place has an identical rule.",
+        "Onsen, bathing, religious, and other facilities may have specific access rules, including rules about tattoos or swimwear; check the facility before arrival rather than assuming a countrywide policy. Ask permission before entering restricted/private areas or photographing ceremonies and worshippers."
+      ],
+      "draftDate": "October 28, 2026; health refreshed October 29, 2026"
+    },
+    {
+      "title": "Phones and Internet",
+      "note": "JNTO: free Wi-Fi, SIM cards, pocket Wi-Fi [HTML]: MIC: rules for using foreign phones and devices [HTML]:",
+      "sources": [
+        {
+          "title": "JNTO: free Wi-Fi, SIM cards, pocket Wi-Fi",
+          "url": "https://www.japan.travel/en/plan/wifi-and-connectivity/"
+        },
+        {
+          "title": "MIC: rules for using foreign phones and devices",
+          "url": "https://www.tele.soumu.go.jp/e/sys/others/inbound/index.htm"
+        },
+        {
+          "title": "U.S. State Department communication abroad guidance",
+          "url": "https://travel.state.gov/en/international-travel/planning/guidance/communication-abroad.html"
+        },
+        {
+          "title": "U.S. State Department Japan information",
+          "url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html"
+        }
+      ],
+      "draftParagraphs": [
+        "Before leaving, ask the U.S. carrier whether the phone is unlocked and compatible, whether Japan is included in the plan, what roaming/data/call charges apply, and how to contact support. Coverage and service quality vary by provider and location.",
+        "Compare carrier roaming, a travel eSIM, or a local SIM. Confirm device compatibility, activation requirements, data limits, voice/SMS availability, and whether the option works before relying on it. Save offline copies of passport details, accommodation and itinerary, maps, and key contacts; keep a way to receive important alerts."
+      ],
+      "draftDate": "October 28, 2026; health refreshed October 29, 2026"
+    },
+    {
+      "title": "Electricity and Tech",
+      "note": "JNTO: 100 V, 50/60 Hz, adapters [HTML]: KEK (national lab): Type A plugs, east/west frequency split [HTML]: MLIT Civil Aviation Bureau: drone flight rules [HTML]:",
+      "sources": [
+        {
+          "title": "JNTO: 100 V, 50/60 Hz, adapters",
+          "url": "https://www.japan.travel/en/plan/plug-and-electricity/"
+        },
+        {
+          "title": "KEK (national lab): Type A plugs, east/west frequency split",
+          "url": "https://www2.kek.jp/rso/test/eng/BeforeCome/JapaneseElectricity.html"
+        },
+        {
+          "title": "MLIT Civil Aviation Bureau: drone flight rules",
+          "url": "https://www.mlit.go.jp/en/koku/uas.html"
+        },
+        {
+          "title": "Kansai Electric Power electricity guide",
+          "url": "https://www.kepco.co.jp/english/home/denki/01.html"
+        },
+        {
+          "title": "Kagawa University voltage and frequency information",
+          "url": "https://www.kagawa-u.ac.jp/kagawa-u_ead/english/newcomer/kagawa-university-international-house/voltage-and-frequency/"
+        }
+      ],
+      "draftParagraphs": [
+        "Japan's household supply is generally 100 V AC. Frequency is 50 Hz in eastern Japan and 60 Hz in western Japan. Type A two-flat-pin outlets are common; outlet fit can vary by accommodation and location.",
+        "Check each device's input label and the manufacturer's instructions for voltage and frequency. A plug adapter changes physical fit; it does not convert voltage. If a device is not rated for Japan's supply, use a suitable converter only if the manufacturer allows it, or leave the device at home. Take chargers, battery packs, and any needed adapters; airline rules apply to batteries."
+      ],
+      "draftDate": "October 28, 2026; health refreshed October 29, 2026"
+    },
+    {
+      "title": "Emergency Information",
+      "note": "JNTO: 110/119 and 24/7 Japan Visitor Hotline [HTML]: U.S. Embassy Tokyo: citizen services and emergencies [HTML]: UK FCDO: English-speaking medical facilities in Japan [HTML]: STEP: enroll for embassy alerts [login]:",
+      "sources": [
+        {
+          "title": "JNTO: 110/119 and 24/7 Japan Visitor Hotline",
+          "url": "https://www.japan.travel/en/plan/hotline/"
+        },
+        {
+          "title": "Embassy Tokyo: citizen services and emergencies",
+          "url": "https://jp.usembassy.gov/"
+        },
+        {
+          "title": "UK FCDO: English-speaking medical facilities in Japan",
+          "url": "https://www.gov.uk/government/publications/japan-list-of-doctors-and-medical-facilities/list-of-medical-facilities-in-japan"
+        },
+        {
+          "title": "STEP: enroll for embassy alerts",
+          "url": "https://mytravel.state.gov/s/step"
+        },
+        {
+          "title": "U.S. State Department Japan information and contacts",
+          "url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html"
+        },
+        {
+          "title": "Japan National Police Agency traffic rules",
+          "url": "https://www.npa.go.jp/english/bureau/traffic/document/TrafficSafetyRules.pdf"
+        },
+        {
+          "title": "Japan Fire and Disaster Management Agency ambulance guide",
+          "url": "https://www.fdma.go.jp/publication/portal/items/portal001_pamphiet_english.pdf"
+        }
+      ],
+      "draftParagraphs": [
+        "Japan's emergency numbers are 110 for police and 119 for fire or ambulance. The Fire and Disaster Management Agency's English guide describes calling 119 and giving the emergency type and location; prepare a nearby address or landmark. In a traffic accident, the National Police Agency says to contact police even when no one appears injured.",
+        "At the research check date, the U.S. State Department listed +81-3-3224-5000 as the U.S. Embassy Tokyo main and after-hours number. Confirm the live State Department page for the correct embassy/consulate and current contact method for where you are. Emergency responders handle immediate local emergencies; U.S. consular staff can provide limited assistance to U.S. citizens but do not replace local emergency services, hospitals, insurers, or legal counsel.",
+        "Save emergency numbers, embassy/consulate contacts, insurer assistance, and accommodation information offline. If an emergency is active, follow local responders' instructions first."
+      ],
+      "draftDate": "October 28, 2026; health refreshed October 29, 2026"
+    }
+  ]
+}

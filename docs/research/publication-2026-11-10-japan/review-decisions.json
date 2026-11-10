@@ -1,0 +1,291 @@
+[
+  {
+    "key": "tax-free",
+    "fact_id": "a5b1cdb4-d4fe-54ae-b310-cc61d9a408f2",
+    "title": "Tax-free refunds for purchases from November 2026",
+    "origin": "November 9–10 subcard research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.customs.go.jp/kaigairyoko/taxrefund.htm"
+    ]
+  },
+  {
+    "key": "hotspot",
+    "fact_id": "c1195193-8e90-58e5-be0f-745f01485d3e",
+    "title": "Pocket Wi-Fi rental and coverage checks",
+    "origin": "November 9–10 subcard research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.japan.travel/en/plan/wifi-and-connectivity/",
+      "https://support.travelwifi.com/hc/en-us/articles/17685823197329-Regional-rental-day-plans"
+    ]
+  },
+  {
+    "key": "insurance",
+    "fact_id": "7cc9e9ec-b638-5d38-a75c-b936485cfc1b",
+    "title": "Medical insurance and evacuation preparation",
+    "origin": "November 9–10 subcard research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.gov.uk/foreign-travel-advice/japan/health",
+      "https://travel.state.gov/en/international-travel/travel-advisories/japan.html"
+    ]
+  },
+  {
+    "key": "care",
+    "fact_id": "235faead-da38-5a44-8a01-576a5eee511b",
+    "title": "Finding care and paying for treatment",
+    "origin": "November 9–10 subcard research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.gov.uk/foreign-travel-advice/japan/health",
+      "https://travel.state.gov/en/international-travel/travel-advisories/japan.html"
+    ]
+  },
+  {
+    "key": "narita-arrivals",
+    "fact_id": "f3ad3323-dc33-51d4-84e1-553691376d32",
+    "title": "Narita international arrival sequence",
+    "origin": "November 9–10 subcard research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.narita-airport.jp/en/airportguide/inter-arr/"
+    ]
+  },
+  {
+    "key": "haneda",
+    "fact_id": "fd234449-fd6a-5f3d-92ea-1380b91142ee",
+    "title": "Haneda terminal and onward transport",
+    "origin": "November 9–10 subcard research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://tokyo-haneda.com/en/access/index.html"
+    ]
+  },
+  {
+    "key": "airport-buses",
+    "fact_id": "9b8caddb-5edf-5488-a957-75544d62357b",
+    "title": "Narita buses and taxi transfers",
+    "origin": "November 9–10 subcard research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.narita-airport.jp/en/access/bus/",
+      "https://www.narita-airport.jp/en/access/taxi/"
+    ]
+  },
+  {
+    "key": "subway",
+    "fact_id": "29db76e0-b63b-5e0c-984d-9c930ffc4ae3",
+    "title": "Tokyo subway ticket coverage",
+    "origin": "November 9–10 subcard research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.tokyometro.jp/en/ticket/travel/index.html"
+    ]
+  },
+  {
+    "key": "taxi",
+    "fact_id": "256339b9-b9be-5ee8-b164-2eb42e38bc4d",
+    "title": "Taxi payment and destination checks",
+    "origin": "November 9–10 subcard research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.japan.travel/en/plan/getting-around/"
+    ]
+  },
+  {
+    "key": "hazards",
+    "fact_id": "142cb849-d488-503b-bd75-ef64fc0e7074",
+    "title": "Earthquake and weather alert preparation",
+    "origin": "November 9–10 subcard research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.gov.uk/foreign-travel-advice/japan/safety-and-security"
+    ]
+  },
+  {
+    "key": "solo",
+    "fact_id": "43e0414c-ba9f-5751-8aaa-6e9c6f286a82",
+    "title": "Solo travel and nightlife precautions",
+    "origin": "November 9–10 subcard research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.gov.uk/foreign-travel-advice/japan/safety-and-security"
+    ]
+  },
+  {
+    "key": "tipping",
+    "fact_id": "602a3690-7b21-554c-9399-ba415b56b7fe",
+    "title": "Tipping customs and exceptions",
+    "origin": "November 9–10 subcard research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.japan.travel/en/plan/tipping-in-japan/"
+    ]
+  },
+  {
+    "key": "forms",
+    "fact_id": "ecbb37d4-c1db-57d0-8db7-c2e6b1b96567",
+    "title": "Visit Japan Web and arrival documents",
+    "origin": "October 28–29 Japan research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.digital.go.jp/en/policies/visit_japan_web"
+    ]
+  },
+  {
+    "key": "railpass",
+    "fact_id": "697d88d6-9da8-575f-95b5-0652e9ed579b",
+    "title": "Japan Rail Pass coverage and train conditions",
+    "origin": "October 28–29 Japan research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://japanrailpass.net/en/about_jrp/",
+      "https://www.japan.travel/en/plan/getting-around/"
+    ]
+  },
+  {
+    "key": "currency",
+    "fact_id": "ab52816d-9a92-567f-b804-4ca598280812",
+    "title": "Yen and backup payment preparation",
+    "origin": "October 28–29 Japan research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.japan.travel/en/plan/currency/"
+    ]
+  },
+  {
+    "key": "atms",
+    "fact_id": "8528eec7-51c9-5df5-bfc8-f183615b22fd",
+    "title": "ATM access and withdrawal costs",
+    "origin": "October 28–29 Japan research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.japan.travel/en/plan/currency/",
+      "https://travel.state.gov/en/international-travel/travel-advisories/japan.html"
+    ]
+  },
+  {
+    "key": "cards",
+    "fact_id": "3089d2a4-02ce-543e-b6b9-836a5fecab87",
+    "title": "Payment cards and Suica or PASMO",
+    "origin": "October 28–29 Japan research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.japan.travel/en/plan/cashless-payments-in-japan/"
+    ]
+  },
+  {
+    "key": "esim",
+    "fact_id": "bd626586-c61a-5077-a8a6-d7d860ccb78e",
+    "title": "SIM and eSIM device checks",
+    "origin": "October 28–29 Japan research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.japan.travel/en/plan/wifi-and-connectivity/",
+      "https://support.apple.com/en-us/118227"
+    ]
+  },
+  {
+    "key": "wifi",
+    "fact_id": "24ba9868-21f9-56fc-b3a3-982258c50f3c",
+    "title": "Airport and accommodation Wi-Fi",
+    "origin": "October 28–29 Japan research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.japan.travel/en/plan/wifi-and-connectivity/"
+    ]
+  },
+  {
+    "key": "adapters",
+    "fact_id": "c52e1ddc-2f4e-5228-9ce6-80fa98e284d6",
+    "title": "Device labels and voltage conversion",
+    "origin": "October 28–29 Japan research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.japan.travel/en/plan/plug-and-electricity/"
+    ]
+  },
+  {
+    "key": "vaccines",
+    "fact_id": "8f1f6a81-f0ef-5ba5-8f5b-34fb1277c4b6",
+    "title": "CDC vaccine planning for Japan",
+    "origin": "October 28–29 Japan research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://wwwnc.cdc.gov/travel/destinations/traveler/none/japan"
+    ]
+  },
+  {
+    "key": "je",
+    "fact_id": "2c1ac28e-c803-597b-8d21-a63c4a9140a6",
+    "title": "Japanese encephalitis depends on itinerary",
+    "origin": "October 28–29 Japan research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://wwwnc.cdc.gov/travel/destinations/traveler/none/japan"
+    ]
+  },
+  {
+    "key": "measles",
+    "fact_id": "632a2dd9-ede1-534c-8465-f74d37558521",
+    "title": "Measles notice and practical health precautions",
+    "origin": "October 28–29 Japan research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://wwwnc.cdc.gov/travel/destinations/traveler/none/japan"
+    ]
+  },
+  {
+    "key": "onsen",
+    "fact_id": "81a43729-7417-528f-84c4-bb8a87121e33",
+    "title": "Onsen bathing and tattoo rules",
+    "origin": "October 28–29 Japan research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.japan.travel/en/guide/understanding-and-mastering-japanese-manners-and-etiquette/"
+    ]
+  },
+  {
+    "key": "laws",
+    "fact_id": "3ab62040-37f4-5a9a-bae3-a60e6693569e",
+    "title": "Identification and local conduct rules",
+    "origin": "October 28–29 Japan research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.gov.uk/foreign-travel-advice/japan/safety-and-security",
+      "https://travel.state.gov/en/international-travel/travel-advisories/japan.html"
+    ]
+  },
+  {
+    "key": "emergency",
+    "fact_id": "53db048f-4753-5b09-a551-588ff23f5798",
+    "title": "Emergency numbers and visitor hotline",
+    "origin": "October 28–29 Japan research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.japan.travel/en/plan/hotline/"
+    ]
+  },
+  {
+    "key": "etiquette",
+    "fact_id": "4c531e6e-bbf0-521d-8672-c1a97573fd49",
+    "title": "Shoes and shared-space etiquette",
+    "origin": "October 28–29 Japan research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.japan.travel/en/guide/understanding-and-mastering-japanese-manners-and-etiquette/"
+    ]
+  },
+  {
+    "key": "buses",
+    "fact_id": "b1ab0ac0-3dab-545e-9598-3a678706406c",
+    "title": "Local and highway bus planning",
+    "origin": "October 28–29 Japan research, cross-checked November 10",
+    "outcome": "reviewed_and_approved_for_publication",
+    "source_urls": [
+      "https://www.japan.travel/en/plan/getting-around/",
+      "https://www.japan.travel/en/plan/cashless-payments-in-japan/"
+    ]
+  }
+]

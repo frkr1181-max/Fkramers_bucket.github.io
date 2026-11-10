@@ -1,0 +1,688 @@
+[
+  {
+    "id": "a5b1cdb4-d4fe-54ae-b310-cc61d9a408f2",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "money",
+    "title": "Tax-free refunds for purchases from November 2026",
+    "plain_summary": "For purchases on or after November 1, 2026, eligible shoppers pay the tax-inclusive price and complete departure customs procedures before receiving the tax refund. Goods must leave Japan; retain the goods and purchase records. Customs requires the departure check within 90 days of purchase. Check purchaser eligibility, excluded goods and retailer refund arrangements before buying. A refund is not guaranteed.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Foreign visitor tax refund program",
+        "url": "https://www.customs.go.jp/kaigairyoko/taxrefund.htm",
+        "organization": "Japan Customs",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "c1195193-8e90-58e5-be0f-745f01485d3e",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "phones",
+    "title": "Pocket Wi-Fi rental and coverage checks",
+    "plain_summary": "Portable Wi-Fi routers are available through airport rental services and advance reservations. Compare the provider’s Japan coverage, data allowance, pickup or delivery, charging needs and return arrangements. TravelWifi lists Japan in its Global Rental Plan, but that list does not prove current inventory, delivery eligibility or reception along your route. Confirm the booking conditions directly.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Wi-Fi and connectivity",
+        "url": "https://www.japan.travel/en/plan/wifi-and-connectivity/",
+        "organization": "Japan National Tourism Organization",
+        "checked_at": "2026-11-10"
+      },
+      {
+        "title": "Regional rental day plans",
+        "url": "https://support.travelwifi.com/hc/en-us/articles/17685823197329-Regional-rental-day-plans",
+        "organization": "TravelWifi",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "7cc9e9ec-b638-5d38-a75c-b936485cfc1b",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "health",
+    "title": "Medical insurance and evacuation preparation",
+    "plain_summary": "Before departure, check that your insurance covers treatment and unexpected medical evacuation for your Japan itinerary. Ask about exclusions, planned activities, how facilities are paid and how to reach insurer assistance. Do not assume a U.S. policy pays for overseas care or that cancellation cover includes medical treatment.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan healthcare preparation",
+        "url": "https://www.gov.uk/foreign-travel-advice/japan/health",
+        "organization": "UK Foreign, Commonwealth & Development Office",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "235faead-da38-5a44-8a01-576a5eee511b",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "health",
+    "title": "Finding care and paying for treatment",
+    "plain_summary": "Medical treatment in Japan can be expensive. Facilities may check your insurance before treatment, and you should be prepared to pay. The FCDO links an English-speaking medical-provider directory. For prescriptions, U.S. prescriptions are not honored in Japan: plan supplies within Japanese import rules or arrange a local doctor. Pharmacy hours, stock and individual treatment require a local check.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan healthcare preparation",
+        "url": "https://www.gov.uk/foreign-travel-advice/japan/health",
+        "organization": "UK Foreign, Commonwealth & Development Office",
+        "checked_at": "2026-11-10"
+      },
+      {
+        "title": "Japan country guidance",
+        "url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html",
+        "organization": "U.S. Department of State",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "f3ad3323-dc33-51d4-84e1-553691376d32",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "arrival",
+    "title": "Narita international arrival sequence",
+    "plain_summary": "At Narita, follow the signs and staff instructions through applicable quarantine, immigration, baggage claim, plant or animal quarantine and customs before entering the arrivals lobby. Check the flight’s actual terminal and baggage display. These are Narita-specific procedures; they do not establish the layout of every Japanese airport.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "International arrival procedure",
+        "url": "https://www.narita-airport.jp/en/airportguide/inter-arr/",
+        "organization": "Narita International Airport",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "fd234449-fd6a-5f3d-92ea-1380b91142ee",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "arrival",
+    "title": "Haneda terminal and onward transport",
+    "plain_summary": "Haneda publishes terminal-specific routes from arrivals to trains, monorail, buses and taxis. Check the airport and terminal on your ticket, then select the onward connection for your actual destination and arrival time. Haneda is a Tokyo-area example, not an arrival instruction for all of Japan.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Haneda Airport access",
+        "url": "https://tokyo-haneda.com/en/access/index.html",
+        "organization": "Haneda Airport Passenger Terminal",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "9b8caddb-5edf-5488-a957-75544d62357b",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "arrival",
+    "title": "Narita buses and taxi transfers",
+    "plain_summary": "Narita lists direct bus services to multiple destinations and airport ticket counters. Its taxis include standard and zone-based fixed-fare options to Tokyo; tolls and other charges may be additional. Use the official terminal pickup information and confirm destination, departure time and total fare. These details apply to Narita, not every airport or bus company.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Public bus access",
+        "url": "https://www.narita-airport.jp/en/access/bus/",
+        "organization": "Narita International Airport",
+        "checked_at": "2026-11-10"
+      },
+      {
+        "title": "Taxi access",
+        "url": "https://www.narita-airport.jp/en/access/taxi/",
+        "organization": "Narita International Airport",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "29db76e0-b63b-5e0c-984d-9c930ffc4ae3",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "getting-around",
+    "title": "Tokyo subway ticket coverage",
+    "plain_summary": "The Tokyo Subway Ticket covers Tokyo Metro and Toei Subway lines for its stated 24-, 48- or 72-hour period from first use within the ticket’s validity conditions. It does not imply coverage of JR or every airport train. Check the route, eligible purchase method and current ticket conditions before buying.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Tokyo Subway Ticket",
+        "url": "https://www.tokyometro.jp/en/ticket/travel/index.html",
+        "organization": "Tokyo Metro",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "256339b9-b9be-5ee8-b164-2eb42e38bc4d",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "getting-around",
+    "title": "Taxi payment and destination checks",
+    "plain_summary": "Japanese taxis can be useful where public transport is inconvenient. Some accept cards, but not all; carry a suitable payment backup and show the destination clearly. For an airport transfer, use that airport’s official taxi information and confirm total charges rather than assuming a nationwide fare or booking rule.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Transportation in Japan",
+        "url": "https://www.japan.travel/en/plan/getting-around/",
+        "organization": "Japan National Tourism Organization",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "142cb849-d488-503b-bd75-ef64fc0e7074",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "safety",
+    "title": "Earthquake and weather alert preparation",
+    "plain_summary": "Japan has earthquake, tsunami and severe-weather risks. Learn the evacuation instructions at your accommodation and stations, monitor Japan Meteorological Agency warnings and follow local authorities, including evacuation orders. Check seasonal conditions for your travel dates. This is preparedness guidance, not a prediction or an active alert.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan safety and local conditions",
+        "url": "https://www.gov.uk/foreign-travel-advice/japan/safety-and-security",
+        "organization": "UK Foreign, Commonwealth & Development Office",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "43e0414c-ba9f-5751-8aaa-6e9c6f286a82",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "safety",
+    "title": "Solo travel and nightlife precautions",
+    "plain_summary": "Get local advice about places requiring extra caution. Keep belongings in sight, do not follow street touts into bars, watch your drinks and check prices before ordering. For a visitor, carry your passport; residents may use their Japanese residence card. Plan your return route and follow local warnings. These precautions are not a guarantee of safety.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan safety and local conditions",
+        "url": "https://www.gov.uk/foreign-travel-advice/japan/safety-and-security",
+        "organization": "UK Foreign, Commonwealth & Development Office",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "602a3690-7b21-554c-9399-ba415b56b7fe",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "culture",
+    "title": "Tipping customs and exceptions",
+    "plain_summary": "Tipping is generally not customary in Japanese restaurants, bars, cafes, taxis or hotels. A private guide or interpreter accustomed to overseas visitors may accept a discreet gratuity, but it is not expected. Check the actual arrangement rather than applying a standard percentage.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Tipping in Japan",
+        "url": "https://www.japan.travel/en/plan/tipping-in-japan/",
+        "organization": "Japan National Tourism Organization",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "ecbb37d4-c1db-57d0-8db7-c2e6b1b96567",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "arrival",
+    "title": "Visit Japan Web and arrival documents",
+    "plain_summary": "Visit Japan Web supports online immigration and customs arrival procedures. Use the official service and current instructions for your trip, and keep the required passport and immigration documents available. Online registration is a preparation tool; it does not itself establish permission to enter Japan.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Visit Japan Web",
+        "url": "https://www.digital.go.jp/en/policies/visit_japan_web",
+        "organization": "Digital Agency, Government of Japan",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "697d88d6-9da8-575f-95b5-0652e9ed579b",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "getting-around",
+    "title": "Japan Rail Pass coverage and train conditions",
+    "plain_summary": "The Japan Rail Pass is offered by the six JR Group companies. Check its eligible services and current purchase and reservation conditions against your itinerary. NOZOMI and MIZUHO use has additional conditions, including a special ticket for pass holders. A JR pass does not establish coverage of every private railway, subway or bus; compare the actual journeys before buying.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "About Japan Rail Pass",
+        "url": "https://japanrailpass.net/en/about_jrp/",
+        "organization": "Japan Railways Group",
+        "checked_at": "2026-11-10"
+      },
+      {
+        "title": "Transportation in Japan",
+        "url": "https://www.japan.travel/en/plan/getting-around/",
+        "organization": "Japan National Tourism Organization",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "ab52816d-9a92-567f-b804-4ca598280812",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "money",
+    "title": "Yen and backup payment preparation",
+    "plain_summary": "Japan uses the yen (JPY). Carry some yen as well as another suitable payment method, especially for smaller businesses and rural stays. Check the current exchange rate and conversion costs when exchanging; a static USD-to-yen figure is not a current quote.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Currency and exchange",
+        "url": "https://www.japan.travel/en/plan/currency/",
+        "organization": "Japan National Tourism Organization",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "8528eec7-51c9-5df5-bfc8-f183615b22fd",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "money",
+    "title": "ATM access and withdrawal costs",
+    "plain_summary": "Not every ATM accepts every overseas card, and access hours and withdrawal fees vary. Check your card issuer’s overseas withdrawal rules and the ATM’s displayed fees before confirming. Keep enough yen for times or places where a compatible cash machine is unavailable.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Currency and exchange",
+        "url": "https://www.japan.travel/en/plan/currency/",
+        "organization": "Japan National Tourism Organization",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "3089d2a4-02ce-543e-b6b9-836a5fecab87",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "money",
+    "title": "Payment cards and Suica or PASMO",
+    "plain_summary": "Check the payment logos at the actual business; card acceptance does not eliminate the need for cash. Suica, PASMO and other compatible IC cards can pay on supported transport and at participating shops. Coverage, purchase, refund and top-up rules vary by card and operator. Do not assume an overseas mobile wallet works with every Japanese terminal.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Cashless payments and IC travel cards",
+        "url": "https://www.japan.travel/en/plan/cashless-payments-in-japan/",
+        "organization": "Japan National Tourism Organization",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "bd626586-c61a-5077-a8a6-d7d860ccb78e",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "phones",
+    "title": "SIM and eSIM device checks",
+    "plain_summary": "Before using a different carrier, check that your phone is unlocked and supports the chosen SIM or eSIM plan. Confirm Japan coverage, activation, data allowance, validity and whether calls or texts are included; check home-carrier roaming charges too. Apple’s linked instructions apply to compatible iPhones; for other devices, use the manufacturer’s and carrier’s instructions.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Wi-Fi and connectivity",
+        "url": "https://www.japan.travel/en/plan/wifi-and-connectivity/",
+        "organization": "Japan National Tourism Organization",
+        "checked_at": "2026-11-10"
+      },
+      {
+        "title": "eSIM during international travel on iPhone",
+        "url": "https://support.apple.com/en-us/118227",
+        "organization": "Apple",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "24ba9868-21f9-56fc-b3a3-982258c50f3c",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "phones",
+    "title": "Airport and accommodation Wi-Fi",
+    "plain_summary": "Japan’s major international airports offer terminal Wi-Fi, with connection instructions varying by airport. Confirm Wi-Fi at your accommodation before booking, especially outside large city hotels. Public hotspots may need registration and may be slow or patchy; keep another way to reach your itinerary and contacts.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Wi-Fi and connectivity",
+        "url": "https://www.japan.travel/en/plan/wifi-and-connectivity/",
+        "organization": "Japan National Tourism Organization",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "c52e1ddc-2f4e-5228-9ce6-80fa98e284d6",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "electricity",
+    "title": "Device labels and voltage conversion",
+    "plain_summary": "Japan uses 100-volt AC, with 50 Hz in the east and 60 Hz in the west. Check each appliance’s voltage and frequency rating and its manufacturer’s instructions before connecting it. A physical plug adapter does not change voltage; devices that are not compatible may need appropriate conversion equipment or should be left at home.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Plugs and electricity",
+        "url": "https://www.japan.travel/en/plan/plug-and-electricity/",
+        "organization": "Japan National Tourism Organization",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "8f1f6a81-f0ef-5ba5-8f5b-34fb1277c4b6",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "health",
+    "title": "CDC vaccine planning for Japan",
+    "plain_summary": "CDC advises a health visit at least a month before travel and staying current on routine vaccines and eligible COVID-19 vaccination. It says to consider hepatitis A for most travelers, with stronger recommendations for certain food and rural exposures. Hepatitis B is recommended for unvaccinated travelers under 60; older travelers may receive it. Review personal recommendations with a clinician. These are health recommendations, not blanket entry requirements.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan Traveler View",
+        "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/japan",
+        "organization": "U.S. Centers for Disease Control and Prevention",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "2c1ac28e-c803-597b-8d21-a63c4a9140a6",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "health",
+    "title": "Japanese encephalitis depends on itinerary",
+    "plain_summary": "CDC recommends Japanese encephalitis vaccination for relocation, long stays or frequent visits to affected areas. Shorter visits may warrant discussion when rural or outdoor exposure increases risk. It is not recommended for short urban-only trips. Ask a clinician about your activities and accommodation rather than deciding from duration alone.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan Traveler View",
+        "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/japan",
+        "organization": "U.S. Centers for Disease Control and Prevention",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "632a2dd9-ede1-534c-8465-f74d37558521",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "health",
+    "title": "Measles notice and practical health precautions",
+    "plain_summary": "CDC’s Japan page links a global measles notice, not a declaration of a Japan-specific outbreak. Check MMR protection under CDC’s international-travel recommendations. Also prevent insect bites and avoid contaminated floodwater; vaccination does not prevent every travel illness.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan Traveler View",
+        "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/japan",
+        "organization": "U.S. Centers for Disease Control and Prevention",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "81a43729-7417-528f-84c4-bb8a87121e33",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "culture",
+    "title": "Onsen bathing and tattoo rules",
+    "plain_summary": "Wash before entering a shared bath and keep towels and other items out of the water. Tattoo, clothing and access rules vary by facility: check directly before arrival. Some venues restrict tattoos, while others permit them or offer private baths. Do not assume either a universal ban or universal acceptance.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Manners and bathing etiquette",
+        "url": "https://www.japan.travel/en/guide/understanding-and-mastering-japanese-manners-and-etiquette/",
+        "organization": "Japan National Tourism Organization",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "3ab62040-37f4-5a9a-bae3-a60e6693569e",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "culture",
+    "title": "Identification and local conduct rules",
+    "plain_summary": "Visitors should carry their passport; Japan residents may use their residence card. Local rules can differ from U.S. practice, including smoking restrictions and strict controls on medicines and drugs. Follow posted restrictions and check the relevant Japanese authority before bringing a controlled item. A U.S. prescription alone does not establish import permission.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan safety and local conditions",
+        "url": "https://www.gov.uk/foreign-travel-advice/japan/safety-and-security",
+        "organization": "UK Foreign, Commonwealth & Development Office",
+        "checked_at": "2026-11-10"
+      },
+      {
+        "title": "Japan country guidance",
+        "url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html",
+        "organization": "U.S. Department of State",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "53db048f-4753-5b09-a551-588ff23f5798",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "emergency",
+    "title": "Emergency numbers and visitor hotline",
+    "plain_summary": "For an immediate emergency in Japan, call 110 for police or 119 for fire or ambulance. JNTO’s Japan Visitor Hotline is +81-50-3816-2787, available around the clock in English, Chinese and Korean for visitor assistance. It complements rather than replaces local emergency responders. Save your accommodation address and insurer assistance details before travel.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan Visitor Hotline and emergency numbers",
+        "url": "https://www.japan.travel/en/plan/hotline/",
+        "organization": "Japan National Tourism Organization",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "4c531e6e-bbf0-521d-8672-c1a97573fd49",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "culture",
+    "title": "Shoes and shared-space etiquette",
+    "plain_summary": "Remove shoes where requested and follow the facility’s directions about indoor and bathroom slippers. In traditional accommodation, check posted instructions and ask staff if uncertain. Bathing, dress and venue access rules vary, so use local instructions rather than assuming all venues follow identical customs.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Manners and etiquette",
+        "url": "https://www.japan.travel/en/guide/understanding-and-mastering-japanese-manners-and-etiquette/",
+        "organization": "Japan National Tourism Organization",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "b1ab0ac0-3dab-545e-9598-3a678706406c",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "getting-around",
+    "title": "Local and highway bus planning",
+    "plain_summary": "Japan has local and longer-distance bus services. Choose the operator for your actual route and check stops, timetable, luggage and payment arrangements before departure. Use an IC card only where that service accepts it; do not assume a rail pass or another city’s fare rules apply.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Transportation in Japan",
+        "url": "https://www.japan.travel/en/plan/getting-around/",
+        "organization": "Japan National Tourism Organization",
+        "checked_at": "2026-11-10"
+      },
+      {
+        "title": "Cashless payments and IC travel cards",
+        "url": "https://www.japan.travel/en/plan/cashless-payments-in-japan/",
+        "organization": "Japan National Tourism Organization",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  }
+]

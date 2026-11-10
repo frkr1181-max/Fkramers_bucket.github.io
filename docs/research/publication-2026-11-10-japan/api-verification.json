@@ -1,0 +1,170 @@
+{
+  "verified_at": "2026-11-10",
+  "trip": "Japan, tourism, five days",
+  "api_fact_count": 42,
+  "published_additions": 28,
+  "subcards": [
+    {
+      "guide": "entry",
+      "topic": "Visa",
+      "matching_facts": 2
+    },
+    {
+      "guide": "entry",
+      "topic": "Passport",
+      "matching_facts": 1
+    },
+    {
+      "guide": "entry",
+      "topic": "Arrival forms",
+      "matching_facts": 2
+    },
+    {
+      "guide": "entry",
+      "topic": "Medicine",
+      "matching_facts": 3
+    },
+    {
+      "guide": "money",
+      "topic": "Currency",
+      "matching_facts": 3
+    },
+    {
+      "guide": "money",
+      "topic": "Cash & ATMs",
+      "matching_facts": 3
+    },
+    {
+      "guide": "money",
+      "topic": "Cards & IC cards",
+      "matching_facts": 3
+    },
+    {
+      "guide": "money",
+      "topic": "Tax-free shopping",
+      "matching_facts": 1
+    },
+    {
+      "guide": "phones",
+      "topic": "eSIM",
+      "matching_facts": 2
+    },
+    {
+      "guide": "phones",
+      "topic": "Pocket Wi-Fi",
+      "matching_facts": 1
+    },
+    {
+      "guide": "phones",
+      "topic": "Free Wi-Fi",
+      "matching_facts": 2
+    },
+    {
+      "guide": "phones",
+      "topic": "Plugs & voltage",
+      "matching_facts": 2
+    },
+    {
+      "guide": "health",
+      "topic": "Travel insurance",
+      "matching_facts": 1
+    },
+    {
+      "guide": "health",
+      "topic": "Vaccines",
+      "matching_facts": 4
+    },
+    {
+      "guide": "health",
+      "topic": "Medicine rules",
+      "matching_facts": 2
+    },
+    {
+      "guide": "health",
+      "topic": "Doctors & pharmacies",
+      "matching_facts": 1
+    },
+    {
+      "guide": "there",
+      "topic": "Narita Airport",
+      "matching_facts": 2
+    },
+    {
+      "guide": "there",
+      "topic": "Haneda Airport",
+      "matching_facts": 1
+    },
+    {
+      "guide": "there",
+      "topic": "Arrival steps",
+      "matching_facts": 3
+    },
+    {
+      "guide": "there",
+      "topic": "Buses & taxis",
+      "matching_facts": 1
+    },
+    {
+      "guide": "around",
+      "topic": "Subway",
+      "matching_facts": 1
+    },
+    {
+      "guide": "around",
+      "topic": "JR trains",
+      "matching_facts": 2
+    },
+    {
+      "guide": "around",
+      "topic": "Buses",
+      "matching_facts": 2
+    },
+    {
+      "guide": "around",
+      "topic": "Taxis",
+      "matching_facts": 1
+    },
+    {
+      "guide": "safety",
+      "topic": "Travel advisory",
+      "matching_facts": 1
+    },
+    {
+      "guide": "safety",
+      "topic": "Emergency numbers",
+      "matching_facts": 2
+    },
+    {
+      "guide": "safety",
+      "topic": "Earthquakes",
+      "matching_facts": 1
+    },
+    {
+      "guide": "safety",
+      "topic": "Solo travel",
+      "matching_facts": 1
+    },
+    {
+      "guide": "culture",
+      "topic": "Etiquette",
+      "matching_facts": 2
+    },
+    {
+      "guide": "culture",
+      "topic": "Tipping",
+      "matching_facts": 1
+    },
+    {
+      "guide": "culture",
+      "topic": "Onsen & tattoos",
+      "matching_facts": 2
+    },
+    {
+      "guide": "culture",
+      "topic": "Local laws",
+      "matching_facts": 2
+    }
+  ],
+  "all_32_have_published_support": true,
+  "work_and_long_stay_facts_excluded": true
+}
