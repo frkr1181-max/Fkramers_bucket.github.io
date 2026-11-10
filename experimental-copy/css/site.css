@@ -464,14 +464,15 @@ dialog.guest .inner { display: grid; gap: 16px; }
    the arrow side by side (David, Nov 10: no empty white space in the cards).
    the thumbnail takes all the height the row doesn't need */
 .tile-band { flex: 1; min-height: 0; height: auto; overflow: hidden; background: var(--thumb-main); }
-/* a slanted lighter slab behind the object, so the band isn't one flat color */
-.tile-band::before {
-  content: ""; position: absolute; inset: -20% 18% -20% 30%;
-  background: var(--rr-palette-white); opacity: 0.14; transform: skewX(-18deg);
+/* the art is a big square that peeks up from behind the white title row
+   (David, Nov 10): it's 118% of the band's height (the tile minus its 56px
+   title row), never wider than 86% of the tile, starts just under the band's
+   top edge, and the band clips whatever hangs below */
+.tile-band { place-items: start center; }
+.tile-band .glyph {
+  --art: min(86cqw, calc((100cqh - 56px) * 1.18)); width: var(--art); height: var(--art);
+  margin-top: calc(var(--art) * 0.04);
 }
-/* the art is a square that fits both ways: 82% of the band's height (the tile
-   minus its 56px title row) and never wider than 76% of the tile */
-.tile-band .glyph { --art: min(150px, 76cqw, calc((100cqh - 56px) * 0.82)); width: var(--art); height: var(--art); }
 .tile-body {
   flex: none; flex-direction: row; align-items: center; justify-content: space-between;
   gap: 12px; min-height: 56px; padding: 8px 12px 8px 18px;
@@ -521,7 +522,8 @@ dialog.guest .inner { display: grid; gap: 16px; }
   .tiles { margin-top: 16px; gap: 16px; grid-template-columns: 1fr 1fr; }
   .tile { height: 64px; flex-direction: row; container-type: normal; }
   .tile-band { flex: none; height: auto; width: 56px; }
-  .tile-band .glyph { width: 40px; height: 40px; }
+  .tile-band { place-items: center; }
+  .tile-band .glyph { width: 50px; height: 50px; margin-top: 0; }
   .tile-body { flex: 1; min-height: 0; padding: 0 10px; }
   .tile .arrow { display: none; }
   .tile .title-m { font-size: 15px; line-height: 1.15; }
