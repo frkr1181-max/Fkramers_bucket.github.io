@@ -23,3 +23,7 @@ The separate Narita international-arrivals research note is also linked under Na
 ### Reviewed October 29 material and publication
 
 The [November 10 publication](../docs/research/publication-2026-11-10-japan/README.md) adds 28 reviewed records (44 Japan facts total), including supported October 29 detail and gap filling. All 32 subcards now have published support. Matching published records supersede their earlier draft display; original source research remains preserved as a historical archive. The snapshot includes the new publication.
+
+## Permanent topic pages
+
+Learn more now links to `#/topic/<guide>/<topic>?<trip details>`, with a complete detail page rather than a dialog. Japan uses its 32 mapped subcards; other countries use their published fact IDs. The detail page includes full summaries, original excerpts where present, verification dates, source links, neighboring topics, and links back to the guide and trip. Browser back, bookmarking and refresh work with the topic route. Saved-trip topic URLs go through the same account/ownership check as the dashboard. Account dialogs are separate from guide details.

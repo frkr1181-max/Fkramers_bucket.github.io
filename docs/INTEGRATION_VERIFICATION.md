@@ -36,3 +36,7 @@ The supplemental Narita international-arrivals note is also connected under Nari
 ## Japan publication and October 29 cross-check
 
 Published 28 reviewed additions on November 10 (44 Japan facts total); original records were preserved. The live five-day tourism API returns 42 facts, including all 28 additions, with published support in every one of the 32 subcards. Work and long-stay facts remain excluded. See [publication report](research/publication-2026-11-10-japan/README.md). The two requested coverage/archive messages were removed. Superseded draft notes are omitted from topic dialogs when the corresponding published facts are available.
+
+## Permanent topic navigation
+
+The approved full-page preview was implemented in the canonical `site/` without copying preview-only Auth stubs or forcing snapshot mode. All guide Learn more controls are ordinary links to topic routes. Japan supports all 32 subcards; other destinations use stable fact IDs within their guide category. Full detail content, citations, verification dates and optional official excerpts are preserved. Saved-trip topic routes authenticate and fetch the owned trip before displaying account data. Added frontend checks cover route-topic resolution, all 32 Japan topics, other-country categories, missing topics and eligibility.

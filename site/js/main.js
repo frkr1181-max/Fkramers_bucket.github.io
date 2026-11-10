@@ -6,6 +6,7 @@ import { GUIDES, STAGES, PURPOSES, guideById, groupFacts, emergencyNumbers, purp
 import { tripFromQuery, tripToQuery, rememberDescription, tripDays, formatRange, factQuery } from "./trip.js";
 
 import { loadJapanResearch, japanSubcards, japanAdditionalResearch } from "./japan-subcards.js";
+import { topicsForGuide } from "./topics.js";
 import { session, signIn, signUp, signOut } from "./auth.js";
 import { listTrips, loadTrip, saveTrip, deleteTrip, fromRow, savedChecks } from "./saved-trips.js";
 
@@ -434,8 +435,8 @@ async function guideView(id) {
       </div>
       <div class="topic-body">
         <div><h2>${esc(fact.title)}</h2><p class="small">${esc(fact.plain_summary)}</p><p class="small">Last verified: ${esc(fact.last_verified_at)}</p>${matchLabel(fact)}</div>
-        <button class="learn" type="button" data-fact="${i}" aria-haspopup="dialog">Learn more<span class="visually-hidden"> about ${esc(fact.title)}</span>
-          <span class="arrow"><img src="${A}icon-arrow-small.svg" alt="" /></span></button>
+        <a class="learn" href="${tripLink(`topic/${guide.id}/${encodeURIComponent(fact.id)}`)}">Learn more<span class="visually-hidden"> about ${esc(fact.title)}</span>
+          <span class="arrow"><img src="${A}icon-arrow-small.svg" alt="" /></span></a>
       </div></article></li>`).join("");
 
   const sources = (activeJapanSubcards ? activeJapanSubcards.flatMap(sub=>sub.facts) : guideFacts).flatMap((fact) => fact.sources || []);
@@ -487,43 +488,13 @@ function renderJapanCards(guide,subcards){
  const status=sub.facts.length?'Published supporting information':sub.research.length?'Research draft available':'No matching published detail';
  const primary=sub.id==='visas'?sub.facts.find(f=>f.applicability_status==='conditional'):['medicine','medicines'].includes(sub.id)?sub.facts.find(f=>/medicine/i.test(f.title)):null;
  const summary=primary?.plain_summary||sub.facts[0]?.plain_summary||sub.research[0]?.text||'Open this topic for the available research notes, sources and coverage limits.';
- return `<li><article class="topic"><div class="topic-tint" style="background:${guide.tint}" aria-hidden="true"><img class="whisk" src="${A}decor-whisk-rings.svg" alt=""/><img class="glyph" src="${guide.topicIcon}" alt=""/></div><div class="topic-body"><div><h2>${esc(sub.title)}</h2><p class="small">${esc(summary)}</p><p class="small topic-status">${status}</p></div><button class="learn" type="button" data-subcard="${i}" aria-haspopup="dialog">Learn more<span class="visually-hidden"> about ${esc(sub.title)}</span><span class="arrow"><img src="${A}icon-arrow-small.svg" alt=""/></span></button></div></article></li>`;
+ return `<li><article class="topic"><div class="topic-tint" style="background:${guide.tint}" aria-hidden="true"><img class="whisk" src="${A}decor-whisk-rings.svg" alt=""/><img class="glyph" src="${guide.topicIcon}" alt=""/></div><div class="topic-body"><div><h2>${esc(sub.title)}</h2><p class="small">${esc(summary)}</p><p class="small topic-status">${status}</p></div><a class="learn" href="${tripLink(`topic/${guide.id}/${sub.id}`)}">Learn more<span class="visually-hidden"> about ${esc(sub.title)}</span><span class="arrow"><img src="${A}icon-arrow-small.svg" alt=""/></span></a></div></article></li>`;
  }).join('');
 }
 function renderAdditionalJapan(sections){
  return `<details class="card japan-research"><summary>Original Japan research archive — October 28–29</summary><p>Original notes are preserved here as historical research. Current reviewed guidance, including the supported October 29 material, is shown in the topic cards above.</p>${sections.map(section=>`<section><h3>${esc(section.title)}</h3><p class="small">Original research date: ${esc(section.draftDate||'Not recorded')}</p>${(section.draftParagraphs||[]).map(text=>`<p>${esc(text)}</p>`).join('')}${section.note?`<p>${esc(section.note)}</p>`:''}${researchCitations(section.sources)}</section>`).join('')}</details>`;
 }
-function wireGuide(id) {
-  const guide = guideById(id);
-  const dialog = document.querySelector("#learn-more");
-  document.querySelectorAll('[data-subcard]').forEach(button=>button.addEventListener('click',()=>{
-    const sub=activeJapanSubcards[Number(button.dataset.subcard)];
-    dialog.innerHTML=`<div class="tint" style="background:${guide.color}"></div><div class="inner"><div class="top"><h2 id="learn-more-title">Japan · ${esc(sub.title)}</h2><form method="dialog"><button class="close" aria-label="Close">×</button></form></div>
-    ${sub.facts.length?sub.facts.map(fact=>`<section class="published-topic"><h3>${esc(fact.title)}</h3><p>${esc(fact.plain_summary)}</p><p class="small">Published fact · Last verified ${esc(fact.last_verified_at)}</p>${matchLabel(fact)}${fact.official_text_excerpt?`<blockquote>${esc(fact.official_text_excerpt)}</blockquote>`:''}${researchCitations(fact.sources)}</section>`).join(''):'<p>No published fact currently answers this topic for your trip. Draft notes below are not a substitute for reviewed guidance.</p>'}
-    ${sub.research.map(renderResearch).join('')}
-    </div>`;
-    dialog.showModal();
-  }));
-  document.querySelectorAll("[data-fact]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const fact = guideFacts[Number(button.dataset.fact)];
-      dialog.innerHTML = `<div class="tint" style="background:${guide.color}"></div>
-        <div class="inner">
-          <div class="top"><h2 id="learn-more-title">${esc(fact.title)}</h2>
-            <form method="dialog"><button class="close" type="submit" aria-label="Close">×</button></form></div>
-          <p>${esc(fact.plain_summary)}</p>
-          <p class="small">Last verified: ${esc(fact.last_verified_at)}</p>
-          ${matchLabel(fact)}
-          ${fact.official_text_excerpt ? `<blockquote><p class="small">From the official page</p><p>${esc(fact.official_text_excerpt)}</p></blockquote>` : ""}
-          <h3>Sources for this topic</h3>
-          <ul class="source-list">${sourceRows(fact.sources || [])}</ul>
-        </div>`;
-      dialog.showModal();
-    });
-  });
-  // clicking the dimmed backdrop closes the dialog too
-  dialog.onclick = (event) => { if (event.target === dialog) dialog.close(); };
-}
+function wireGuide() {}
 
 // ---------- about ----------
 
@@ -586,7 +557,29 @@ function wireAccount(){
 
 // ---------- router ----------
 
+let renderedTopicTitle=null;
+async function topicPage(guideId,topicId){
+ const guide=guideById(guideId);if(!guide)return notFound();if(!trip)return noTrip();
+ const country=countryName(trip.country);
+ const facts=await getFacts(trip.country,factQuery(trip));
+ const subs=topicsForGuide(trip.country,guideId,facts,trip.country==='japan'?await loadJapanResearch():null);
+ const selected=subs.find(sub=>sub.id===topicId);if(!selected)return notFound();
+ renderedTopicTitle=selected.title;
+ const index=subs.indexOf(selected),previous=subs[index-1],next=subs[index+1];
+ const sources=selected.facts.flatMap(f=>f.sources||[]);
+ return `<div class="page guide topic-detail">${band(PHOTO.arrivals)}<div class="container">
+ <div class="guide-head on-dark"><a class="back" href="${tripLink(`guide/${guideId}`)}"><img src="${A}icon-arrow-left-on-dark.svg" alt=""/>Back to ${esc(guide.title)}</a><div class="guide-title"><span class="icon-box"><img src="${guide.topicIcon}" alt=""/></span><div><p class="detail-eyebrow">${esc(country)} / ${esc(guide.title)}</p><h1 tabindex="-1">${esc(selected.title)}</h1></div></div></div>
+ <div class="guide-columns"><nav class="card sidebar" aria-label="Topic navigation"><div class="trip-summary"><p><strong>${esc(country)}</strong><span class="small">${esc(formatRange(trip))}</span></p><a class="btn btn-secondary" href="${tripLink('trip')}">Trip overview</a></div><hr/><ul class="guide-nav"><li class="group">${esc(guide.title)}</li>${subs.map(sub=>`<li><a class="side-link" href="${tripLink(`topic/${guideId}/${sub.id}`)}" ${sub.id===selected.id?'aria-current="page"':''}><span class="dot" style="background:${guide.color}"></span>${esc(sub.title)}</a></li>`).join('')}<li><a class="side-link" href="${tripLink(`guide/${guideId}`)}">View all ${esc(guide.title.toLowerCase())} topics</a></li></ul></nav>
+ <article class="card full-topic"><p class="detail-eyebrow">Your guide for ${esc(country)} · ${esc(purposeById(trip.purpose)?.label||'Trip preparation')}</p>
+ ${selected.facts.length?selected.facts.map(f=>`<section class="detail-section"><h2>${esc(f.title)}</h2><p>${esc(f.plain_summary)}</p><p class="detail-date">Last verified ${esc(f.last_verified_at)}</p>${matchLabel(f)}${f.official_text_excerpt?`<blockquote>${esc(f.official_text_excerpt)}</blockquote>`:''}</section>`).join(''):'<p>No published guidance is available for this topic and trip.</p>'}
+ ${selected.research.map(renderResearch).join('')}
+ <section class="detail-sources"><h2>Sources</h2>${researchCitations(sources)}</section>
+ <nav class="detail-pagination" aria-label="Other topics">${previous?`<a class="btn btn-secondary" href="${tripLink(`topic/${guideId}/${previous.id}`)}">← ${esc(previous.title)}</a>`:'<span></span>'}${next?`<a class="btn btn-primary" href="${tripLink(`topic/${guideId}/${next.id}`)}">${esc(next.title)} →</a>`:`<a class="btn btn-primary" href="${tripLink(`guide/${guideId}`)}">Back to ${esc(guide.title)}</a>`}</nav>
+ </article></div></div></div>`;
+}
+
 const ROUTES = {
+ topic:{nav:"trip",title:"Topic detail",view:topicPage,wire:()=>{}},
   signup: {nav:null,title:"Create account",view:signupView,wire:wireSignup},
   account: {nav:null,title:"Saved trips",view:accountView,wire:wireAccount},
   "": { nav: "home", title: "RoamReady", view: home, wire: wireHome },
@@ -603,13 +596,14 @@ async function render() {
   main.innerHTML='<div class="container account-form" role="status">Loading…</div>';
   const hash = location.hash.startsWith("#/") ? location.hash : "#/";
   const [path, query = ""] = hash.replace(/^#\/?/, "").split("?");
-  const [name, param] = path.split("/");
+  const [name, param, rawTopic] = path.split("/");
+  let topic;try{topic=rawTopic?decodeURIComponent(rawTopic):null;}catch{topic=null;}
   const route = ROUTES[name] ?? { nav: null, title: "Page not found", view: notFound, wire: () => {} };
 
   // the address bar holds the trip, so links and refreshes keep it
   const fromUrl = tripFromQuery(query);
   if (fromUrl) trip = fromUrl;
-  if(fromUrl?.id && ['trip','guide'].includes(name)){
+  if(fromUrl?.id && ['trip','guide','topic'].includes(name)){
     const current=await session();user=current?.user||null;
     if(!user){trip=null;main.removeAttribute('aria-busy');main.innerHTML='<div class="container account-form card"><h1>Log in to open this saved trip</h1><a class="btn btn-primary" href="#/">Log in</a></div>';return;}
     const identity=`${user.id}:${fromUrl.id}`;
@@ -620,7 +614,7 @@ async function render() {
   if (trip && !countryName(trip.country)) trip = null;
 
   main.setAttribute("aria-busy", "true");
-  const html = await route.view(param);
+  const html = await route.view(param,topic);
   if(generation!==renderGeneration)return;
   main.innerHTML = html;
   main.removeAttribute("aria-busy");
@@ -632,7 +626,7 @@ async function render() {
     // keep the trip in the nav links too
     if (link.dataset.route === "trip" || link.dataset.route === "plan") link.href = tripLink(link.dataset.route);
   });
-  const guideTitle = name === "guide" ? guideById(param)?.title : null;
+  const guideTitle = name === "topic" ? renderedTopicTitle : name === "guide" ? guideById(param)?.title : null;
   document.title = `${guideTitle || route.title} · RoamReady`.replace("RoamReady · RoamReady", "RoamReady");
 
   closeMenu();
