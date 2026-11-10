@@ -260,8 +260,12 @@ textarea.input-area:focus { border-color: var(--rr-color-border-strong); outline
 .tiles { margin-top: 40px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; padding: 0; list-style: none; }
 .tile {
   display: flex; flex-direction: column; height: 264px; overflow: hidden; text-decoration: none;
-  background: var(--rr-color-bg-surface); border-radius: var(--rr-radius-lg); box-shadow: var(--rr-shadow-card);
+  border-radius: var(--rr-radius-lg); box-shadow: var(--rr-shadow-card);
 }
+/* the white lives on the title row, not on the whole tile. a white tile under
+   a colored thumbnail showed through as a thin white rim around the
+   thumbnail's rounded edge (David spotted it, Nov 10) */
+.tile-body { background: var(--rr-color-bg-surface); }
 .tile:focus-visible { outline-color: var(--rr-color-focus-on-dark); outline-offset: 4px; }
 .tile-band { position: relative; height: 104px; flex: none; display: grid; place-items: center; }
 .tile-band .glyph { position: relative; width: 48px; height: 48px; }
