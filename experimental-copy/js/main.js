@@ -6,10 +6,10 @@ import { GUIDES, STAGES, PURPOSES, guideById, groupFacts, emergencyNumbers, purp
 import { tripFromQuery, tripToQuery, rememberDescription, tripDays, formatRange, factQuery, DEMO_TRIP } from "./trip.js";
 import { enter, wireDialogs, staggerMenu, shake } from "./motion.js";
 import { TILE_ART } from "./tile-art.js";
+import { UNIVERSAL, countryPhoto } from "./photos.js";
 
 const main = document.querySelector("#main");
 const A = "assets/figma/";
-const PHOTO = { street: "assets/photos/street.webp", plan: "assets/photos/plan-street.webp", arrivals: "assets/photos/arrivals.webp" };
 
 let trip = DEMO_TRIP ? { ...DEMO_TRIP } : null;  // the current guest trip (starts as the test trip), or null
 let destinations = [];         // [{ slug, name, ... }] from the API or the snapshot
@@ -59,7 +59,7 @@ function sourceRows(sources) {
 }
 
 function noTrip() {
-  return `<section class="page plan">${band(PHOTO.plan)}
+  return `<section class="page plan">${band(UNIVERSAL.plan)}
     <div class="container">
       <h1 class="page-title" tabindex="-1">No trip yet</h1>
       <div class="plan-row"><div class="card empty">
@@ -75,7 +75,7 @@ function noTrip() {
 // accounts aren't switched on yet, so the card's main button shows a note
 // instead of pretending to sign anyone in
 function accountHero({ title, lead, card, password, submit, other }) {
-  return `<div class="band-wrap">${band(null, { arcs: false, fill: true })}
+  return `<div class="band-wrap">${band(UNIVERSAL.hero, { arcs: false, fill: true })}
     <div class="container">
       <section class="hero on-dark">
         <div>
@@ -164,7 +164,7 @@ function trustSection() {
       <ul class="trust-tiles">${tiles.map(([icon, tint, title, text]) => `<li class="card">
         <span class="icon-circle" style="background: var(--rr-guide-tint-${tint})"><img src="${A}${icon}.svg" alt="" /></span>
         <h3 class="title-m">${title}</h3><p class="small">${text}</p></li>`).join("")}</ul>
-      <img class="trust-photo" src="${PHOTO.arrivals}" alt="" loading="lazy" />
+      <img class="trust-photo" src="${UNIVERSAL.arrive}" alt="" loading="lazy" />
     </div>
   </section>`;
 }
@@ -219,7 +219,7 @@ function plan() {
         <span class="swatch" style="background:${g.color}"><img src="${g.swatch}" alt="" /></span>${g.title}</li>`).join("")}</ul>
     </div>`).join("");
 
-  return `<div class="page plan">${band(PHOTO.plan)}
+  return `<div class="page plan">${band(UNIVERSAL.plan)}
     <div class="container">
       <h1 class="page-title" tabindex="-1">Let’s get prepared!</h1>
       <div class="plan-row">
@@ -363,7 +363,7 @@ async function tripView() {
 
   return `<div class="page trip">
     <div class="band-wrap">
-      ${band(PHOTO.street, { fill: true })}
+      ${band(countryPhoto(trip.country, "main"), { fill: true })}
       <div class="container trip-band-content on-dark">
         <div class="trip-head">
           <div>
@@ -441,7 +441,7 @@ async function guideView(id) {
 
   const sources = guideFacts.flatMap((fact) => fact.sources || []);
 
-  return `<div class="page guide">${band(PHOTO.arrivals)}
+  return `<div class="page guide">${band(countryPhoto(trip.country, guide.stage))}
     <div class="container">
       <div class="guide-head on-dark">
         <a class="back" href="${tripLink("trip")}"><img src="${A}icon-arrow-left-on-dark.svg" alt="" />Back to your trip</a>
@@ -497,7 +497,7 @@ function wireGuide(id) {
 // ---------- about ----------
 
 function about() {
-  return `<div class="page plan">${band(PHOTO.plan)}
+  return `<div class="page plan">${band(UNIVERSAL.plan)}
     <div class="container">
       <h1 class="page-title" tabindex="-1">About RoamReady</h1>
       <div class="plan-row" style="grid-template-columns:1fr"><div class="card empty">
@@ -510,7 +510,7 @@ function about() {
 }
 
 function notFound() {
-  return `<div class="page plan">${band(PHOTO.plan)}<div class="container">
+  return `<div class="page plan">${band(UNIVERSAL.plan)}<div class="container">
     <h1 class="page-title" tabindex="-1">Page not found</h1>
     <div class="plan-row" style="grid-template-columns:1fr"><div class="card empty"><p>That page doesn’t exist.</p>
     <a class="btn btn-primary btn-l" href="#/">Go home</a></div></div></div></div>`;

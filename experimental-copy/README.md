@@ -38,6 +38,22 @@ python3 experimental-copy/tools/build_snapshot.py
 
 It writes only into `experimental-copy/data/`. Experiments with made-up or reshaped data belong in a separate file in `data/`, never in the backend or in `site/`.
 
+## Photos
+
+Which background photo each page uses is decided in one file, `js/photos.js`:
+
+- **Universal photos** (3, in `assets/photos/universal/`): `hero.webp` for Home and Sign up, `plan.webp` for Plan a trip, No trip yet and About, `arrive.webp` beside the sources on Home.
+- **Country photos** (up to 4 per country, in `assets/photos/countries/<country slug>/`): `main.webp` for the trip dashboard, and `plan.webp`, `arrive.webp` and `know.webp` for that stage's guides.
+- A missing country photo falls back to the country's `main.webp`, and a country with no photos uses the universal ones, so no page shows an empty band.
+
+After adding or removing country photos, run:
+
+```bash
+python3 experimental-copy/tools/build_photos.py
+```
+
+It rewrites `js/country-photos.js`, the list of which photos exist. The three universal photos are still the Tokyo placeholders from the first build.
+
 ## Motion
 
 The bouncy feel lives in two files, so it's easy to tune or remove:
