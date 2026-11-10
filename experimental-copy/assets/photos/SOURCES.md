@@ -1,10 +1,10 @@
 # Photo sources
 
-Every photo listed here is from Wikimedia Commons and is marked CC0 or public domain there,
-so it needs no permission and no credit. This list is kept so anyone can check that.
+Every photo listed here is free to use with no permission and no credit: from Wikimedia Commons marked CC0 or public domain, or a free photo under the Unsplash License.
+This list is kept so anyone can check that.
 Built by `tools/build_photos.py`; don't edit by hand.
 
-| Photo | Commons file | License |
+| Photo | Source | License |
 |---|---|---|
 | `countries/algeria/arrive.webp` | [File:Rn 1 - El Menea المنيعة.jpg](https://commons.wikimedia.org/wiki/File:Rn_1_-_El_Menea_%D8%A7%D9%84%D9%85%D9%86%D9%8A%D8%B9%D8%A9.jpg) | CC0 |
 | `countries/algeria/know.webp` | [File:Timgad تيمقاد (39656085891).jpg](https://commons.wikimedia.org/wiki/File:Timgad_%D8%AA%D9%8A%D9%85%D9%82%D8%A7%D8%AF_(39656085891).jpg) | Public domain |
@@ -150,4 +150,4 @@ Built by `tools/build_photos.py`; don't edit by hand.
 | `countries/uzbekistan/plan.webp` | [File:Bobur koʻchasining Shota Rustaveli koʻchasi bilan kesishmasi.jpg](https://commons.wikimedia.org/wiki/File:Bobur_ko%CA%BBchasining_Shota_Rustaveli_ko%CA%BBchasi_bilan_kesishmasi.jpg) | CC0 |
 | `universal/arrive.webp` | [File:Airport in the evening (Unsplash).jpg](https://commons.wikimedia.org/wiki/File:Airport_in_the_evening_(Unsplash).jpg) | CC0 |
 | `universal/hero.webp` | [File:Sunset from a plane (Unsplash).jpg](https://commons.wikimedia.org/wiki/File:Sunset_from_a_plane_(Unsplash).jpg) | CC0 |
-| `universal/plan.webp` | [File:Dariusz Sankowski 2016 (Unsplash).jpg](https://commons.wikimedia.org/wiki/File:Dariusz_Sankowski_2016_(Unsplash).jpg) | CC0 |
+| `universal/plan.webp` | [Unsplash photo rFKBUwLg_WQ](https://unsplash.com/photos/man-standing-inside-airport-looking-at-led-flight-schedule-bulletin-board-rFKBUwLg_WQ) | Unsplash License |

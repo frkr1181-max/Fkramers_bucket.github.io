@@ -38,11 +38,11 @@ def write_sources() -> None:
     lines = [
         "# Photo sources",
         "",
-        "Every photo listed here is from Wikimedia Commons and is marked CC0 or public domain there,",
-        "so it needs no permission and no credit. This list is kept so anyone can check that.",
+        "Every photo listed here is free to use with no permission and no credit: from Wikimedia Commons marked CC0 or public domain, or a free photo under the Unsplash License.",
+        "This list is kept so anyone can check that.",
         "Built by `tools/build_photos.py`; don't edit by hand.",
         "",
-        "| Photo | Commons file | License |",
+        "| Photo | Source | License |",
         "|---|---|---|",
         *rows,
     ]

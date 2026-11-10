@@ -54,7 +54,7 @@ python3 experimental-copy/tools/build_photos.py
 
 It rewrites `js/country-photos.js`, the list of which photos exist, and `assets/photos/SOURCES.md`, the list of where each photo came from.
 
-Every photo is from Wikimedia Commons and is marked CC0 or public domain there, so none needs a license or a credit line. To find and add more, use `tools/photo_tool.py` (it needs Pillow: `python -m pip install pillow`). It refuses any file with another license, crops to 16:9, saves a 1600 x 900 `.webp`, and writes a small `.json` beside it with the Commons page and license:
+Every photo needs no license and no credit line: it is either from Wikimedia Commons and marked CC0 or public domain there, or a free Unsplash photo under the Unsplash License (no paid Unsplash+ photos). To find and add more, use `tools/photo_tool.py` (it needs Pillow: `python -m pip install pillow`). It refuses anything else, crops to 16:9, saves a 1600 x 900 `.webp`, and writes a small `.json` beside it with the source page and license. Its `add-unsplash` command adds an Unsplash photo; check the photo page in a browser first, since Unsplash blocks scripts:
 
 ```bash
 python3 experimental-copy/tools/photo_tool.py search "Sydney harbour skyline"

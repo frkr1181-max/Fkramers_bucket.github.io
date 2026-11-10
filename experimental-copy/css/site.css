@@ -104,6 +104,9 @@ h1[tabindex="-1"]:focus { outline: none; }
   background: var(--rr-color-bg-brand); overflow: hidden;
 }
 .band .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+/* the Plan a trip / About photo: show its top part (the departures board and
+   the traveller's head) in the short band instead of the middle */
+.band .photo[src$="universal/plan.webp"] { object-position: center 12%; }
 /* no color wash over the photos (David, Nov 10): they show in their own
    colors. what's left is a plain dark shade, strongest at the top where the
    white title sits and fading down, only so the text stays readable */

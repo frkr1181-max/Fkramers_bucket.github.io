@@ -1,8 +1,16 @@
 """Find and add background photos that need no license and no credit.
 
-Every photo comes from Wikimedia Commons, and this tool only accepts files
-that Commons marks as CC0 or public domain. Those can be used with no
-permission and no credit line. Anything else (CC BY, CC BY-SA, ...) is refused.
+Photos come from two places, both free to use with no permission and no
+credit line:
+  - Wikimedia Commons: only files Commons marks as CC0 or public domain.
+    Anything else (CC BY, CC BY-SA, ...) is refused.
+  - Unsplash: only free photos under the Unsplash License (images.unsplash.com).
+    Paid "Unsplash+" photos (plus.unsplash.com) are refused.
+
+Add a free Unsplash photo (check its page in a browser first; it must say
+"Free to use under the Unsplash License"):
+    python experimental-copy/tools/photo_tool.py add-unsplash --universal plan
+        --page https://unsplash.com/photos/<slug> --image https://images.unsplash.com/photo-<id>
 
 Needs Pillow:  python -m pip install pillow
 
@@ -42,7 +50,7 @@ OUT_W, OUT_H = 1600, 900
 MIN_W = 1400
 MAX_BYTES = 40 * 1024 * 1024
 # only these hosts are ever downloaded from
-IMAGE_HOSTS = {"upload.wikimedia.org", "thumb.wikimedia.org"}
+IMAGE_HOSTS = {"upload.wikimedia.org", "thumb.wikimedia.org", "images.unsplash.com"}
 # Commons license names that need no permission and no credit
 FREE = re.compile(r"^(cc0|cc-zero|public domain|pd\b|pd-|no restrictions)", re.I)
 # Wikidata ids used by Commons search: license = CC0, copyright status = public domain
@@ -105,49 +113,49 @@ def search(args: argparse.Namespace) -> None:
     print(f"-- {shown} usable of {len(pages)} results for: {args.query}")
 
 
-def add(args: argparse.Namespace) -> None:
-    from PIL import Image  # imported here so "search" works without Pillow
-
+def target(args: argparse.Namespace) -> tuple[Path, str]:
+    """The folder and slot name a photo should be saved as."""
     if args.universal:
         if args.universal not in UNIVERSAL_SLOTS:
             raise SystemExit(f"--universal must be one of {UNIVERSAL_SLOTS}")
-        folder, slot = PHOTOS / "universal", args.universal
-    else:
-        known = {d["slug"] for d in json.loads(SNAPSHOT.read_text(encoding="utf-8"))["destinations"]}
-        if args.slug not in known:
-            raise SystemExit(f"unknown country slug: {args.slug}")
-        if args.slot not in COUNTRY_SLOTS:
-            raise SystemExit(f"--slot must be one of {COUNTRY_SLOTS}")
-        folder, slot = PHOTOS / "countries" / args.slug, args.slot
+        return PHOTOS / "universal", args.universal
+    known = {d["slug"] for d in json.loads(SNAPSHOT.read_text(encoding="utf-8"))["destinations"]}
+    if args.slug not in known:
+        raise SystemExit(f"unknown country slug: {args.slug}")
+    if args.slot not in COUNTRY_SLOTS:
+        raise SystemExit(f"--slot must be one of {COUNTRY_SLOTS}")
+    return PHOTOS / "countries" / args.slug, args.slot
 
-    info = file_info(args.file)
-    # the rule this whole tool exists for: no license needed, no credit needed
-    if not FREE.match(info["license"]):
-        raise SystemExit(f"REFUSED: license is '{info['license']}', not CC0 or public domain: {info['title']}")
-    if info["width"] < MIN_W or info["width"] <= info["height"]:
-        raise SystemExit(f"REFUSED: needs a landscape photo at least {MIN_W}px wide, got {info['width']}x{info['height']}")
-    host = urllib.parse.urlparse(info["download"]).hostname
+
+def download(url: str) -> bytes:
+    host = urllib.parse.urlparse(url).hostname
     if host not in IMAGE_HOSTS:
         raise SystemExit(f"REFUSED: unexpected download host {host}")
-
-    request = urllib.request.Request(info["download"], headers={"User-Agent": AGENT})
+    request = urllib.request.Request(url, headers={"User-Agent": AGENT})
     with urllib.request.urlopen(request, timeout=60) as response:
         raw = response.read(MAX_BYTES + 1)
     if len(raw) > MAX_BYTES:
         raise SystemExit("REFUSED: file is larger than 40 MB")
+    return raw
+
+
+def save(raw: bytes, folder: Path, slot: str, record: dict) -> None:
+    """Crop the middle to 16:9, shrink to 1600 x 900, save as .webp plus a .json record."""
+    from PIL import Image  # imported here so "search" works without Pillow
 
     image = Image.open(io.BytesIO(raw))
     image.load()
     image = image.convert("RGB")
-    # crop the middle to 16:9, then shrink to 1600 x 900
     width, height = image.size
-    target = OUT_W / OUT_H
-    if width / height > target:
-        new_w = round(height * target)
+    if width < MIN_W or width <= height:
+        raise SystemExit(f"REFUSED: needs a landscape photo at least {MIN_W}px wide, got {width}x{height}")
+    target_ratio = OUT_W / OUT_H
+    if width / height > target_ratio:
+        new_w = round(height * target_ratio)
         left = (width - new_w) // 2
         image = image.crop((left, 0, left + new_w, height))
     else:
-        new_h = round(width / target)
+        new_h = round(width / target_ratio)
         top = (height - new_h) // 2
         image = image.crop((0, top, width, top + new_h))
     image = image.resize((OUT_W, OUT_H), Image.LANCZOS)
@@ -155,13 +163,44 @@ def add(args: argparse.Namespace) -> None:
     folder.mkdir(parents=True, exist_ok=True)
     out = folder / f"{slot}.webp"
     image.save(out, "WEBP", quality=54, method=6)
-    record = {
+    record["original_size"] = f"{width}x{height}"
+    (folder / f"{slot}.json").write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+    print(f"saved {out.relative_to(ROOT.parent)} ({out.stat().st_size // 1024} kB) | {record['license']} | {record['file']}")
+
+
+def add(args: argparse.Namespace) -> None:
+    folder, slot = target(args)
+    info = file_info(args.file)
+    # the rule for Commons photos: no license needed, no credit needed
+    if not FREE.match(info["license"]):
+        raise SystemExit(f"REFUSED: license is '{info['license']}', not CC0 or public domain: {info['title']}")
+    if info["width"] < MIN_W or info["width"] <= info["height"]:
+        raise SystemExit(f"REFUSED: needs a landscape photo at least {MIN_W}px wide, got {info['width']}x{info['height']}")
+    save(download(info["download"]), folder, slot, {
         "file": info["title"], "page": info["page"], "license": info["license"],
         "author": info["author"], "description": info["description"],
-        "original_size": f"{info['width']}x{info['height']}",
-    }
-    (folder / f"{slot}.json").write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
-    print(f"saved {out.relative_to(ROOT.parent)} ({out.stat().st_size // 1024} kB) | {info['license']} | {info['title']}")
+    })
+
+
+def add_unsplash(args: argparse.Namespace) -> None:
+    """A free Unsplash photo. The Unsplash License allows use with no permission
+    and no credit. Unsplash's paid "Unsplash+" photos live on plus.unsplash.com
+    and are refused here. Unsplash's pages block scripts, so check the page in a
+    browser first: it must say "Free to use under the Unsplash License"."""
+    folder, slot = target(args)
+    page = urllib.parse.urlparse(args.page)
+    if page.scheme != "https" or page.hostname != "unsplash.com" or not page.path.startswith("/photos/"):
+        raise SystemExit("REFUSED: --page must be an https://unsplash.com/photos/... page")
+    image = urllib.parse.urlparse(args.image)
+    if image.scheme != "https" or image.hostname != "images.unsplash.com" or not image.path.startswith("/photo-"):
+        raise SystemExit("REFUSED: --image must be an https://images.unsplash.com/photo-... link (free photos only)")
+    photo_id = page.path.rstrip("/").rsplit("-", 1)[-1].rsplit("/", 1)[-1]
+    url = f"https://images.unsplash.com{image.path}?w=2400&q=85&fm=jpg"
+    save(download(url), folder, slot, {
+        "file": f"Unsplash photo {photo_id}",
+        "page": f"https://unsplash.com{page.path}", "license": "Unsplash License",
+        "author": args.author or "", "description": args.description or "",
+    })
 
 
 def main() -> None:
@@ -179,6 +218,15 @@ def main() -> None:
     put.add_argument("--universal")
     put.add_argument("--file", required=True, help='Commons file title, like "File:Sydney skyline.jpg"')
     put.set_defaults(run=add)
+    free = commands.add_parser("add-unsplash")
+    free.add_argument("--slug")
+    free.add_argument("--slot")
+    free.add_argument("--universal")
+    free.add_argument("--page", required=True, help="the photo's https://unsplash.com/photos/... page")
+    free.add_argument("--image", required=True, help="its https://images.unsplash.com/photo-... link")
+    free.add_argument("--author")
+    free.add_argument("--description")
+    free.set_defaults(run=add_unsplash)
     args = parser.parse_args()
     args.run(args)
 
