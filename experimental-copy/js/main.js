@@ -100,7 +100,7 @@ function accountHero({ title, lead, card, password, submit, other }) {
         </div>
         <div class="hero-art" aria-hidden="true">
           <div class="rings" id="rings"><img src="${A}decor-hero-rings.svg" alt="" width="600" height="600" /></div>
-          <div class="badge"><img src="${A}logo-mark-hero.svg" alt="" /></div>
+          <div class="badge"><img src="assets/logo/logo-mark.svg" alt="" /></div>
         </div>
       </section>
     </div></div>`;

@@ -60,8 +60,9 @@ h1[tabindex="-1"]:focus { outline: none; }
 .site-header .container { height: 72px; display: flex; align-items: center; justify-content: space-between; }
 
 .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; border-radius: var(--rr-radius-sm); }
-.logo .mark { width: 53.514px; height: 44px; }
-.logo .wordmark { width: 135.981px; height: 26px; }
+/* the buffalo logo (Nov 10), assets/logo/: mark 1.254:1, wordmark 5.348:1 */
+.logo .mark { width: 55.18px; height: 44px; }
+.logo .wordmark { width: 139.04px; height: 26px; }
 
 .nav { display: flex; align-items: center; gap: 4px; }
 .nav a {
@@ -174,7 +175,7 @@ h1[tabindex="-1"]:focus { outline: none; }
   position: absolute; left: 150px; top: 150px; width: 300px; height: 300px; border-radius: 50%;
   background: var(--rr-color-bg-page); box-shadow: var(--rr-shadow-lifted); display: grid; place-items: center;
 }
-.hero-art .badge img { width: 214.054px; height: 176px; }
+.hero-art .badge img { width: 220.7px; height: 176px; }
 
 /* motion lives in css/motion.css */
 
@@ -396,8 +397,8 @@ dialog.learn-more::backdrop { background: rgba(34, 46, 80, 0.6); }
 .site-footer .brand { display: grid; gap: 12px; max-width: 340px; color: var(--rr-color-text-footer); }
 .logo-dark { display: flex; align-items: center; gap: 10px; }
 .logo-dark .badge-mark { width: 48px; height: 48px; border-radius: 50%; background: var(--rr-color-bg-page); display: grid; place-items: center; }
-.logo-dark .badge-mark img { width: 43.784px; height: 36px; }
-.logo-dark .wordmark { width: 135.981px; height: 26px; }
+.logo-dark .badge-mark img { width: 40px; height: 31.9px; }
+.logo-dark .wordmark { width: 139.04px; height: 26px; }
 .site-footer .cols { display: flex; gap: 64px; }
 .site-footer .cols h2 { font-weight: 800; font-size: 15px; color: var(--rr-palette-sage); }
 .site-footer .cols ul { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 12px; }

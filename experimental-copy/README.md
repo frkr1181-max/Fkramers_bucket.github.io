@@ -38,6 +38,10 @@ python3 experimental-copy/tools/build_snapshot.py
 
 It writes only into `experimental-copy/data/`. Experiments with made-up or reshaped data belong in a separate file in `data/`, never in the backend or in `site/`.
 
+## Logo
+
+The buffalo logo (latest version, Nov 10) lives in `assets/logo/`: `logo-mark.svg` (the picture: globe, swoosh, plane and buffalo; used in the header, the home hero badge, the footer badge and as the tab icon), `logo-wordmark.svg` (RoamReady in navy and teal), `logo-wordmark-dark.svg` (light colors for the navy footer) and `logo.svg` (picture over word). They were taken from the finished frame of the RoamReady Logo Build page.
+
 ## Photos
 
 Which background photo each page uses is decided in one file, `js/photos.js`:
