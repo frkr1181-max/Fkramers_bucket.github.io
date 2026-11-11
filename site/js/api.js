@@ -9,10 +9,10 @@
 // another backend. other hosts must be added to DEPLOYED_API_HOSTS first, so a
 // shared link can't make the site show some other server's "facts".
 
-import { API_BASE } from "./config.js";
+import { API_BASE, SAVED_GUIDES_ONLY } from "./config.js?v=20261110-original24";
 
 const TIMEOUT_MS = 4000;
-const SNAPSHOT_URL = "data/guide-snapshot.json";
+const SNAPSHOT_URL = "data/guide-snapshot.json?v=20261110-original24";
 
 // "live" or "snapshot". decided on the first request so a missing backend
 // costs one timeout, not one per page
@@ -91,6 +91,11 @@ export function filterFacts(facts, { stayMin = null, stayMax = null, purpose = n
 }
 
 export async function getDestinations() {
+  if (SAVED_GUIDES_ONLY) {
+    const data = await loadSnapshot();
+    if (mode !== "snapshot") setMode("snapshot");
+    return data.destinations;
+  }
   if (mode !== "snapshot") {
     try {
       const rows = await getJson("/api/destinations");

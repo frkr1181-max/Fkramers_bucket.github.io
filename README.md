@@ -41,7 +41,7 @@ The source monitor polls five approved GOV.UK FCDO Content API pages daily, chec
 
 ### Country guides
 
-The [country guide index](docs/research/country-guides/README.md) links all 24 destinations in the same ten-section format as Japan. The original guides organize 263 published facts; [28 additional Japan facts](docs/research/publication-2026-11-10-japan/README.md) bring the live total to 291. Facts retain sources, checked dates, and trip conditions.
+The [country guide index](docs/research/country-guides/README.md) links all 24 destinations in the same ten-section format as Japan. The original guides organize 263 published facts. Subsequent Japan additions and the [twelve-country publication](docs/research/publication-2026-11-10-missing-countries/README.md) bring the saved collection to 857 facts across all 36 dropdown destinations. Facts retain sources, checked dates, and trip conditions.
 
 ### Initial endpoints
 
@@ -82,3 +82,5 @@ The country catalog, fact table, and candidate table have RLS enabled. The GitHu
 Install `requirements-dev.txt` using Python 3.10+, then run `python -m pytest tests/test_trips.py -q`. The 25 backend checks cover authentication, validation, ownership filters, and use of the user token with the publishable key.
 
 The hosted table's owner CRUD and cross-account isolation were also verified in a rolled-back SQL transaction on November 5, 2026. No test users or trips were retained. Email and password remain in Supabase Auth; trips reference the account through `owner_id`. The main site includes account screens and saved trips; current verification results are recorded in docs/INTEGRATION_VERIFICATION.md.
+
+The [remaining original-country research publication](docs/research/publication-2026-11-10-original-countries/README.md) adds 282 nonduplicate facts. Australia now has 28. Empty placeholder cards are omitted; unresolved research is retained separately from published guidance.

@@ -1,0 +1,113 @@
+{
+  "checked_at": "2026-11-10",
+  "destinations": [
+    {
+      "country": "brazil",
+      "tourism_facts": 21,
+      "general_facts": 20,
+      "long_work_facts": 20,
+      "categories": 10,
+      "exact_payload_match": true,
+      "status": "passed"
+    },
+    {
+      "country": "cabo-verde",
+      "tourism_facts": 20,
+      "general_facts": 19,
+      "long_work_facts": 19,
+      "categories": 10,
+      "exact_payload_match": true,
+      "status": "passed"
+    },
+    {
+      "country": "canada",
+      "tourism_facts": 20,
+      "general_facts": 19,
+      "long_work_facts": 19,
+      "categories": 10,
+      "exact_payload_match": true,
+      "status": "passed"
+    },
+    {
+      "country": "colombia",
+      "tourism_facts": 20,
+      "general_facts": 19,
+      "long_work_facts": 19,
+      "categories": 10,
+      "exact_payload_match": true,
+      "status": "passed"
+    },
+    {
+      "country": "croatia",
+      "tourism_facts": 23,
+      "general_facts": 22,
+      "long_work_facts": 22,
+      "categories": 10,
+      "exact_payload_match": true,
+      "status": "passed"
+    },
+    {
+      "country": "czechia",
+      "tourism_facts": 23,
+      "general_facts": 22,
+      "long_work_facts": 22,
+      "categories": 10,
+      "exact_payload_match": true,
+      "status": "passed"
+    },
+    {
+      "country": "spain",
+      "tourism_facts": 23,
+      "general_facts": 22,
+      "long_work_facts": 22,
+      "categories": 10,
+      "exact_payload_match": true,
+      "status": "passed"
+    },
+    {
+      "country": "sweden",
+      "tourism_facts": 24,
+      "general_facts": 23,
+      "long_work_facts": 23,
+      "categories": 10,
+      "exact_payload_match": true,
+      "status": "passed"
+    },
+    {
+      "country": "switzerland",
+      "tourism_facts": 23,
+      "general_facts": 22,
+      "long_work_facts": 22,
+      "categories": 10,
+      "exact_payload_match": true,
+      "status": "passed"
+    },
+    {
+      "country": "turkiye",
+      "tourism_facts": 21,
+      "general_facts": 20,
+      "long_work_facts": 20,
+      "categories": 10,
+      "exact_payload_match": true,
+      "status": "passed"
+    },
+    {
+      "country": "uruguay",
+      "tourism_facts": 21,
+      "general_facts": 20,
+      "long_work_facts": 20,
+      "categories": 10,
+      "exact_payload_match": true,
+      "status": "passed"
+    },
+    {
+      "country": "uzbekistan",
+      "tourism_facts": 20,
+      "general_facts": 19,
+      "long_work_facts": 19,
+      "categories": 10,
+      "exact_payload_match": true,
+      "status": "passed"
+    }
+  ]
+}

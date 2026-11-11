@@ -1,0 +1,363 @@
+[
+  {
+    "id": "4b7b2e21-d339-535e-abf6-6b084aa28d26",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Passport validity and the six-month question",
+    "plain_summary": "For an ordinary passport, Japan requires validity throughout your stay rather than a general extra six months. Japan’s embassy notes a separate six-month validity condition for temporary emergency travel documents at visa application. Check your document type and all transit destinations before booking.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan visa and travel FAQ",
+        "url": "https://www.us.emb-japan.go.jp/itpr_en/visa-faq.html",
+        "organization": "Embassy of Japan in the United States",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "ff09a72a-e57b-509b-a43d-409a2036223d",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Blank pages for entry stamps",
+    "plain_summary": "The U.S. State Department lists one blank passport page per entry stamp for Japan. Check available pages before travel, including any further entries on your itinerary.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan entry, travel documents and local requirements",
+        "url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html",
+        "organization": "U.S. Department of State",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "7a20a085-1ee4-5980-81b8-ef14c6745af4",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Damage versus normal passport wear",
+    "plain_summary": "Water damage, significant tears, unofficial markings on the personal-information page, missing pages or major damage can make a U.S. passport unusable. Normal wear, such as slight edge fraying, is different. Follow State Department replacement instructions if damaged.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Passport damage and normal wear",
+        "url": "https://travel.state.gov/en/glossary.html",
+        "organization": "U.S. Department of State",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "c2053f7d-e33f-5751-bd68-a19df8204300",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "A reported lost passport cannot be reused",
+    "plain_summary": "Once reported lost or stolen, a passport cannot be used even if recovered. Obtain a replacement before traveling; if already in Japan, follow U.S. Embassy replacement instructions.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan entry, travel documents and local requirements",
+        "url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html",
+        "organization": "U.S. Department of State",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "39e78894-f134-5f37-b4be-3f0e5f020639",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Online renewal changes travel-document validity",
+    "plain_summary": "Applying to renew a U.S. passport online invalidates the old passport for travel. Wait for the new passport before international travel; do not plan to use the old book while renewal is pending.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan entry, travel documents and local requirements",
+        "url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html",
+        "organization": "U.S. Department of State",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "97f85fbb-961c-5cc8-8b48-01167720c934",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Check passport rules for connecting flights",
+    "plain_summary": "A connecting airline or onward destination may require more remaining validity than Japan. Check the entire itinerary’s document rules. Passport services are not available at Japanese airports.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan entry, travel documents and local requirements",
+        "url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html",
+        "organization": "U.S. Department of State",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "90611529-4ef8-5502-9de3-99a3ee8e0bc3",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Carry your original identity document in Japan",
+    "plain_summary": "The State Department says visitors must carry their U.S. passport in Japan; residents may carry their Japanese residence card. You can be questioned or detained without the required original document.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan entry, travel documents and local requirements",
+        "url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html",
+        "organization": "U.S. Department of State",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "a5ca2b85-8c86-5179-8c0f-c136080dbfce",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Onward travel and support during a visitor stay",
+    "plain_summary": "For a visa-free tourist or business visit, have return or onward travel evidence and proof you can support your stay. Do not plan on changing to a work, spouse or study visa after arrival as a short-term visitor.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan entry, travel documents and local requirements",
+        "url": "https://travel.state.gov/en/international-travel/travel-advisories/japan.html",
+        "organization": "U.S. Department of State",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "ba8fce9e-16ee-5eb2-98d9-578d3139b283",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Visa approval and admission are different",
+    "plain_summary": "A visa does not guarantee entry. Immigration officers examine your identity, activities and planned stay before granting landing permission. That permission records your status and authorized stay. Explain your actual travel purpose accurately and follow the permission granted at entry.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Visas and landing permission",
+        "url": "https://www.mofa.go.jp/j_info/visit/visa/system/index.html",
+        "organization": "Ministry of Foreign Affairs of Japan",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "8171715a-28e6-5811-bb1a-29414c9dd88b",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Visa entry window is not your permitted stay",
+    "plain_summary": "A single-entry visa is generally valid for entry within three months of issuance and is used when you enter. This entry window is different from the stay permitted at landing. Read both dates rather than treating visa validity as permission to remain.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Visa application and entry FAQ",
+        "url": "https://www.mofa.go.jp/j_info/visit/visa/faq.html",
+        "organization": "Ministry of Foreign Affairs of Japan",
+        "checked_at": "2026-11-10"
+      },
+      {
+        "title": "Visas and landing permission",
+        "url": "https://www.mofa.go.jp/j_info/visit/visa/system/index.html",
+        "organization": "Ministry of Foreign Affairs of Japan",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "f697b402-47a7-556c-88b4-88c4f56265b5",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Apply through the mission for your residence",
+    "plain_summary": "Use the Japanese embassy or consulate responsible for your residence. Washington, D.C.’s embassy handles D.C., Maryland and Virginia; its local submission procedures do not apply to every applicant in the United States.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan visa and travel FAQ",
+        "url": "https://www.us.emb-japan.go.jp/itpr_en/visa-faq.html",
+        "organization": "Embassy of Japan in the United States",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "d095fb91-e622-5d2f-aefe-1de190456417",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Allow time for visa processing",
+    "plain_summary": "MOFA’s standard processing period is five working days from the day after an application is accepted without problems. Extra documents, interviews or other checks can extend it to weeks or months. Apply well before departure; do not treat five days as a guarantee.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Visa application and entry FAQ",
+        "url": "https://www.mofa.go.jp/j_info/visit/visa/faq.html",
+        "organization": "Ministry of Foreign Affairs of Japan",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "54ea07ff-f205-5105-9a3a-dc2705b474df",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Visa exemption follows nationality, not a green card",
+    "plain_summary": "A U.S. green card does not itself provide Japan visa exemption. Check the rules for the nationality of your travel document; U.S.-passport guidance is not interchangeable with guidance for every U.S. resident.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan visa and travel FAQ",
+        "url": "https://www.us.emb-japan.go.jp/itpr_en/visa-faq.html",
+        "organization": "Embassy of Japan in the United States",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "882b09c5-d0e1-5df6-a184-f5dd151e406f",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Airside transit versus entering Japan",
+    "plain_summary": "The Japanese embassy says no transit visa is needed if you stay outside immigration/passport control and hold confirmed onward tickets. Ask the airline whether your connection requires entry into Japan; baggage collection, an airport change or an overnight arrangement may affect the answer.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Japan visa and travel FAQ",
+        "url": "https://www.us.emb-japan.go.jp/itpr_en/visa-faq.html",
+        "organization": "Embassy of Japan in the United States",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "general",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": null
+  },
+  {
+    "id": "455fd621-9b83-54ee-8fdc-28fd39124125",
+    "country_code": "JP",
+    "destination_slug": "japan",
+    "category": "entry",
+    "title": "Work, study and long stays: Certificate of Eligibility",
+    "plain_summary": "For relevant work, study or other long-term statuses, start with the correct visa category and Certificate of Eligibility process. A sponsor, school, employer or representative in Japan generally handles the COE application. A COE is not a visa and does not guarantee visa issuance.",
+    "official_text_excerpt": "",
+    "last_verified_at": "2026-11-10",
+    "sources": [
+      {
+        "title": "Visa application and entry FAQ",
+        "url": "https://www.mofa.go.jp/j_info/visit/visa/faq.html",
+        "organization": "Ministry of Foreign Affairs of Japan",
+        "checked_at": "2026-11-10"
+      },
+      {
+        "title": "Work and long-term visa categories",
+        "url": "https://www.mofa.go.jp/j_info/visit/visa/long/index.html",
+        "organization": "Ministry of Foreign Affairs of Japan",
+        "checked_at": "2026-11-10"
+      }
+    ],
+    "published": true,
+    "applicability_status": "conditional",
+    "min_stay_days": null,
+    "max_stay_days": null,
+    "applies_to_purposes": [
+      "work",
+      "study",
+      "long-term"
+    ]
+  }
+]

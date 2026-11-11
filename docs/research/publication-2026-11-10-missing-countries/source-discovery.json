@@ -1,0 +1,724 @@
+{
+  "brazil-phone": [
+    {
+      "title": "eSIM Claro: Comprar Chip Virtual e Ativar Online",
+      "url": "https://www.claro.com.br/celular/esim"
+    },
+    {
+      "title": "International Visitors - SIM Cards and Data Plans in Brazil | Claro",
+      "url": "https://www.claro.com.br/institucional/international-visitors"
+    },
+    {
+      "title": "Claro flex pass: Your local mobile internet with eSIM",
+      "url": "https://www.claro.com.br/celular/flex/flex-pass-english"
+    }
+  ],
+  "cabo-phone": [
+    {
+      "title": "eSIM Alou | Portal Alou",
+      "url": "https://alou.cv/esim"
+    },
+    {
+      "title": "Powa Swag | Portal Alou",
+      "url": "https://alou.cv/servicos-adicionais/pacotes-pst"
+    },
+    {
+      "title": "Contactos, Lojas e Sede Alou | Portal Alou",
+      "url": "https://alou.cv/contacto-alou"
+    }
+  ],
+  "canada-phone": [
+    {
+      "title": "What are eSIM and Dual SIM from Bell Mobility? How do I use them?",
+      "url": "https://support.bell.ca/Mobility/Smartphones_and_mobile_internet/what_are_dual_sim_and_esim_and_how_do_i_use_them"
+    },
+    {
+      "title": "Cell Phone Plans | Bring Your Own Phone | Bell Canada",
+      "url": "https://www.bell.ca/Mobility/Cell_phone_plans"
+    },
+    {
+      "title": "null",
+      "url": "https://www.rogers.com/support/mobility/activate-esim-on-a-device"
+    }
+  ],
+  "colombia-phone": [
+    {
+      "title": "Conoce todo sobre la eSIM Virtual | General",
+      "url": "https://ayuda.tigo.com.co/hc/centro-de-ayuda/articles/1728716206-e_sim-o-sim-virtual-para-telefonos-celulares-general"
+    },
+    {
+      "title": "¿Cómo realizar una reposición o cambio de SIM Tigo? | Móvil",
+      "url": "https://ayuda.tigo.com.co/hc/centro-de-ayuda/articles/1729094243"
+    },
+    {
+      "title": "Centro de ayuda - Tigo Colombia",
+      "url": "https://ayuda.tigo.com.co/hc/centro-de-ayuda/es/categories/movil"
+    }
+  ],
+  "croatia-phone": [
+    {
+      "title": "Unlimited mobile surfing for tourists in Croatia | A1 Hrvatska",
+      "url": "https://www.a1.hr/tourist-offer/en"
+    },
+    {
+      "title": "Explore Croatia with Unlimited internet - Hrvatski Telekom",
+      "url": "https://www.hrvatskitelekom.hr/visiting-croatia"
+    },
+    {
+      "title": "Cjenik A1 Hrvatska d.o.o.",
+      "url": "https://www.a1.hr/documents/d/a1/771_cjenik-a1-mobile-hrvatska_do-28-2-2026"
+    }
+  ],
+  "czechia-phone": [
+    {
+      "title": "I'm planning a trip to the Czech Republic. What type of service can I use? - Vodafone.cz",
+      "url": "https://www.vodafone.cz/pece/en/tariffs-and-additional-services/offering-tariffs-and-vodafone-cards/prepaid-services-for-tourists/"
+    },
+    {
+      "title": "Data SIM for Visitors - Vodafone - EN",
+      "url": "https://www.vodafone.cz/en/calling/prepaid-cards/data-sim-for-visitors/"
+    },
+    {
+      "title": "Conditions of the prepaid \"Data SIM for Visitors\" - Vodafone - EN",
+      "url": "https://www.vodafone.cz/en/downloads/conditions-of-the-prepaid-data-sim-for-visitors/"
+    }
+  ],
+  "spain-phone": [
+    {
+      "title": "eSIM Data Only for Traveling to Spain | Vodafone",
+      "url": "https://esimprepago.vodafone.es/en/dataonly"
+    },
+    {
+      "title": "Vodafone España lanza \"Data Only\", la ESIM prepago de solo datos para viajeros internacionales",
+      "url": "https://www.saladeprensa.vodafone.es/c/notas-prensa/np-prepagodataonly/"
+    },
+    {
+      "title": "Prepaid eSIM Vodafone | 5G, Data & Calls | Instant Activation",
+      "url": "https://esimprepago.vodafone.es/en/prepago-s"
+    }
+  ],
+  "sweden-phone": [
+    {
+      "title": "Registrera kontantkort",
+      "url": "https://www.comviq.se/en/registrera-kontantkort/sms"
+    },
+    {
+      "title": "Kontantkort – Registrera ditt kontantkort – Telia.se",
+      "url": "https://www.telia.se/kontantkort/registrera"
+    },
+    {
+      "title": "Kontantkort – hjälp med saldo, tankning och prisplaner | Comviq",
+      "url": "https://www.comviq.se/hjalp/kontantkort"
+    }
+  ],
+  "switzerland-phone": [
+    {
+      "title": "Prepaid Flat 7: eSIM card for tourists in Switzerland | Swisscom",
+      "url": "https://www.swisscom.ch/en/residential/mobile-subscription/prepaid/tourists.html"
+    },
+    {
+      "title": "Prepaid Travel eSIM Switzerland and Europe | Sunrise",
+      "url": "https://www.sunrise.ch/en/mobile/prepaid/travel-esim"
+    },
+    {
+      "title": "Prepaid: SIM card with no fixed costs | Swisscom",
+      "url": "https://www.swisscom.ch/en/residential/mobile-subscription/prepaid.html"
+    }
+  ],
+  "turkiye-phone": [
+    {
+      "title": "Tourist Prepaid SIM Card in Türkiye - Turkcell",
+      "url": "https://www.turkcell.com.tr/prepaid-tourist-sim-turkey"
+    },
+    {
+      "title": "Prepaid Tourist SIM Turkey | Türk Telekom",
+      "url": "https://www.turktelekom.com.tr/en/prepaid-tourist-sim-turkey?r=c56de96e-ec1e-40df-b5c1-964386cb7fa3"
+    },
+    {
+      "title": "Prepaid Tourist SIM Turkey | Türk Telekom",
+      "url": "https://www.turktelekom.com.tr/en/prepaid-tourist-sim-turkey?TermId=c730f6c3-e253-4e84-8ceb-193b5f59c5d1&TermSetId=2aafb553-f22c-4259-8fa8-44af94705351&TermStoreId=ba85a013-8ce8-4fbc-a7ed-2546441ff1f6&r=6d03c282-e877-486f-b824-18a296b995a8"
+    }
+  ],
+  "uruguay-phone": [
+    {
+      "title": "ANTEL",
+      "url": "https://wse-prod.antel.com.uy/registro-prepago-web/form/pages/telefono.jsf"
+    },
+    {
+      "title": "Prepago - Antel",
+      "url": "https://roaming.antel.com.uy/plan/749/prepago_lte"
+    },
+    {
+      "title": "Prepago - Antel",
+      "url": "https://www.tienda.antel.com.uy/plan/749/prepago_lte"
+    }
+  ],
+  "uzbekistan-phone": [
+    {
+      "title": "Ucell",
+      "url": "https://ucell.uz/ru/services/self_registration"
+    },
+    {
+      "title": "Self-registration of Ucell SIM Cards Is Now Available for Foreign Citizens",
+      "url": "https://ucell.uz/en/news/plan_works_selfreg1206"
+    },
+    {
+      "title": "270. Договор на оказание услуг мобильной связи заключается только при личном присутствии абонента - физического лица и предоставлении им оригинала паспорта (или иного документа, удостоверяющего его личность) или при личном присутствии его представителя и предоставлении им оригинала паспорта (или иного документа, удостоверяющего его личность) и доверенности на оказание услуг мобильной связи.",
+      "url": "https://beeline.uz/uploads/2023-7/8787eb12-48ae-4c93-8723-ef7f31e6d818.pdf"
+    }
+  ],
+  "brazil-air": [
+    {
+      "title": "Discover GRU - Services and Facilities - Wi-fi",
+      "url": "https://www.gru.com.br/en/passenger/discover-gru/services-and-facilities/wifi"
+    },
+    {
+      "title": "To/From the Airport - Train",
+      "url": "https://www.gru.com.br/en/passenger/to-from-gru-airport/train"
+    },
+    {
+      "title": "Descubra GRU - Serviços e Facilidades - Wi-Fi",
+      "url": "https://www.gru.com.br/pt/passageiro/descubra-gru/servicos-e-facilidades/wifi"
+    }
+  ],
+  "cabo-air2": [
+    {
+      "title": "Destinos | Cabo Verde Airports",
+      "url": "https://www.caboverde-airports.cv/destinos/"
+    },
+    {
+      "title": "Aeroportos | Cabo Verde Airports",
+      "url": "https://www.caboverde-airports.cv/en/aeroportos/"
+    },
+    {
+      "title": "Praia Airport - VINCI Airports",
+      "url": "https://vinci-airports.com/en/our-airports/cabo-verde/praia-airport/"
+    }
+  ],
+  "canada-air": [
+    {
+      "title": "UP Express – Toronto Airport Train | Pearson Airport",
+      "url": "https://www.torontopearson.com/en/transportation-and-parking/up-express"
+    },
+    {
+      "title": "UP Express – Toronto Airport Train | Pearson Airport",
+      "url": "https://cdn.torontopearson.com/en/transportation-and-parking/up-express"
+    },
+    {
+      "title": "Toronto Pearson WiFi, YYZ Wifi | Pearson Airport",
+      "url": "https://www.torontopearson.com/en/while-you-are-here/free-wifi"
+    }
+  ],
+  "colombia-air": [
+    {
+      "title": "Aeropuerto internacional El Dorado en Bogotá, Colombia",
+      "url": "https://eldorado.aero/servicios/transporte-publico"
+    },
+    {
+      "title": "El Dorado International Airport in Bogotá, Colombia",
+      "url": "https://eldorado.aero/en/servicios/transporte-publico"
+    },
+    {
+      "title": "El Dorado International Airport in Bogotá, Colombia",
+      "url": "https://eldorado.aero/en/servicios/internet-wifi"
+    }
+  ],
+  "croatia-air": [
+    {
+      "title": "Franjo Tuđman Airport Zagreb - 24/7 Free Wi-Fi",
+      "url": "https://www.zagreb-airport.hr/en/passengers/at-the-airport/facilities-services/24-7-wi-fi/109"
+    },
+    {
+      "title": "Franjo Tuđman Airport Zagreb - Parking & Transportation",
+      "url": "https://zagreb-airport.hr/en/passengers/need-help/faq/parking-transportation/347"
+    },
+    {
+      "title": "Franjo Tuđman Airport Zagreb - By Bus",
+      "url": "https://www.zagreb-airport.hr/en/passengers/to-from-the-airport/by-bus/89"
+    }
+  ],
+  "czechia-air": [
+    {
+      "title": "Public Transport Buses | Vaclav Havel Airport Prague, Ruzyne",
+      "url": "https://www.prg.aero/en/public-transport-buses"
+    },
+    {
+      "title": "Public Transport Buses | Vaclav Havel Airport Prague, Ruzyne",
+      "url": "https://www.prg.aero/en/public-transport-buses-to-airport"
+    },
+    {
+      "title": "Public Transport Buses | Vaclav Havel Airport Prague, Ruzyne",
+      "url": "https://www.prg.aero/en/public-transport-buses?source=post_page---------------------------"
+    }
+  ],
+  "spain-air": [
+    {
+      "title": "Cómo llegar en autobús | Aeropuerto Adolfo Suárez Madrid-Barajas | Aena",
+      "url": "https://www.aena.es/es/adolfo-suarez-madrid-barajas/como-llegar/autobus.html"
+    },
+    {
+      "title": "Transport between terminals | Madrid-Barajas Airport | Aena",
+      "url": "https://www.aena.es/en/adolfo-suarez-madrid-barajas/airport-services/transport-between-terminals.html"
+    },
+    {
+      "title": "How to get here by bus | Adolfo Suárez Madrid-Barajas Airport | Aena",
+      "url": "https://www.aena.es/en/adolfo-suarez-madrid-barajas/getting-there/bus.html"
+    }
+  ],
+  "sweden-air": [
+    {
+      "title": "WiFi - Wireless network | Stockholm Arlanda Airport",
+      "url": "https://www.swedavia.com/arlanda/service/wifi/"
+    },
+    {
+      "title": "Transport at the airport | Stockholm Arlanda Airport",
+      "url": "https://www.swedavia.com/arlanda/transport-at-the-airport/"
+    },
+    {
+      "title": "Buses | Stockholm Arlanda Airport",
+      "url": "https://www.swedavia.com/arlanda/buses/"
+    }
+  ],
+  "switzerland-air": [
+    {
+      "title": "Train, tram & bus – Flughafen Zuerich",
+      "url": "https://www.flughafen-zuerich.ch/en/passengers/practical/parking-and-transport/train-tram-and-bus"
+    },
+    {
+      "title": "Wi-Fi & Internet – Flughafen Zuerich",
+      "url": "https://www.flughafen-zuerich.ch/en/passengers/practical/services/wifi-and-internet"
+    },
+    {
+      "title": "Public Transport – Flughafen Zuerich",
+      "url": "https://www.flughafen-zuerich.ch/en/zrh-staff/mobility-and-safety/mobility/public-transport"
+    }
+  ],
+  "turkiye-air": [
+    {
+      "title": "Havaist | İstanbul Havalimanı’na Konforlu Ulaşım",
+      "url": "https://www.hava.ist/"
+    },
+    {
+      "title": "Havaist | İstanbul Havalimanı’na Konforlu Ulaşım",
+      "url": "https://web.hava.ist/"
+    },
+    {
+      "title": "Havaist | İstanbul Havalimanı’na Konforlu Ulaşım",
+      "url": "https://hava.ist/?lang=en"
+    }
+  ],
+  "uruguay-air": [
+    {
+      "title": "Buses – Carrasco Airport – Montevideo, Uruguay",
+      "url": "https://aeropuertodecarrasco.com.uy/en/how-to-get-here/buses/"
+    },
+    {
+      "title": "Buses – Aeropuerto de Carrasco – Montevideo, Uruguay",
+      "url": "https://aeropuertodecarrasco.com.uy/como-llegar/buses/"
+    },
+    {
+      "title": "Services – Carrasco Airport – Montevideo, Uruguay",
+      "url": "https://aeropuertodecarrasco.com.uy/en/services/"
+    }
+  ],
+  "uzbekistan-air": [
+    {
+      "title": "Правила пользования аэровокзалом",
+      "url": "https://web.uzairports.com/files/Aeroport%20terminalidan%20foydalanish%20qoidalari.pdf"
+    },
+    {
+      "title": "Публичная оферта",
+      "url": "https://web.uzairports.com/files/%D0%9F%D1%83%D0%B1%D0%BB%D0%B8%D1%87%D0%BD%D0%B0%D1%8F_%D0%BE%D1%84%D0%B5%D1%80%D1%82%D0%B0_%D0%BD%D0%B0_%D0%BE%D0%B1%D1%81%D0%BB%D1%83%D0%B6%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B2_%D0%97%D0%B0%D0%BB%D0%B5_%D0%BF%D0%BE%D0%B2%D1%8B%D1%88%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D0%BA%D0%BE%D0%BC%D1%84%D0%BE%D1%80%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B8.pdf"
+    },
+    {
+      "title": "1",
+      "url": "https://web.uzairports.com/files/ESG%20-%20final-%20UZ.pdf"
+    }
+  ],
+  "brazil-transport": [
+    {
+      "title": "TurisMetrô – Metrô",
+      "url": "https://www.metro.sp.gov.br/sua-viagem/turismetro/"
+    },
+    {
+      "title": "TurisMetrô – Metrô",
+      "url": "https://www.metro.sp.gov.br/pt_BR/sua-viagem/turismetro/"
+    },
+    {
+      "title": "Bilhetes e Cartões – Metrô",
+      "url": "https://www.metro.sp.gov.br/sua-viagem/bilhetes-cartoes/"
+    }
+  ],
+  "cabo-transport": [
+    {
+      "title": "CV InterIlhas",
+      "url": "https://www.cvinterilhas.cv/routesschedules"
+    },
+    {
+      "title": "CV InterIlhas",
+      "url": "https://www.cvinterilhas.cv/"
+    },
+    {
+      "title": "CV InterIlhas",
+      "url": "https://cvinterilhas.cv/home"
+    }
+  ],
+  "canada-transport": [
+    {
+      "title": "Fees and Optional Services | VIA Rail",
+      "url": "https://www.viarail.ca/en/plan/fees-optional-services"
+    },
+    {
+      "title": "Is checked baggage service available in the Corridor? | VIA Rail",
+      "url": "https://www.viarail.ca/en/plan/faq/baggage/is-checked-baggage-service-available-in-the-corridor"
+    },
+    {
+      "title": "Train baggage allowance | VIA Rail",
+      "url": "https://www.viarail.ca/plan/baggages"
+    }
+  ],
+  "colombia-transport": [
+    {
+      "title": "Cómo viajar en el Metro de Medellín con la tarjeta Cívica",
+      "url": "https://www.metrodemedellin.gov.co/usuarios/como-viajar-en-el-metro-de-medellin"
+    },
+    {
+      "title": "How to travel on the Metro?",
+      "url": "https://www.metrodemedellin.gov.co/en/users/how-to-travel-in-the-medellin-metro"
+    },
+    {
+      "title": "Preguntas Frecuentes del Metro de Medellín: Respuestas a tus dudas",
+      "url": "https://www.metrodemedellin.gov.co/atencion-al-ciudadano/preguntas-frecuentes/"
+    }
+  ],
+  "croatia-transport": [
+    {
+      "title": "HŽ Putnički prijevoz - Buy a ticket",
+      "url": "https://www.hzpp.hr/en/before-the-trip/buy-a-ticket"
+    },
+    {
+      "title": "HŽ Putnički prijevoz - Buy a ticket",
+      "url": "https://hzpp.hr/en/at-the-station/buy-a-ticket"
+    },
+    {
+      "title": "HŽ Putnički prijevoz - Kupite kartu",
+      "url": "https://hzpp.hr/hr/u-kolodvoru/kupite-kartu"
+    }
+  ],
+  "czechia-transport": [
+    {
+      "title": "How and where to buy tickets | Pražská integrovaná doprava Pražská integrovaná doprava",
+      "url": "https://pid.cz/en/tickets-and-fare/how-to-buy-ticket/"
+    },
+    {
+      "title": "How do I get from...? | Pražská integrovaná doprava Pražská integrovaná doprava",
+      "url": "https://pid.cz/en/travel-information/how-do-i-get-from/"
+    },
+    {
+      "title": "Travel to Airport and Stations | Pražská integrovaná doprava Pražská integrovaná doprava",
+      "url": "https://pid.cz/en/travel-information/airport-and-stations/"
+    }
+  ],
+  "spain-transport": [
+    {
+      "title": "¿Dónde comprar tu billete?",
+      "url": "https://www.renfe.com/es/es/viajar/informacion-util/donde-comprar"
+    },
+    {
+      "title": "Where can I buy the ticket?",
+      "url": "https://www.renfe.com/es/en/travel/useful-information/donde-comprar"
+    },
+    {
+      "title": "Where can I buy the ticket?",
+      "url": "https://www.renfe.com/es/en/travel/informacion-util/where-to-buy"
+    }
+  ],
+  "sweden-transport": [
+    {
+      "title": "Fares & tickets",
+      "url": "https://sl.se/en/fares-and-tickets"
+    },
+    {
+      "title": "Single journey tickets",
+      "url": "https://sl.se/en/fares-and-tickets/visitor-tickets/single-journey-tickets"
+    },
+    {
+      "title": "How to travel with SL",
+      "url": "https://sl.se/en/getting-around/how-to-travel-with-sl"
+    }
+  ],
+  "switzerland-transport": [
+    {
+      "title": "Swiss Travel Pass: travel throughout Switzerland with a single ticket. | SBB",
+      "url": "https://www.sbb.ch/en/offers/swiss-travel-pass"
+    },
+    {
+      "title": "Help with Swiss Travel Pass for tourists | SBB help & contact",
+      "url": "https://www.sbb.ch/en/help-and-contact/products-services/offers-for-tourists.html"
+    },
+    {
+      "title": "Travel tips and Swiss train tickets for tourists. | SBB",
+      "url": "https://www.sbb.ch/en/offers/guests-from-abroad"
+    }
+  ],
+  "turkiye-transport": [
+    {
+      "title": "Sıkça Sorulan Sorular",
+      "url": "https://www.metro.istanbul/Home/SikcaSorulanSorular?q=5"
+    },
+    {
+      "title": "Sıkça Sorulan Sorular",
+      "url": "https://metro.istanbul/Home/SikcaSorulanSorular"
+    },
+    {
+      "title": "Sıkça Sorulan Sorular",
+      "url": "https://www.metro.istanbul/Home/SikcaSorulanSorular?q=14"
+    }
+  ],
+  "uruguay-transport": [
+    {
+      "title": "Tarjeta Común | Portal institucional",
+      "url": "https://montevideo.gub.uy/areas-tematicas/sistema-de-transporte-metropolitano/tarjetas-stm/tarjeta-comun"
+    },
+    {
+      "title": "Nuevas tarifas del transporte colectivo urbano | Portal institucional",
+      "url": "https://montevideo.gub.uy/noticias/nuevas-tarifas-del-transporte-colectivo-urbano-0"
+    },
+    {
+      "title": "STM - Preguntas frecuentes | Portal institucional",
+      "url": "https://montevideo.gub.uy/tipo/area-tematica/sistema-de-transporte-metropolitano/stm-preguntas-frecuentes"
+    }
+  ],
+  "uzbekistan-transport": [
+    {
+      "title": "JSC « O’zbekiston temir yo’llari » | Interactive services",
+      "url": "https://railway.uz/en/interaktivnye_uslugi/chasto_zadavaemye_voprosy/?sphrase_id=5032435"
+    },
+    {
+      "title": "O'zbekiston temir yo'llari | Home",
+      "url": "https://eticket.railway.uz/en/"
+    },
+    {
+      "title": "JSC « O’zbekiston temir yo’llari » | Interactive services",
+      "url": "https://railway.uz/en/interaktivnye_uslugi/chasto_zadavaemye_voprosy/?VOICE=N"
+    }
+  ],
+  "canada-arrival": [
+    {
+      "title": "Advance Declaration",
+      "url": "https://www.cbsa-asfc.gc.ca/multimedia/declaration/menu-eng.html"
+    },
+    {
+      "title": "Traveller Modernization: New tools and technologies for a faster, better and safe experience at the border",
+      "url": "https://www.cbsa-asfc.gc.ca/services/border-tech-frontiere/modern-eng.html"
+    },
+    {
+      "title": "Declare your travel information at an airport kiosk or eGate: What you need before you start",
+      "url": "https://www.cbsa-asfc.gc.ca/services/border-tech-frontiere/what-quoi-eng.html"
+    }
+  ],
+  "uruguay-arrival": [
+    {
+      "title": "Recomendaciones de Migración para las vacaciones de primavera | MI",
+      "url": "https://www.gub.uy/ministerio-interior/comunicacion/noticias/recomendaciones-migracion-para-vacaciones-primavera"
+    },
+    {
+      "title": "Sobre los Controles Aeroportuarios al ingreso al Uruguay | MRREE",
+      "url": "https://www.gub.uy/ministerio-relaciones-exteriores/politicas-y-gestion/sobre-controles-aeroportuarios-ingreso-uruguay"
+    },
+    {
+      "title": "Turismo y tiempo libre | Portal institucional",
+      "url": "https://www.montevideo.gub.uy/tipo/area-tematica/turismo-y-tiempo-libre"
+    }
+  ],
+  "uzbekistan-registration": [
+    {
+      "title": "Uzbekistan for foreigners",
+      "url": "https://my.gov.uz/en/for-foreigners"
+    },
+    {
+      "title": "Uzbekistan for foreigners",
+      "url": "https://my.gov.uz/ru/for-foreigners"
+    },
+    {
+      "title": "Notice for foreign citizens arriving in the Republic of Uzbekistan",
+      "url": "https://gov.uz/en/iiv/news/view/10609"
+    }
+  ],
+  "brazil-customs": [
+    {
+      "title": "Declarar bens para viagem internacional",
+      "url": "https://www.gov.br/pt-br/servicos/declarar-bens-para-viagem-internacional-dbv"
+    },
+    {
+      "title": "Traveling to Brazil",
+      "url": "https://www.bcb.gov.br/en/financialstability/fxtravelbrazil"
+    },
+    {
+      "title": "Dinheiro em Espécie na Entrada no Brasil — Receita Federal",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/dinheiro-em-especie"
+    }
+  ],
+  "tourism-wifi": [
+    {
+      "title": "Wifi | Adolfo Suárez Madrid-Barajas Airport | Aena",
+      "url": "https://www.aena.es/en/adolfo-suarez-madrid-barajas/airport-services/wi-fi.html"
+    },
+    {
+      "title": "Wifi | Aeropuerto Adolfo Suárez Madrid-Barajas | Aena",
+      "url": "https://www.aena.es/es/adolfo-suarez-madrid-barajas/servicios-del-aeropuerto/wifi.html"
+    },
+    {
+      "title": "Wi‑Fi Service – Aena Airport Network",
+      "url": "https://www.aena.es/en/landing/wifi-service"
+    }
+  ],
+  "zurich-wifi": [
+    {
+      "title": "Wi-Fi & Internet – Flughafen Zuerich",
+      "url": "https://www.flughafen-zuerich.ch/en/passengers/practical/services/wifi-and-internet"
+    },
+    {
+      "title": "WiFi & Internet – Flughafen Zuerich",
+      "url": "https://www.flughafen-zuerich.ch/de/passagiere/praktisches/services/wifi-und-internet"
+    },
+    {
+      "title": "Flughafen Zürich",
+      "url": "https://media.flughafen-zuerich.ch/-/jssmedia/airport/portal/dokumente/business/renting-and-advertising/real-estate-and-rentals/ict-services/zrh-preisliste_2026_versioned.pdf?rev=512deecb6d794598a709d6b5ff075e6a&sc_lang=en&sc_site=dxp-portal&vs=1"
+    }
+  ],
+  "prague-wifi": [
+    {
+      "title": "Connecting to Wi-Fi at the Airport | Vaclav Havel Airport Prague, Ruzyne",
+      "url": "https://www.prg.aero/en/wifi"
+    },
+    {
+      "title": "Connecting to Wi-Fi at the Airport | Vaclav Havel Airport Prague, Ruzyne",
+      "url": "https://www.prg.aero/en/connecting-to-wi-fi-at-the-airport"
+    },
+    {
+      "title": "Useful Information | Vaclav Havel Airport Prague, Ruzyne",
+      "url": "https://www.prg.aero/en/useful-hints-and-tips"
+    }
+  ],
+  "brazil-entry": [
+    {
+      "title": "Electronic Visitor Visa (e-Visa) — Ministério das Relações Exteriores",
+      "url": "https://www.gov.br/mre/pt-br/consulado-sao-francisco/electronic-visitor-visa-e-visa"
+    },
+    {
+      "title": "ALERT TO BRAZILIAN DUAL NATIONALS — Ministério das Relações Exteriores",
+      "url": "https://www.gov.br/mre/pt-br/consulado-chicago/Visas/alert-brazilian-dual-nationals"
+    },
+    {
+      "title": "Frequent questions — Ministério das Relações Exteriores",
+      "url": "https://www.gov.br/mre/pt-br/consulado-orlando/visa-section/important-information/frequent-questions"
+    }
+  ],
+  "cabo-entry": [
+    {
+      "title": "Microsoft Word - Informacao sobre vistos_ portugues versao 27 de marÃ§o",
+      "url": "https://www.embcv-usa.gov.cv/images/doc/Info_pedidos_vistos_pt.pdf"
+    },
+    {
+      "title": "Microsoft Word - InformaÃ§Ã£o sobre vistos_ingles versao 27 de marÃ§o",
+      "url": "https://www.embcv-usa.gov.cv/images/doc/Info_pedidos_vistos_eng.pdf"
+    },
+    {
+      "title": "EASE",
+      "url": "https://www.ease.gov.cv/?tick=331d92d9"
+    }
+  ],
+  "swiss-customs": [
+    {
+      "title": "Notes and coins, foreign currencies, bearer negotiable instruments",
+      "url": "https://www.bazg.admin.ch/en/cash-foreign-currency-securities"
+    },
+    {
+      "title": "Bans and Authorisations",
+      "url": "https://www.bazg.admin.ch/en/bans-restrictions-and-authorisations"
+    },
+    {
+      "title": "Bargeld, Fremdwährung, Wertpapiere",
+      "url": "https://www.bazg.admin.ch/de/mitnahme-von-bargeld-in-die-schweiz"
+    }
+  ],
+  "colombia-money": [
+    {
+      "title": "Currency Converter | Colombia Travel",
+      "url": "https://colombia.travel/en/practical-information/currency-information"
+    },
+    {
+      "title": "Practical information for traveling to Colombia | Colombia Travel",
+      "url": "https://colombia.travel/en/practical-information"
+    },
+    {
+      "title": "Información práctica para viajar a Colombia | Colombia Travel",
+      "url": "https://colombia.travel/es/informacion-practica"
+    }
+  ],
+  "eu-cash": [
+    {
+      "title": "EU Cash Controls - Taxation and Customs Union - European Commission",
+      "url": "https://taxation-customs.ec.europa.eu/customs/prohibitions-restrictions/eu-cash-controls_en"
+    },
+    {
+      "title": "What are the rules?",
+      "url": "https://taxation-customs.ec.europa.eu/what-are-rules_en"
+    },
+    {
+      "title": "Microsoft Word - EN_CDF_SEAF_FINAL.doc",
+      "url": "https://taxation-customs.ec.europa.eu/document/download/82d4b2ed-8be7-4f8f-bf25-40e859f12a91_en?filename=declaration_form_pt_en.pdf"
+    }
+  ],
+  "ees": [
+    {
+      "title": "FAQs about EES - EES",
+      "url": "https://travel-europe.europa.eu/en/ees/faq"
+    },
+    {
+      "title": "How does the EES work? - EES",
+      "url": "https://travel-europe.europa.eu/en/ees/ltr/how-does-the-ees-work"
+    },
+    {
+      "title": "FAQs about EES - EES",
+      "url": "https://travel-europe.europa.eu/ees/faq?ftag=YHF4eb9d17"
+    }
+  ],
+  "ca-taxi": [
+    {
+      "title": "Pearson Airport Taxis Toronto and Airport Limousines | Pearson Airport",
+      "url": "https://www.torontopearson.com/en/transportation-and-parking/taxis-and-limos"
+    }
+  ],
+  "cz-taxi": [
+    {
+      "title": "Taxi (Uber Airport) | Vaclav Havel Airport Prague, Ruzyne",
+      "url": "https://www.prg.aero/en/taxi"
+    }
+  ],
+  "es-taxi": [
+    {
+      "title": "How to get here by taxi | Adolfo Suárez Madrid-Barajas Airport | Aena",
+      "url": "https://www.aena.es/en/adolfo-suarez-madrid-barajas/getting-there/taxi.html"
+    }
+  ],
+  "se-taxi": [
+    {
+      "title": "Taxi | Stockholm Arlanda Airport",
+      "url": "https://www.swedavia.com/arlanda/taxi/"
+    }
+  ],
+  "ch-taxi": [
+    {
+      "title": "Taxis & limousines – Flughafen Zuerich",
+      "url": "https://www.flughafen-zuerich.ch/en/passengers/practical/parking-and-transport/taxi-und-limousinen"
+    }
+  ],
+  "uy-taxi": [
+    {
+      "title": "Services – Carrasco Airport – Montevideo, Uruguay",
+      "url": "https://aeropuertodecarrasco.com.uy/en/services/"
+    }
+  ]
+}

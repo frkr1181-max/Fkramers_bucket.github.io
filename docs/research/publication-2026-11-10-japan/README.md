@@ -25,3 +25,21 @@ Airport and Tokyo subway examples remain location-specific. No live exchange rat
 Only INSERT was used, with deterministic IDs and `ON CONFLICT DO NOTHING`; there were no UPDATE, DELETE, policy or schema changes. Source-linked original research remains in the historical accordion. Once a topic's reviewed additions are returned by the API, their superseded draft notes are not displayed as pending review. The snapshot builder includes this publication batch so fallback browsing includes the same Japan additions.
 
 Original preparation instructions are retained for provenance; they are not blanket approvals for every unexamined statement in old notes. The public facts above are the reviewed and approved claim set.
+
+## Passport and Visa expansion — November 10
+
+Added 15 source-reviewed facts: seven Passport sections and eight Visa sections. Published Japan facts now total 59. Existing records and original research were preserved; this batch used insert-only publication with deterministic IDs. The pre-publication backup is retained under the ignored candidates directory.
+
+`entry-expansion-facts.json` contains the publication payload and fact-specific official citations. `entry-expansion-mapping.json` records topic assignments. Sources include the Embassy of Japan in the United States, Japan MOFA, and U.S. State Department passport and Japan guidance. Verification date: November 10, 2026.
+
+Passport covers validity, blank pages, damage, reported loss, online renewal, connections and carrying original identification. Visa adds onward travel/funds, admission versus visa approval, entry windows versus permitted stays, residence jurisdiction, processing time, nationality, airside transit and Certificates of Eligibility. Work/study/long-stay content remains conditional.
+
+The live five-day tourism API returned 56 eligible facts, including all 14 new general facts and excluding the new conditional COE fact. Topic checks confirm seven Passport sections, no shared fact IDs between Passport and Visa, and no repeated fact across cards within each guide. All 27 backend tests and frontend checks passed. See `entry-expansion-api-verification.json`.
+
+## Arrival documents expansion — November 10
+
+Published ten additional arrival-document facts, bringing Japan to 69 published facts. `arrival-expansion-facts.json` records the exact insert-only payload, official citations and verification dates. The Arrival forms topic now contains twelve focused sections, including its two existing facts. Original facts and historical research are retained unchanged.
+
+Sources: Digital Agency Visit Japan Web setup guide; Immigration Services Agency arrival-record guidance (Japanese page, reviewed in the browser); Japan Customs electronic/paper declaration guidance, official English C-5360-B form, passenger-clearance channels and unaccompanied-articles FAQ. Covered requirements include ED records, individual immigration QR codes, regeneration after corrections, paper alternatives, flight/accommodation details, mandatory customs declarations, terminal/passport use, red/green channels and certification for unaccompanied baggage. No unsupported guaranteed processing times or entry approval were added.
+
+The live five-day tourism API returned 66 eligible facts including all ten additions. Frontend checks confirm twelve Arrival forms sections, no facts shared with Passport or Visa, and no repeated fact across cards in each guide. All 27 backend tests passed. Evidence: `arrival-expansion-api-verification.json`. No UPDATE, DELETE, schema or policy change was used.

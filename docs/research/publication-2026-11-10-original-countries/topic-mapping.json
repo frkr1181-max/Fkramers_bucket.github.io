@@ -1,0 +1,886 @@
+{
+  "e867129b-493f-58dd-9b60-b1d199c85105": [
+    "entry:forms"
+  ],
+  "d60e869c-67cc-5a46-8498-3661c0a4590a": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "b2274a83-1caf-5f25-9424-1becc4419163": [
+    "health:insurance"
+  ],
+  "b840bd00-216e-586a-abdd-76f06ccccf42": [
+    "health:care"
+  ],
+  "829a19f9-0ce5-5be6-9df0-8922f5ac8095": [
+    "there:airport-1"
+  ],
+  "86b9bc6e-7af1-5304-9038-a2a235026a8e": [
+    "there:airport-2"
+  ],
+  "5fcf59c6-f939-5024-b3e7-1754b03235f4": [
+    "there:city-transfer",
+    "around:taxis",
+    "safety:solo"
+  ],
+  "c1c522a8-4681-5648-9b6c-94e00c1dc872": [
+    "around:subway"
+  ],
+  "7e770417-b3bc-551e-82cf-86201282a819": [
+    "around:buses"
+  ],
+  "982cf9ba-b7aa-5cc4-b8bc-d2958534969b": [
+    "safety:hazards"
+  ],
+  "45dde64a-8eb3-5c31-b56c-752aaa90514f": [
+    "culture:venue"
+  ],
+  "f9e524c1-0135-56e1-bd67-ac52abfba7bb": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "9208dd08-3287-5cd4-ac56-39afe410069f": [
+    "money:tax-free"
+  ],
+  "d096b43c-ba57-5523-a5c1-e6cec8e5329d": [
+    "phones:wifi"
+  ],
+  "670a0caa-f3e3-5633-bf43-fbed3dcfb305": [
+    "health:insurance"
+  ],
+  "682cbcf2-868e-5c81-9d96-1f5a6f45bda7": [
+    "health:care"
+  ],
+  "c8c26c6f-6021-513f-a78c-f17a44cae613": [
+    "there:airport-1"
+  ],
+  "ac8032d0-60a7-57ee-a734-2a4708b5a3d7": [
+    "there:airport-2"
+  ],
+  "0783caf6-2c7e-5d83-8805-d72fbdd5fa50": [
+    "there:city-transfer",
+    "around:taxis",
+    "safety:solo"
+  ],
+  "11c4540e-b29d-50e3-8604-cd991b675132": [
+    "around:buses"
+  ],
+  "680a012a-72eb-573c-920f-a8cfda5fc381": [
+    "safety:hazards"
+  ],
+  "16c88480-a4ee-55fb-80e3-de2f9047116f": [
+    "culture:etiquette"
+  ],
+  "d81ccafa-0877-531c-9876-31851c975636": [
+    "culture:tipping"
+  ],
+  "55d9c47a-df7d-5ad2-beff-3233ac61b82d": [
+    "culture:laws"
+  ],
+  "44d14cc9-1fec-51b0-82a6-2787bff4d24f": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "c224bab3-c709-5e9a-9af9-126edb142ca6": [
+    "money:tax-free"
+  ],
+  "07f6ada6-a4ae-51cf-99d4-b7cf7c3a6716": [
+    "phones:wifi"
+  ],
+  "ee36770f-46f9-5791-9155-fabf68579a88": [
+    "health:insurance"
+  ],
+  "c3009783-f843-5850-a07a-9913d91649c5": [
+    "health:care"
+  ],
+  "826181a1-83a4-518b-acb1-5079ea2779dd": [
+    "there:airport-1"
+  ],
+  "efdb4368-6c39-5d2b-8db9-973cd61a8821": [
+    "there:airport-2"
+  ],
+  "a1b3b7ff-b95f-55ad-a557-dffbc880c8e6": [
+    "there:city-transfer"
+  ],
+  "56d6a0c7-2774-52ac-b031-96cbed9ae77c": [
+    "around:subway"
+  ],
+  "da922804-1964-5543-9ee7-7bf729452758": [
+    "safety:hazards"
+  ],
+  "218c46ee-1dea-5571-a6be-95d18e445548": [
+    "safety:solo"
+  ],
+  "57093e46-e468-5cbc-9889-41ba52fef3fd": [
+    "culture:tipping"
+  ],
+  "383a10bc-46f8-5aa0-b287-46367b045d0b": [
+    "culture:venue"
+  ],
+  "e70d3ba0-a274-5e4b-987c-2ab0e06180a4": [
+    "culture:laws"
+  ],
+  "51496b37-ebc4-51a2-9fed-c686f20a302a": [
+    "entry:forms",
+    "there:arrival-steps"
+  ],
+  "cdefc27e-c48f-5b57-b159-93a86a343995": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "0e52bb05-9ca9-5232-a467-1f2c500f1f56": [
+    "money:tax-free"
+  ],
+  "c56e1e76-b1b8-557e-8865-b1f622da464d": [
+    "phones:wifi"
+  ],
+  "ea98b0a7-d80c-50d1-a418-ab995a36c10a": [
+    "health:insurance"
+  ],
+  "8be59d17-3063-573c-a476-d50070954f62": [
+    "health:care"
+  ],
+  "d8aea93e-5133-58ae-9b1c-07a882a851a3": [
+    "there:airport-2"
+  ],
+  "3f4d11db-8f0c-53cb-8362-5939eb9b025d": [
+    "there:city-transfer",
+    "around:taxis"
+  ],
+  "c9fc260e-91ec-5493-9ddc-69518f38b42f": [
+    "around:subway"
+  ],
+  "f58b0d3c-cb24-5ba8-80f5-2a47f9398dff": [
+    "around:buses"
+  ],
+  "620b74e4-d16b-5e11-85db-db6477aafb01": [
+    "safety:hazards"
+  ],
+  "d975e124-7c1a-5e6d-bf74-1bb4d369942d": [
+    "safety:solo"
+  ],
+  "21bb6fa8-891a-54f4-8f66-150e59e85981": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "52338353-9c66-578e-a639-03243bcba3e9": [
+    "money:tax-free"
+  ],
+  "97ca5c7e-d143-5487-9f06-da08f981977b": [
+    "phones:wifi"
+  ],
+  "04c5c3b3-bf8c-5c38-9e2f-abec865c78e4": [
+    "health:insurance"
+  ],
+  "25d3b1a2-a371-55b9-b2bb-670d2203dddb": [
+    "health:care"
+  ],
+  "4f23d6b3-85c8-5513-8300-1b36f579eb34": [
+    "there:airport-1"
+  ],
+  "5c14328f-1159-54c4-b033-8ff818404aa5": [
+    "there:airport-2"
+  ],
+  "e235c51f-bedc-5e2a-b0b0-01081250764c": [
+    "there:city-transfer",
+    "around:taxis"
+  ],
+  "b2f9690e-9145-5115-9a05-4e60fcef2967": [
+    "safety:hazards"
+  ],
+  "d894a2e4-d583-5c2f-bff8-899e0e6c3789": [
+    "culture:tipping"
+  ],
+  "b7045237-01f7-5c24-835a-f02f60706bef": [
+    "culture:venue"
+  ],
+  "4495d973-d9f9-53e4-a7f2-0a8474d717e7": [
+    "culture:laws"
+  ],
+  "ae03f030-9bef-56ef-9441-00cd4a435960": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "c4982e2c-b858-588d-a7cf-7912317ef02e": [
+    "money:tax-free"
+  ],
+  "c7bede2f-0241-5e2e-9d0c-ea92a0a6d6e5": [
+    "phones:wifi"
+  ],
+  "80f419b1-8e89-5d21-9989-96589092db79": [
+    "health:insurance"
+  ],
+  "1541e2fa-937e-5aab-83b0-5278681efffc": [
+    "health:care"
+  ],
+  "85585d99-f575-5885-b6b2-2a3ab68bc3f1": [
+    "there:airport-2"
+  ],
+  "d4953e20-ed6e-53ef-b727-7e5b5c129ccf": [
+    "there:arrival-steps"
+  ],
+  "ad1771ad-171b-5efd-802d-e92924cbeebc": [
+    "there:city-transfer",
+    "around:taxis"
+  ],
+  "05eb1a15-aef5-525b-9367-a1e1470c63a6": [
+    "around:buses"
+  ],
+  "abd741b9-59fa-5af7-a9be-644b049bf952": [
+    "safety:hazards"
+  ],
+  "917e1cb6-3dce-5768-8056-8d691ae691bf": [
+    "safety:solo"
+  ],
+  "369c26f7-2df3-52a8-ad1b-7af26bb5d890": [
+    "culture:etiquette"
+  ],
+  "246b7bb8-a45e-5121-997f-b86dc7245812": [
+    "culture:laws"
+  ],
+  "70e3150d-5106-5185-866f-ad4088dc50d5": [
+    "entry:forms"
+  ],
+  "46fab2cc-d698-5c5c-ba84-c5ac1e7595ef": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "02a6a66b-e39f-5c84-b3b4-816137e00144": [
+    "money:tax-free"
+  ],
+  "10ee791e-9bb9-553a-8d7a-d1aa072438b1": [
+    "phones:wifi"
+  ],
+  "b56f69b8-8ad8-51ea-827a-2255ac92ab29": [
+    "health:insurance"
+  ],
+  "631c9da5-1370-5dc1-874f-d6aa103c3071": [
+    "health:care"
+  ],
+  "72dcee3b-0f84-58c3-97c2-8ab96ea634ef": [
+    "there:airport-1"
+  ],
+  "9239374b-903e-5065-befa-4cae84a63197": [
+    "there:airport-2"
+  ],
+  "81fd8318-f951-558e-94c9-91f0ea7afe63": [
+    "around:subway"
+  ],
+  "50a0f084-a9a6-5593-a903-f2bf02d138c1": [
+    "around:taxis"
+  ],
+  "1a6158b4-43bf-503c-9f22-9dbbfbc45f45": [
+    "safety:hazards"
+  ],
+  "2fb5c027-a3b4-54a3-b28e-0abced0f26e6": [
+    "safety:solo"
+  ],
+  "55694a6d-5941-5769-92af-cfd6002aef7a": [
+    "culture:laws"
+  ],
+  "539bcb3c-f28b-506d-a4a5-efc53c87afaf": [
+    "entry:forms"
+  ],
+  "598c344b-6de6-5e78-83e0-f74bece060ce": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "9d90fc7b-850b-5d1c-983b-d2c5b1d092ee": [
+    "money:currency"
+  ],
+  "eb333ec1-367b-5858-8ae7-feac886f652b": [
+    "phones:wifi"
+  ],
+  "b218b4d6-62ef-5ae8-a4ed-7a4b84ebdeb5": [
+    "health:insurance"
+  ],
+  "29f45e4f-d68e-584c-9eec-2d8376d0935a": [
+    "health:care"
+  ],
+  "98fd5f13-88fb-5d53-8b00-6ca1dcc806e0": [
+    "there:airport-2"
+  ],
+  "b80c8902-2e05-57d2-853f-fc4f59efc63f": [
+    "there:arrival-steps"
+  ],
+  "8dccd0af-17c6-5d24-8b25-fb05f1835e1e": [
+    "there:city-transfer",
+    "around:taxis"
+  ],
+  "1ed20c88-4dee-5497-a7f9-1c4437c75ff6": [
+    "around:subway"
+  ],
+  "a343ed67-b1f6-5a00-aae1-01f78a3d2407": [
+    "safety:hazards"
+  ],
+  "12a87751-8d2d-58a3-a325-5c2db05bfb6e": [
+    "safety:solo"
+  ],
+  "3163ae7b-bddd-5cd0-9ab5-69fc8a6a7ba5": [
+    "culture:laws"
+  ],
+  "a5fcf337-74c3-5160-bd5c-571041504bba": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "e6b41b12-dee0-56cb-81fe-f201474ecc83": [
+    "money:tax-free"
+  ],
+  "da1cf4d8-4d5f-5d70-9383-f453d9789315": [
+    "phones:wifi"
+  ],
+  "6acc9c0d-adcb-596d-ad87-e63b82c4759a": [
+    "health:insurance"
+  ],
+  "819eb224-dd08-565f-b8f7-ae854de54b6c": [
+    "health:care"
+  ],
+  "7cb629a1-e642-549a-a669-8eba1341edab": [
+    "there:arrival-steps"
+  ],
+  "172a36b6-d2ad-5583-b82a-14e8ea92221a": [
+    "there:city-transfer",
+    "around:taxis"
+  ],
+  "c624ae12-d41b-5083-867a-5e6d4591bb49": [
+    "around:subway"
+  ],
+  "beaf1276-e0da-509c-b3c2-6ca7deb9d956": [
+    "around:buses"
+  ],
+  "6636c9b3-881e-5662-980f-1dc0e035ca01": [
+    "safety:hazards"
+  ],
+  "8781bea0-97d8-51c8-88d5-3f804997615b": [
+    "culture:venue"
+  ],
+  "ac6f3aff-9ac4-5b01-96b3-d5afefc855f6": [
+    "culture:laws"
+  ],
+  "2c975177-7eec-5700-9acb-a06e072a5bd7": [
+    "entry:forms",
+    "there:arrival-steps"
+  ],
+  "7c734cff-6689-5d93-9d50-1f9a1f677c84": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "976e1ebc-bca5-5837-a5fb-30a389bc7b9b": [
+    "money:tax-free"
+  ],
+  "73737100-c295-5668-8bb9-ec7631861532": [
+    "phones:wifi"
+  ],
+  "d4579a4d-97d5-52d1-9c1a-cf5f0c5b6685": [
+    "health:insurance"
+  ],
+  "465bf8f6-c82d-5a5c-b550-d4367721166c": [
+    "health:care"
+  ],
+  "16f59d88-a2a6-54b7-947e-708d97be4424": [
+    "there:airport-2"
+  ],
+  "a9134792-41aa-53c3-a8d8-77ba277dd455": [
+    "there:city-transfer",
+    "around:taxis"
+  ],
+  "eb86a68a-20a6-5430-af45-287c087f5207": [
+    "around:subway"
+  ],
+  "5754a540-42a9-5b17-98e2-6c8459bf8e1b": [
+    "around:buses"
+  ],
+  "fc088811-ce1f-5f09-abbd-f3f04762d451": [
+    "safety:hazards"
+  ],
+  "6713bb0c-5cfa-5ea8-9b65-fc0c37265c5f": [
+    "safety:solo"
+  ],
+  "f4c5dbf6-e4e3-54b9-a4d6-ca5ec40f8277": [
+    "culture:venue"
+  ],
+  "6eb3b0b4-0d24-5f62-bc4e-d0bf80498709": [
+    "culture:laws"
+  ],
+  "847506dc-f1b0-5641-94c8-b66ac38da43c": [
+    "entry:forms"
+  ],
+  "faaa9008-5e12-500e-88f4-52904cef67d0": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "7612a2fe-6410-5e18-b0a4-3b8f7771e2f1": [
+    "phones:esim"
+  ],
+  "2c64225f-2f61-5249-bad2-baddfce6aa67": [
+    "health:insurance"
+  ],
+  "23a0ecab-bd70-5d0e-add0-57b99223e335": [
+    "health:care"
+  ],
+  "3c321724-4c9c-5af8-a71d-336f20162c7c": [
+    "there:airport-1"
+  ],
+  "0321c0ab-e1d4-5d9a-94c6-4c8200bd4a90": [
+    "there:airport-2"
+  ],
+  "ec15aa26-e9e4-5e92-923f-645a886835ab": [
+    "there:city-transfer"
+  ],
+  "67375e19-8695-5e06-898b-a8b076f66a3c": [
+    "safety:hazards"
+  ],
+  "5d6be97a-8c25-5598-8e17-f54a11fd0043": [
+    "safety:solo"
+  ],
+  "9b9f6def-aec4-5403-aad5-4876a9681aca": [
+    "culture:venue"
+  ],
+  "a052708d-4eaa-596f-b9f8-25d4b2069738": [
+    "culture:laws"
+  ],
+  "48cecd37-bf74-5060-9a36-37413700e5c0": [
+    "entry:forms"
+  ],
+  "08265a91-f19d-5df9-909b-09dbd483fb27": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "0c3282a9-d98e-57af-82ee-1f896d6ea840": [
+    "money:tax-free"
+  ],
+  "0a6f81e0-7f2f-5564-9eed-d20761e9c773": [
+    "phones:wifi"
+  ],
+  "fe1507be-5197-5511-b607-8f22c87851e5": [
+    "health:insurance"
+  ],
+  "31770d84-8fa8-510a-936c-60e61796edf2": [
+    "health:care"
+  ],
+  "b749b51a-1427-5315-acdb-53aafde6ff44": [
+    "there:airport-2"
+  ],
+  "155a3af0-53ee-5401-8400-00f6765d1ae6": [
+    "there:city-transfer"
+  ],
+  "89c32b0f-fd08-5bbe-8e96-7c326f4b9f4e": [
+    "around:subway"
+  ],
+  "0f7d33df-b1b0-5a29-8aec-4efc80eb4536": [
+    "around:trains"
+  ],
+  "c3b88ef4-f723-593e-b440-1903d9344a6f": [
+    "around:buses"
+  ],
+  "f0dcf774-6f48-5e27-a152-a73340473c14": [
+    "safety:hazards"
+  ],
+  "ba6a10ce-b1b8-58db-b832-c95bb3144d01": [
+    "culture:tipping"
+  ],
+  "ff93400d-9f1b-5f08-8f82-850ab5f1546b": [
+    "culture:venue"
+  ],
+  "cc246aed-bcd4-5814-82e9-6b1082ebfe05": [
+    "culture:laws"
+  ],
+  "3b413fbe-2b40-5b6e-b476-daab123285f2": [
+    "entry:forms"
+  ],
+  "1dcbcb15-ab37-5ecf-be67-176e0f4e756e": [
+    "money:tax-free"
+  ],
+  "74c8d36e-5386-5b45-a3e9-1804ae260e28": [
+    "phones:wifi"
+  ],
+  "b3871fda-d7e0-589d-8c29-8f8227372a57": [
+    "health:insurance"
+  ],
+  "7ecd5ae1-9159-5c09-a313-22a155bec5d2": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "9cf639e3-3c82-5618-852f-5886bf002195": [
+    "health:care"
+  ],
+  "e76cb79c-6a8f-5592-a3f5-f2c0bd5bf5a9": [
+    "there:airport-2"
+  ],
+  "17596043-1d3b-5a5f-91cc-a67f5507caca": [
+    "there:city-transfer",
+    "around:taxis"
+  ],
+  "ce4f6a49-0a46-5f37-86ea-17ad33304276": [
+    "safety:hazards"
+  ],
+  "701532cb-276b-51fc-8d9d-f03e673d1e7a": [
+    "safety:solo"
+  ],
+  "c76ffa25-f788-5f27-ab0c-d1bb466b26c7": [
+    "culture:tipping"
+  ],
+  "3ec8098c-96da-58c1-9532-56fbd5a46d8b": [
+    "culture:venue"
+  ],
+  "be17df6f-9990-5b21-b1ba-d33efcfee49f": [
+    "culture:laws"
+  ],
+  "eb25033d-f47a-5fa4-9580-1333b5eb1fc3": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "ad84722f-548d-561b-9ece-7f866451f4c0": [
+    "money:cash"
+  ],
+  "efc50b86-a6a8-585c-8d68-e708cd64829f": [
+    "money:currency"
+  ],
+  "e609ee94-9ce7-5f9e-92a6-983dd9a9d130": [
+    "phones:wifi"
+  ],
+  "345bef8c-4d8e-51fb-b69c-43e9fa3a47bd": [
+    "health:insurance"
+  ],
+  "a352d5a0-b294-55ee-b91e-2b6212a68f93": [
+    "health:care"
+  ],
+  "29c447d0-afbf-5f18-b7ef-860592d0d8b8": [
+    "there:airport-1"
+  ],
+  "903bfaff-5795-5876-9017-c77cfeb08b1c": [
+    "there:airport-2"
+  ],
+  "d15c3d37-d648-5f6b-baf7-fd52fa3dc707": [
+    "there:city-transfer",
+    "around:taxis"
+  ],
+  "c600a002-c1b0-56df-9e1f-731826c71e12": [
+    "around:trains"
+  ],
+  "c10b437e-2f4b-5878-877c-cf09878e1c20": [
+    "safety:hazards"
+  ],
+  "8b303b10-4f21-588b-8c14-887f67a7568f": [
+    "safety:solo"
+  ],
+  "ade0fb09-f522-569e-87f1-5381f5b075a4": [
+    "culture:tipping"
+  ],
+  "05a1a6e4-94bc-551a-acef-b87e07aa63c1": [
+    "culture:laws"
+  ],
+  "c7a6d30e-9717-5e37-93af-62c2d5ccb4f3": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "ebcd11f0-40e0-5250-bb8b-631e603d8fe2": [
+    "money:tax-free"
+  ],
+  "5a9f676d-69c6-52af-899f-5bfa36e66892": [
+    "phones:wifi"
+  ],
+  "87967da0-4c90-5a06-bd5b-e549aaa79cc0": [
+    "health:insurance"
+  ],
+  "78d1239b-6f5a-5ff7-beb4-6531d44181cd": [
+    "health:care"
+  ],
+  "04e33aa4-a16b-5667-bed5-364621766076": [
+    "there:airport-1"
+  ],
+  "11aabe78-248e-5b8f-aab4-04440dcbc348": [
+    "there:airport-2"
+  ],
+  "3cd8442d-9002-5898-965d-95334d921fe3": [
+    "there:city-transfer",
+    "around:taxis"
+  ],
+  "2c62a107-0908-54a1-9c40-c71e4595b2cb": [
+    "around:subway"
+  ],
+  "dc8bb517-9436-5286-a3fd-7ee60d2d1243": [
+    "safety:hazards"
+  ],
+  "ef9d99d2-6888-51bf-ac9e-3859ddac5b7f": [
+    "safety:solo"
+  ],
+  "5b31450e-9a52-5724-abea-ace49fe5884e": [
+    "culture:tipping"
+  ],
+  "fed2c75d-36e8-5899-9e1d-fd1545b323eb": [
+    "culture:venue"
+  ],
+  "e8c8842c-bffe-508e-9a54-5d4e6e7d4203": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "f60b7b98-7b66-50a6-b1f8-8612da984ad6": [
+    "phones:esim"
+  ],
+  "0c38494f-19b8-54bb-9d27-ae81e08014e8": [
+    "phones:wifi"
+  ],
+  "c9f39203-b103-5500-bfda-879e86a53fc4": [
+    "health:insurance"
+  ],
+  "bbddcbde-4bab-5c4e-b316-60965b79a28e": [
+    "health:care"
+  ],
+  "97404a31-30be-51c1-a29d-1a1865aac2e5": [
+    "there:airport-1"
+  ],
+  "9db18a27-7299-5512-90ef-a11b47541fd4": [
+    "there:airport-2"
+  ],
+  "867a1311-011c-5469-9bed-3311008ebc9c": [
+    "there:city-transfer",
+    "around:taxis"
+  ],
+  "d2fd5fbb-9ac0-5cc1-a459-4e0e45f62a5f": [
+    "around:subway"
+  ],
+  "824ce26f-2396-5c65-b094-09ecf6f8cab7": [
+    "safety:hazards"
+  ],
+  "dfc4244a-6c44-533b-ba2a-f9b3756a4993": [
+    "safety:solo"
+  ],
+  "cd299089-0e83-5cd9-8e7d-e24de7fedc80": [
+    "culture:laws"
+  ],
+  "9a4fee76-eecf-5e70-81b9-eab185f75493": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "2e6c1f10-5656-5fb9-8513-11bed1107e83": [
+    "money:tax-free"
+  ],
+  "44d86c72-3d1d-57ae-8391-66d40dbc2aa9": [
+    "phones:wifi"
+  ],
+  "4dca729c-8224-5f45-9a93-e5e3b4e22e53": [
+    "health:insurance"
+  ],
+  "2bedf45e-1aa9-598b-a9c2-4e87701a4c7b": [
+    "health:care"
+  ],
+  "9bfa2134-64b6-508d-9e9f-e88b0e8916a3": [
+    "there:airport-2"
+  ],
+  "87a916f9-f33c-55dc-aca6-7ea39800e708": [
+    "there:arrival-steps"
+  ],
+  "56848eb5-c65d-5019-b884-e77d89a25495": [
+    "around:taxis"
+  ],
+  "c0fe4ca0-898e-5522-8dd7-84acfca18ddf": [
+    "safety:hazards"
+  ],
+  "c34b9b65-cb06-5b1f-af40-e3f77f443900": [
+    "safety:solo"
+  ],
+  "cbaf0b38-e45c-5733-8cd2-ec09c999ed30": [
+    "culture:laws"
+  ],
+  "967025bb-6200-59b4-ab44-c88a7dfe8b3a": [
+    "money:currency"
+  ],
+  "8b401d9c-6452-5d0d-b6c0-4369f978a717": [
+    "phones:wifi"
+  ],
+  "94ca8cc9-bbe1-5e96-9c6f-c476eea7558a": [
+    "health:insurance"
+  ],
+  "494af6d3-96b7-5788-9c08-91db80cb4104": [
+    "health:care"
+  ],
+  "9fd62015-068b-5df4-8a70-5097e800de36": [
+    "there:airport-1"
+  ],
+  "527adf90-8a42-55b7-a808-75bb28ea0005": [
+    "there:city-transfer"
+  ],
+  "b1f0941f-fa4f-5171-b1b1-2e6cd65076bd": [
+    "safety:hazards"
+  ],
+  "973d606b-416d-5a00-95dd-273c5a191aa7": [
+    "safety:solo"
+  ],
+  "2580e8c7-7e80-5e74-bbf9-4df3929230e3": [
+    "culture:tipping"
+  ],
+  "d26449d3-6daf-5ae2-a37d-421afd01a545": [
+    "phones:wifi"
+  ],
+  "4b0454b9-9a31-5a17-a566-ea001c8b5402": [
+    "health:insurance"
+  ],
+  "5be05f30-08c8-563b-9b8a-60469a6b62da": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "9a265bc4-fe9a-504a-9f3d-409fd0ad0bf9": [
+    "health:care"
+  ],
+  "3cedb5d6-1a39-56b6-9027-3e1488716a71": [
+    "there:airport-1"
+  ],
+  "c4fecd40-4e20-5dab-89c0-53027dca70b5": [
+    "there:airport-2"
+  ],
+  "2a87eb25-6e15-5741-91d7-5e5a09eb664e": [
+    "there:city-transfer",
+    "around:taxis"
+  ],
+  "6598d4f7-ff17-5cef-8057-f9d618a606f4": [
+    "around:trains"
+  ],
+  "61f98eed-af00-51f7-aa3b-3908611ee42e": [
+    "safety:hazards"
+  ],
+  "9217cbb3-fb1f-5ffb-8978-da80922a06f8": [
+    "safety:solo"
+  ],
+  "ef9791f7-a337-5181-ac8e-112b7d95a932": [
+    "culture:tipping"
+  ],
+  "8c050074-358b-54cd-b946-d4c9329d7d99": [
+    "entry:forms"
+  ],
+  "1ff4eee6-af27-54ef-981e-ea2e49960a40": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "94e038a9-9db8-563f-9355-a5b0acc30b53": [
+    "money:currency"
+  ],
+  "0c8c90a8-d0e7-5886-8757-e593b626629c": [
+    "phones:wifi"
+  ],
+  "7b00c898-e6e1-575e-8e8a-66f6604498dd": [
+    "health:insurance"
+  ],
+  "883bd119-6fad-55d1-800f-fdd5519d9f89": [
+    "health:care"
+  ],
+  "b4e18d47-d907-5853-b18f-8818b9842ecb": [
+    "there:airport-2"
+  ],
+  "fb2e44ed-8a04-5c83-bbe4-bd7f0c3d3588": [
+    "there:arrival-steps"
+  ],
+  "3159640b-4f00-513a-8ad1-40eb1a23fd06": [
+    "there:city-transfer",
+    "around:taxis"
+  ],
+  "c8bb6658-2502-5593-81cd-2fd072388553": [
+    "around:subway"
+  ],
+  "5263f4ae-9673-5c77-b141-d14e9361cd9d": [
+    "safety:hazards"
+  ],
+  "477e0cfd-d4db-5e2e-93d1-ca31a13c76d8": [
+    "safety:solo"
+  ],
+  "2c22c696-3f12-523c-954e-e6a95c19977f": [
+    "culture:laws"
+  ],
+  "b836f923-9778-5a83-95cb-8ca24dcb6891": [
+    "phones:wifi"
+  ],
+  "9974675b-f529-5ccc-8aeb-a261e2c40103": [
+    "health:insurance"
+  ],
+  "49f0aa35-11db-5f40-afa2-30d4a456fc3d": [
+    "health:care"
+  ],
+  "c2bb0879-5ee0-5bcb-8790-f9fb693e4c43": [
+    "there:airport-2"
+  ],
+  "a9a84e1e-640d-5e3c-ad24-caa9f762aab6": [
+    "there:arrival-steps"
+  ],
+  "c9605ea4-3967-5247-86b7-825668125489": [
+    "around:trains"
+  ],
+  "124497bb-b130-53bd-a8ca-95c47b9a8507": [
+    "around:taxis"
+  ],
+  "56cbf5e5-3440-5c31-90c3-d33436421bff": [
+    "safety:hazards"
+  ],
+  "5c741eb3-1689-5a24-853a-6098bf1d0ddf": [
+    "safety:solo"
+  ],
+  "b0c9027b-29da-5637-9099-6560441a35bb": [
+    "culture:venue"
+  ],
+  "a3dc229e-e43c-5343-91db-a643d4e7ed8e": [
+    "culture:laws"
+  ],
+  "88d2d792-a176-5508-a907-9caeb0bd8713": [
+    "entry:medicine",
+    "health:medicines"
+  ],
+  "191cceeb-81ad-5c28-b8d7-d337dc45cd94": [
+    "money:tax-free"
+  ],
+  "7f369074-885e-5479-83bf-02a00939c795": [
+    "phones:wifi"
+  ],
+  "35a27d86-38b2-536d-9c55-e511a29c0182": [
+    "health:insurance"
+  ],
+  "fa4033db-daa9-5884-9a54-13ff67489697": [
+    "health:care"
+  ],
+  "3688d5af-cbcf-5f1b-ae05-f991fee667a3": [
+    "there:airport-2"
+  ],
+  "76773300-12c7-5096-a1ae-adfd8a4ad924": [
+    "there:arrival-steps"
+  ],
+  "7cec643a-2758-5722-bebf-8f444eff02c6": [
+    "around:taxis"
+  ],
+  "ff9a5104-f702-5e8b-afe4-2a74a06a31fc": [
+    "safety:hazards"
+  ],
+  "75ffbe53-82a3-5d33-95ca-079a3a351fac": [
+    "culture:tipping"
+  ],
+  "9391e9f3-e9b0-5216-8d09-9ff4aa40918c": [
+    "culture:laws"
+  ],
+  "df8f416f-b523-5c1a-a12d-2d60c47ecdd5": [
+    "money:tax-free"
+  ],
+  "f702e560-8674-58f8-b7b3-7fd66f0b695c": [
+    "phones:wifi"
+  ],
+  "ea2728bb-5b50-5ff4-9980-c36f204d79f9": [
+    "health:care"
+  ],
+  "70818eee-1b4b-5901-82aa-e2d412775899": [
+    "there:airport-2"
+  ],
+  "cd6ad645-47c9-51b2-a350-bd21f5e63653": [
+    "there:city-transfer"
+  ],
+  "ea90f0a3-cf08-52bc-8fe2-45c95f0e3768": [
+    "culture:laws"
+  ],
+  "b9f3f264-02c9-5085-a0cc-b2783e9792cb": [
+    "entry:visas"
+  ],
+  "2ba4cb83-0ac1-50d7-81a2-8e667d300203": [
+    "entry:passport"
+  ],
+  "0f0b70d9-7407-5e98-aea9-8f3a454e9013": [
+    "around:buses"
+  ],
+  "d6216178-20ec-5afb-b171-3740edf3758b": [
+    "around:taxis"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-11-10",
+  "new_facts": 259,
+  "total_published": 575,
+  "dropdown_destinations_with_facts": 36,
+  "categories_per_new_destination": 10,
+  "old_rows_before": 316,
+  "old_rows_after": 316,
+  "old_rows_fingerprint_before": "8d8ba79bcf43a9e193f8a66ec74a1cdc",
+  "backend_tests_passed": 27,
+  "frontend_suites_passed": 5,
+  "publication_mode": "INSERT ON CONFLICT DO NOTHING; no updates or deletions",
+  "sources": 127,
+  "old_rows_fingerprint_after": "8d8ba79bcf43a9e193f8a66ec74a1cdc",
+  "old_rows_unchanged": true
+}

@@ -1,6 +1,8 @@
 // On Render the site and API share an origin. Set apiBase before publishing to GitHub Pages.
 const LOCAL = ['localhost','127.0.0.1'].includes(location.hostname);
 export const DEPLOYMENT = {apiBase: ''};
+// GitHub Pages hosts files only; use the labeled saved guides until Render is configured.
+export const SAVED_GUIDES_ONLY = !DEPLOYMENT.apiBase && location.hostname.endsWith('.github.io');
 const defaultBase = DEPLOYMENT.apiBase || (LOCAL && location.port !== '8000' ? 'http://127.0.0.1:8000' : location.origin);
 function chooseApi() {
   const asked = new URLSearchParams(location.search).get('api');

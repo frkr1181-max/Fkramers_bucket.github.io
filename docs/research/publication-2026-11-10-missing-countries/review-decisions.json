@@ -1,0 +1,2074 @@
+[
+  {
+    "id": "6923c3be-9d72-5230-a442-9d9435fe65a0",
+    "country": "brazil",
+    "topic": "entry:passport",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "69b8033d-050d-53df-8cf4-b39f6930e851",
+    "country": "brazil",
+    "topic": "entry:visas",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "c8f40a25-04d0-5502-af7c-676b5fe64217",
+    "country": "brazil",
+    "topic": "money:currency",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "10ac81a2-dd1e-5e90-9b6a-de5085c77166",
+    "country": "brazil",
+    "topic": "money:cash",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "8dde64d8-9904-5a3d-aae0-846d93a2c11f",
+    "country": "brazil",
+    "topic": "money:cards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "2c9e785a-4926-51df-8dbf-149433709d68",
+    "country": "brazil",
+    "topic": "safety:advisories",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "b1bc3c7e-2120-5b94-ae51-4a3c6e9beb18",
+    "country": "brazil",
+    "topic": "safety:emergencies",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "7c5bfcef-72ec-54ad-b786-f60708256e59",
+    "country": "brazil",
+    "topic": "culture:laws",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "364f26b5-3c07-562f-a3ec-789040783e8c",
+    "country": "brazil",
+    "topic": "safety:hazards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "a7ab09e5-b10f-542c-b402-7b56090a9db6",
+    "country": "brazil",
+    "topic": "around:taxis",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "fcb06c07-d065-5b29-b7d2-a61c6ad07e61",
+    "country": "brazil",
+    "topic": "health:insurance",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "a044a335-1c55-538d-b59a-5f3dd241467b",
+    "country": "brazil",
+    "topic": "health:care",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "526d58d4-852d-50d2-b9b3-7ca85b3d2b39",
+    "country": "brazil",
+    "topic": "health:medicines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "4ed1b724-501d-5893-b9a0-e802346d143a",
+    "country": "brazil",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "a945f26d-ac9a-561a-93e2-b9d91055e173",
+    "country": "brazil",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "b1ac324d-b487-58db-9dea-26ac3a0dc23e",
+    "country": "brazil",
+    "topic": "phones:esim",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "874e9373-a268-5905-8925-0f3463b9a847",
+    "country": "brazil",
+    "topic": "entry:forms",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "b8ecb831-e331-5613-8db8-3550bef90316",
+    "country": "brazil",
+    "topic": "there:city-transfer",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "fc2de0af-faaa-5a34-9ed1-8521ec5860d6",
+    "country": "brazil",
+    "topic": "phones:wifi",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "28b8f839-612c-5bca-b3e2-fc039b24c322",
+    "country": "brazil",
+    "topic": "around:subway",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "18ceac50-8af4-5c03-856c-9b2b148001a2",
+    "country": "brazil",
+    "topic": "phones:electricity",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "bc6dd4d0-3f80-58f3-b354-591055238ee6",
+    "country": "cabo-verde",
+    "topic": "entry:passport",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "faef9128-aeb7-5bdb-aad0-dfef9531b41d",
+    "country": "cabo-verde",
+    "topic": "entry:visas",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "5bd9ab81-e10a-5d92-ba5f-e76fab8bb5c4",
+    "country": "cabo-verde",
+    "topic": "money:currency",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "35aee3d4-df0c-5227-892f-47db32396fbd",
+    "country": "cabo-verde",
+    "topic": "money:cash",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "116c31fb-a707-5d2c-98c4-9ad615b98d6b",
+    "country": "cabo-verde",
+    "topic": "money:cards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "52e865fd-ef30-54a1-97b5-6c613bbe9089",
+    "country": "cabo-verde",
+    "topic": "safety:advisories",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "27cfb090-1da2-5584-9fde-5b53867fff2f",
+    "country": "cabo-verde",
+    "topic": "safety:emergencies",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "a9cb924e-0c88-5548-b0f4-8de42c773bb6",
+    "country": "cabo-verde",
+    "topic": "culture:laws",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "347f7335-0820-5065-965e-0c31e0d73e3d",
+    "country": "cabo-verde",
+    "topic": "safety:hazards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "8a5f4455-9dc3-5cbb-a6ef-a0858759879e",
+    "country": "cabo-verde",
+    "topic": "around:taxis",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "7b5c3b14-32eb-51f3-b1be-6eeba442ea95",
+    "country": "cabo-verde",
+    "topic": "health:insurance",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "7cbe60f4-03b8-5a32-a1f5-a3276e8a558b",
+    "country": "cabo-verde",
+    "topic": "health:care",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "bd123c8a-08a9-52c9-9882-82c9701a47cd",
+    "country": "cabo-verde",
+    "topic": "health:medicines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "a74c2aa3-f5f2-5d4f-9d2e-27b260e4ad29",
+    "country": "cabo-verde",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "a6ba4323-66b1-56b5-a9d7-8bd933ac7294",
+    "country": "cabo-verde",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "91d22d50-0b24-5660-93a9-0d468f6792bd",
+    "country": "cabo-verde",
+    "topic": "phones:esim",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "d5f91933-fdd4-5f50-8246-8ecd7f9cf06f",
+    "country": "cabo-verde",
+    "topic": "entry:forms",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "99d5c7e0-8889-578c-8a29-8b2e9c8f30f7",
+    "country": "cabo-verde",
+    "topic": "there:airport-1",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "d6e70e12-78b0-5467-a390-fc34a59f8485",
+    "country": "cabo-verde",
+    "topic": "around:overview",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "0e3ccc51-c576-59e8-a1d8-a619d3eb9cd1",
+    "country": "cabo-verde",
+    "topic": "phones:electricity",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "f651ec6c-bbf9-556c-a06e-5446a93ba2dc",
+    "country": "canada",
+    "topic": "entry:passport",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "045c667c-c8d1-5536-a137-999ca7c6e829",
+    "country": "canada",
+    "topic": "entry:visas",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "e8feeb4f-06bc-50e1-9689-2e280c4e5779",
+    "country": "canada",
+    "topic": "money:currency",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "3724d480-ab41-5c52-a444-e733fa30160a",
+    "country": "canada",
+    "topic": "money:cash",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "6b61a01e-3d44-5b8a-91b0-f155a84e45ef",
+    "country": "canada",
+    "topic": "money:cards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "8049cfbb-c950-5cbf-8a6d-d0000cd3e898",
+    "country": "canada",
+    "topic": "safety:advisories",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "3954449d-6013-506c-837f-2652948daaf8",
+    "country": "canada",
+    "topic": "safety:emergencies",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "40d77186-2478-5074-89f6-d8a641edfc79",
+    "country": "canada",
+    "topic": "culture:laws",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "f4c03a57-d750-5b0d-b4ba-94afdf4df914",
+    "country": "canada",
+    "topic": "safety:hazards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "983a0e58-4d7d-5e33-b0e1-cf3bd6dfef05",
+    "country": "canada",
+    "topic": "around:taxis",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "3414a001-64a2-536f-a271-8eb1678a69d5",
+    "country": "canada",
+    "topic": "health:insurance",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "1cde21b2-905e-5671-b236-7e953defba52",
+    "country": "canada",
+    "topic": "health:care",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "227de772-9ba7-56e2-89fa-d1d8660954dc",
+    "country": "canada",
+    "topic": "health:medicines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "91803b2b-ad99-53cd-96ec-c716480867ca",
+    "country": "canada",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "96e413cb-9010-5cc3-a5e2-845a420fdeb0",
+    "country": "canada",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "e227261c-7411-54bd-936e-e51b43084b98",
+    "country": "canada",
+    "topic": "phones:esim",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "1a5b8c97-715c-5b22-875d-1de3c5347453",
+    "country": "canada",
+    "topic": "entry:forms",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "8a5ebd3f-c42f-574a-8db5-a598ba177742",
+    "country": "canada",
+    "topic": "there:city-transfer",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "eaf628c5-65c1-5179-9eda-637069a5b7c3",
+    "country": "canada",
+    "topic": "around:trains",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "00d0ecae-d3c4-5b78-9743-b7373306c667",
+    "country": "canada",
+    "topic": "phones:electricity",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "838c7859-7d9e-580e-83eb-3886b6f81cb8",
+    "country": "colombia",
+    "topic": "entry:passport",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "dec6cbff-4a51-5b37-bac9-128d1d243e60",
+    "country": "colombia",
+    "topic": "entry:visas",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "0f3227b6-48b5-5948-99ad-c09da8c98ba7",
+    "country": "colombia",
+    "topic": "money:currency",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "84380e7f-5ebe-5cc0-b3e1-6c937b032afd",
+    "country": "colombia",
+    "topic": "money:cash",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "b4af34d6-66e2-54af-8091-f7d7cdf12a70",
+    "country": "colombia",
+    "topic": "money:cards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "d586dee3-a983-5935-8e3e-ccbf851621cc",
+    "country": "colombia",
+    "topic": "safety:advisories",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "207faf0c-9252-5f5f-9b8b-33b279a62e1b",
+    "country": "colombia",
+    "topic": "safety:emergencies",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "9400d6fd-4939-52c2-a9b7-fa9d1ae69883",
+    "country": "colombia",
+    "topic": "culture:laws",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "389d95b7-40b6-5a9c-8bb7-4823cf0fd40c",
+    "country": "colombia",
+    "topic": "safety:hazards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "e09605df-a864-5efa-8cc9-ad4c6e6ddd7f",
+    "country": "colombia",
+    "topic": "around:taxis",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "51c1f126-1da9-5f03-bf98-31cce931c018",
+    "country": "colombia",
+    "topic": "health:insurance",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "8869d79f-0b9b-56f0-9e01-efedd7af662a",
+    "country": "colombia",
+    "topic": "health:care",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "6411abd2-1d02-5ef8-8d01-35ee718447a8",
+    "country": "colombia",
+    "topic": "health:medicines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "57f9774b-ccad-5209-abe4-ba0829ac3a10",
+    "country": "colombia",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "f2ac9f21-5816-5f1e-94b2-44419d667ba6",
+    "country": "colombia",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "6a4b3d55-a202-5151-99eb-eca6d5094a84",
+    "country": "colombia",
+    "topic": "phones:esim",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "995bfae1-d264-5152-8134-081629670042",
+    "country": "colombia",
+    "topic": "entry:forms",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "c86881fe-9b0a-5f64-91a7-d79d090fb600",
+    "country": "colombia",
+    "topic": "there:city-transfer",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "48d2ee91-317d-5680-8dc4-fc5df7c4e383",
+    "country": "colombia",
+    "topic": "around:subway",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "e14b3204-23b0-567f-949b-70dcce805ff8",
+    "country": "colombia",
+    "topic": "phones:electricity",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "ce25b802-45b4-50be-a275-ee6d90145721",
+    "country": "croatia",
+    "topic": "entry:passport",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "48554027-6dd5-5be0-9a3c-3fd5c80ffd08",
+    "country": "croatia",
+    "topic": "entry:visas",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "118a622c-c1d0-5ec6-850c-fb5de0427230",
+    "country": "croatia",
+    "topic": "entry:forms",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "b81290ef-6d47-5508-8149-dc29cbc0564b",
+    "country": "croatia",
+    "topic": "entry:visas",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "87eca2df-bc7b-5622-a3ec-3728df6c66e8",
+    "country": "croatia",
+    "topic": "entry:forms",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "b323e65f-cbf5-544f-b586-a1659e5c68d1",
+    "country": "croatia",
+    "topic": "money:currency",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "f901e295-7da2-5aee-8ef5-0964b73443fb",
+    "country": "croatia",
+    "topic": "money:cash",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "d9f0c292-a9d7-5edf-97a7-dbf45f23e8d3",
+    "country": "croatia",
+    "topic": "money:cards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "af9f53e7-6bd3-529c-9da7-00587419a1d8",
+    "country": "croatia",
+    "topic": "safety:advisories",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "5875631e-2f9f-5bc0-8c32-37113f105e06",
+    "country": "croatia",
+    "topic": "safety:emergencies",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "56655dc4-44f2-5bdd-9542-af1b05528a5f",
+    "country": "croatia",
+    "topic": "culture:laws",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "f25f1da7-e179-5c14-9cb5-0318899a462f",
+    "country": "croatia",
+    "topic": "safety:hazards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "4df05c5c-728b-5561-a495-7f852f0a67aa",
+    "country": "croatia",
+    "topic": "around:taxis",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "e62334dd-c892-573c-8f80-e4fe451338b9",
+    "country": "croatia",
+    "topic": "health:insurance",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "dcd1eaad-6ed4-520a-b1b0-ff130b74ef91",
+    "country": "croatia",
+    "topic": "health:care",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "5f119a63-1641-5ab1-a7a8-123712b6fc7c",
+    "country": "croatia",
+    "topic": "health:medicines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "e7ca4bf1-7315-5474-88e4-a55a8cbe7766",
+    "country": "croatia",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "4c6a1c7b-f300-56c3-b1d2-8a4ffb156250",
+    "country": "croatia",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "bae76a79-0669-5326-a5b6-1a5021e3fc03",
+    "country": "croatia",
+    "topic": "phones:esim",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "39128cad-54f0-5a05-826a-63310ae78b10",
+    "country": "croatia",
+    "topic": "there:city-transfer",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "61628854-5f27-5d45-990d-3f58e5c44d8c",
+    "country": "croatia",
+    "topic": "phones:wifi",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "0ea49022-4df1-52a9-92e5-09e12c767d40",
+    "country": "croatia",
+    "topic": "around:trains",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "721937ae-a673-52b0-baff-b0671dcf035d",
+    "country": "croatia",
+    "topic": "phones:electricity",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "c33af0a1-cbc6-5ca0-bea3-125e654a1390",
+    "country": "czechia",
+    "topic": "entry:passport",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "d1b18387-16de-5156-a169-e28cbdbfcc33",
+    "country": "czechia",
+    "topic": "entry:visas",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "bf721451-cd0a-52b3-a45e-b94e5746d5e4",
+    "country": "czechia",
+    "topic": "entry:forms",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "564ede28-eb4a-5a77-92f0-0c07e4e262e5",
+    "country": "czechia",
+    "topic": "entry:visas",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "2fa2fa1d-d549-5bbf-afd8-0eb2151b615f",
+    "country": "czechia",
+    "topic": "entry:forms",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "b1bc077d-7dfa-574f-9122-1110a63ea702",
+    "country": "czechia",
+    "topic": "money:currency",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "a9590f2d-34cc-54bc-96d5-07896d58b888",
+    "country": "czechia",
+    "topic": "money:cash",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "72a40b9b-8792-5052-bf92-95a158f3f246",
+    "country": "czechia",
+    "topic": "money:cards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "ffc8f627-4b6b-5e50-9384-3ebc45fc30c3",
+    "country": "czechia",
+    "topic": "safety:advisories",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "f3af79f7-8aba-5f87-a2c6-d681600e881d",
+    "country": "czechia",
+    "topic": "safety:emergencies",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "a7643ba8-1056-5026-873f-ffb6cb85753c",
+    "country": "czechia",
+    "topic": "culture:laws",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "f68895d8-b376-575b-abd8-b87bedefebbc",
+    "country": "czechia",
+    "topic": "safety:hazards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "7cb6a4fd-f2d9-53ec-8ea2-e3f4dd87774b",
+    "country": "czechia",
+    "topic": "around:taxis",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "45ccc33e-c6eb-548f-a4ba-0e8129b3f498",
+    "country": "czechia",
+    "topic": "health:insurance",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "4dd48793-ff31-5cd2-9925-a60f444feafa",
+    "country": "czechia",
+    "topic": "health:care",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "a3845390-4050-591b-a578-5e01f2310c24",
+    "country": "czechia",
+    "topic": "health:medicines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "f9a95a3d-53b2-53dd-b133-ae8db8d6b0f8",
+    "country": "czechia",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "0a3c631c-f806-5d3a-967e-cf57afeaf60f",
+    "country": "czechia",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "477facd1-cdf2-5164-91e7-236ee50fcbb1",
+    "country": "czechia",
+    "topic": "phones:esim",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "64c77557-3ec6-5c61-8890-e6fa6e664951",
+    "country": "czechia",
+    "topic": "there:city-transfer",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "33f6a81e-0b6d-508b-a273-470acd4a8f1a",
+    "country": "czechia",
+    "topic": "around:subway",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "8a7ec6c2-c847-5075-b65e-052510b6b163",
+    "country": "czechia",
+    "topic": "phones:wifi",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "0efd40fd-33fb-5fcf-8f02-4a6bb4607c40",
+    "country": "czechia",
+    "topic": "phones:electricity",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "2ecd77ee-c3a3-518d-9ec7-3c1340065449",
+    "country": "spain",
+    "topic": "entry:passport",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "e0616aeb-4df2-5736-adc4-d0c9763e7bdf",
+    "country": "spain",
+    "topic": "entry:visas",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "041ef373-66fe-5ffd-8343-42bccb1a134b",
+    "country": "spain",
+    "topic": "entry:forms",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "e16533ad-512e-50bc-ad26-ba2a717d11b4",
+    "country": "spain",
+    "topic": "entry:visas",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "dfd9784b-125b-567c-a3fd-622f4f9fdbe1",
+    "country": "spain",
+    "topic": "entry:forms",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "772fe1ef-79eb-56e2-80c5-e7e309668308",
+    "country": "spain",
+    "topic": "money:currency",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "1d555dd4-e30e-5c91-acda-88c3b6da8a41",
+    "country": "spain",
+    "topic": "money:cash",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "5b522a7b-c100-57ac-8f92-52a668e71bc7",
+    "country": "spain",
+    "topic": "money:cards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "8bf8a9b0-4a0c-5f0b-b5d7-207a8218979f",
+    "country": "spain",
+    "topic": "safety:advisories",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "7f31f908-5893-5f26-90e0-ba7a1608c98e",
+    "country": "spain",
+    "topic": "safety:emergencies",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "b9cd1a20-34ac-522c-aa7a-0e3abee66475",
+    "country": "spain",
+    "topic": "culture:laws",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "765bbeb7-f15b-5638-9dff-85ae406b7978",
+    "country": "spain",
+    "topic": "safety:hazards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "592bfbc6-0b0d-5018-bf93-627513223d8d",
+    "country": "spain",
+    "topic": "around:taxis",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "4718fd31-532e-562d-aec1-7cae375443c6",
+    "country": "spain",
+    "topic": "health:insurance",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "f351e6ee-784f-5fbc-8f77-a4230c91af6c",
+    "country": "spain",
+    "topic": "health:care",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "ac470688-f443-5431-af98-c88195c43d0f",
+    "country": "spain",
+    "topic": "health:medicines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "2edf27d5-70be-55ae-b54f-6c9ce636d94b",
+    "country": "spain",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "918e0e31-dfba-51d4-881f-9aa3cba7618d",
+    "country": "spain",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "a5f24a66-14ec-59ee-b2e6-e671f9be8815",
+    "country": "spain",
+    "topic": "phones:esim",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "b9009a8d-ab30-5a3d-98b9-70b1b4738c56",
+    "country": "spain",
+    "topic": "there:city-transfer",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "864ac9e6-9aeb-59c3-8d83-5524f63e5621",
+    "country": "spain",
+    "topic": "around:trains",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "b3bf92b8-908d-58da-9b93-c9799cad9ac9",
+    "country": "spain",
+    "topic": "phones:wifi",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "aff80b2c-4924-5f9a-9cee-4920bd685f67",
+    "country": "spain",
+    "topic": "phones:electricity",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "20a95201-25e2-5bfa-8285-676a6b133098",
+    "country": "sweden",
+    "topic": "entry:passport",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "59edab79-14d2-5209-80a9-c9f55ed554c3",
+    "country": "sweden",
+    "topic": "entry:visas",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "b6bcbb1d-0302-506f-9ae8-8fdc8cccb3e9",
+    "country": "sweden",
+    "topic": "entry:forms",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "96eda310-1ad5-5455-8853-1e775f85b845",
+    "country": "sweden",
+    "topic": "entry:visas",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "bbf1fcbd-5bf4-5808-b0cb-087c8e829cf5",
+    "country": "sweden",
+    "topic": "entry:forms",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "dce819db-484a-522a-8938-1b691e022025",
+    "country": "sweden",
+    "topic": "money:currency",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "3aea94ae-de9a-5c52-a509-3531b0f724b2",
+    "country": "sweden",
+    "topic": "money:cash",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "c8855ee7-a295-5a1a-8256-9adec82f15d2",
+    "country": "sweden",
+    "topic": "money:cards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "1409195b-65ea-5b61-9bb4-fd06f8062ef0",
+    "country": "sweden",
+    "topic": "safety:advisories",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "913b6c56-ef0b-5713-abe7-cdfe77dec8c4",
+    "country": "sweden",
+    "topic": "safety:emergencies",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "dbddefc7-b95e-5909-87d3-202680ba14bd",
+    "country": "sweden",
+    "topic": "culture:laws",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "66042038-091a-5cf5-a40b-361990e86543",
+    "country": "sweden",
+    "topic": "safety:hazards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "04b03234-5193-52bf-8028-9cd9c2fa3e82",
+    "country": "sweden",
+    "topic": "around:taxis",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "1cf9eefd-82f1-5c8f-8da4-327a39908bea",
+    "country": "sweden",
+    "topic": "health:insurance",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "879b4bbd-5087-5862-a4c7-191a2b0ebd34",
+    "country": "sweden",
+    "topic": "health:care",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "fd1c933a-542a-5743-99c6-e8da0f6f3b69",
+    "country": "sweden",
+    "topic": "health:medicines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "4349acae-6331-5d6b-9eb3-34d0fe72f35a",
+    "country": "sweden",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "3b40823d-8d99-5225-a877-ad3ecd3722e4",
+    "country": "sweden",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "e4663524-b012-50d9-9b9b-6b030c8ae089",
+    "country": "sweden",
+    "topic": "phones:esim",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "4875661d-2cad-5e5e-8e34-dd1ec5567e9b",
+    "country": "sweden",
+    "topic": "culture:etiquette",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "cd438e09-76bd-54c2-8055-d9bec772c31f",
+    "country": "sweden",
+    "topic": "there:airport-2",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "5c075deb-d2c8-5328-9596-3dd4bfef6655",
+    "country": "sweden",
+    "topic": "around:subway",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "7278c3fc-d716-5a56-ac39-864a5ef4716b",
+    "country": "sweden",
+    "topic": "phones:wifi",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "ed8a1e0b-800c-54fc-b8fc-6e83d286aca9",
+    "country": "sweden",
+    "topic": "phones:electricity",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "a2a3b1b4-77a4-5c5d-8743-50ea62241a14",
+    "country": "switzerland",
+    "topic": "entry:passport",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "04332463-4495-5488-9f03-2f8795e118cc",
+    "country": "switzerland",
+    "topic": "entry:visas",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "b054eef1-d9fa-5d61-8896-3cdb6c6bec65",
+    "country": "switzerland",
+    "topic": "entry:forms",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "6335e31d-18dd-5803-986f-dc250677520b",
+    "country": "switzerland",
+    "topic": "entry:visas",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "a7b80990-cfd7-54af-a97b-fc790e8b0491",
+    "country": "switzerland",
+    "topic": "money:currency",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "18b02efe-eee9-5695-b966-bd2f78654368",
+    "country": "switzerland",
+    "topic": "money:cash",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "180c054d-485b-51db-a1d2-3e297cb2b443",
+    "country": "switzerland",
+    "topic": "money:cards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "9d1f0cfe-c2d3-5e40-b4f7-78707ebb3d1c",
+    "country": "switzerland",
+    "topic": "safety:advisories",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "c89e1707-943d-56d2-bedc-026f1b260528",
+    "country": "switzerland",
+    "topic": "safety:emergencies",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "91ed6709-cefb-5a0a-acb9-709856da1a37",
+    "country": "switzerland",
+    "topic": "culture:laws",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "5880ccce-ad3e-5249-853b-94f8a110bd32",
+    "country": "switzerland",
+    "topic": "safety:hazards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "85a5b002-cf0e-53a8-87c2-5da739170c5f",
+    "country": "switzerland",
+    "topic": "around:taxis",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "d2c84507-6168-56f3-a02a-7aec6875f653",
+    "country": "switzerland",
+    "topic": "health:insurance",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "b08a9f17-6243-5c80-91bf-0f2a9892e189",
+    "country": "switzerland",
+    "topic": "health:care",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "25072def-f2c0-59f0-96fb-55df37c3d4f2",
+    "country": "switzerland",
+    "topic": "health:medicines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "88e1eb79-df78-521e-b079-ec23cf48cd8b",
+    "country": "switzerland",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "0a9b0894-ea36-55ee-82ff-7baff6bd0d82",
+    "country": "switzerland",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "9db0ab7d-b2b0-5ff3-844f-992500f40a76",
+    "country": "switzerland",
+    "topic": "phones:esim",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "e703f509-641e-59d9-92cd-6a5a88306c97",
+    "country": "switzerland",
+    "topic": "entry:forms",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "3171b402-5a25-5597-ad67-7f0e9aa8a6c5",
+    "country": "switzerland",
+    "topic": "there:city-transfer",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "c88f8df9-dcc4-598e-ab3d-ddf8bd290cbc",
+    "country": "switzerland",
+    "topic": "around:trains",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "323cc1e5-2a62-5a99-b8bf-7459e761a69a",
+    "country": "switzerland",
+    "topic": "phones:wifi",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "15e86407-ce94-5269-a33f-3f9f77db959f",
+    "country": "switzerland",
+    "topic": "phones:electricity",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "932936fb-a2fb-5b46-a7a7-2c17638b6156",
+    "country": "turkiye",
+    "topic": "entry:passport",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "49407178-3eb1-5778-8e6f-7de897ec0cc0",
+    "country": "turkiye",
+    "topic": "entry:visas",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "77241191-5504-5579-8bbf-a697dac4ae9a",
+    "country": "turkiye",
+    "topic": "money:currency",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "64e49f5b-1678-5a63-a824-7fde3be4ec62",
+    "country": "turkiye",
+    "topic": "money:cash",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "1fe45c5d-1b19-55c7-8894-569a4d511177",
+    "country": "turkiye",
+    "topic": "money:cards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "77396a8a-065f-5c2c-ac01-f83d290ad9e1",
+    "country": "turkiye",
+    "topic": "safety:advisories",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "13f46805-4822-5190-81e0-18e5fc8c7c7d",
+    "country": "turkiye",
+    "topic": "safety:emergencies",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "5bae3ccb-01a1-5303-8d2c-ee134bf2afb6",
+    "country": "turkiye",
+    "topic": "culture:laws",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "d7abca11-7115-5852-8e5e-e608a84b8104",
+    "country": "turkiye",
+    "topic": "safety:hazards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "58908d91-e240-50c1-b992-09eaa2cf6664",
+    "country": "turkiye",
+    "topic": "around:taxis",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "1cb06467-980a-5ba7-94f9-d3d304cf4981",
+    "country": "turkiye",
+    "topic": "health:insurance",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "0823923e-edc2-5b54-8094-5fdb255c5be6",
+    "country": "turkiye",
+    "topic": "health:care",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "165dfb1f-0e99-5398-8cc4-2f9c3f01802a",
+    "country": "turkiye",
+    "topic": "health:medicines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "4fe11fec-e440-5f02-bbc1-f29cea44227c",
+    "country": "turkiye",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "6fe10554-d9a2-5200-92ba-0353c93e71b5",
+    "country": "turkiye",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "bb464644-dc9e-5b29-b6b4-2f25514d5cfe",
+    "country": "turkiye",
+    "topic": "phones:esim",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "7abeb8e0-aadb-56c2-8fa8-cff0bc5bdb37",
+    "country": "turkiye",
+    "topic": "phones:esim",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "a34763b5-0245-512f-9f77-afd6aec14ec2",
+    "country": "turkiye",
+    "topic": "there:city-transfer",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "e7c3529a-5f9e-524a-9112-d72fc7f7f346",
+    "country": "turkiye",
+    "topic": "around:subway",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "c45fcbe5-e8d9-53aa-9544-f93347f3c8b3",
+    "country": "turkiye",
+    "topic": "phones:wifi",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "4fb15baf-43ff-5095-a8ab-2408e2f9e827",
+    "country": "turkiye",
+    "topic": "phones:electricity",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "f0916d0a-2979-506c-93b2-8b4a18e972cc",
+    "country": "uruguay",
+    "topic": "entry:passport",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "da73ec33-97e4-52f2-9333-4aa420706772",
+    "country": "uruguay",
+    "topic": "entry:visas",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "d0612cf7-7481-52b2-84ff-a3c7d08200b1",
+    "country": "uruguay",
+    "topic": "money:currency",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "ddcd8852-592f-5027-8642-6ddcdd1cad24",
+    "country": "uruguay",
+    "topic": "money:cash",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "9bc3b3c7-35b2-58de-b888-22d68fae0059",
+    "country": "uruguay",
+    "topic": "money:cards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "50fbaddd-63b8-535b-886a-b6bf2fdfcf14",
+    "country": "uruguay",
+    "topic": "safety:advisories",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "d5e4b29c-638e-5df6-adaf-3b49e176d905",
+    "country": "uruguay",
+    "topic": "safety:emergencies",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "940783f8-7564-5cb9-ba37-bbe5cbd33a31",
+    "country": "uruguay",
+    "topic": "culture:laws",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "4f7c2c0e-9d56-51e2-bdeb-920db10481fd",
+    "country": "uruguay",
+    "topic": "safety:hazards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "05d15ab1-1f11-58fc-86f4-972eb5ed2dbb",
+    "country": "uruguay",
+    "topic": "around:taxis",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "2d268e1e-e948-5b07-a2de-5126410bd442",
+    "country": "uruguay",
+    "topic": "health:insurance",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "a630a99c-f483-5288-9b24-34f72299a62d",
+    "country": "uruguay",
+    "topic": "health:care",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "630a2161-1941-58a7-b245-86689be3b1a4",
+    "country": "uruguay",
+    "topic": "health:medicines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "128d5833-d5ce-50aa-a897-a64e82a523f5",
+    "country": "uruguay",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "9642f360-8842-5cca-90bb-08ad0d493fa2",
+    "country": "uruguay",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "00094400-2b52-5d3a-9bbb-bf38314028a7",
+    "country": "uruguay",
+    "topic": "phones:esim",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "803005f7-ca28-5801-833b-4086297d92fc",
+    "country": "uruguay",
+    "topic": "entry:forms",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "605c4158-33da-5d05-8f6b-2e2aeebee5f5",
+    "country": "uruguay",
+    "topic": "there:city-transfer",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "e7605af0-2660-5fc4-951a-12960059e4a1",
+    "country": "uruguay",
+    "topic": "around:buses",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "989e9180-4e8d-5518-89ae-412df68efe1d",
+    "country": "uruguay",
+    "topic": "phones:wifi",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "f1f11cff-8c18-5ff8-b192-79fba7e643b7",
+    "country": "uruguay",
+    "topic": "phones:electricity",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "58e9ec1a-29b3-54fe-a4ab-cff9364d1fc9",
+    "country": "uzbekistan",
+    "topic": "entry:passport",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "2590e519-538f-501a-9d5d-dfebcac30c40",
+    "country": "uzbekistan",
+    "topic": "entry:visas",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "0e4c87ba-55fe-55a6-9bb4-9c7955d6a2f2",
+    "country": "uzbekistan",
+    "topic": "money:currency",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "313c91a3-6565-5beb-9c0e-11c9460c37ed",
+    "country": "uzbekistan",
+    "topic": "money:cash",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "508e3ad3-3438-5411-8312-1970db4dcd52",
+    "country": "uzbekistan",
+    "topic": "money:cards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "deb9cc7c-c19f-562e-b295-d219dab00934",
+    "country": "uzbekistan",
+    "topic": "safety:advisories",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "44e75c90-6aff-5443-abd4-f378f8cfd1e4",
+    "country": "uzbekistan",
+    "topic": "safety:emergencies",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "88388199-b1e2-5ea8-a476-2018ad62dcd3",
+    "country": "uzbekistan",
+    "topic": "culture:laws",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "2502244b-2bf5-5811-bdbd-0278c4b5c92d",
+    "country": "uzbekistan",
+    "topic": "safety:hazards",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "31dc10f8-0ddc-56de-a309-bda9195f778c",
+    "country": "uzbekistan",
+    "topic": "around:taxis",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "0d24e95d-c8b7-5f5b-8453-b7e74cb4d6e1",
+    "country": "uzbekistan",
+    "topic": "health:insurance",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "84c598e8-9a37-5367-ba53-17bef61dbc1a",
+    "country": "uzbekistan",
+    "topic": "health:care",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "1e98ccd4-23dd-5139-b4ad-4ad1b0d41c61",
+    "country": "uzbekistan",
+    "topic": "health:medicines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "3d8d3e77-9f10-5d72-b4be-286bb7da09c3",
+    "country": "uzbekistan",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "f100591c-78fe-5c61-aeb3-373933a0dcc0",
+    "country": "uzbekistan",
+    "topic": "health:vaccines",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "55fa69bb-7bd9-5fca-bb7a-d49b0c644557",
+    "country": "uzbekistan",
+    "topic": "phones:esim",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "756cd208-7dd0-5b83-b5f8-0ea5ecf8cdc8",
+    "country": "uzbekistan",
+    "topic": "entry:forms",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "7fea6d82-2e5e-51ae-81a6-7f380ffd331f",
+    "country": "uzbekistan",
+    "topic": "there:airport-1",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "d23fab18-a963-5701-ac96-b14413facb33",
+    "country": "uzbekistan",
+    "topic": "around:trains",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  },
+  {
+    "id": "2b2d0a43-d22c-5411-b40d-0a47897b2c10",
+    "country": "uzbekistan",
+    "topic": "phones:electricity",
+    "decision": "Publish narrowly scoped, source-reviewed summary",
+    "reviewer": "Codex source review",
+    "checked_at": "2026-11-10"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-10",
+  "published_japan": 59,
+  "published_total": 306,
+  "five_day_tourism_facts": 56,
+  "new_general_facts_present": 14,
+  "new_conditional_fact_excluded": true,
+  "python_tests_passed": 27,
+  "frontend_checks": "passed"
+}

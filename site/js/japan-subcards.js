@@ -9,10 +9,15 @@ export async function loadJapanResearch(){
 // Static research mappings must never reintroduce ineligible facts.
 export function japanSubcards(data,guideId,eligibleFacts){
  const card=data.cards.find(c=>c.id===guideId);
- return (card?.subcards||[]).map(sub=>{const facts=sub.fact_titles.flatMap(title=>eligibleFacts.filter(f=>f.title===title));return {...sub,facts,research:sub.research.filter(note=>!(note.published_as||[]).some(title=>facts.some(f=>f.title===title)))};});
-}
-const sections={entry:['Entry and Documents'],money:['Money and Payments'],phones:['Phones and Internet','Electricity and Tech'],health:['Health'],there:['Getting There'],around:['Getting Around'],safety:['Safety','Emergency Information'],culture:['Local Culture']};
-const normalize=text=>text.toLowerCase().replace(/[^a-z]/g,'');
-export function japanAdditionalResearch(data,id){
- return data.additional_research.filter(section=>(sections[id]||[]).some(title=>normalize(title)===normalize(section.title)));
+ return (card?.subcards||[]).map(sub=>{
+  const facts=sub.fact_titles.flatMap(title=>eligibleFacts.filter(f=>f.title===title).map(f=>{
+   const excerpt=sub.excerpts?.[title];
+   // Use a narrower passage only while it still matches the reviewed source fact.
+   const focused=excerpt && f.plain_summary?.startsWith(excerpt) ? {...f,plain_summary:excerpt} : {...f};
+   if(sub.display_titles?.[title])focused.topic_title=sub.display_titles[title];
+   return focused;
+  }));
+  const research=sub.research.filter(note=>!(note.published_as||[]).some(title=>eligibleFacts.some(f=>f.title===title)));
+  return {...sub,facts,research};
+ });
 }

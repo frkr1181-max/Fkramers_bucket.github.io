@@ -17,7 +17,7 @@ Auto-deploy is disabled in the Blueprint. The free plan can sleep; the site show
 
 ## Optional GitHub Pages frontend
 
-Publish only `site/`, not the repository root. Set `DEPLOYMENT.apiBase` in `site/js/config.js` to the exact HTTPS Render URL before publication. Add the GitHub Pages origin (scheme and hostname, without a path) to Render's `FRONTEND_ORIGINS`. Add the complete Pages base URL to Supabase's allowed email redirects. Run the same checks on Pages and on a narrow mobile viewport.
+GitHub Pages uses GitHub Actions as its source. `.github/workflows/deploy-pages.yml` publishes only `site/` after main-branch frontend changes; it also supports manual runs. The public URL is https://frkr1181-max.github.io/Fkramers_bucket.github.io/. The site includes the saved research. On GitHub Pages, guides explicitly use this labeled saved copy while `apiBase` is empty, because Pages cannot host the API. Set `apiBase` to Render to restore live API requests. Sign-in and saved-trip operations require that backend. Set `DEPLOYMENT.apiBase` in `site/js/config.js` to the exact HTTPS Render URL before publication. Add the GitHub Pages origin (scheme and hostname, without a path) to Render's `FRONTEND_ORIGINS`. Add the complete Pages base URL to Supabase's allowed email redirects. Run the same checks on Pages and on a narrow mobile viewport.
 
 ## Local preview
 

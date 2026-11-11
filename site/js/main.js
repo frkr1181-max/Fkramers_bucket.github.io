@@ -1,12 +1,13 @@
 // page shell: a small hash router and the five views (home, plan, trip, guide, about).
 // every piece of text from the database goes through esc() before it reaches the page.
 
-import { getDestinations, getFacts, onSourceChange, retryLive } from "./api.js";
+import { getDestinations, getFacts, onSourceChange, retryLive } from "./api.js?v=20261110-original24";
 import { GUIDES, STAGES, PURPOSES, guideById, groupFacts, emergencyNumbers, purposeById } from "./guides.js";
 import { tripFromQuery, tripToQuery, rememberDescription, tripDays, formatRange, factQuery } from "./trip.js";
 
-import { loadJapanResearch, japanSubcards, japanAdditionalResearch } from "./japan-subcards.js";
-import { topicsForGuide } from "./topics.js";
+import { loadJapanResearch } from "./japan-subcards.js";
+import { loadCountryTopics } from "./country-topics.js?v=20261110-original24";
+import { topicsForGuide } from "./topics.js?v=20261110-original24";
 import { session, signIn, signUp, signOut } from "./auth.js";
 import { listTrips, loadTrip, saveTrip, deleteTrip, fromRow, savedChecks } from "./saved-trips.js";
 
@@ -403,7 +404,7 @@ function wireTrip() {
 // ---------- guide ----------
 
 let guideFacts = [];
-let activeJapanSubcards = null;
+let guideTopics = [];
 
 function matchLabel(fact) {
   // conditional facts only show because of the trip's details, so say which ones
@@ -421,7 +422,7 @@ async function guideView(id) {
   const country = countryName(trip.country);
   const facts = await getFacts(trip.country, factQuery(trip));
   guideFacts = groupFacts(facts)[guide.id];
-  activeJapanSubcards = trip.country === "japan" ? japanSubcards(await loadJapanResearch(),id,facts) : null;
+  guideTopics = topicsForGuide(trip.country,id,facts,await loadTopicData(trip.country));
 
   const nav = STAGES.map((stage) => `<li class="group">${stage.label}</li>${GUIDES.filter((g) => g.stage === stage.id).map((g) => `<li>
       <a class="side-link" href="${tripLink(`guide/${g.id}`)}" style="--dot:${g.color}" ${g.id === guide.id ? 'aria-current="page"' : ""}>
@@ -429,18 +430,8 @@ async function guideView(id) {
 
   // the whole card is clickable, but the real control is the Learn more button
   // (its ::after stretches over the card), so headings stay out of the button
-  const cards = activeJapanSubcards ? renderJapanCards(guide,activeJapanSubcards) : guideFacts.map((fact, i) => `<li><article class="topic">
-      <div class="topic-tint" style="background:${guide.tint}" aria-hidden="true">
-        <img class="whisk" src="${A}decor-whisk-rings.svg" alt="" /><img class="glyph" src="${guide.topicIcon}" alt="" />
-      </div>
-      <div class="topic-body">
-        <div><h2>${esc(fact.title)}</h2><p class="small">${esc(fact.plain_summary)}</p><p class="small">Last verified: ${esc(fact.last_verified_at)}</p>${matchLabel(fact)}</div>
-        <a class="learn" href="${tripLink(`topic/${guide.id}/${encodeURIComponent(fact.id)}`)}">Learn more<span class="visually-hidden"> about ${esc(fact.title)}</span>
-          <span class="arrow"><img src="${A}icon-arrow-small.svg" alt="" /></span></a>
-      </div></article></li>`).join("");
-
-  const sources = (activeJapanSubcards ? activeJapanSubcards.flatMap(sub=>sub.facts) : guideFacts).flatMap((fact) => fact.sources || []);
-  const extraResearch = activeJapanSubcards ? renderAdditionalJapan(japanAdditionalResearch(await loadJapanResearch(),id)) : "";
+  const cards = renderTopicCards(guide,guideTopics);
+  const sources = guideTopics.flatMap(sub=>sub.facts).flatMap(fact=>fact.sources||[]);
 
   return `<div class="page guide">${band(PHOTO.arrivals)}
     <div class="container">
@@ -466,7 +457,6 @@ async function guideView(id) {
         <div>
           ${cards ? `<ul class="topics">${cards}</ul>` : `<div class="card empty"><p>There’s no reviewed ${esc(guide.title.toLowerCase())} info for ${esc(country)} yet. The research team adds facts after checking them against official sources.</p>
             <a class="btn btn-secondary" href="${tripLink("trip")}">Back to your trip</a></div>`}
-          ${extraResearch}
           ${sources.length ? `<section class="sources" aria-labelledby="sources-title">
             <h2 class="h3" id="sources-title">Sources for this page</h2>
             <ul class="card source-list">${sourceRows(sources)}</ul></section>` : ""}
@@ -483,16 +473,13 @@ function renderResearch(note){
  ${note.shared_notes.map(shared=>`<p>${esc(shared.text)}</p><p class="small">Scope: ${esc(shared.scope)}</p>${researchCitations(shared.sources)}`).join('')}
  ${note.limitations.length?`<h4>Scope and remaining checks</h4><ul>${note.limitations.map(text=>`<li>${esc(text)}</li>`).join('')}</ul>`:''}${researchCitations(note.sources)}</section>`;
 }
-function renderJapanCards(guide,subcards){
+function renderTopicCards(guide,subcards){
  return subcards.map((sub,i)=>{
- const status=sub.facts.length?'Published supporting information':sub.research.length?'Research draft available':'No matching published detail';
+ const status=sub.facts.length?'Published supporting information':'No published detail for this trip';
  const primary=sub.id==='visas'?sub.facts.find(f=>f.applicability_status==='conditional'):['medicine','medicines'].includes(sub.id)?sub.facts.find(f=>/medicine/i.test(f.title)):null;
- const summary=primary?.plain_summary||sub.facts[0]?.plain_summary||sub.research[0]?.text||'Open this topic for the available research notes, sources and coverage limits.';
+ const summary=primary?.plain_summary||sub.facts[0]?.plain_summary||'No published information is available for this topic and trip yet.';
  return `<li><article class="topic"><div class="topic-tint" style="background:${guide.tint}" aria-hidden="true"><img class="whisk" src="${A}decor-whisk-rings.svg" alt=""/><img class="glyph" src="${guide.topicIcon}" alt=""/></div><div class="topic-body"><div><h2>${esc(sub.title)}</h2><p class="small">${esc(summary)}</p><p class="small topic-status">${status}</p></div><a class="learn" href="${tripLink(`topic/${guide.id}/${sub.id}`)}">Learn more<span class="visually-hidden"> about ${esc(sub.title)}</span><span class="arrow"><img src="${A}icon-arrow-small.svg" alt=""/></span></a></div></article></li>`;
  }).join('');
-}
-function renderAdditionalJapan(sections){
- return `<details class="card japan-research"><summary>Original Japan research archive — October 28–29</summary><p>Original notes are preserved here as historical research. Current reviewed guidance, including the supported October 29 material, is shown in the topic cards above.</p>${sections.map(section=>`<section><h3>${esc(section.title)}</h3><p class="small">Original research date: ${esc(section.draftDate||'Not recorded')}</p>${(section.draftParagraphs||[]).map(text=>`<p>${esc(text)}</p>`).join('')}${section.note?`<p>${esc(section.note)}</p>`:''}${researchCitations(section.sources)}</section>`).join('')}</details>`;
 }
 function wireGuide() {}
 
@@ -557,13 +544,17 @@ function wireAccount(){
 
 // ---------- router ----------
 
+async function loadTopicData(country){return country==='japan'?loadJapanResearch():loadCountryTopics();}
 let renderedTopicTitle=null;
 async function topicPage(guideId,topicId){
  const guide=guideById(guideId);if(!guide)return notFound();if(!trip)return noTrip();
  const country=countryName(trip.country);
  const facts=await getFacts(trip.country,factQuery(trip));
- const subs=topicsForGuide(trip.country,guideId,facts,trip.country==='japan'?await loadJapanResearch():null);
- const selected=subs.find(sub=>sub.id===topicId);if(!selected)return notFound();
+ const subs=topicsForGuide(trip.country,guideId,facts,await loadTopicData(trip.country));
+ // Preserve existing links that used a fact UUID before focused country topics.
+ let selected=subs.find(sub=>sub.id===topicId);
+ if(!selected){const legacy=facts.find(f=>f.id===topicId&&guide.categories.includes(f.category));if(legacy)selected={id:legacy.id,title:legacy.title,facts:[legacy],research:[]};}
+ if(!selected)return notFound();
  renderedTopicTitle=selected.title;
  const index=subs.indexOf(selected),previous=subs[index-1],next=subs[index+1];
  const sources=selected.facts.flatMap(f=>f.sources||[]);
@@ -571,7 +562,7 @@ async function topicPage(guideId,topicId){
  <div class="guide-head on-dark"><a class="back" href="${tripLink(`guide/${guideId}`)}"><img src="${A}icon-arrow-left-on-dark.svg" alt=""/>Back to ${esc(guide.title)}</a><div class="guide-title"><span class="icon-box"><img src="${guide.topicIcon}" alt=""/></span><div><p class="detail-eyebrow">${esc(country)} / ${esc(guide.title)}</p><h1 tabindex="-1">${esc(selected.title)}</h1></div></div></div>
  <div class="guide-columns"><nav class="card sidebar" aria-label="Topic navigation"><div class="trip-summary"><p><strong>${esc(country)}</strong><span class="small">${esc(formatRange(trip))}</span></p><a class="btn btn-secondary" href="${tripLink('trip')}">Trip overview</a></div><hr/><ul class="guide-nav"><li class="group">${esc(guide.title)}</li>${subs.map(sub=>`<li><a class="side-link" href="${tripLink(`topic/${guideId}/${sub.id}`)}" ${sub.id===selected.id?'aria-current="page"':''}><span class="dot" style="background:${guide.color}"></span>${esc(sub.title)}</a></li>`).join('')}<li><a class="side-link" href="${tripLink(`guide/${guideId}`)}">View all ${esc(guide.title.toLowerCase())} topics</a></li></ul></nav>
  <article class="card full-topic"><p class="detail-eyebrow">Your guide for ${esc(country)} · ${esc(purposeById(trip.purpose)?.label||'Trip preparation')}</p>
- ${selected.facts.length?selected.facts.map(f=>`<section class="detail-section"><h2>${esc(f.title)}</h2><p>${esc(f.plain_summary)}</p><p class="detail-date">Last verified ${esc(f.last_verified_at)}</p>${matchLabel(f)}${f.official_text_excerpt?`<blockquote>${esc(f.official_text_excerpt)}</blockquote>`:''}</section>`).join(''):'<p>No published guidance is available for this topic and trip.</p>'}
+ ${selected.facts.length?selected.facts.map(f=>`<section class="detail-section"><h2>${esc(f.topic_title||f.title)}</h2><p>${esc(f.plain_summary)}</p><p class="detail-date">Last verified ${esc(f.last_verified_at)}</p>${matchLabel(f)}${f.official_text_excerpt?`<blockquote>${esc(f.official_text_excerpt)}</blockquote>`:''}</section>`).join(''):'<p>No published guidance is available for this topic and trip.</p>'}
  ${selected.research.map(renderResearch).join('')}
  <section class="detail-sources"><h2>Sources</h2>${researchCitations(sources)}</section>
  <nav class="detail-pagination" aria-label="Other topics">${previous?`<a class="btn btn-secondary" href="${tripLink(`topic/${guideId}/${previous.id}`)}">← ${esc(previous.title)}</a>`:'<span></span>'}${next?`<a class="btn btn-primary" href="${tripLink(`topic/${guideId}/${next.id}`)}">${esc(next.title)} →</a>`:`<a class="btn btn-primary" href="${tripLink(`guide/${guideId}`)}">Back to ${esc(guide.title)}</a>`}</nav>
