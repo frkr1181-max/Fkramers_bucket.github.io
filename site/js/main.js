@@ -131,13 +131,14 @@ function howItWorks() {
 
 function trustSection() {
   const tiles = [
-    ["trust-landmark", "entry", "U.S. Department of State", "Entry rules, travel advisories and embassy contacts."],
-    ["trust-globe", "money", "Destination governments", "Visa rules, customs and which medicines you can bring."],
-    ["trust-plane", "there", "Airports and transit", "Getting from the airport and getting around the city."],
-    ["trust-map", "safety", "Official tourism boards", "Money, phones, etiquette and local customs."],
+    ["trust-landmark", "entry", "U.S. Department of State", "U.S. government travel advisories and embassy guidance explain safety concerns and support available abroad."],
+    ["trust-globe", "money", "Destination authorities", "The agencies responsible for immigration, customs and health provide guidance on entering the country and what you can bring."],
+    ["trust-plane", "there", "Airports & transport operators", "Information directly from airports, train services and bus operators helps you understand arrival options and local transport."],
+    ["trust-map", "safety", "Official tourism organizations", "Official visitor resources offer practical advice on local customs, payments and staying connected."],
   ];
   return `<section class="section" aria-labelledby="trust">
-    <h2 class="h2" id="trust">Information you can trust</h2>
+    <h2 class="h2" id="trust">Know where your travel information comes from</h2>
+    <p>Our guides bring together information from government agencies, transport operators and official tourism organizations. Source links and verification dates show where the guidance comes from and when it was last checked.</p>
     <div class="trust">
       <ul class="trust-tiles">${tiles.map(([icon, tint, title, text]) => `<li class="card">
         <span class="icon-circle" style="background: var(--rr-guide-tint-${tint})"><img src="${A}${icon}.svg" alt="" /></span>
