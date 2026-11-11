@@ -117,9 +117,9 @@ function home() {
 
 function howItWorks() {
   const steps = [
-    ["Tell us about your trip", "Add where you’re going, your dates and the purpose of your travel."],
-    ["Get your checklist and guide", "See what to do before you leave and what to know when you land."],
-    ["Check the official source", "Every guide lists the official pages it’s based on, so you can confirm the details yourself."],
+    ["Start with your trip", "Choose your destination, travel dates and reason for visiting to find guidance that fits your plans."],
+    ["Explore your travel essentials", "Find clear guidance on entry documents, health, money, transport and staying connected—all organized by topic."],
+    ["Turn guidance into a plan", "Use your checklist to track preparations, and follow source links to confirm requirements before you travel."],
   ];
   return `<section class="section" aria-labelledby="how">
     <h2 class="h2" id="how">How RoamReady works</h2>
