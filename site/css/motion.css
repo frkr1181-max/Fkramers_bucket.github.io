@@ -1,0 +1,105 @@
+/* RoamReady motion: the bouncy layer on top of site.css.
+   rules of thumb (Emil Kowalski's animation framework):
+   - only transform and opacity move; nothing starts from scale(0)
+   - entrances use the springs from tokens.css, presses use a fast ease-out
+   - hover motion only on devices with a real pointer
+   - with reduced motion, things fade instead of moving
+   js/motion.js adds the classes and the --i stagger index used below */
+
+/* ---------- entrances ---------- */
+@keyframes rr-rise { from { transform: translateY(24px) scale(0.96); } }
+@keyframes rr-pop { from { transform: translateY(16px) scale(0.9); } }
+@keyframes rr-fade { from { opacity: 0; } }
+@keyframes rr-draw { to { stroke-dashoffset: 0; } }
+@keyframes rr-orbit { to { transform: rotate(360deg); } }
+
+@media (prefers-reduced-motion: no-preference) {
+  /* big blocks: the dashboard's title row */
+  .rr-rise {
+    animation:
+      rr-rise var(--rr-spring-bouncy-ms) var(--rr-spring-bouncy) both,
+      rr-fade 300ms var(--rr-ease-out) both;
+    animation-delay: calc(var(--i, 0) * var(--rr-stagger) + var(--base, 0ms));
+  }
+  /* small repeated pieces: the dashboard's chips and guide tiles */
+  .rr-pop {
+    animation:
+      rr-pop var(--rr-spring-playful-ms) var(--rr-spring-playful) both,
+      rr-fade 250ms var(--rr-ease-out) both;
+    animation-delay: calc(var(--i, 0) * var(--rr-stagger) + var(--base, 0ms));
+  }
+
+  /* home hero: no entrance (David, Nov 10: entrances only on the dashboard).
+     the rings are there from the start and just drift slowly */
+  .rings .spin { transform-origin: 300px 300px; animation: rr-orbit 140s linear infinite; }
+
+  /* the dashboard's band arcs: drawn on once per visit (js/motion.js inlines them) */
+  .arcs-live .draw { stroke-dasharray: var(--len); stroke-dashoffset: var(--len); animation: rr-draw 1.1s var(--rr-ease-out) forwards; animation-delay: var(--delay, 0s); }
+  .arcs-live .pop { opacity: 0; animation: rr-dot 0.4s var(--rr-ease-out) forwards; animation-delay: calc(var(--delay, 0s) + 0.6s); }
+}
+@keyframes rr-dot { to { opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .rr-rise, .rr-pop { animation: rr-fade 200ms ease both; }
+}
+
+/* ---------- presses: quick squish, springy release ---------- */
+.btn, .purpose span, .task .box, .avatar, .menu-button, .btn-icon-on-dark, .close, .learn .arrow {
+  transition:
+    transform var(--rr-spring-playful-ms) var(--rr-spring-playful),
+    background-color 200ms ease, border-color 200ms ease, color 200ms ease;
+}
+.btn:active, .avatar:active, .menu-button:active, .btn-icon-on-dark:active, .close:active { transform: scale(0.95); transition: transform 120ms var(--rr-ease-out); }
+.purpose:active span { transform: scale(0.95); transition: transform 120ms var(--rr-ease-out); }
+.task:active .box { transform: scale(0.82); transition: transform 120ms var(--rr-ease-out); }
+
+/* ---------- hovers (real pointers only) ---------- */
+.tile, .topic {
+  transition: transform var(--rr-spring-bouncy-ms) var(--rr-spring-bouncy), box-shadow 250ms var(--rr-ease-out);
+}
+.arrow img { transition: transform var(--rr-spring-playful-ms) var(--rr-spring-playful); }
+.tile-band .glyph, .topic-tint .glyph { transition: transform var(--rr-spring-playful-ms) var(--rr-spring-playful); }
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .btn:hover { transform: translateY(-2px); }
+  .btn:active { transform: translateY(0) scale(0.95); }
+  .tile:hover, .topic:hover { transform: translateY(-6px); box-shadow: var(--rr-shadow-lifted); }
+  .tile:hover .arrow img, .topic:hover .arrow img { transform: translateX(3px); }
+  .tile:hover .glyph, .topic:hover .glyph { transform: scale(1.08) rotate(-4deg); }
+  .purpose span:hover { transform: translateY(-2px); }
+  .source:hover .icon-circle { transform: rotate(-6deg) scale(1.06); }
+  .source .icon-circle { transition: transform var(--rr-spring-playful-ms) var(--rr-spring-playful); }
+}
+
+/* ---------- checklist: the box pops and the tick draws itself ---------- */
+.task .box svg path { stroke-dasharray: 20; stroke-dashoffset: 20; transition: stroke-dashoffset 250ms var(--rr-ease-out) 60ms; }
+.task[aria-pressed="true"] .box svg path { stroke-dashoffset: 0; }
+.task .box, .task .label { transition: transform var(--rr-spring-playful-ms) var(--rr-spring-playful), background-color 150ms ease, border-color 150ms ease, color 200ms ease; }
+
+/* ---------- trip purpose: the picked icon bounces ----------
+   only when you pick it (the input has focus then), not when the page opens
+   with a purpose already selected: no entrances outside the dashboard */
+@media (prefers-reduced-motion: no-preference) {
+  .purpose input:checked:focus + span img { animation: rr-pop var(--rr-spring-playful-ms) var(--rr-spring-playful) both; }
+}
+
+/* ---------- dialogs: spring in from the center, quick fade out ---------- */
+@keyframes rr-dialog-in { from { transform: scale(0.94) translateY(12px); } }
+@keyframes rr-dialog-out { to { transform: scale(0.97); opacity: 0; } }
+@media (prefers-reduced-motion: no-preference) {
+  dialog[open] { animation: rr-dialog-in var(--rr-spring-bouncy-ms) var(--rr-spring-bouncy), rr-fade 200ms var(--rr-ease-out); }
+  dialog.closing { animation: rr-dialog-out 150ms var(--rr-ease-out) forwards; }
+}
+dialog[open]::backdrop { animation: rr-fade 200ms var(--rr-ease-out); }
+dialog.closing::backdrop { animation: rr-fade 150ms var(--rr-ease-out) reverse forwards; }
+
+/* ---------- phone menu drops in ---------- */
+@keyframes rr-drop { from { transform: translateY(-8px); opacity: 0; } }
+@media (prefers-reduced-motion: no-preference) {
+  .nav.open { animation: rr-drop 220ms var(--rr-ease-out); }
+  .nav.open > * { animation: rr-pop var(--rr-spring-playful-ms) var(--rr-spring-playful) both; animation-delay: calc(var(--i, 0) * 35ms); }
+}
+
+/* ---------- login and sign-up note slides in ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  .notice:not([hidden]) { animation: rr-pop var(--rr-spring-playful-ms) var(--rr-spring-playful) both, rr-fade 200ms var(--rr-ease-out) both; }
+}

@@ -3,7 +3,10 @@
 
 import { getDestinations, getFacts, onSourceChange, retryLive } from "./api.js?v=20261110-original24";
 import { GUIDES, STAGES, PURPOSES, guideById, groupFacts, emergencyNumbers, purposeById } from "./guides.js";
-import { tripFromQuery, tripToQuery, rememberDescription, tripDays, formatRange, factQuery } from "./trip.js";
+import { tripFromQuery, tripToQuery, rememberDescription, tripDays, formatRange, factQuery, DEMO_TRIP } from "./trip.js";
+import { enter, wireDialogs, staggerMenu, shake } from "./motion.js";
+import { TILE_ART } from "./tile-art.js";
+import { UNIVERSAL, countryPhoto } from "./photos.js";
 
 import { loadJapanResearch } from "./japan-subcards.js";
 import { loadCountryTopics } from "./country-topics.js?v=20261110-original24";
@@ -13,11 +16,10 @@ import { listTrips, loadTrip, saveTrip, deleteTrip, fromRow, savedChecks } from 
 
 const main = document.querySelector("#main");
 const A = "assets/figma/";
-const PHOTO = { street: "assets/photos/street.webp", plan: "assets/photos/plan-street.webp", arrivals: "assets/photos/arrivals.webp" };
 
 let user = null;
 let loadedTrip = null;
-let trip = null;               // the current guest trip, or null
+let trip = DEMO_TRIP ? { ...DEMO_TRIP } : null;  // the current guest trip (the test trip when DEMO_TRIP is set), or null
 let destinations = [];         // [{ slug, name, ... }] from the API or the snapshot
 const done = new Set();        // checklist items ticked in this tab
 
@@ -65,7 +67,7 @@ function sourceRows(sources) {
 }
 
 function noTrip() {
-  return `<section class="page plan">${band(PHOTO.plan)}
+  return `<section class="page plan">${band(UNIVERSAL.plan)}
     <div class="container">
       <h1 class="page-title" tabindex="-1">No trip yet</h1>
       <div class="plan-row"><div class="card empty">
@@ -79,7 +81,7 @@ function noTrip() {
 
 function home() {
   return `<div class="page home">
-    <div class="band-wrap">${band(null, { arcs: false, fill: true })}
+    <div class="band-wrap">${band(UNIVERSAL.hero, { arcs: false, fill: true })}
     <div class="container">
       <section class="hero on-dark">
         <div>
@@ -104,7 +106,7 @@ function home() {
         </div>
         <div class="hero-art" aria-hidden="true">
           <div class="rings" id="rings"><img src="${A}decor-hero-rings.svg" alt="" width="600" height="600" /></div>
-          <div class="badge"><img src="${A}logo-mark-hero.svg" alt="" /></div>
+          <div class="badge"><img src="assets/logo/logo-mark.svg" alt="" /></div>
         </div>
       </section>
     </div></div>
@@ -143,12 +145,14 @@ function trustSection() {
       <ul class="trust-tiles">${tiles.map(([icon, tint, title, text]) => `<li class="card">
         <span class="icon-circle" style="background: var(--rr-guide-tint-${tint})"><img src="${A}${icon}.svg" alt="" /></span>
         <h3 class="title-m">${title}</h3><p class="small">${text}</p></li>`).join("")}</ul>
-      <img class="trust-photo" src="${PHOTO.arrivals}" alt="" loading="lazy" />
+      <img class="trust-photo" src="${UNIVERSAL.arrive}" alt="" loading="lazy" />
     </div>
   </section>`;
 }
 
-// the hero rings are inlined so their strokes can draw on (the page's one motion moment)
+// the hero rings are inlined so css can make them drift slowly. they no longer
+// draw themselves on: entrances happen only on the dashboard (David, Nov 10),
+// and motion.css has no rule for the draw/pop classes added below
 async function animateRings() {
   const holder = document.querySelector("#rings");
   if (!holder) return;
@@ -199,7 +203,7 @@ function plan() {
         <span class="swatch" style="background:${g.color}"><img src="${g.swatch}" alt="" /></span>${g.title}</li>`).join("")}</ul>
     </div>`).join("");
 
-  return `<div class="page plan">${band(PHOTO.plan)}
+  return `<div class="page plan">${band(UNIVERSAL.plan)}
     <div class="container">
       <h1 class="page-title" tabindex="-1">Let’s get prepared!</h1>
       <div class="plan-row">
@@ -263,6 +267,8 @@ function wirePlan() {
     };
     flag("#f-country", form.country, "country-error", !match);
     flag("#f-dates", form.to, "dates-error", Boolean(datesBad));
+    if (!match) shake(form.country.closest(".input"));
+    if (datesBad) shake(form.to.closest(".input"));
     if (!match) return form.country.focus();
     if (datesBad) return form.to.focus();
 
@@ -284,16 +290,17 @@ function wirePlan() {
 
 // ---------- trip dashboard ----------
 
-function checklistItems(country) {
-  // the 8 tasks from the hi-fi (Nov 4), with the country swapped in
+// the same 8 tasks for every country (Aahana's comment #16), so nothing here
+// depends on which country the trip is for
+function checklistItems() {
   return [
     "Check your passport is valid for your whole stay",
-    `Check that your medicines are allowed in ${country}`,
+    "Check that your medicines are allowed where you’re going",
     "Buy travel insurance that covers medical care",
     "Enroll in STEP so the U.S. Embassy can reach you",
     "Set up an eSIM or pocket Wi-Fi",
     "Tell your bank you’re traveling",
-    `Check the entry rules for ${country}`,
+    "Check if you need a visa or an arrival form",
     "Save your emergency numbers for offline use",
   ];
 }
@@ -306,7 +313,6 @@ async function tripView() {
   const days = tripDays(trip);
   const purpose = purposeById(trip.purpose);
   const facts = await getFacts(trip.country, factQuery(trip));
-  const groups = groupFacts(facts);
   const emergency = emergencyNumbers(facts);
   // the emergency fact's source is the State Department country page, which
   // lists the embassy's contacts; label the row by what the page is
@@ -318,17 +324,16 @@ async function tripView() {
     [`${A}chip-passport.svg`, "U.S. passport rules"],
   ].filter(Boolean);
 
-  const tiles = GUIDES.map((g) => `<li><a class="tile" href="${tripLink(`guide/${g.id}`)}">
-      <span class="tile-band" style="background:${g.color}">
-        <img class="whisk" src="${A}decor-whisk-rings.svg" alt="" /><img class="glyph" src="${g.icon}" alt="" />
-      </span>
+  // each tile is a colored thumbnail (art from tile-art.js, its two colors set
+  // by the tile--<id> class in site.css) over one row: the title and the arrow
+  const tiles = GUIDES.map((g) => `<li><a class="tile tile--${g.id}" href="${tripLink(`guide/${g.id}`)}">
+      <span class="tile-band">${TILE_ART[g.id]}</span>
       <span class="tile-body">
-        <span><span class="title-m">${g.title}</span>
-        <span class="small blurb">${groups[g.id].length ? g.blurb : "No reviewed info for this country yet."}</span></span>
+        <span class="title-m">${g.title}</span>
         <span class="arrow"><img src="${A}icon-arrow-small.svg" alt="" /></span>
       </span></a></li>`).join("");
 
-  const tasks = checklistItems(country).map((label, i) => `<li>
+  const tasks = checklistItems().map((label, i) => `<li>
       <button class="task" type="button" aria-pressed="${done.has(i)}" data-task="${i}">
         <span class="box">${CHECK}</span><span class="label">${esc(label)}</span>
       </button></li>`).join("");
@@ -346,13 +351,13 @@ async function tripView() {
 
   return `<div class="page trip">
     <div class="band-wrap">
-      ${band(PHOTO.street, { fill: true })}
+      ${band(countryPhoto(trip.country, "main"), { fill: true })}
       <div class="container trip-band-content on-dark">
         <div class="trip-head">
           <div>
             <div class="trip-title">
               <h1 tabindex="-1">${esc(trip.name || `Your trip to ${country}`)}</h1>
-              <a class="btn-icon-on-dark" href="${tripLink("plan")}" aria-label="Edit trip name"><img src="${A}icon-edit-on-dark.svg" alt="" width="20" height="20" /></a>
+              <a class="btn-icon-on-dark" href="${tripLink("plan")}" aria-label="Edit trip"><img src="${A}icon-edit-on-dark.svg" alt="" width="20" height="20" /></a>
             </div>
             <ul class="chips">${chips.map(([icon, text]) => `<li><img src="${icon}" alt="" />${esc(text)}</li>`).join("")}</ul>
           </div>
@@ -434,7 +439,7 @@ async function guideView(id) {
   const cards = renderTopicCards(guide,guideTopics);
   const sources = guideTopics.flatMap(sub=>sub.facts).flatMap(fact=>fact.sources||[]);
 
-  return `<div class="page guide">${band(PHOTO.arrivals)}
+  return `<div class="page guide">${band(countryPhoto(trip.country, guide.stage))}
     <div class="container">
       <div class="guide-head on-dark">
         <a class="back" href="${tripLink("trip")}"><img src="${A}icon-arrow-left-on-dark.svg" alt="" />Back to your trip</a>
@@ -487,7 +492,7 @@ function wireGuide() {}
 // ---------- about ----------
 
 function about() {
-  return `<div class="page plan">${band(PHOTO.plan)}
+  return `<div class="page plan">${band(UNIVERSAL.plan)}
     <div class="container">
       <h1 class="page-title" tabindex="-1">About RoamReady</h1>
       <div class="plan-row" style="grid-template-columns:1fr"><div class="card empty">
@@ -500,7 +505,7 @@ function about() {
 }
 
 function notFound() {
-  return `<div class="page plan">${band(PHOTO.plan)}<div class="container">
+  return `<div class="page plan">${band(UNIVERSAL.plan)}<div class="container">
     <h1 class="page-title" tabindex="-1">Page not found</h1>
     <div class="plan-row" style="grid-template-columns:1fr"><div class="card empty"><p>That page doesn’t exist.</p>
     <a class="btn btn-primary btn-l" href="#/">Go home</a></div></div></div></div>`;
@@ -508,7 +513,7 @@ function notFound() {
 
 // ---------- accounts ----------
 function signupView(){
- return `<div class="page plan">${band(PHOTO.plan)}<div class="container"><h1 class="page-title" tabindex="-1">Create your account</h1>
+ return `<div class="page plan">${band(UNIVERSAL.plan)}<div class="container"><h1 class="page-title" tabindex="-1">Create your account</h1>
  <form class="card plan-form account-form" id="signup-form">
  <label for="signup-email">Email</label><div class="input"><input id="signup-email" type="email" autocomplete="email" required /></div>
  <label for="signup-password">Password</label><div class="input"><input id="signup-password" type="password" autocomplete="new-password" minlength="8" required /></div>
@@ -526,7 +531,7 @@ async function accountView(){
  const current=await session();user=current?.user||null;
  if(!user)return `<div class="container account-form card"><h1 tabindex="-1">Log in to see saved trips</h1><a class="btn btn-primary" href="#/">Log in</a><a class="btn btn-secondary" href="#/signup">Create an account</a></div>`;
  const rows=await listTrips();
- return `<div class="page plan">${band(PHOTO.plan)}<div class="container"><h1 class="page-title" tabindex="-1">Your saved trips</h1>
+ return `<div class="page plan">${band(UNIVERSAL.plan)}<div class="container"><h1 class="page-title" tabindex="-1">Your saved trips</h1>
  <div class="card account-form"><p>Signed in as ${esc(user.email)}</p><p class="small">This browser keeps you signed in until you log out.</p><button class="btn btn-secondary" id="logout">Log out</button><p id="account-status" role="status"></p></div>
  <ul class="saved-trips">${rows.map(row=>`<li class="card"><h2 class="h3">${esc(row.trip_name||countryName(row.destination_slug))}</h2><p>${esc(countryName(row.destination_slug))} · ${esc(formatRange(fromRow(row)))}</p><a class="btn btn-primary" href="#/trip?${esc(tripToQuery(fromRow(row)))}">Open trip</a><button class="btn btn-secondary" data-delete="${esc(row.id)}">Delete trip</button></li>`).join('')}</ul>
  ${rows.length?'':'<p>No saved trips yet. Plan a trip, then choose Save trip on its dashboard.</p>'}<a class="btn btn-secondary" id="new-trip" href="#/plan">Plan a new trip</a></div></div>`;
@@ -559,7 +564,7 @@ async function topicPage(guideId,topicId){
  renderedTopicTitle=selected.title;
  const index=subs.indexOf(selected),previous=subs[index-1],next=subs[index+1];
  const sources=selected.facts.flatMap(f=>f.sources||[]);
- return `<div class="page guide topic-detail">${band(PHOTO.arrivals)}<div class="container">
+ return `<div class="page guide topic-detail">${band(countryPhoto(trip.country, guide.stage))}<div class="container">
  <div class="guide-head on-dark"><a class="back" href="${tripLink(`guide/${guideId}`)}"><img src="${A}icon-arrow-left-on-dark.svg" alt=""/>Back to ${esc(guide.title)}</a><div class="guide-title"><span class="icon-box"><img src="${guide.topicIcon}" alt=""/></span><div><p class="detail-eyebrow">${esc(country)} / ${esc(guide.title)}</p><h1 tabindex="-1">${esc(selected.title)}</h1></div></div></div>
  <div class="guide-columns"><nav class="card sidebar" aria-label="Topic navigation"><div class="trip-summary"><p><strong>${esc(country)}</strong><span class="small">${esc(formatRange(trip))}</span></p><a class="btn btn-secondary" href="${tripLink('trip')}">Trip overview</a></div><hr/><ul class="guide-nav"><li class="group">${esc(guide.title)}</li>${subs.map(sub=>`<li><a class="side-link" href="${tripLink(`topic/${guideId}/${sub.id}`)}" ${sub.id===selected.id?'aria-current="page"':''}><span class="dot" style="background:${guide.color}"></span>${esc(sub.title)}</a></li>`).join('')}<li><a class="side-link" href="${tripLink(`guide/${guideId}`)}">View all ${esc(guide.title.toLowerCase())} topics</a></li></ul></nav>
  <article class="card full-topic"><p class="detail-eyebrow">Your guide for ${esc(country)} · ${esc(purposeById(trip.purpose)?.label||'Trip preparation')}</p>
@@ -623,6 +628,8 @@ async function render() {
 
   closeMenu();
   window.scrollTo(0, 0);
+  // the bouncy entrance for whatever just arrived (js/motion.js)
+  enter(main);
   // move focus to the new page's heading so screen readers announce it
   if (rendered) main.querySelector("h1")?.focus({ preventScroll: true });
   rendered = true;
@@ -642,6 +649,9 @@ menuButton.addEventListener("click", () => {
   nav.classList.toggle("open", open);
   menuButton.setAttribute("aria-expanded", String(open));
 });
+
+wireDialogs(document.querySelectorAll("dialog"));
+staggerMenu(nav);
 
 document.querySelectorAll("[data-open-guest]").forEach((button) =>
   button.addEventListener("click", () => {location.hash="#/account";}));

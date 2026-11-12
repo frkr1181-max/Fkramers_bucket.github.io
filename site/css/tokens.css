@@ -2,6 +2,9 @@
    "RoamReady hi-fi design system" frame). names match the Figma variables so a value
    can be traced back: var(--rr-color-text-primary) is color/text/primary in Figma. */
 :root {
+  /* light mode only for now: native controls (date pickers, scrollbars) stay light */
+  color-scheme: only light;
+
   /* palette: the five brand colors plus the helpers the hi-fi uses */
   --rr-palette-navy: #222e50;
   --rr-palette-teal: #007991;
@@ -29,6 +32,10 @@
   --rr-color-bg-brand: var(--rr-palette-teal);
   --rr-color-bg-brand-deep: var(--rr-palette-teal-deep);
   --rr-color-bg-scrim: rgba(34, 46, 80, 0.6);
+  /* the plain dark shade over band photos, so white text on them stays readable */
+  --rr-color-photo-shade-strong: rgba(0, 0, 0, 0.55);
+  --rr-color-photo-shade: rgba(0, 0, 0, 0.35);
+  --rr-color-photo-shade-soft: rgba(0, 0, 0, 0.2);
   --rr-color-text-primary: var(--rr-palette-navy);
   --rr-color-text-secondary: var(--rr-palette-muted);
   --rr-color-text-inverse: var(--rr-palette-snow);
@@ -48,7 +55,7 @@
   /* the three trip stages that group the guides */
   --rr-color-stage-plan: var(--rr-palette-teal);
   --rr-color-stage-arrive: var(--rr-palette-orange);
-  --rr-color-stage-know: var(--rr-palette-sage);
+  --rr-color-stage-know: var(--rr-palette-navy);  /* was sage; navy stands apart from teal (David, Nov 10) */
 
   /* one color per guide, and the pale tint used behind topic-card icons.
      the entry, money, there and safety tints are from Figma; the other four
@@ -61,6 +68,14 @@
   --rr-guide-around: #ffc65c;  --rr-guide-tint-around: #ffe8bd;
   --rr-guide-safety: #7fcb97;  --rr-guide-tint-safety: #c9e9d3;
   --rr-guide-culture: #bcd8c1; --rr-guide-tint-culture: #dfede2;
+
+  /* the shaded side of each palette color, for the dashboard tile art: the
+     color mixed 72/28 with navy (navy itself is lightened so its side shows) */
+  --rr-shade-orange: #c18435;
+  --rr-shade-sage: #91a8a1;
+  --rr-shade-snow: #c1c2cd;
+  --rr-shade-teal: #0a647f;
+  --rr-shade-navy: #5a668c;
 
   /* shape and space */
   --rr-radius-sm: 12px;
@@ -80,6 +95,30 @@
   --rr-h1: 56px;
   --rr-h1-guide: 50px;
   --rr-h2: 44px;
+}
+
+/* motion tokens. the springs are sampled from Apple-style springs (the same
+   "duration + bounce" model as SwiftUI and motion.dev) into CSS linear() curves:
+   bouncy = duration 0.5s, bounce 0.3 (SwiftUI's .bouncy): settles in 820ms, overshoots 4.6%
+   playful = duration 0.45s, bounce 0.45: settles in 905ms, overshoots 12.6%
+   each curve must run for its settle time, so the duration tokens travel with it */
+:root {
+  --rr-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --rr-ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --rr-spring-bouncy: linear(0, 0.029, 0.104, 0.205, 0.32, 0.438, 0.551, 0.655, 0.746, 0.824, 0.888, 0.939, 0.978, 1.006, 1.026, 1.038, 1.044, 1.046, 1.045, 1.042, 1.037, 1.032, 1.026, 1.021, 1.016, 1.012, 1.008, 1.005, 1.003, 1.001, 1, 0.999, 0.998, 0.998, 0.998, 0.998, 0.998, 0.998, 0.999, 0.999, 1);
+  --rr-spring-bouncy-ms: 820ms;
+  --rr-spring-playful: linear(0, 0.044, 0.155, 0.305, 0.468, 0.628, 0.772, 0.893, 0.987, 1.055, 1.098, 1.121, 1.126, 1.12, 1.105, 1.086, 1.065, 1.045, 1.027, 1.012, 1.001, 0.992, 0.987, 0.985, 0.984, 0.985, 0.987, 0.989, 0.992, 0.995, 0.997, 0.999, 1, 1.001, 1.002, 1.002, 1.002, 1.002, 1.002, 1.001, 1);
+  --rr-spring-playful-ms: 905ms;
+  --rr-stagger: 45ms;
+}
+/* browsers without linear() get the standard ease-out-back curve (easings.net) instead */
+@supports not (transition-timing-function: linear(0, 1)) {
+  :root {
+    --rr-spring-bouncy: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --rr-spring-bouncy-ms: 500ms;
+    --rr-spring-playful: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --rr-spring-playful-ms: 500ms;
+  }
 }
 
 @media (max-width: 760px) {
