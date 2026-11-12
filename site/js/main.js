@@ -325,11 +325,13 @@ async function tripView() {
   ].filter(Boolean);
 
   // each tile is a colored thumbnail (art from tile-art.js, its two colors set
-  // by the tile--<id> class in site.css) over one row: the title and the arrow
+  // by the tile--<id> class in site.css) over one row: the title and the arrow.
+  // a guide with no reviewed facts for this country says so under its title
+  const groups = groupFacts(facts);
   const tiles = GUIDES.map((g) => `<li><a class="tile tile--${g.id}" href="${tripLink(`guide/${g.id}`)}">
       <span class="tile-band">${TILE_ART[g.id]}</span>
       <span class="tile-body">
-        <span class="title-m">${g.title}</span>
+        <span class="tile-name"><span class="title-m">${g.title}</span>${groups[g.id].length ? "" : '<span class="small tile-empty">No info yet</span>'}</span>
         <span class="arrow"><img src="${A}icon-arrow-small.svg" alt="" /></span>
       </span></a></li>`).join("");
 
@@ -366,10 +368,6 @@ async function tripView() {
         <ul class="tiles" aria-label="Your guides">${tiles}</ul>
       </div>
     </div>
-    <div class="container account-actions">
-      ${user?'<button class="btn btn-primary" id="save-trip">Save trip</button><a class="btn btn-secondary" href="#/account">Saved trips</a>':'<a class="btn btn-primary" href="#/">Log in to save this trip</a>'}
-      <p class="small" id="save-status" role="status">${trip.id?'Saved trip opened. Save any changes before leaving.':'Guest plans stay in the address bar. Save to an account to keep checklist progress.'}</p>
-    </div>
     <div class="container plan-below">
       <section class="card checklist" aria-labelledby="before">
         <h2 class="h3" id="before">Before you leave</h2>
@@ -380,6 +378,10 @@ async function tripView() {
         ${emergency ? `${contactText}<ul>${contactRows}${consularRow}</ul>`
           : `<p class="small fallback">No reviewed emergency numbers for ${esc(country)} yet. Check the <a href="${tripLink("guide/safety")}">Safety guide</a>.</p>`}
       </section>
+    </div>
+    <div class="container account-actions trip-save">
+      ${user?'<button class="btn btn-primary" id="save-trip">Save trip</button><a class="btn btn-secondary" href="#/account">Saved trips</a>':'<a class="btn btn-primary" href="#/">Log in to save this trip</a>'}
+      <p class="small" id="save-status" role="status">${trip.id?'Saved trip opened. Save any changes before leaving.':'Guest plans stay in the address bar. Save to an account to keep checklist progress.'}</p>
     </div>
   </div>`;
 }

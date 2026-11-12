@@ -555,3 +555,11 @@ dialog.guest .inner { display: grid; gap: 16px; }
   .tile .arrow { display: none; }
   .tile .title-m { font-size: 15px; line-height: 1.15; }
 }
+
+/* the tile's title row can carry a small "No info yet" under the title when
+   the guide has no reviewed facts for this country (the team's empty state) */
+.tile-name { display: grid; gap: 2px; min-width: 0; }
+.tile-empty { color: var(--rr-color-text-secondary); line-height: 1.2; }
+@media (max-width: 600px) { .tile-empty { font-size: 12px; } }
+/* save trip sits under the checklist and essentials on the dashboard */
+.trip-save { padding-block: 0 48px; }
