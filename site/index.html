@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;700;800;900&display=swap" />
     <link rel="stylesheet" href="css/tokens.css" />
     <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/photos.css" />
     <link rel="stylesheet" href="css/motion.css" />
   </head>
   <body>
@@ -31,10 +32,10 @@
           <a href="#/plan" data-route="plan">Plan a trip</a>
           <a href="#/trip" data-route="trip">My trip</a>
           <a href="#/about" data-route="about">About</a>
-          <button class="avatar" type="button" data-open-guest>
+          <a class="avatar" href="#/account">
             <img src="assets/figma/icon-user.svg" alt="" width="22" height="22" />
             <span class="avatar-label">Your profile</span>
-          </button>
+          </a>
         </nav>
       </div>
     </header>
@@ -63,7 +64,7 @@
               <h2>About</h2>
               <ul>
                 <li><a href="#/about">About RoamReady</a></li>
-                <li><button type="button" data-open-guest>Your profile</button></li>
+                <li><a href="#/account">Your profile</a></li>
               </ul>
             </div>
           </div>
@@ -76,15 +77,15 @@
       </div>
     </footer>
 
-    <dialog class="guest" id="guest" aria-labelledby="guest-title">
+    <dialog class="confirm" id="confirm" aria-labelledby="confirm-title">
       <div class="inner">
-        <h2 class="h3" id="guest-title">You're planning as a guest</h2>
-        <p>Your trip stays in this tab and isn't saved to an account. Accounts and saved trips are coming after the demo.</p>
-        <form method="dialog"><button class="btn btn-secondary" type="submit">Got it</button></form>
+        <h2 id="confirm-title">Delete this saved trip?</h2>
+        <p>This removes the trip and its saved checklist from your account.</p>
+        <button class="btn btn-primary" type="button" id="confirm-delete">Delete trip</button>
+        <form method="dialog"><button class="btn btn-secondary">Cancel</button></form>
+        <p id="delete-status" role="status"></p>
       </div>
     </dialog>
-
-    <dialog class="learn-more" id="learn-more" aria-labelledby="learn-more-title"></dialog>
 
     <script type="module" src="js/main.js?v=20261111-steps"></script>
   </body>

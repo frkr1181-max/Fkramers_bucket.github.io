@@ -6,7 +6,7 @@
 //   GET /api/destinations/{slug}/facts?...     -> [TravelFact]  (app/schemas/facts.py)
 //
 // add ?api=http://localhost:8000 (any local port) to the page URL to point at
-// another backend. other hosts must be added to DEPLOYED_API_HOSTS first, so a
+// another backend while developing. config.js ignores any other host, so a
 // shared link can't make the site show some other server's "facts".
 
 import { API_BASE, SAVED_GUIDES_ONLY } from "./config.js?v=20261110-original24";

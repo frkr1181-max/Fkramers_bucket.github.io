@@ -28,9 +28,6 @@ export const GUIDES = [
   color: `var(--rr-guide-${guide.id})`,
   tint: `var(--rr-guide-tint-${guide.id})`,
   icon: `${ICONS}tile-${guide.id}.svg`,      // 48px icon for dashboard tiles
-  // 48px navy icon on the pale topic-card tint. entry's tile icon is white (it sits
-  // on dark teal), so its cards use the navy document icon from the Entry guide
-  topicIcon: guide.id === "entry" ? `${ICONS}topic-document.svg` : `${ICONS}tile-${guide.id}.svg`,
   swatch: `${ICONS}swatch-${guide.id}.svg`,  // 18px white icon for the plan preview
 }));
 

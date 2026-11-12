@@ -1,0 +1,161 @@
+/* country photos, written straight into the stylesheet (David, Nov 11).
+
+   every country has two photos in assets/photos/countries/<country slug>/:
+     dashboard.webp  behind the trip dashboard, the page with the guide tiles
+     guide.webp      behind the title of every guide page for that country
+
+   the page only marks where a country photo goes, with data-country and
+   data-photo (see band() in js/main.js). the rules below fill it in.
+
+   to add or change a photo: save it with site/tools/photo_tool.py, add or
+   edit that country's two lines here, and rebuild assets/photos/SOURCES.md
+   with "photo_tool.py sources". a country with no lines here gets the RoamReady
+   photos instead, so a page never shows an empty band. */
+
+.country-photo { background: var(--rr-color-bg-brand) center / cover no-repeat; }
+.country-photo[data-photo="dashboard"] { background-image: url("../assets/photos/universal/hero.webp"); }
+.country-photo[data-photo="guide"] { background-image: url("../assets/photos/universal/plan.webp"); }
+
+/* Algeria */
+.country-photo[data-country="algeria"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/algeria/dashboard.webp"); }
+.country-photo[data-country="algeria"][data-photo="guide"] { background-image: url("../assets/photos/countries/algeria/guide.webp"); }
+
+/* Argentina */
+.country-photo[data-country="argentina"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/argentina/dashboard.webp"); }
+.country-photo[data-country="argentina"][data-photo="guide"] { background-image: url("../assets/photos/countries/argentina/guide.webp"); }
+
+/* Australia */
+.country-photo[data-country="australia"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/australia/dashboard.webp"); }
+.country-photo[data-country="australia"][data-photo="guide"] { background-image: url("../assets/photos/countries/australia/guide.webp"); }
+
+/* Austria */
+.country-photo[data-country="austria"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/austria/dashboard.webp"); }
+.country-photo[data-country="austria"][data-photo="guide"] { background-image: url("../assets/photos/countries/austria/guide.webp"); }
+
+/* Belgium */
+.country-photo[data-country="belgium"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/belgium/dashboard.webp"); }
+.country-photo[data-country="belgium"][data-photo="guide"] { background-image: url("../assets/photos/countries/belgium/guide.webp"); }
+
+/* Bosnia and Herzegovina */
+.country-photo[data-country="bosnia-and-herzegovina"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/bosnia-and-herzegovina/dashboard.webp"); }
+.country-photo[data-country="bosnia-and-herzegovina"][data-photo="guide"] { background-image: url("../assets/photos/countries/bosnia-and-herzegovina/guide.webp"); }
+
+/* Brazil */
+.country-photo[data-country="brazil"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/brazil/dashboard.webp"); }
+.country-photo[data-country="brazil"][data-photo="guide"] { background-image: url("../assets/photos/countries/brazil/guide.webp"); }
+
+/* Cabo Verde */
+.country-photo[data-country="cabo-verde"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/cabo-verde/dashboard.webp"); }
+.country-photo[data-country="cabo-verde"][data-photo="guide"] { background-image: url("../assets/photos/countries/cabo-verde/guide.webp"); }
+
+/* Canada */
+.country-photo[data-country="canada"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/canada/dashboard.webp"); }
+.country-photo[data-country="canada"][data-photo="guide"] { background-image: url("../assets/photos/countries/canada/guide.webp"); }
+
+/* Colombia */
+.country-photo[data-country="colombia"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/colombia/dashboard.webp"); }
+.country-photo[data-country="colombia"][data-photo="guide"] { background-image: url("../assets/photos/countries/colombia/guide.webp"); }
+
+/* Croatia */
+.country-photo[data-country="croatia"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/croatia/dashboard.webp"); }
+.country-photo[data-country="croatia"][data-photo="guide"] { background-image: url("../assets/photos/countries/croatia/guide.webp"); }
+
+/* Czechia */
+.country-photo[data-country="czechia"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/czechia/dashboard.webp"); }
+.country-photo[data-country="czechia"][data-photo="guide"] { background-image: url("../assets/photos/countries/czechia/guide.webp"); }
+
+/* Egypt */
+.country-photo[data-country="egypt"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/egypt/dashboard.webp"); }
+.country-photo[data-country="egypt"][data-photo="guide"] { background-image: url("../assets/photos/countries/egypt/guide.webp"); }
+
+/* England */
+.country-photo[data-country="england"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/england/dashboard.webp"); }
+.country-photo[data-country="england"][data-photo="guide"] { background-image: url("../assets/photos/countries/england/guide.webp"); }
+
+/* France */
+.country-photo[data-country="france"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/france/dashboard.webp"); }
+.country-photo[data-country="france"][data-photo="guide"] { background-image: url("../assets/photos/countries/france/guide.webp"); }
+
+/* Germany */
+.country-photo[data-country="germany"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/germany/dashboard.webp"); }
+.country-photo[data-country="germany"][data-photo="guide"] { background-image: url("../assets/photos/countries/germany/guide.webp"); }
+
+/* Iraq */
+.country-photo[data-country="iraq"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/iraq/dashboard.webp"); }
+.country-photo[data-country="iraq"][data-photo="guide"] { background-image: url("../assets/photos/countries/iraq/guide.webp"); }
+
+/* Japan */
+.country-photo[data-country="japan"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/japan/dashboard.webp"); }
+.country-photo[data-country="japan"][data-photo="guide"] { background-image: url("../assets/photos/countries/japan/guide.webp"); }
+
+/* Mexico */
+.country-photo[data-country="mexico"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/mexico/dashboard.webp"); }
+.country-photo[data-country="mexico"][data-photo="guide"] { background-image: url("../assets/photos/countries/mexico/guide.webp"); }
+
+/* Netherlands */
+.country-photo[data-country="netherlands"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/netherlands/dashboard.webp"); }
+.country-photo[data-country="netherlands"][data-photo="guide"] { background-image: url("../assets/photos/countries/netherlands/guide.webp"); }
+
+/* New Zealand */
+.country-photo[data-country="new-zealand"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/new-zealand/dashboard.webp"); }
+.country-photo[data-country="new-zealand"][data-photo="guide"] { background-image: url("../assets/photos/countries/new-zealand/guide.webp"); }
+
+/* Norway */
+.country-photo[data-country="norway"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/norway/dashboard.webp"); }
+.country-photo[data-country="norway"][data-photo="guide"] { background-image: url("../assets/photos/countries/norway/guide.webp"); }
+
+/* Panama */
+.country-photo[data-country="panama"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/panama/dashboard.webp"); }
+.country-photo[data-country="panama"][data-photo="guide"] { background-image: url("../assets/photos/countries/panama/guide.webp"); }
+
+/* Paraguay */
+.country-photo[data-country="paraguay"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/paraguay/dashboard.webp"); }
+.country-photo[data-country="paraguay"][data-photo="guide"] { background-image: url("../assets/photos/countries/paraguay/guide.webp"); }
+
+/* Qatar */
+.country-photo[data-country="qatar"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/qatar/dashboard.webp"); }
+.country-photo[data-country="qatar"][data-photo="guide"] { background-image: url("../assets/photos/countries/qatar/guide.webp"); }
+
+/* Saudi Arabia */
+.country-photo[data-country="saudi-arabia"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/saudi-arabia/dashboard.webp"); }
+.country-photo[data-country="saudi-arabia"][data-photo="guide"] { background-image: url("../assets/photos/countries/saudi-arabia/guide.webp"); }
+
+/* Scotland */
+.country-photo[data-country="scotland"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/scotland/dashboard.webp"); }
+.country-photo[data-country="scotland"][data-photo="guide"] { background-image: url("../assets/photos/countries/scotland/guide.webp"); }
+
+/* Senegal */
+.country-photo[data-country="senegal"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/senegal/dashboard.webp"); }
+.country-photo[data-country="senegal"][data-photo="guide"] { background-image: url("../assets/photos/countries/senegal/guide.webp"); }
+
+/* South Africa */
+.country-photo[data-country="south-africa"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/south-africa/dashboard.webp"); }
+.country-photo[data-country="south-africa"][data-photo="guide"] { background-image: url("../assets/photos/countries/south-africa/guide.webp"); }
+
+/* South Korea */
+.country-photo[data-country="south-korea"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/south-korea/dashboard.webp"); }
+.country-photo[data-country="south-korea"][data-photo="guide"] { background-image: url("../assets/photos/countries/south-korea/guide.webp"); }
+
+/* Spain */
+.country-photo[data-country="spain"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/spain/dashboard.webp"); }
+.country-photo[data-country="spain"][data-photo="guide"] { background-image: url("../assets/photos/countries/spain/guide.webp"); }
+
+/* Sweden */
+.country-photo[data-country="sweden"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/sweden/dashboard.webp"); }
+.country-photo[data-country="sweden"][data-photo="guide"] { background-image: url("../assets/photos/countries/sweden/guide.webp"); }
+
+/* Switzerland */
+.country-photo[data-country="switzerland"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/switzerland/dashboard.webp"); }
+.country-photo[data-country="switzerland"][data-photo="guide"] { background-image: url("../assets/photos/countries/switzerland/guide.webp"); }
+
+/* Türkiye */
+.country-photo[data-country="turkiye"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/turkiye/dashboard.webp"); }
+.country-photo[data-country="turkiye"][data-photo="guide"] { background-image: url("../assets/photos/countries/turkiye/guide.webp"); }
+
+/* Uruguay */
+.country-photo[data-country="uruguay"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/uruguay/dashboard.webp"); }
+.country-photo[data-country="uruguay"][data-photo="guide"] { background-image: url("../assets/photos/countries/uruguay/guide.webp"); }
+
+/* Uzbekistan */
+.country-photo[data-country="uzbekistan"][data-photo="dashboard"] { background-image: url("../assets/photos/countries/uzbekistan/dashboard.webp"); }
+.country-photo[data-country="uzbekistan"][data-photo="guide"] { background-image: url("../assets/photos/countries/uzbekistan/guide.webp"); }

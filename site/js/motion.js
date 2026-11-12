@@ -2,18 +2,22 @@
 // curves and keyframes live in css/motion.css. nothing here is needed for the
 // site to work: if this file fails, pages simply appear without motion.
 
+import { playLogoBuild } from "./logo-build.js";
+
 const reduceMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-// entrances happen on one screen only: the trip dashboard (David, Nov 10).
-// its title, chips and guide tiles arrive in that order; everything else on
-// it, and every other page, is simply there when the page opens, with no
-// entrance and nothing that waits for a scroll.
-// "rise" is for big blocks, "pop" for small repeated pieces.
+// entrances happen on two screens only. the trip dashboard (David, Nov 10):
+// its title, chips and guide tiles arrive in that order. and Home, where the
+// logo builds itself in the hero (David, Nov 11: it replaced the slowly
+// spinning rings). everything else is simply there when the page opens, with
+// no entrance and nothing that waits for a scroll.
+// "rise" is for big blocks, "pop" for small repeated pieces, "card" is the
+// slower pop the guide tiles use.
 // base is when the group starts, in ms after the page appears
 const GROUPS = [
   { kind: "rr-rise", base: 0, selector: ".trip .trip-head" },
   { kind: "rr-pop", base: 60, selector: ".trip .chips > li" },
-  { kind: "rr-pop", base: 120, selector: ".trip .tiles > li" },
+  { kind: "rr-card", base: 120, selector: ".trip .tiles > li" },
 ];
 
 export function enter(root) {
@@ -24,39 +28,7 @@ export function enter(root) {
       el.style.setProperty("--base", `${group.base}ms`);
     });
   }
-  drawArcsOnce(root);
-}
-
-// the dashboard's band arcs draw themselves the first time it opens, once per visit
-// (the Figma spec: "arcs draw on once in 0.9s"). later pages keep the static image
-let arcsDrawn = false;
-async function drawArcsOnce(root) {
-  const img = root.querySelector(".trip .band img.arcs");
-  if (arcsDrawn || !img || reduceMotion()) return;
-  arcsDrawn = true;
-  try {
-    const text = await (await fetch(img.getAttribute("src"))).text();
-    const holder = document.createElement("div");
-    holder.innerHTML = text;
-    const svg = holder.querySelector("svg");
-    if (!svg || !img.isConnected) return;
-    svg.setAttribute("class", "arcs arcs-live");
-    svg.setAttribute("aria-hidden", "true");
-    svg.removeAttribute("style");
-    svg.querySelectorAll("path, circle").forEach((shape, i) => {
-      const delay = `${Math.min(i * 0.015, 0.5)}s`;
-      shape.style.setProperty("--delay", delay);
-      if (shape.getAttribute("stroke") && shape.tagName === "path") {
-        shape.style.setProperty("--len", Math.ceil(shape.getTotalLength()));
-        shape.classList.add("draw");
-      } else {
-        shape.classList.add("pop");
-      }
-    });
-    img.replaceWith(svg);
-  } catch {
-    // keep the static image
-  }
+  playLogoBuild(root.querySelector("[data-logo-build]"));
 }
 
 // dialogs leave with a quick fade instead of vanishing. covers the close

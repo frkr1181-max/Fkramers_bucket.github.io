@@ -44,7 +44,8 @@ assert.equal(topicsForGuide('france','entry',changed,data).find(t=>t.id==='overv
 assert.ok(!topicsForGuide('france','entry',snapshot.facts.filter(f=>f.destination_slug==='qatar'),data).flatMap(t=>t.facts).length);
 const japan=await read('../data/japan-subcards.json');
 assert.deepEqual(topicsForGuide('japan','entry',[],japan),[],'Draft research alone must not create public cards');
-const passportFact=snapshot.facts.find(f=>f.destination_slug==='japan'&&f.title==='Passport and permission checks');
+// 'Passport and permission checks' left the Japan mapping when the dedicated passport facts were published
+const passportFact=snapshot.facts.find(f=>f.destination_slug==='japan'&&f.title==='Passport validity and the six-month question');
 const japanTopics=topicsForGuide('japan','entry',[passportFact],japan);
 assert.ok(japanTopics.length>0,'A supported Japan topic must remain visible');
 assert.ok(japanTopics.every(t=>t.facts.length&&t.facts.every(f=>f.id===passportFact.id)),'Trip filtering must hide unsupported Japan topics too');
