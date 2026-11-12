@@ -914,15 +914,21 @@
     "destination_slug": "austria",
     "category": "entry",
     "title": "Medicine import preparation",
-    "plain_summary": "Confirm import permission with Austria’s medicines authority before packing. Check the active ingredient, quantity and trip length; keep original packaging and prescription documentation. This preparation guidance does not establish permission for a specific drug.",
+    "plain_summary": "Austria’s Health Ministry says bringing medicines for usual personal needs is permit-free up to three retail packs of the smallest size. For prescription medicines, carry a doctor’s confirmation of personal need, including the generic name and dosage, and leave medicines in original packaging. Medicines containing addictive or psychotropic substances have stricter rules. Customs guidance says travelers who reside abroad may carry medicines needed for their own personal needs. Check the active ingredient and applicable requirements before travel.",
     "official_text_excerpt": "",
-    "last_verified_at": "2026-11-09",
+    "last_verified_at": "2026-11-11",
     "sources": [
       {
-        "title": "UK FCDO — Austria — health",
-        "url": "https://www.gov.uk/foreign-travel-advice/austria/health",
-        "organization": "www.gov.uk",
-        "checked_at": "2026-11-09"
+        "title": "Bringing medication into Austria",
+        "organization": "Austrian Federal Ministry of Social Affairs, Health, Care and Consumer Protection",
+        "url": "https://www.sozialministerium.gv.at/en/Topics/Health/Information-for-travellers/Bringing-medication-to-Austria.html",
+        "checked_at": "2026-11-11"
+      },
+      {
+        "title": "Medicines",
+        "organization": "Austrian Federal Ministry of Finance",
+        "url": "https://www.bmf.gv.at/en/topics/customs/travellers/prohibitions-and-restrictions-on-imports/medicines.html",
+        "checked_at": "2026-11-11"
       }
     ],
     "published": true,
