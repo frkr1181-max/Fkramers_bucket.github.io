@@ -1,5 +1,5 @@
 <!-- the RoamReady logo build (Nov 7-8): the mark, then the word, in the logo's own colors, from the
-     RoamReady Logo Build page (https://claude.ai/artifact/SytRmWMcNGt13Z1NfymTjv). the markup is the
+     RoamReady Logo Build page. the markup is the
      finished logo, so it shows as-is if js/logo-build.js can't run; the script redraws every frame
      from render(t). the plane's tail, its corner by the wing and the swoosh's tip were cleaned up on Nov 11 -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="212 120 1115 820" overflow="visible" aria-hidden="true" focusable="false">
